@@ -29,12 +29,13 @@
     </p>
     <el-table :data="contentTableData" border style="width: 80%" :span-method="objectSpanMethod">
       <el-table-column prop="first" width="120" label="一级" align="center" />
-      <el-table-column prop="second" width="160" label="二级" align="center" />
+      <el-table-column prop="second" width="180" label="二级" align="center" />
       <el-table-column prop="third" label="三级" align="center" />
     </el-table>
     <p>
       情境问题主要是考察实践性知识，每道题只有一个最优答案。本部分记分规则为：选择最优答案计5分，其余答案计0分。每个题项比重一致，无加权。本部分得分为各题项相加。统计结果分为不合格（107分及以下）、合格（108-135分）、良好（136-162分）和优秀（163-180）四个等第。
     </p>
+
   </div>
 </template>
 
@@ -45,30 +46,57 @@ export default {
   data() {
     return {
       researchTableData: [],
-      contentTableData: []
+      contentTableData: [],
+      testArr1: [],
+      testArr2: [],
+      testPosition1: 0,
+      testPosition2: 0
     }
   },
   created() {},
   mounted() {
     this.researchTableData = ResearchTableData
     this.contentTableData = ContentTableData
+    this.rowspan(this.testArr1, this.testPosition1, 'first')
+    this.rowspan(this.testArr2, this.testPosition2, 'second')
   },
   methods: {
     objectSpanMethod({ row, column, rowIndex, columnIndex }) {
-      if (columnIndex === 0) { // 判断当前列是否为第一列
-        const rowspan = this.contentTableData.filter(item => item.first === row.first).length // 获取相同内容的行数
-        if (rowIndex % rowspan === 0) { // 只在每组相同内容的第一行设置rowspan属性
-          return {
-            rowspan: rowspan,
-            colspan: 1
-          }
-        } else { // 其他行则隐藏
-          return {
-            rowspan: 0,
-            colspan: 0
-          }
+      if (columnIndex === 0) {
+        const _row = this.testArr1[rowIndex]
+        const _col = _row > 0 ? 1 : 0
+        return {
+          rowspan: _row,
+          colspan: _col
         }
       }
+      if (columnIndex === 1) {
+        const _row = this.testArr2[rowIndex]
+        const _col = _row > 0 ? 1 : 0
+        return {
+          rowspan: _row,
+          colspan: _col
+        }
+      }
+    },
+    rowspan(spanArr, position, spanName) {
+      this.contentTableData.forEach((item, index) => {
+        if (index === 0) {
+          spanArr.push(1)
+          position = 0
+        } else {
+          if (
+            this.contentTableData[index][spanName] ===
+            this.contentTableData[index - 1][spanName]
+          ) {
+            spanArr[position] += 1
+            spanArr.push(0)
+          } else {
+            spanArr.push(1)
+            position = index
+          }
+        }
+      })
     }
   }
 }

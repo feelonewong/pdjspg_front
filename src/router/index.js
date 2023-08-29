@@ -57,16 +57,16 @@ export const constantRoutes = [
     component: () => import('@/views/login/auth-redirect'),
     hidden: true
   },
-  {
-    path: '/404',
-    component: () => import('@/views/error-page/404'),
-    hidden: true
-  },
-  {
-    path: '/401',
-    component: () => import('@/views/error-page/401'),
-    hidden: true
-  },
+  // {
+  //   path: '/404',
+  //   component: () => import('@/views/error-page/404'),
+  //   hidden: true
+  // },
+  // {
+  //   path: '/401',
+  //   component: () => import('@/views/error-page/401'),
+  //   hidden: true
+  // },
   {
     path: '/',
     component: Layout,
@@ -77,20 +77,6 @@ export const constantRoutes = [
         component: () => import('@/views/dashboard/index'),
         name: 'Dashboard',
         meta: { title: '终端', icon: 'dashboard', affix: true }
-      }
-    ]
-  },
-  {
-    path: '/profile',
-    component: Layout,
-    redirect: '/profile/index',
-    hidden: true,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/profile/index'),
-        name: 'Profile',
-        meta: { title: 'Profile', icon: 'user', noCache: true }
       }
     ]
   }
@@ -106,25 +92,6 @@ export const asyncRoutes = [
   // componentsRouter,
   // chartsRouter,
   nestedRouter,
-
-  {
-    path: '/clipboard',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/clipboard/index'),
-        name: 'ClipboardDemo',
-        meta: { title: '基地校报告', icon: 'clipboard' }
-      }
-    ]
-  },
-  {
-    path: '/pdf/download',
-    component: () => import('@/views/pdf/download'),
-    hidden: true
-  },
-
   {
     path: '/tab',
     component: Layout,
