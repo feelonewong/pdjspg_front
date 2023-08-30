@@ -22,6 +22,7 @@ const nestedRouter = {
       path: 'overall-result',
       name: 'overallResult',
       meta: { title: '调研结果' },
+      component: () => import('@/views/nested/overall-result/index.vue'),
       children: [
         {
           path: 'result',

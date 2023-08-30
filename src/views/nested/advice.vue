@@ -6,8 +6,7 @@
           <h2>{{ item.title }}</h2><br />
           <div v-for="(child, index) in item.children" :key="index">
             <h2 class="second">{{child.title}}</h2><br />
-            <el-input type="textarea" :rows="10" placeholder="" v-model="child.value">
-      </el-input>
+            <el-input type="textarea" :rows="10" placeholder="" v-model="child.value"></el-input>
           </div>
         </div>
       </template>
