@@ -15,9 +15,9 @@
       本次调研对象覆盖上海市浦东新区新进教师XXX名，XXX学段，学校XX所，涵盖XXX学科，具体数据如下。
     </p>
     <el-table :data="researchTableData" border style="width: 50%">
-      <el-table-column prop="date" label="学段" align="center" />
-      <el-table-column prop="name" label="学科" align="center" />
-      <el-table-column prop="address" label="教师人数" align="center" />
+      <el-table-column prop="period" label="学段" align="center" />
+      <el-table-column prop="subject" label="学科" align="center" />
+      <el-table-column prop="teachCount" label="教师人数" align="center" />
     </el-table>
     <h2>五、调研内容与工具</h2>
     <p>
