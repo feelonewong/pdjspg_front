@@ -1,31 +1,55 @@
 <template>
-  <div>
-    <h2>1.1.2 各维度平均分、标准差与中位数字</h2><br>
-    <h2 class="second">1.1.2.1 职业态度</h2><br>
-    <CommonEcharts :chartData="chartData" />
-    <CommonTable :TableData="tableData"/>
+  <div class="container">
+    <template v-for="(item, idx) in resultData">
+      <div :key="idx">
+        <h2>{{ item.title }}</h2><br>
+        <h2 class="second">{{ item.subTitle }}</h2><br>
+        <template v-if="idx === 0">
+          <div>
+            <CommonEcharts :chartData="item.chartDataList[0]"></CommonEcharts>
+          </div>
+          <div class="table-wrap">
+            <ResultTable :TableData="item.tableData" style="width: 80%; display: flex; justify-self: center;"></ResultTable>
+          </div>
+        </template>
+        <template v-else-if="idx === 1"></template>
+        <template v-else>
+          <template v-for="(child, childIdx) in item.chartDataList">
+            <section :key="childIdx">
+              <CommonEcharts :chartData="child"></CommonEcharts>
+            </section>
+          </template>
+          <div class="table-wrap">
+            <ResultTable :TableData="item.tableData" style="width: 80%; display: flex; justify-self: center;"></ResultTable>
+          </div>
+        </template>
+      </div>
+    </template>
   </div>
 </template>
 
 <script>
 import CommonEcharts from '@/views/nested/overall-result/components/common-echarts.vue'
 import CommonTable from '@/views/nested/overall-result/components/common-table.vue'
-import { TABLE_DATA } from '@/constant/result'
+import ResultTable from '@/views/nested/overall-result/components/result-table.vue'
+import { RESULT_DATA } from '@/constant/result'
 export default {
   components: {
     CommonEcharts,
-    CommonTable
+    CommonTable,
+    ResultTable
   },
   data(){
     return {
       chartData: {
         
       },
+      resultData: [],
       tableData: []
     }
   },
   mounted(){
-    this.tableData = TABLE_DATA
+    this.resultData = RESULT_DATA
   }
 }
 </script>
@@ -59,5 +83,10 @@ h2::after {
 .second {
   font-size: 20px;
   font-weight: 400;
+}
+.table-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

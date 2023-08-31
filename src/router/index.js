@@ -70,14 +70,14 @@ export const constantRoutes = [
   {
     path: '/',
     component: Layout,
-    redirect: '/dashboard',
+    redirect: '/nested/base',
     children: [
-      {
-        path: 'dashboard',
-        component: () => import('@/views/dashboard/index'),
-        name: 'Dashboard',
-        meta: { title: '终端', icon: 'dashboard', affix: true }
-      }
+      // {
+      //   path: 'dashboard',
+      //   component: () => import('@/views/dashboard/index'),
+      //   name: 'Dashboard',
+      //   meta: { title: '终端', icon: 'dashboard', affix: true }
+      // }
     ]
   }
 ]
@@ -92,18 +92,6 @@ export const asyncRoutes = [
   // componentsRouter,
   // chartsRouter,
   nestedRouter,
-  {
-    path: '/tab',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/tab/index'),
-        name: 'Tab',
-        meta: { title: 'Tab', icon: 'tab' }
-      }
-    ]
-  },
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
 ]
