@@ -4,7 +4,7 @@
       <h2>{{ item.title }}</h2><br>
       <h2 class="second">{{ item.subTitle }}</h2><br>
       <div v-for="(child, index) in item.chartDataList" :key="index" class="charts-wrap">
-        <CommonEcharts :chartData="chartData" />
+        <CommonEcharts :chartData="child" />
       </div>
       <div class="table-wrap">
         <CommonTable :TableData="item.tableData" style="width: 80%; display: flex; justify-self: center;"/>
