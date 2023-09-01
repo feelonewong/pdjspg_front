@@ -1,5 +1,6 @@
 <template>
   <div style="margin-bottom: 50px;">
+    <h2>二、学前教育与特殊教育学段调研结果</h2><br>
     <div v-for="(item, idx) in preEduInfo" :key="idx">
       <h2>{{ item.title }}</h2><br>
       <h2 class="second">{{ item.subTitle }}</h2><br>

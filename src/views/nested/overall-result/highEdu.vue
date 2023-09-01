@@ -5,6 +5,7 @@
       @tab-click="handleTabClick($event, activeName)"
       type="border-card"
     >
+      <h2>四、高中(含职校)学段调研结果</h2><br>
       <el-tab-pane label="语文" name="first">
         <CompEduModule :moduleData="chnEduModule"></CompEduModule>
       </el-tab-pane>

@@ -1,10 +1,12 @@
 <template>
   <div class="container">
+
     <el-tabs
       v-model="activeName"
       @tab-click="handleTabClick($event, activeName)"
       type="border-card"
     >
+      <h2>三、义务教育学段调研结果</h2><br>
       <el-tab-pane label="语文" name="first">
         <CompEduModule :moduleData="chnEduModule"></CompEduModule>
       </el-tab-pane>
@@ -90,5 +92,21 @@ export default {
 <style scoped>
 .container {
   padding: 10px;
+}
+h2 {
+  margin-top: 10px;
+  margin-left: 20px;
+  display: inline-block;
+  position: relative;
+  color: #409eff;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #409eff;
+  bottom: -5px;
+  left: 0;
 }
 </style>
