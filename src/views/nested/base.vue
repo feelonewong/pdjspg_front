@@ -23,15 +23,26 @@
     <p>
       本次教师素养调研的内容涵盖“职业态度”、“教学实践”、“综合育人”和“自主发展”四部分，具体结构如下表所示。
     </p>
-    <p>
-      本次教师专业素养调研采用计算机在线调研模式，分为自陈量表和情境问题两类，各36题。
-      自陈量表主要是考察理论性知识，每道题目选项包含A非常不同意；B不同意；C基本同意；D比较同意；E非常同意。赋分为A=1分、B=2分、C=3分、D=4分、E=5分，每个题项比重一致，无加权。本部分得分为各题项相加。统计结果为不合格（107分及以下）、合格（108-135分）、良好（136-162分）和优秀（163-180）四个等第。
-    </p>
-    <el-table :data="contentTableData" border style="width: 80%" :span-method="objectSpanMethod">
+    <div>
+      <p>幼儿园教师专业素养指标体系</p>
+    </div>
+    <el-table :data="contentTableData" border style="width: 80%" :span-method="objectSpanMethod" height="500">
       <el-table-column prop="first" width="120" label="一级" align="center" />
       <el-table-column prop="second" width="180" label="二级" align="center" />
       <el-table-column prop="third" label="三级" align="center" />
     </el-table>
+    <div>
+      <p>义务教育、高中含职校教师专业素养指标体系</p>
+    </div>
+    <el-table :data="contentTableData" border style="width: 80%" :span-method="objectSpanMethod" height="500">
+      <el-table-column prop="first" width="120" label="一级" align="center" />
+      <el-table-column prop="second" width="180" label="二级" align="center" />
+      <el-table-column prop="third" label="三级" align="center" />
+    </el-table>
+    <p>
+      本次教师专业素养调研采用计算机在线调研模式，分为自陈量表和情境问题两类，各36题。
+      自陈量表主要是考察理论性知识，每道题目选项包含A非常不同意；B不同意；C基本同意；D比较同意；E非常同意。赋分为A=1分、B=2分、C=3分、D=4分、E=5分，每个题项比重一致，无加权。本部分得分为各题项相加。统计结果为不合格（107分及以下）、合格（108-135分）、良好（136-162分）和优秀（163-180）四个等第。
+    </p>
     <p>
       情境问题主要是考察实践性知识，每道题只有一个最优答案。本部分记分规则为：选择最优答案计5分，其余答案计0分。每个题项比重一致，无加权。本部分得分为各题项相加。统计结果分为不合格（107分及以下）、合格（108-135分）、良好（136-162分）和优秀（163-180）四个等第。
     </p>

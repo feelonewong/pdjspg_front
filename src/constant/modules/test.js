@@ -77,7 +77,6 @@ const column0_1 = [
     "5-17",
     "5-18"
 ];
-// class_name = 幼儿园教师
 
 // 第1个
 const column1_0 = [
