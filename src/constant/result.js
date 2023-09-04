@@ -1009,7 +1009,6 @@ const xAxisLabelAddr = [
   "周家渡街道",
   "周浦镇",
   "祝桥镇",
-  "直属单位",
 ];
 const xAxisLabelAll = ["自陈问题合格率", "情景问题合格率"];
 const legendObj = {

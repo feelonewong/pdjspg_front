@@ -8,7 +8,8 @@
         <CommonEcharts :chartData="child" />
       </div>
       <div class="table-wrap">
-        <CommonTable :TableData="item.tableData" style="width: 80%; display: flex; justify-self: center;"/>
+        <CommonTable v-if="idx !== 5" :TableData="item.tableData" style="width: 80%; display: flex; justify-self: center;"/>
+        <PassTable v-else :TableData="item.tableData" style="width: 80%; display: flex; justify-self: center;"/>
       </div>
     </div>
     
@@ -20,11 +21,13 @@
 <script>
 import CommonEcharts from '@/views/nested/overall-result/components/common-echarts.vue'
 import CommonTable from '@/views/nested/overall-result/components/common-table.vue'
+import PassTable from '@/views/nested/overall-result/components/pass-table.vue'
 import { PRE_EDU_INFO } from '@/constant/preEdu'
 export default {
   components: {
     CommonEcharts,
-    CommonTable
+    CommonTable,
+    PassTable
   },
   data(){
     return {

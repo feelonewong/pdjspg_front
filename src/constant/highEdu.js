@@ -36,7 +36,6 @@ const xAxisLabel = [
     "周家渡街道",
     "周浦镇",
     "祝桥镇",
-    "直属单位",
   ];
   const legendObj = {
     0: ["自陈问题平均分"],
