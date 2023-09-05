@@ -13,6 +13,8 @@ import {
   chn_chart_obj_5, 
   chn_tableData_5,
 } from './modules/comp_edu_data';
+
+
 const xAxisLabel = chart_label_arr;
 const legendObj = {
   0: ["自陈问题平均分"],
@@ -100,160 +102,7 @@ export const CHN_EDU_MODULE = [
   },
 ];
 
-// 数学
-export const MATH_EDU_MODULE = [
-  {
-    title: "3.1义务教育数学",
-    subTitle: "3.1.1义务教育数学平均分、标准差和中位数",
-    chartDataList: [
-      { xDataLable: xAxisLabel, yData: [1,2,3,4,5], legend: legendObj["0"], xName:legendObj['0'] },
-      { xDataLable: xAxisLabel, yData: [1,2,3,4,5], legend: legendObj["1"], xName:legendObj['1'] },
-      { xDataLable: xAxisLabel, yData: [1,2,3,4,5], legend: legendObj["2"], xName:legendObj['2'] },
-      { xDataLable: xAxisLabel, yData: [1,2,3,4,5], legend: legendObj["3"], xName:legendObj['3'] },
-      { xDataLable: xAxisLabel, yData: [1,2,3,4,5], legend: legendObj["4"], xName:legendObj['4'] },
-      { xDataLable: xAxisLabel, yData: [1,2,3,4,5], legend: legendObj["5"], xName: legendObj['5']},
-    ],
-    tableData: [],
-  },
-  {
-    title: "3.1.2.1 义务教育数学学科职业态度",
-    chartDataList: [
-      { xDataLable: xAxisLabel, yData: [8,9,10], legend: legendObj["0"], xName: legendObj['0'] },
-      { xDataLable: xAxisLabel, yData: [8,9,10], legend: legendObj["1"], xName: legendObj['1'] },
-      { xDataLable: xAxisLabel, yData: [8,9,10], legend: legendObj["2"], xName: legendObj['2'] },
-      { xDataLable: xAxisLabel, yData: [8,9,10], legend: legendObj["3"], xName: legendObj['3'] },
-      { xDataLable: xAxisLabel, yData: [8,9,10], legend: legendObj["4"], xName: legendObj['4'] },
-      { xDataLable: xAxisLabel, yData: [8,9,10], legend: legendObj["5"], xName: legendObj['5'] },
-    ],
-    tableData: [],
-  },
-  {
-    title: "3.1.2.2 义务教育数学学科教学实践",
-    subTitle: "",
-    chartDataList: [
-      { xDataLable: xAxisLabel, yData: [10,29,40], legend: legendObj["0"], xName:legendObj['0']  },
-      { xDataLable: xAxisLabel, yData: [10,29,40], legend: legendObj["1"], xName:legendObj['1']  },
-      { xDataLable: xAxisLabel, yData: [10,29,40], legend: legendObj["2"], xName:legendObj['2']  },
-      { xDataLable: xAxisLabel, yData: [10,29,40], legend: legendObj["3"], xName:legendObj['3']  },
-      { xDataLable: xAxisLabel, yData: [10,29,40], legend: legendObj["4"], xName:legendObj['4']  },
-      { xDataLable: xAxisLabel, yData: [10,29,40], legend: legendObj["5"], xName: legendObj['5'] },
-    ],
-    tableData: [],
-  },
-  {
-    title: "3.1.2.3 义务教育数学科综合育人",
-    subTitle: "",
 
-    chartDataList: [
-      { xDataLable: xAxisLabel, yData: [2,3,4,5], legend: legendObj["0"], xName: legendObj['0'] },
-      { xDataLable: xAxisLabel, yData: [2,3,4,5], legend: legendObj["1"], xName: legendObj['1'] },
-      { xDataLable: xAxisLabel, yData: [2,3,4,5], legend: legendObj["2"], xName: legendObj['2'] },
-      { xDataLable: xAxisLabel, yData: [2,3,4,5], legend: legendObj["3"], xName: legendObj['3'] },
-      { xDataLable: xAxisLabel, yData: [2,3,4,5], legend: legendObj["4"], xName: legendObj['4'] },
-      { xDataLable: xAxisLabel, yData: [2,3,4,5], legend: legendObj["5"], xName: legendObj['5'] },
-    ],
-    tableData: [],
-  },
-  {
-    title: "3.1.2.4 义务教育数学科自主发展",
-    subTitle: "",
-    chartDataList: [
-      { xDataLable: xAxisLabel, yData: [10,20,30], legend: legendObj["0"], xName:legendObj['0']  },
-      { xDataLable: xAxisLabel, yData: [10,20,30], legend: legendObj["1"], xName:legendObj['1']  },
-      { xDataLable: xAxisLabel, yData: [10,20,30], legend: legendObj["2"], xName:legendObj['2']  },
-      { xDataLable: xAxisLabel, yData: [10,20,30], legend: legendObj["3"], xName:legendObj['3']  },
-      { xDataLable: xAxisLabel, yData: [10,20,30], legend: legendObj["4"], xName:legendObj['4']  },
-      { xDataLable: xAxisLabel, yData: [10,20,30], legend: legendObj["5"], xName: legendObj['5'] },
-    ],
-    tableData: [],
-  },
-  {
-    title: "3.1.3 义务教育数学科整体及格率",
-    subTitle: "",
-    chartDataList: [
-      { xDataLable: xAxisLabel, yData: [20,30,40], legend: ["自陈问题合格率"], xName: '自陈问题合格率' },
-      { xDataLable: xAxisLabel, yData: [10,20,40], legend: ["情景问题合格率"], xName:  '情景问题合格率'},
-    ],
-    tableData: [],
-  },
-];
-// 英语
-export const ENG_EDU_MODULE = [
-  {
-    title: "3.1义务教育英语",
-    subTitle: "3.1.1义务教育英语平均分、标准差和中位数",
-    chartDataList: [
-      { xDataLable: xAxisLabel, yData: [1,2,3,4], legend: legendObj["0"],xName: legendObj['0'] },
-      { xDataLable: xAxisLabel, yData: [1,2,3,4], legend: legendObj["1"],xName: legendObj['1'] },
-      { xDataLable: xAxisLabel, yData: [1,2,3,4], legend: legendObj["2"],xName: legendObj['2'] },
-      { xDataLable: xAxisLabel, yData: [1,2,3,4], legend: legendObj["3"],xName: legendObj['3'] },
-      { xDataLable: xAxisLabel, yData: [1,2,3,4], legend: legendObj["4"],xName: legendObj['4'] },
-      { xDataLable: xAxisLabel, yData: [1,2,3,4], legend: legendObj["5"],xName: legendObj['5'] },
-    ],
-    tableData: [],
-  },
-  {
-    title: "3.1.2.1 义务教育英语学科职业态度",
-    chartDataList: [
-      { xDataLable: xAxisLabel, yData: [1,8,10], legend: legendObj["0"], xName:legendObj['0']  },
-      { xDataLable: xAxisLabel, yData: [1,8,10], legend: legendObj["1"], xName:legendObj['1']  },
-      { xDataLable: xAxisLabel, yData: [1,8,10], legend: legendObj["2"], xName:legendObj['2']  },
-      { xDataLable: xAxisLabel, yData: [1,8,10], legend: legendObj["3"], xName:legendObj['3']  },
-      { xDataLable: xAxisLabel, yData: [1,8,10], legend: legendObj["4"], xName:legendObj['4']  },
-      { xDataLable: xAxisLabel, yData: [1,8,10], legend: legendObj["5"], xName: legendObj['5'] },
-    ],
-    tableData: [],
-  },
-  {
-    title: "3.1.2.2 义务教育英语学科教学实践",
-    subTitle: "",
-    chartDataList: [
-      { xDataLable: xAxisLabel, yData: [20,30,40], legend: legendObj["0"], xName: legendObj['0'] },
-      { xDataLable: xAxisLabel, yData: [20,30,40], legend: legendObj["1"], xName: legendObj['1'] },
-      { xDataLable: xAxisLabel, yData: [20,30,40], legend: legendObj["2"], xName: legendObj['2'] },
-      { xDataLable: xAxisLabel, yData: [20,30,40], legend: legendObj["3"], xName: legendObj['3'] },
-      { xDataLable: xAxisLabel, yData: [20,30,40], legend: legendObj["4"], xName: legendObj['4'] },
-      { xDataLable: xAxisLabel, yData: [20,30,40], legend: legendObj["5"], xName: legendObj['5'] },
-    ],
-    tableData: [],
-  },
-  {
-    title: "3.1.2.3 义务教育英语学科综合育人",
-    subTitle: "",
-
-    chartDataList: [
-      { xDataLable: xAxisLabel, yData: [20,30,50], legend: legendObj["0"], xName: legendObj['0'] },
-      { xDataLable: xAxisLabel, yData: [20,30,50], legend: legendObj["1"], xName: legendObj['1'] },
-      { xDataLable: xAxisLabel, yData: [20,30,50], legend: legendObj["2"], xName: legendObj['2'] },
-      { xDataLable: xAxisLabel, yData: [20,30,50], legend: legendObj["3"], xName: legendObj['3'] },
-      { xDataLable: xAxisLabel, yData: [20,30,50], legend: legendObj["4"], xName: legendObj['4'] },
-      { xDataLable: xAxisLabel, yData: [20,30,50], legend: legendObj["5"], xName: legendObj['5'] },
-    ],
-    tableData: [],
-  },
-  {
-    title: "3.1.2.4 义务教育英语学科自主发展",
-    subTitle: "",
-    chartDataList: [
-      { xDataLable: xAxisLabel, yData: [30,40,50], legend: legendObj["0"], xName:legendObj['0']  },
-      { xDataLable: xAxisLabel, yData: [30,40,50], legend: legendObj["1"], xName:legendObj['1']  },
-      { xDataLable: xAxisLabel, yData: [30,40,50], legend: legendObj["2"], xName:legendObj['2']  },
-      { xDataLable: xAxisLabel, yData: [30,40,50], legend: legendObj["3"], xName:legendObj['3']  },
-      { xDataLable: xAxisLabel, yData: [30,40,50], legend: legendObj["4"], xName:legendObj['4']  },
-      { xDataLable: xAxisLabel, yData: [30,40,50], legend: legendObj["5"], xName: legendObj['5'] },
-    ],
-    tableData: [],
-  },
-  {
-    title: "3.1.3 义务教育英语学科整体及格率",
-    subTitle: "",
-    chartDataList: [
-      { xDataLable: xAxisLabel, yData: [1,2,3], legend: ["自陈问题合格率"], xName: '自陈问题合格率' },
-      { xDataLable: xAxisLabel, yData: [4,5,6], legend: ["情景问题合格率"], xName:  '情景问题合格率'},
-    ],
-    tableData: [],
-  },
-];
 // 社会科 
 export const SOC_EDU_MODULE = [
   {
