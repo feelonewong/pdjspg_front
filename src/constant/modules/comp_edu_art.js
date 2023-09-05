@@ -749,7 +749,7 @@ export const art_chart_obj_1 = {
     median2: toSingleArr(art_tableData_1, 'median2'),
     standardDeviation2: toSingleArr(art_tableData_1, 'standardDeviation2'),
   }
-// 2.义务教育艺体-保教知识与能力表格
+// 2.义务教育艺体-教学实践表格
 export const art_tableData_2 =[
   {
     "villagesAndTowns": "北蔡镇",

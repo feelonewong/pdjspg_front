@@ -32,12 +32,23 @@
 import CompEduModule from "@/views/nested/overall-result/modules/compEduModule.vue";
 import {
   CHN_EDU_MODULE,
-  MATH_EDU_MODULE,
-  ENG_EDU_MODULE,
-  SOC_EDU_MODULE,
-  CHEM_EDU_MODULE,
-  ART_EDU_MODULE,
-} from "@/constant/highEdu";
+} from "@/constant/highEduCHN";
+import {
+  MATH_EDU_MODULE
+} from '@/constant/highEduMath'
+import {
+  ENG_EDU_MODULE
+} from '@/constant/highEduEng'
+import {
+  SOC_EDU_MODULE
+} from '@/constant/highEduSoc'
+import {
+  CHEM_EDU_MODULE
+} from '@/constant/highEduChem'
+import {
+  ART_EDU_MODULE
+} from '@/constant/highEduArt'
+
 export default {
   components: {
     CompEduModule,

@@ -8,6 +8,7 @@
         <br />
         <h2 class="second">{{ item.subTitle }}</h2>
         <br />
+        <!-- 第一行 -->
         <template v-if="idx === 0">
           <div>
             <CommonEcharts :chartData="item.chartDataList[0]"></CommonEcharts>
@@ -23,6 +24,7 @@
           </div>
           <p>{{ item.desc }}</p>
         </template>
+        <!-- 第二行 -->
         <template v-else-if="idx === 1">
           <template v-for="(child, childIdx) in item.children">
             <section :key="childIdx">
@@ -44,17 +46,24 @@
             </section>
           </template>
         </template>
+        <!-- 其他行 -->
         <template v-else>
           <template v-for="(child, childIdx) in item.chartDataList">
-            <section :key="childIdx">
+            <section :key="childIdx" style="margin-bottom: 10px;">
               <CommonEcharts :chartData="child"></CommonEcharts>
             </section>
           </template>
           <div class="table-wrap">
             <ResultTable
+              v-if="idx !== 5"
               :TableData="item.tableData"
               style="width: 80%; display: flex; justify-self: center"
             ></ResultTable>
+            <ResultTableQualified
+              v-else
+              :TableData="item.tableData"
+              style="width: 80%; display: flex; justify-self: center">
+            </ResultTableQualified>
           </div>
           <p>{{ item.desc }}</p>
         </template>
@@ -68,6 +77,7 @@ import CommonEcharts from "@/views/nested/overall-result/components/common-echar
 import CommonTable from "@/views/nested/overall-result/components/common-table.vue";
 import ResultEcharts from "@/views/nested/overall-result/components/result-echarts.vue";
 import ResultTable from "@/views/nested/overall-result/components/result-table.vue";
+import ResultTableQualified from "@/views/nested/overall-result/components/result-table-qualified.vue";
 import { RESULT_DATA } from "@/constant/result";
 export default {
   components: {
@@ -75,6 +85,7 @@ export default {
     CommonTable,
     ResultTable,
     ResultEcharts,
+    ResultTableQualified
   },
   data() {
     return {

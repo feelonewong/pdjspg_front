@@ -1,5 +1,5 @@
 <template>
-  <div :class="className" :style="{ height: height, width: width }"></div>
+  <div :class="className" :style="{ height: height, width: width }" style="min-height: 320px;"></div>
 </template>
 
 <script>
