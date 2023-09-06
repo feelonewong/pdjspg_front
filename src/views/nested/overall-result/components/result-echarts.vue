@@ -96,7 +96,7 @@ export default {
           },
           {
             type: "value",
-            name: "",
+            name: this.$props.chartData.legend[5],
           },
         ],
         series: [
@@ -127,6 +127,12 @@ export default {
             type: "line",
             yAxisIndex: 1,
             data: this.$props.chartData.yData5,
+          },
+          {
+            name: this.$props.chartData.legend[5],
+            type: "line",
+            yAxisIndex: 1,
+            data: this.$props.chartData.yData6,
           },
         ],
       });

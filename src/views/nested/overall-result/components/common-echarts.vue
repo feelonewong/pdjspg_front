@@ -73,9 +73,16 @@ export default {
           type: "category",
           axisLabel: { interval: 0,
             formatter: function (value) {
-              //x轴的文字改为竖版显示
-              var str = value.split("");
-              return str.join("\n");
+              // if(!this.$props.chartData.flag){
+
+              
+              // }else {
+              //   return value
+                
+              // }
+              // return value;
+                var str = value.split("");
+                return str.join("\n");
             },
           },
           data: this.$props.chartData.xDataLable,

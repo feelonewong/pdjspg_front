@@ -12,21 +12,21 @@
     </p>
     <h2>四、调研对象</h2>
     <p>
-      本次调研对象覆盖上海市浦东新区新进教师XXX名，XXX学段，学校XX所，涵盖XXX学科，具体数据如下。
+      本次调研对象覆盖上海市浦东新区新进教师XXX名，学前教育、义务教育、高中(含职教)学段，学校XX所，涵盖语文、数学、英语、社会科学科、理工科学科、艺体科学科，具体数据如下。
     </p>
-    <el-table :data="researchTableData" border style="width: 50%">
+    <el-table :data="researchTableData" border style="width: 50%" :span-method="objectSpanMethod3">
       <el-table-column prop="period" label="学段" align="center" />
       <el-table-column prop="subject" label="学科" align="center" />
       <el-table-column prop="teachCount" label="教师人数" align="center" />
     </el-table>
     <h2>五、调研内容与工具</h2>
     <p>
-      本次教师素养调研的内容涵盖“职业态度”、“教学实践”、“综合育人”和“自主发展”四部分，具体结构如下表所示。
+      本次教师素养调研的内容涵盖“职业态度”、“教学实践”、“综合育人”和“自主发展”四部分，具体结构如下表所示:
     </p>
     <div>
       <p>幼儿园教师专业素养指标体系</p>
     </div>
-    <el-table :data="contentTableData" border style="width: 80%" :span-method="objectSpanMethod" height="500">
+    <el-table :data="contentTableData2" border style="width: 80%" :span-method="objectSpanMethod2" height="500">
       <el-table-column prop="first" width="120" label="一级" align="center" />
       <el-table-column prop="second" width="180" label="二级" align="center" />
       <el-table-column prop="third" label="三级" align="center" />
@@ -51,25 +51,37 @@
 </template>
 
 <script>
-import { ContentTableData, ResearchTableData } from '@/constant/base'
+import { ContentTableData, ResearchTableData, ContentTableData2 } from '@/constant/base'
 export default {
   name: '',
   data() {
     return {
       researchTableData: [],
       contentTableData: [],
+      contentTableData2: [],
       testArr1: [],
       testArr2: [],
+      testArr3: [],
+      testArr4: [],
+      testArr5: [],
       testPosition1: 0,
-      testPosition2: 0
+      testPosition2: 0,
+      testPosition3: 0,
+      testPosition4: 0,
+      testPosition5: 0,
     }
   },
   created() {},
   mounted() {
     this.researchTableData = ResearchTableData
     this.contentTableData = ContentTableData
+    this.contentTableData2 = ContentTableData2
     this.rowspan(this.testArr1, this.testPosition1, 'first')
     this.rowspan(this.testArr2, this.testPosition2, 'second')
+    this.commonRowSpan(this.testArr3, this.testPosition3, 'first', this.contentTableData2 )
+    this.commonRowSpan(this.testArr4, this.testPosition4, 'second',this.contentTableData2)
+    this.commonRowSpan(this.testArr5, this.testPosition5, 'period', this.researchTableData)
+
   },
   methods: {
     objectSpanMethod({ row, column, rowIndex, columnIndex }) {
@@ -83,6 +95,34 @@ export default {
       }
       if (columnIndex === 1) {
         const _row = this.testArr2[rowIndex]
+        const _col = _row > 0 ? 1 : 0
+        return {
+          rowspan: _row,
+          colspan: _col
+        }
+      }
+    },
+    objectSpanMethod2({ row, column, rowIndex, columnIndex }) {
+      if (columnIndex === 0) {
+        const _row = this.testArr3[rowIndex]
+        const _col = _row > 0 ? 1 : 0
+        return {
+          rowspan: _row,
+          colspan: _col
+        }
+      }
+      if (columnIndex === 1) {
+        const _row = this.testArr4[rowIndex]
+        const _col = _row > 0 ? 1 : 0
+        return {
+          rowspan: _row,
+          colspan: _col
+        }
+      }
+    },
+    objectSpanMethod3({ row, column, rowIndex, columnIndex }) {
+      if (columnIndex === 0) {
+        const _row = this.testArr5[rowIndex]
         const _col = _row > 0 ? 1 : 0
         return {
           rowspan: _row,
@@ -108,7 +148,26 @@ export default {
           }
         }
       })
-    }
+    },
+    commonRowSpan(spanArr, position, spanName, navtiveArr){
+      navtiveArr.forEach((item, index) => {
+        if (index === 0) {
+          spanArr.push(1)
+          position = 0
+        } else {
+          if (
+            navtiveArr[index][spanName] ===
+            navtiveArr[index - 1][spanName]
+          ) {
+            spanArr[position] += 1
+            spanArr.push(0)
+          } else {
+            spanArr.push(1)
+            position = index
+          }
+        }
+      })
+    },
   }
 }
 </script>

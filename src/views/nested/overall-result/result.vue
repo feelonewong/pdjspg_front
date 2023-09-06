@@ -22,7 +22,7 @@
               style="width: 80%; display: flex; justify-self: center"
             ></ResultTable>
           </div>
-          <p>{{ item.desc }}</p>
+          <DescComp :descInfo="item.desc"></DescComp>
         </template>
         <!-- 第二行 -->
         <template v-else-if="idx === 1">
@@ -40,15 +40,16 @@
                   style="width: 80%; display: flex; justify-self: center"
                 ></ResultTable>
               </div>
-              <div style="padding: 0 30px">
-                <p>{{ child.desc }}</p>
-              </div>
             </section>
+              <!-- 详情 -->
+              <DescComp :descInfo="child.desc"></DescComp>
+              <h2>{{ child.subTitle }}</h2>
           </template>
         </template>
         <!-- 其他行 -->
         <template v-else>
           <template v-for="(child, childIdx) in item.chartDataList">
+            
             <section :key="childIdx" style="margin-bottom: 10px;">
               <CommonEcharts :chartData="child"></CommonEcharts>
             </section>
@@ -65,7 +66,9 @@
               style="width: 80%; display: flex; justify-self: center">
             </ResultTableQualified>
           </div>
-          <p>{{ item.desc }}</p>
+          
+          <DescComp v-if="idx !== 5" :descInfo="item.desc"></DescComp>
+            
         </template>
       </div>
     </template>
@@ -73,19 +76,21 @@
 </template>
 
 <script>
-import CommonEcharts from "@/views/nested/overall-result/components/common-echarts.vue";
+import CommonEcharts from "@/views/nested/overall-result/components/common-echarts-axBle.vue";
 import CommonTable from "@/views/nested/overall-result/components/common-table.vue";
 import ResultEcharts from "@/views/nested/overall-result/components/result-echarts.vue";
 import ResultTable from "@/views/nested/overall-result/components/result-table.vue";
 import ResultTableQualified from "@/views/nested/overall-result/components/result-table-qualified.vue";
 import { RESULT_DATA } from "@/constant/result";
+import DescComp from '@/views/nested/overall-result/components/desc-comp.vue'
 export default {
   components: {
     CommonEcharts,
     CommonTable,
     ResultTable,
     ResultEcharts,
-    ResultTableQualified
+    ResultTableQualified,
+    DescComp
   },
   data() {
     return {
