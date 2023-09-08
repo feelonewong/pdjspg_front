@@ -284,7 +284,7 @@ $light_gray: #eee;
   width: 100%;
   background-color: $bg;
   background-size: cover;
-  background-image: url('../../assets/login-bg.jpg');
+  background-image: url('../../assets/bg-5.jpg');
   // background-image: url(https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2022&q=80);
   overflow: hidden;
 
@@ -349,13 +349,13 @@ $light_gray: #eee;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
     padding: 50px;
     // padding-top: 30px;
     // padding-bottom: 40px;
     background-color: #fff;
     box-sizing: border-box;
     border-radius: 5px;
+    // background-color: transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
   }
