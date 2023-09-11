@@ -14,7 +14,7 @@
           <h3 class="title last-title">上海市浦东新区见习教师专业胜任力调查报告</h3>
         </div> 
         <div class="form-item-line">
-          <el-form-item prop="password" style=" width: 300px; height: 42px; line-height: 42px;">
+          <el-form-item prop="password" style=" width: 300px; height: 40px; line-height: 40px;">
             <span class="svg-container">
               <svg-icon icon-class="password" />
             </span>
@@ -266,7 +266,8 @@ $light_gray: #eee;
   }
 
   .svg-container {
-    padding: 6px 5px 6px 15px;
+    // padding: 6px 5px 6px 15px;
+    padding-left: 15px;
     color: $dark_gray;
     vertical-align: middle;
     width: 30px;
@@ -288,7 +289,7 @@ $light_gray: #eee;
   .show-pwd {
     position: absolute;
     right: 10px;
-    top: 7px;
+    top: 2px;
     font-size: 16px;
     color: $dark_gray;
     cursor: pointer;
