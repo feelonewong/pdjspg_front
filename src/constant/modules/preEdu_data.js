@@ -2158,5 +2158,4 @@ export const chart_obj_5 = {
   a: toSingleArr(tableData_5, 'selfReportedPassingRate'),
   b: toSingleArr(tableData_5, 'situationPassingRate')
 }
-console.log(chart_obj_5)
 export const chart_label_arr= toSingleArr(tableData_5, 'villagesAndTowns')

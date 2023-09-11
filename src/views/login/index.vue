@@ -10,31 +10,11 @@
     >
       <div class="login-wrapper">
         <div class="title-container">
-          <h3 class="title">上海市浦东新区见习教师专业胜任力调查报告</h3>
-        </div>
-
-        <!-- <el-form-item prop="username" style="width: 420px;">
-          <span class="svg-container">
-            <svg-icon icon-class="user" />
-          </span>
-          <el-input
-            ref="username"
-            v-model="loginForm.username"
-            placeholder="Username"
-            name="username"
-            type="text"
-            tabindex="1"
-            autocomplete="on"
-          />
-        </el-form-item> -->
-
-        <el-tooltip
-          v-model="capsTooltip"
-          content="Caps lock is On"
-          placement="right"
-          manual
-        >
-          <el-form-item prop="password" style=" width: 420px;">
+          <h3 class="title">2023年</h3>
+          <h3 class="title last-title">上海市浦东新区见习教师专业胜任力调查报告</h3>
+        </div> 
+        <div class="form-item-line">
+          <el-form-item prop="password" style=" width: 300px; height: 42px;">
             <span class="svg-container">
               <svg-icon icon-class="password" />
             </span>
@@ -46,6 +26,7 @@
               placeholder="请输入密码"
               name="password"
               tabindex="2"
+              size="small"
               autocomplete="on"
               @keyup.native="checkCapslock"
               @blur="capsTooltip = false"
@@ -57,26 +38,24 @@
               />
             </span>
           </el-form-item>
-        </el-tooltip>
-
-        <el-button
+          <el-form-item class="right-btn">
+            <!-- <el-button
           :loading="loading"
           type="primary"
-          style="width: 100%; margin-bottom: 30px; margin-top: 20px; width: 420px;"
-          @click.native.prevent="handleLogin"
           >登录</el-button
-        >
+        > -->
+        <img src="../../assets/login-btn.png" 
+        
+        @click="handleLogin"
+        
+        alt="" style="width: 35px; margin-top: 10px;">
+        
+          </el-form-item>
+        
+        </div>   
+          
       </div>
     </el-form>
-
-    <el-dialog title="Or connect with" :visible.sync="showDialog">
-      Can not be simulated on local, so please combine you own business
-      simulation! ! !
-      <br />
-      <br />
-      <br />
-      <social-sign />
-    </el-dialog>
   </div>
 </template>
 
@@ -109,6 +88,7 @@ export default {
         username: "admin",
         password: "",
       },
+      imgSrc: '@/assets/login-btn.png',
       loginRules: {
         username: [
           { required: true, trigger: "blur", validator: validateUsername },
@@ -168,7 +148,6 @@ export default {
     handleLogin() {
       this.$refs.loginForm.validate((valid) => {
         if (valid) {
-          console.log(this.loginForm);
           if (this.loginForm.password !== "pdpx") {
             this.$message.error("当前密码不正确!");
             return false;
@@ -202,24 +181,6 @@ export default {
         return acc;
       }, {});
     },
-    // afterQRScan() {
-    //   if (e.key === 'x-admin-oauth-code') {
-    //     const code = getQueryObject(e.newValue)
-    //     const codeMap = {
-    //       wechat: 'code',
-    //       tencent: 'code'
-    //     }
-    //     const type = codeMap[this.auth_type]
-    //     const codeName = code[type]
-    //     if (codeName) {
-    //       this.$store.dispatch('LoginByThirdparty', codeName).then(() => {
-    //         this.$router.push({ path: this.redirect || '/' })
-    //       })
-    //     } else {
-    //       alert('第三方登录失败')
-    //     }
-    //   }
-    // }
   },
 };
 </script>
@@ -232,44 +193,32 @@ $bg: #283443;
 $light_gray: #000;
 $cursor: #000;
 
-@supports (-webkit-mask: none) and (not (cater-color: $cursor)) {
-  .login-container .el-input input {
-    color: $cursor;
-  }
-}
+
 
 /* reset element-ui css */
 .login-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 10%;
   .el-input {
     display: inline-block;
-    height: 47px;
-    width: 85%;
-
+    height: 32px;
+    width: 55%;
     input {
-      background: transparent;
+      // background: transparent;
       border: 0px;
-      -webkit-appearance: none;
       border-radius: 0px;
       padding: 12px 5px 12px 15px;
       color: $light_gray;
-      height: 47px;
+      height: 32px;
       caret-color: $cursor;
-
-      &:-webkit-autofill {
-        box-shadow: 0 0 0px 1000px $bg inset !important;
-        -webkit-text-fill-color: $cursor !important;
-      }
     }
   }
 
   .el-form-item {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    background: rgba(0, 0, 0, 0.1);
+    // background: rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     border-radius: 5px;
-    color: red;
   }
 }
 </style>
@@ -278,6 +227,7 @@ $cursor: #000;
 $bg: #2d3a4b;
 $dark_gray: #889aa4;
 $light_gray: #eee;
+
 
 .login-container {
   min-height: 100%;
@@ -297,7 +247,12 @@ $light_gray: #eee;
     margin: 0 auto;
     overflow: hidden;
   }
-
+  .form-item-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
   .tips {
     font-size: 14px;
     color: #fff;
@@ -322,11 +277,11 @@ $light_gray: #eee;
     position: relative;
 
     .title {
-      font-size: 26px;
-      // color: $light_gray;
-      margin: 0px auto 40px auto;
+      font-size: 32px;
+      margin: 0px auto 20px auto;
       text-align: center;
       font-weight: bold;
+      color: #fff;
     }
   }
 
@@ -349,15 +304,13 @@ $light_gray: #eee;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
-    // padding-top: 30px;
-    // padding-bottom: 40px;
-    background-color: #fff;
     box-sizing: border-box;
-    border-radius: 5px;
-    // background-color: transparent;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
+  }
+  .right-btn{
+    margin-left: 20px;
+    background-color: transparent;
+    border: 1px solid #3984be;
   }
   @media only screen and (max-width: 470px) {
     .thirdparty-button {
