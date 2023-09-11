@@ -14,7 +14,7 @@
           <h3 class="title last-title">上海市浦东新区见习教师专业胜任力调查报告</h3>
         </div> 
         <div class="form-item-line">
-          <el-form-item prop="password" style=" width: 300px; height: 42px;">
+          <el-form-item prop="password" style=" width: 300px; height: 42px; line-height: 42px;">
             <span class="svg-container">
               <svg-icon icon-class="password" />
             </span>
