@@ -2,13 +2,41 @@
   <div class="container">
     <h2>一、全区调研结果</h2>
     <br />
-    <template v-for="(item, idx) in resultData">
+    <h2>1.1 全区整体调研结果</h2>
+    <br />
+    <h2>1.1.1 全区整体得分率与得分分布情况</h2>
+    <p class="pfont">(1)全区整体得分率</p>
+      <div style="display: flex;box-sizing: border-box;">
+        <mip-chart :chartData="allResultRating" :width="'50%'" :height="'600px'"></mip-chart>
+        <el-card class="box-card" style="width: 500px; margin-right: 10%; height: 550px;">
+          <div slot="header">
+            <span>全区整体得分率情况</span>
+          </div>
+          <div style="display: flex; justify-content: center; align-items: center;"></div>
+          <p v-for="(item, index) in allResultRating.data" :key="index">            
+            <span>{{ item.name }}得分率为: {{ item.value }}%</span>
+          </p>
+        </el-card>
+      </div>
+    <p class="pfont">(2)全区整体得分分布情况</p>
+    <div style="display: flex;box-sizing: border-box;">
+      <PieChart :chartData="allScore" :width="'50%'" :height="'280px'"></PieChart>
+      <el-card class="box-card" style="width: 500px; margin-right: 10%; height: 350px;">
+          <div slot="header">
+            <span>全区整体得分分布情况</span>
+          </div>
+          <div style="display: flex; justify-content: center; align-items: center;"></div>
+          <p v-for="(item, index) in allScore.data" :key="index">            
+            <span>{{ item.name }}得分率为: {{ item.value }}%</span>
+          </p>
+        </el-card>
+    </div>
+    <!-- <template v-for="(item, idx) in resultData">
       <div :key="idx">
         <h2>{{ item.title }}</h2>
         <br />
         <h2 class="second">{{ item.subTitle }}</h2>
         <br />
-        <!-- 第一行 -->
         <template v-if="idx === 0">
           <div>
             <CommonEcharts :chartData="item.chartDataList[0]"></CommonEcharts>
@@ -24,7 +52,6 @@
           </div>
           <DescComp :descInfo="item.desc"></DescComp>
         </template>
-        <!-- 第二行 -->
         <template v-else-if="idx === 1">
           <template v-for="(child, childIdx) in item.children">
             <section :key="childIdx">
@@ -41,12 +68,10 @@
                 ></ResultTable>
               </div>
             </section>
-              <!-- 详情 -->
               <DescComp :descInfo="child.desc"></DescComp>
               <h2>{{ child.subTitle }}</h2>
           </template>
         </template>
-        <!-- 其他行 -->
         <template v-else>
           <template v-for="(child, childIdx) in item.chartDataList">
             
@@ -71,7 +96,7 @@
             
         </template>
       </div>
-    </template>
+    </template> -->
   </div>
 </template>
 
@@ -83,6 +108,10 @@ import ResultTable from "@/views/nested/overall-result/components/result-table.v
 import ResultTableQualified from "@/views/nested/overall-result/components/result-table-qualified.vue";
 import { RESULT_DATA } from "@/constant/result";
 import DescComp from '@/views/nested/overall-result/components/desc-comp.vue'
+import { getScoreRate } from '@/api/result/index'
+import MipChart from "@/components/Echart/result/MipChart"
+import PieChart from "@/components/Echart/result/PieChart"
+
 export default {
   components: {
     CommonEcharts,
@@ -90,23 +119,48 @@ export default {
     ResultTable,
     ResultEcharts,
     ResultTableQualified,
-    DescComp
+    DescComp,
+    MipChart,
+    PieChart
   },
   data() {
     return {
       chartData: {},
       resultData: [],
       tableData: [],
+      allResultRating: {},
+      allScore:{}
     };
   },
   mounted() {
-    this.resultData = RESULT_DATA;
+    getScoreRate().then(res => {
+      // 全区得分率
+      const {allScoreRate} = res 
+      allScoreRate.forEach(element => {
+        element.name = element.group
+      });
+      this.allResultRating = {
+        data: allScoreRate,
+      }
+      // 全区整体得分情况
+      console.log(res)
+      const {all} = res
+      this.allScore = {
+        data: all
+      }
+      console.log(all)
+    })
   },
 };
 </script>
 <style scoped>
 .container {
   padding: 15px;
+}
+.pfont {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #409eff;
 }
 h2 {
   margin-top: 10px;
