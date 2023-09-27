@@ -1,124 +1,193 @@
 <template>
   <div style="margin-bottom: 50px">
-    <h2>三、全区义务教育学段调研结果</h2>
+    <h2>二、义务教育与特殊教育学段调研结果</h2>
     <br />
     <h2 class="title">3.1全区义务教育学段整体得分率与得分分布情况</h2>
     <br />
-    <h2 class="title">2.1.1全区义务教育学段整体得分率</h2>
+    <h2 class="title">3.1.1全区义务教育学段整体得分率</h2>
     <br />
     <div class="wrap-d">
       <div class="area-left">
-        <PieChart
-          :title="scoreTotal.title"
-          :chartData="scoreTotal.chartData"
-        ></PieChart>
+        <PieRoseChart
+          :title="emptyTitle"
+          :chartData="allResult.allScoreRating.chartData"
+        ></PieRoseChart>
       </div>
       <div class="area-right">
-        <desc-slot> 全区义务教育学段年总体得分率为: </desc-slot>
+        <desc-slot>
+          义务教育学科整体得分率为:<br>
+
+          {{
+            allResult.allScoreRating.max
+          }}得分率最高<br>
+          {{
+            allResult.allScoreRating.min
+          }}得分率最低<br>
+        </desc-slot>
       </div>
     </div>
-    <h2 class="title">2.1.2全区义务教育学段整体得分分布情况</h2>
+    <h2 class="title">3.1.2全区义务教育学段整体得分分布情况</h2>
     <br />
-    <h2 class="title">2.1.2.1全区义务教育学段总体得分分布情况</h2>
+    <h2 class="title">3.1.2.1全区义务教育学段总体得分分布情况</h2>
     <br />
     <div>
       <div class="wrap-d">
         <div class="area-left">
           <PieChart
-            :title="scoreTotal.title"
-            :chartData="scoreTotal.chartData"
+            :title="''"
+            :chartData="allResult.scoreDistribution.chartData"
           ></PieChart>
         </div>
         <div class="area-right">
           <desc-slot>
-            全区义务教育学段总体得分分布情况: 优秀人数:,成绩良好人数:,
-            成绩及格人数:, 成绩不及格人数:
+            全区义务教育学段总体得分分布情况:<br />
+            优秀人数:{{
+              allResult.scoreDistribution.chartData[0].value
+            }}
+            占比({{ allResult.scoreDistribution.chartData[0].precent }})<br />
+            良好人数:{{
+              allResult.scoreDistribution.chartData[1].value
+            }}
+            占比({{ allResult.scoreDistribution.chartData[1].precent }})<br />
+            及格人数:{{
+              allResult.scoreDistribution.chartData[2].value
+            }}
+            占比({{ allResult.scoreDistribution.chartData[2].precent }})<br />
+            不及格人数{{
+              allResult.scoreDistribution.chartData[3].value
+            }}
+            占比({{ allResult.scoreDistribution.chartData[3].precent }})
           </desc-slot>
         </div>
       </div>
-      <!-- 预留一个点位，这里一共13个点位 -->
+    </div>
+    <!-- 循环6个学科 -->
+    <div class="wrap-d-wrap">
+      <div
+        class="area-left"
+        v-for="(eachItem, eachIndex) in allResult.subjectScoreDistribution"
+        :key="eachIndex"
+        style="width: 33%;"
+      >
+        <PieChart :title="emptyTitle" :chartData="eachItem.chartData"></PieChart>
+        <desc-slot>
+          优秀人数:{{ eachItem.chartData[0].value }} 占比({{
+            eachItem.chartData[0].precent
+          }})<br />
+          良好人数:{{ eachItem.chartData[1].value }} 占比({{
+            eachItem.chartData[1].precent
+          }})<br />
+          及格人数:{{ eachItem.chartData[2].value }} 占比({{
+            eachItem.chartData[2].precent
+          }})<br />
+          不及格人数:{{ eachItem.chartData[3].value }} 占比({{
+            eachItem.chartData[3].precent
+          }})<br />
+        </desc-slot>
+      </div>
     </div>
 
-    <h2 class="title">2.1.2.2义务教育学科整体平均分、中位数、标准差</h2>
+    <h2 class="title">3.1.2.2义务教育学科整体平均分、中位数、标准差</h2>
     <br />
     <div class="wrap-d">
       <div class="area-left">
-        <HistogramChart></HistogramChart>
+        <ZoomBarChart
+          :title="emptyTitle"
+          :chartData="allResult.minMaxScore.all.chartData"
+        ></ZoomBarChart>
       </div>
       <div class="area-right">
-        <desc-slot>
-          全区义务教育学段总体得分分布情况: 优秀人数:,成绩良好人数:,
-          成绩及格人数:, 成绩不及格人数:
-        </desc-slot>
+        <ZoomBarChart
+          :title="emptyTitle"
+          :chartData="allResult.minMaxScore.self.chartData"
+        ></ZoomBarChart>
       </div>
     </div>
     <div class="wrap-d">
       <div class="area-left">
-        <HistogramChart></HistogramChart>
+        <ZoomBarChart
+          :title="emptyTitle"
+          :chartData="allResult.minMaxScore.scene.chartData"
+        ></ZoomBarChart>
       </div>
       <div class="area-right">
         <desc-slot>
-          全区义务教育学段总体得分分布情况: 优秀人数:,成绩良好人数:,
-          成绩及格人数:, 成绩不及格人数:
+           全区义务教育学段整体得分结果如下: <br />
+          总体平均分中: {{
+            allResult.minMaxScore.all.min
+          }}最低<br/>
+          总体平均分: {{
+            allResult.minMaxScore.all.max
+          }}最高<br/>
+          <br>
+           自陈问题平均分:
+          {{
+            allResult.minMaxScore.self.min
+          }}最低<br/>
+           {{
+            allResult.minMaxScore.self.max
+          }}最高<br/>
+          <br>
+
+         情景问题平均分:
+          {{
+            allResult.minMaxScore.scene.min
+          }}最低<br/>
+           {{
+            allResult.minMaxScore.scene.max
+          }}最高<br/> 
+          
         </desc-slot>
       </div>
     </div>
     <div class="wrap-d">
-      <div class="area-left">
-        <HistogramChart></HistogramChart>
+          <div class="area-left">
+            <BoxPlotChart :title="''" :chartData="allResult.midMaxMinSceneAndSelf.self.chartData" />
+          </div>
+          <div class="area-left">
+            <BoxPlotChart :title="''" :chartData="allResult.midMaxMinSceneAndSelf.scene.chartData" />
+          </div>
+         
       </div>
-      <div class="area-right">
-        <desc-slot>
-          全区义务教育学段总体得分分布情况: 优秀人数:,成绩良好人数:,
-          成绩及格人数:, 成绩不及格人数:
-        </desc-slot>
+      <div>
+            <desc-slot>
+              在自陈问题方面: <br>
+                中位数分数最高的学科为: {{allResult.midMaxMinSceneAndSelf.self.midMax  }}
+                中位数分数最低的学科为: {{allResult.midMaxMinSceneAndSelf.self.midMin  }}
+                分数最高的学科为: {{ allResult.midMaxMinSceneAndSelf.self.max }}
+                分数最低的学科为: {{ allResult.midMaxMinSceneAndSelf.self.min }}<br/>
+                <br>
+              在情景问题方面: <br>
+              中位数分数最高的学科为: {{allResult.midMaxMinSceneAndSelf.scene.midMax  }}
+                中位数分数最低的学科为: {{allResult.midMaxMinSceneAndSelf.scene.midMin  }}
+                分数最高的学科为: {{ allResult.midMaxMinSceneAndSelf.scene.max }}
+                分数最低的学科为: {{ allResult.midMaxMinSceneAndSelf.scene.min }}<br/>
+            </desc-slot>
       </div>
-    </div>
     <div class="wrap-d">
       <div class="area-left">
-        <BoxPlotChart :title="plotData.title" :chartData="plotData.chartData" />
+        <ZoomBarChart
+          :title="emptyTitle"
+          :chartData="allResult.standradScore.self.chartData"
+        ></ZoomBarChart>
       </div>
-      <div class="area-right">
-        <desc-slot>
-          全区义务教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
-          优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:, 成绩及格人数:,
-          成绩不及格人数:
-        </desc-slot>
-      </div>
-    </div>
-    <div class="wrap-d">
+      
       <div class="area-left">
-        <BoxPlotChart :title="plotData.title" :chartData="plotData.chartData" />
+        <ZoomBarChart
+          :title="emptyTitle"
+          :chartData="allResult.standradScore.scene.chartData"
+        ></ZoomBarChart>
       </div>
       <div class="area-right">
         <desc-slot>
-          全区义务教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
-          优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:, 成绩及格人数:,
-          成绩不及格人数:
-        </desc-slot>
-      </div>
-    </div>
-    <div class="wrap-d">
-      <div class="area-left">
-        <HistogramChart></HistogramChart>
-      </div>
-      <div class="area-right">
-        <desc-slot>
-          全区义务教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
-          优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:, 成绩及格人数:,
-          成绩不及格人数:
-        </desc-slot>
-      </div>
-    </div>
-    <div class="wrap-d">
-      <div class="area-left">
-        <HistogramChart></HistogramChart>
-      </div>
-      <div class="area-right">
-        <desc-slot>
-          全区义务教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
-          优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:, 成绩及格人数:,
-          成绩不及格人数:
+          在自陈问题方面，义务教育的标准差最大的学科为:
+          {{ allResult.standradScore.self.max }} <br />
+          在自陈问题方面，义务教育的标准差最小的学科为:
+          {{ allResult.standradScore.self.min }} <br />
+          在情景问题方面，义务教育的标准差最大的学科为:
+          {{ allResult.standradScore.scene.max }} <br />
+          在情景问题方面，义务教育的标准差最小的学科为:
+          {{ allResult.standradScore.scene.min }} <br />
         </desc-slot>
       </div>
     </div>
@@ -126,48 +195,44 @@
     <br />
     <h2 class="title">3.2.1 全区义务教育学段各维度得分率与得分分布情况</h2>
     <br />
-    <h2 class="title">3.2.1.1 全区义务教育学段得分率</h2>
+    <h2 class="title">3.2.1.1 全区义务教育学段各维度得分率</h2>
     <br />
-    <div class="wrap-d-wrap">
-      <div
-        v-for="(ratingItem, index) in compEduData.allResult.scoreRating"
-        class="area-left-3"
-      >
-        <PieChart
-          :title="scoreTotal.title"
-          :chartData="scoreTotal.chartData"
-        ></PieChart>
-        <desc-slot>
-          全区义务教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
-          优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:, 成绩及格人数:,
-          成绩不及格人数:
-        </desc-slot>
+    <div class="wrap-d">
+      <div class="area-left">
+        <PieRoseChart
+          :title="emptyTitle"
+          :chartData="allResult.dimensionRating.chartData"
+        ></PieRoseChart>
+      </div>
+      <div class="area-right">
+        <CommonTable
+          :tableInfo="allResult.dimensionRating.tableInfo"
+        ></CommonTable>
       </div>
     </div>
-    <CommonTable
-      style="width: 80%; margin: 0 auto"
-      :tableInfo="compEduData.allResult.wapTableInfo"
-    ></CommonTable>
-    <h2 class="title">3.2.1.2 全区义务教育学段得分分布情况</h2>
+    <h2 class="title">3.2.1.2 全区义务教育学段各维度得分分布情况</h2>
     <br />
-    <div
-      class="wrap-d"
-      v-for="(item, index) in compEduData.allResult.subjectDistri"
-      :key="index"
-    >
+    <div class="wrap-d">
       <div
         class="area-left"
-        v-for="(childItem, childIndex) in item"
-        :key="childIndex"
+        v-for="(eachItem, eachIndex) in allResult.eachScoreDistribution"
+        :key="eachIndex"
       >
-        <PieChart
-          :title="scoreTotal.title"
-          :chartData="scoreTotal.chartData"
-        ></PieChart>
+        <PieChart :title="emptyTitle" :chartData="eachItem.chartData"></PieChart>
         <desc-slot>
-          全区义务教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
-          优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:, 成绩及格人数:,
-          成绩不及格人数:
+          {{ eachItem.title }}维度结果如下:<br />
+          优秀人数:{{ eachItem.chartData[0].value }} 占比({{
+            eachItem.chartData[0].precent
+          }})<br />
+          良好人数:{{ eachItem.chartData[1].value }} 占比({{
+            eachItem.chartData[1].precent
+          }})<br />
+          及格人数:{{ eachItem.chartData[2].value }} 占比({{
+            eachItem.chartData[2].precent
+          }})<br />
+          不及格人数:{{ eachItem.chartData[3].value }} 占比({{
+            eachItem.chartData[3].precent
+          }})<br />
         </desc-slot>
       </div>
     </div>
@@ -179,247 +244,120 @@
         <br />
         <div class="wrap-d">
           <div class="area-left">
-            <RardarChart></RardarChart>
+            <BoxPlotChart :title="''" :chartData="item.scoreRating.chartData" />
           </div>
-          <div class="area-right"></div>
-        </div>
-        <div class="wrap-d-wrap">
-          <div
-            class="area-left-3"
-            v-for="(childItem, childIndex) in item.scoreDistri"
-            :key="childIndex"
-          >
-            <PieChart
-              :title="scoreTotal.title"
-              :chartData="scoreTotal.chartData"
-            ></PieChart>
-          </div>
-        </div>
-        <div class="wrap-d-wrap">
-          <div
-            class="area-left-3"
-            v-for="(childItem, childIndex) in item.scoreDistri"
-            :key="childIndex"
-          >
-            <PieChart
-              :title="scoreTotal.title"
-              :chartData="scoreTotal.chartData"
-            ></PieChart>
-            <desc-slot> 全区义务教育学段年总体得分率为: </desc-slot>
+          <div class="area-right">
+            <desc-slot>
+              义务教育学段{{ item.scoreRating.title }}维度结果如下: <br />
+              得分率平均为:{{ item.scoreRating.chartData[0].average }} <br />
+              得分率中位数为:{{ item.scoreRating.chartData[0].median }} <br />
+              得分率最高数为:{{ item.scoreRating.chartData[0].max }} <br />
+              得分率最低数为:{{ item.scoreRating.chartData[0].min }} <br />
+            </desc-slot>
           </div>
         </div>
         <div class="wrap-d">
           <div class="area-left">
-            <PieChart
-              :title="scoreTotal.title"
-              :chartData="scoreTotal.chartData"
-            ></PieChart>
+            <PieChart :title="emptyTitle" :chartData="item.eachScoreDistribution.chartData"></PieChart>
           </div>
           <div class="area-right">
-            <desc-slot> 全区义务教育学段年总体得分率为: </desc-slot>
+            <CommonTable
+              :tableInfo="item.eachScoreDistribution.tableInfo"
+            ></CommonTable>
           </div>
         </div>
-        <CommonTable
-          style="width: 80%; margin: 0 auto"
-          :tableInfo="compEduData.allResult.wapTableInfo"
-        ></CommonTable>
         <h2 class="title">{{ item.second }}</h2>
         <div class="wrap-d">
           <div class="area-left">
-            <HistogramChart></HistogramChart>
+              <ZoomBarChart
+                :title="emptyTitle"
+                :chartData="item.averageScore.all.chartData"
+              ></ZoomBarChart>
           </div>
-          <div class="area-right">
+          <div class="area-left">
+              <ZoomBarChart
+                :title="emptyTitle"
+                :chartData="item.averageScore.selfAndSecene.chartData"
+              ></ZoomBarChart>
+          </div>
+          <div class="area-left">
             <desc-slot>
-              全区义务教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
-              优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:,
-              成绩及格人数:, 成绩不及格人数:
+              义务教育学段{{ item.averageScore.title }}维度：<br />
+              总体平均分为:{{ item.averageScore.all.chartData[0].value }} <br />
+              自我问题平均分为:{{ item.averageScore.selfAndSecene.chartData[0].value }} <br />
+              情景问题平均分为:{{ item.averageScore.selfAndSecene.chartData[1].value }} <br />
             </desc-slot>
           </div>
         </div>
         <div class="wrap-d">
           <div class="area-left">
-            <HistogramChart></HistogramChart>
-          </div>
-          <div class="area-left">
-            <HistogramChart></HistogramChart>
+            <BoxPlotChart :title="''" :chartData="item.minMaxSocre.chartData" />
           </div>
           <div class="area-right">
             <desc-slot>
-              全区义务教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
-              优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:,
-              成绩及格人数:, 成绩不及格人数:
+              义务教育学段{{ item.scoreRating.title }}维度结果如下: <br />
+              得分平均为:{{ item.minMaxSocre.chartData[0].average }} <br />
+              得分中位数为:{{ item.minMaxSocre.chartData[0].median }} <br />
+              得分最高数为:{{ item.minMaxSocre.chartData[0].max }} <br />
+              得分最低数为:{{ item.minMaxSocre.chartData[0].min }} <br />
             </desc-slot>
           </div>
         </div>
         <div class="wrap-d">
           <div class="area-left">
-            <BoxPlotChart
-              :title="plotData.title"
-              :chartData="plotData.chartData"
-            />
+            <ZoomBarChart
+                :title="emptyTitle"
+                :chartData="item.standardScore.chartData"
+              ></ZoomBarChart>
           </div>
           <div class="area-right">
             <desc-slot>
-              全区义务教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
-              优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:,
-              成绩及格人数:, 成绩不及格人数:
-            </desc-slot>
-          </div>
-        </div>
-        <div class="wrap-d">
-          <div class="area-left">
-            <BoxPlotChart
-              :title="plotData.title"
-              :chartData="plotData.chartData"
-            />
-          </div>
-          <div class="area-right">
-            <desc-slot>
-              全区义务教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
-              优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:,
-              成绩及格人数:, 成绩不及格人数:
-            </desc-slot>
-          </div>
-        </div>
-        <div class="wrap-d">
-          <div class="area-left">
-            <HistogramChart></HistogramChart>
-          </div>
-          <div class="area-left">
-            <HistogramChart></HistogramChart>
-          </div>
-          <div class="area-right">
-            <desc-slot>
-              全区义务教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
-              优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:,
-              成绩及格人数:, 成绩不及格人数:
+              义务教育学段{{ item.scoreRating.title }}维度标准差结果如下: <br />
+              自陈问题标准差为:{{ item.standardScore.chartData[0].value }} <br />
+              情景问题标准差为:{{ item.standardScore.chartData[1].value }} <br />
             </desc-slot>
           </div>
         </div>
       </div>
     </template>
-    <!-- <CommonTable :TableData="tableData"/> -->
   </div>
 </template>
 
 <script>
+import PolyChart from "./components/all/PolyChart.vue";
+import BoxPlotChart from "@/components/Charts/BoxPlotChart";
 import PieRoseChart from "@/components/Charts/PieRoseChart";
 import PieChart from "@/components/Charts/PieChart.vue";
-import ZoomBarChart from "@/components/Charts/ZoomBarChart";
 import DescSlot from "./components/all/desc-slot.vue";
-import BoxPlotChart from "@/components/Charts/BoxPlotChart";
-import HistogramChart from "./components/all/HistogramChart.vue";
 import CommonTable from "./components/all/common-table.vue";
-import RardarChart from "./components/all/RadarChart.vue";
-import { CompEduData } from "@/views/nested/overall-result/constant/compEdu/index";
+import HistogramChart from "./components/all/HistogramChart.vue";
+import ZoomBarChart from "@/components/Charts/ZoomBarChart";
+import { CompEdu } from "./constant/compEdu/index";
 export default {
   components: {
-    RardarChart,
-    CommonTable,
-    PieRoseChart,
-    HistogramChart,
+    PolyChart,
     PieChart,
-    ZoomBarChart,
-    BoxPlotChart,
     DescSlot,
+    CommonTable,
+    BoxPlotChart,
+    HistogramChart,
+    ZoomBarChart,
+    PieRoseChart,
   },
   data() {
     return {
+      aaa: 100,
+      emptyTitle: '',
+      allResult: {},
       compEduData: {},
-      // 义务教育学段各学科得分率
-      total: {
-        title: "义务教育学段各学科得分率",
-        chartData: [
-          { value: 40, name: "语文" },
-          { value: 38, name: "数学" },
-          { value: 32, name: "英语" },
-          { value: 30, name: "社科" },
-          { value: 28, name: "理工" },
-          { value: 26, name: "艺体" },
-        ],
-      },
-      // 全区义务教育学段整体得分分布情况
-      scoreTotal: {
-        title: "全区义务教育学段整体得分分布情况",
-        chartData: [
-          { value: 40, name: "语1文" },
-          { value: 38, name: "数1学" },
-          { value: 32, name: "英1语" },
-          { value: 30, name: "社1科" },
-          { value: 28, name: "理1工" },
-          { value: 26, name: "艺1体" },
-        ],
-      },
-      // 义务教育学段平均分
-      avgScore: {
-        title: "义务教育学段平均分",
-        chartData: [
-          { value: 86, name: "语文" },
-          { value: 92, name: "数学" },
-          { value: 88, name: "英语" },
-          { value: 78, name: "社科" },
-          { value: 77, name: "理工" },
-          { value: 75, name: "艺体" },
-        ],
-      },
-      // 义务教育学段6个学科职业态度分题型中位数、平均分、最低分、最高分
-      plotData: {
-        title:
-          "义务教育学段6个学科职业态度分题型中位数、平均分、最低分、最高分",
-        chartData: [
-          {
-            name: "语文",
-            min: 50,
-            median: 70,
-            average: 60,
-            max: 80,
-          },
-          {
-            name: "数学",
-            min: 40,
-            median: 60,
-            average: 55,
-            max: 75,
-          },
-          {
-            name: "英语",
-            min: 30,
-            median: 55,
-            average: 66,
-            max: 85,
-          },
-          {
-            name: "社科",
-            min: 20,
-            median: 35,
-            average: 45,
-            max: 80,
-          },
-          {
-            name: "理工",
-            min: 33,
-            median: 44,
-            average: 55,
-            max: 66,
-          },
-          {
-            name: "艺体",
-            min: 22,
-            median: 33,
-            average: 66,
-            max: 77,
-          },
-        ],
-      },
     };
   },
   mounted() {
-    this.compEduData = CompEduData;
+    this.compEduData = CompEdu;
+    this.allResult = this.compEduData.allResult;
   },
-  methods: {},
 };
 </script>
-
 <style scoped>
 .container {
   padding: 15px;
@@ -465,18 +403,15 @@ h2::after {
 .wrap-d {
   display: flex;
 }
+.wrap-d-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 .area-left {
   width: 100%;
 }
 .area-right {
   width: 100%;
   margin: auto 0;
-}
-.wrap-d-wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-.area-left-3 {
-  width: 33%;
 }
 </style>
