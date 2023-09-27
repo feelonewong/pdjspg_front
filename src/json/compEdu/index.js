@@ -155,85 +155,476 @@ export const data = {
             },
         },
         "dimensionRating": { //***义务教育学段各维度得分率
-            "chartData": [
-                {"name": '整体', "value": '80'},
-                {"name": '职业态度', "value": '30'},
-                {"name": '教学实践', "value": '40'},
-                {"name": '综合育人', "value": '20'},
-                {"name": '自主发展', "value": '40'},
+                "chnChartData": [ // 义务教育、语文、各维度得分率
+                    {name: '整体得分率', value: '24.32'},
+                    {name: '职业态度', value: '34.33'},
+                    {name: '教学实践', value: '42.44'},
+                    {name: '综合育人', value: '24.55'},
+                    {name: '自主发展', value: '62.55'}
+                ],
+                "mathChartData":  [ // 义务教育、数学、各维度得分率
+                {name: '整体得分率', value: '44.33'},
+                {name: '职业态度', value: '34.22'},
+                {name: '教学实践', value: '42.11'},
+                {name: '综合育人', value: '24.23'},
+                {name: '自主发展', value: '62.43'}
             ],
+            "engChartData":  [ // 义务教育、英语、各维度得分率
+                {name: '整体得分率', value: '44'},
+                {name: '职业态度', value: '34'},
+                {name: '教学时间', value: '42'},
+                {name: '综合育人', value: '24'},
+                {name: '自主发展', value: '62'}
+            ],
+            "socChartData":  [ // 义务教育、社会、各维度得分率
+                {name: '整体得分率', value: '44'},
+                {name: '职业态度', value: '34'},
+                {name: '教学实践', value: '42'},
+                {name: '综合育人', value: '24'},
+                {name: '自主发展', value: '62'}
+            ],
+            "sciChartData":  [ // 义务教育、理工、各维度得分率
+                {name: '整体得分率', value: '44'},
+                {name: '职业态度', value: '34'},
+                {name: '教学实践', value: '42'},
+                {name: '综合育人', value: '24'},
+                {name: '自主发展', value: '62'}
+            ],
+            "artChartData":  [ // 义务教育、艺体、各维度得分率
+                {name: '整体得分率', value: '44'},
+                {name: '职业态度', value: '34'},
+                {name: '教学实践', value: '42'},
+                {name: '综合育人', value: '24'},
+                {name: '自主发展', value: '62'}
+                ],
             "tableData": [
-                {"name": '义务教育', "all":"80", "attitude": '30',"practice": '40',"comprehensive": '20',"development": '40',},
+                {"name": '义务教育语文科', "all":"80", "attitude": '30',"practice": '40',"comprehensive": '20',"development": '40',},
+                {"name": '义务教育数学科', "all":"80", "attitude": '30',"practice": '40',"comprehensive": '20',"development": '40',},
+                {"name": '义务教育英语科', "all":"80", "attitude": '30',"practice": '40',"comprehensive": '20',"development": '40',},
+                {"name": '义务教育社会科', "all":"80", "attitude": '30',"practice": '40',"comprehensive": '20',"development": '40',},
+                {"name": '义务教育理工科', "all":"80", "attitude": '30',"practice": '40',"comprehensive": '20',"development": '40',},
+                {"name": '义务教育艺体科', "all":"80", "attitude": '30',"practice": '40',"comprehensive": '20',"development": '40',},
+            
             ]
         },
         "eachScoreDistribution": { //*** 各维度得分分布情况
-            "attitude": { // 教学态度 标准: 58 57 54 54
-                "chartData": [
-                    {
-                        name: '优秀', value: '20', precent: '40%',
-                    },
-                    {
-                        name: '良好', value: '30', precent: '50%',
-                    },
-                    {
-                        name: '及格', value: '40', precent: '60%',
-                    },
-                    {
-                        name: '不及格', value: '50', precent: '70%',
-                    }
-                ]
-            },
-            "practice": { // 教学实践 标准: 116 114 108 108
-                "chartData": [
-                    {
-                        name: '优秀', value: '50', precent: '42%',
+            // 各学科、各维度、得分分布情况
+            "chn": {
+                "attitude": { // 教学态度 标准: 58 57 54 54
+                    "chartData": [
+                        {
+                            name: '优秀', value: '20', precent: '40%',
+                        },
+                        {
+                            name: '良好', value: '30', precent: '50%',
+                        },
+                        {
+                            name: '及格', value: '40', precent: '60%',
+                        },
+                        {
+                            name: '不及格', value: '50', precent: '70%',
+                        }
+                    ]
+                },
+                "practice": { // 教学实践 标准: 116 114 108 108
+                    "chartData": [
+                        {
+                            name: '优秀', value: '50', precent: '42%',
+    
+                        },
+                        {
+                            name: '良好', value: '30', precent: '35%',
+                        },
+                        {
+                            name: '及格', value: '20', precent: '65%',
+                        },
+                        {
+                            name: '不及格', value: '60', precent: '71%',
+                        }
+                    ]
+                },
+                "comprehensive": { // 教学实践 标准:88 86 81 81
+                    "chartData": [
+                        {
+                            name: '优秀', value: '24', precent: '40%',
+    
+                        },
+                        {
+                            name: '良好', value: '36', precent: '52%',
+                        },
+                        {
+                            name: '及格', value: '45', precent: '62%',
+                        },
+                        {
+                            name: '不及格', value: '51', precent: '74%',
+                        }
+                    ]
+                },
+                "development": { // 自主发展 标准:88 86 81 81
+                    "chartData": [
+                        {
+                            name: '优秀', value: '21', precent: '40%',
+    
+                        },
+                        {
+                            name: '良好', value: '33', precent: '50%',
+                        },
+                        {
+                            name: '及格', value: '44', precent: '60%',
+                        },
+                        {
+                            name: '不及格', value: '55', precent: '70%',
+                        }
+                    ]
+                }
 
-                    },
-                    {
-                        name: '良好', value: '30', precent: '35%',
-                    },
-                    {
-                        name: '及格', value: '20', precent: '65%',
-                    },
-                    {
-                        name: '不及格', value: '60', precent: '71%',
-                    }
-                ]
             },
-            "comprehensive": { // 教学实践 标准:88 86 81 81
-                "chartData": [
-                    {
-                        name: '优秀', value: '24', precent: '40%',
-
-                    },
-                    {
-                        name: '良好', value: '36', precent: '52%',
-                    },
-                    {
-                        name: '及格', value: '45', precent: '62%',
-                    },
-                    {
-                        name: '不及格', value: '51', precent: '74%',
-                    }
-                ]
+            "math": {
+                "attitude": { // 教学态度 标准: 58 57 54 54
+                    "chartData": [
+                        {
+                            name: '优秀', value: '20', precent: '40%',
+                        },
+                        {
+                            name: '良好', value: '30', precent: '50%',
+                        },
+                        {
+                            name: '及格', value: '40', precent: '60%',
+                        },
+                        {
+                            name: '不及格', value: '50', precent: '70%',
+                        }
+                    ]
+                },
+                "practice": { // 教学实践 标准: 116 114 108 108
+                    "chartData": [
+                        {
+                            name: '优秀', value: '50', precent: '42%',
+    
+                        },
+                        {
+                            name: '良好', value: '30', precent: '35%',
+                        },
+                        {
+                            name: '及格', value: '20', precent: '65%',
+                        },
+                        {
+                            name: '不及格', value: '60', precent: '71%',
+                        }
+                    ]
+                },
+                "comprehensive": { // 教学实践 标准:88 86 81 81
+                    "chartData": [
+                        {
+                            name: '优秀', value: '24', precent: '40%',
+    
+                        },
+                        {
+                            name: '良好', value: '36', precent: '52%',
+                        },
+                        {
+                            name: '及格', value: '45', precent: '62%',
+                        },
+                        {
+                            name: '不及格', value: '51', precent: '74%',
+                        }
+                    ]
+                },
+                "development": { // 自主发展 标准:88 86 81 81
+                    "chartData": [
+                        {
+                            name: '优秀', value: '21', precent: '40%',
+    
+                        },
+                        {
+                            name: '良好', value: '33', precent: '50%',
+                        },
+                        {
+                            name: '及格', value: '44', precent: '60%',
+                        },
+                        {
+                            name: '不及格', value: '55', precent: '70%',
+                        }
+                    ]
+                }
             },
-            "development": { // 自主发展 标准:88 86 81 81
-                "chartData": [
-                    {
-                        name: '优秀', value: '21', precent: '40%',
-
-                    },
-                    {
-                        name: '良好', value: '33', precent: '50%',
-                    },
-                    {
-                        name: '及格', value: '44', precent: '60%',
-                    },
-                    {
-                        name: '不及格', value: '55', precent: '70%',
-                    }
-                ]
-            }
+            "eng": {
+                "attitude": { // 教学态度 标准: 58 57 54 54
+                    "chartData": [
+                        {
+                            name: '优秀', value: '20', precent: '40%',
+                        },
+                        {
+                            name: '良好', value: '30', precent: '50%',
+                        },
+                        {
+                            name: '及格', value: '40', precent: '60%',
+                        },
+                        {
+                            name: '不及格', value: '50', precent: '70%',
+                        }
+                    ]
+                },
+                "practice": { // 教学实践 标准: 116 114 108 108
+                    "chartData": [
+                        {
+                            name: '优秀', value: '50', precent: '42%',
+    
+                        },
+                        {
+                            name: '良好', value: '30', precent: '35%',
+                        },
+                        {
+                            name: '及格', value: '20', precent: '65%',
+                        },
+                        {
+                            name: '不及格', value: '60', precent: '71%',
+                        }
+                    ]
+                },
+                "comprehensive": { // 教学实践 标准:88 86 81 81
+                    "chartData": [
+                        {
+                            name: '优秀', value: '24', precent: '40%',
+    
+                        },
+                        {
+                            name: '良好', value: '36', precent: '52%',
+                        },
+                        {
+                            name: '及格', value: '45', precent: '62%',
+                        },
+                        {
+                            name: '不及格', value: '51', precent: '74%',
+                        }
+                    ]
+                },
+                "development": { // 自主发展 标准:88 86 81 81
+                    "chartData": [
+                        {
+                            name: '优秀', value: '21', precent: '40%',
+    
+                        },
+                        {
+                            name: '良好', value: '33', precent: '50%',
+                        },
+                        {
+                            name: '及格', value: '44', precent: '60%',
+                        },
+                        {
+                            name: '不及格', value: '55', precent: '70%',
+                        }
+                    ]
+                }
+            },
+            "soc": {
+                "attitude": { // 教学态度 标准: 58 57 54 54
+                    "chartData": [
+                        {
+                            name: '优秀', value: '20', precent: '40%',
+                        },
+                        {
+                            name: '良好', value: '30', precent: '50%',
+                        },
+                        {
+                            name: '及格', value: '40', precent: '60%',
+                        },
+                        {
+                            name: '不及格', value: '50', precent: '70%',
+                        }
+                    ]
+                },
+                "practice": { // 教学实践 标准: 116 114 108 108
+                    "chartData": [
+                        {
+                            name: '优秀', value: '50', precent: '42%',
+    
+                        },
+                        {
+                            name: '良好', value: '30', precent: '35%',
+                        },
+                        {
+                            name: '及格', value: '20', precent: '65%',
+                        },
+                        {
+                            name: '不及格', value: '60', precent: '71%',
+                        }
+                    ]
+                },
+                "comprehensive": { // 教学实践 标准:88 86 81 81
+                    "chartData": [
+                        {
+                            name: '优秀', value: '24', precent: '40%',
+    
+                        },
+                        {
+                            name: '良好', value: '36', precent: '52%',
+                        },
+                        {
+                            name: '及格', value: '45', precent: '62%',
+                        },
+                        {
+                            name: '不及格', value: '51', precent: '74%',
+                        }
+                    ]
+                },
+                "development": { // 自主发展 标准:88 86 81 81
+                    "chartData": [
+                        {
+                            name: '优秀', value: '21', precent: '40%',
+    
+                        },
+                        {
+                            name: '良好', value: '33', precent: '50%',
+                        },
+                        {
+                            name: '及格', value: '44', precent: '60%',
+                        },
+                        {
+                            name: '不及格', value: '55', precent: '70%',
+                        }
+                    ]
+                }
+            },
+            "sci": {
+                "attitude": { // 教学态度 标准: 58 57 54 54
+                    "chartData": [
+                        {
+                            name: '优秀', value: '20', precent: '40%',
+                        },
+                        {
+                            name: '良好', value: '30', precent: '50%',
+                        },
+                        {
+                            name: '及格', value: '40', precent: '60%',
+                        },
+                        {
+                            name: '不及格', value: '50', precent: '70%',
+                        }
+                    ]
+                },
+                "practice": { // 教学实践 标准: 116 114 108 108
+                    "chartData": [
+                        {
+                            name: '优秀', value: '50', precent: '42%',
+    
+                        },
+                        {
+                            name: '良好', value: '30', precent: '35%',
+                        },
+                        {
+                            name: '及格', value: '20', precent: '65%',
+                        },
+                        {
+                            name: '不及格', value: '60', precent: '71%',
+                        }
+                    ]
+                },
+                "comprehensive": { // 教学实践 标准:88 86 81 81
+                    "chartData": [
+                        {
+                            name: '优秀', value: '24', precent: '40%',
+    
+                        },
+                        {
+                            name: '良好', value: '36', precent: '52%',
+                        },
+                        {
+                            name: '及格', value: '45', precent: '62%',
+                        },
+                        {
+                            name: '不及格', value: '51', precent: '74%',
+                        }
+                    ]
+                },
+                "development": { // 自主发展 标准:88 86 81 81
+                    "chartData": [
+                        {
+                            name: '优秀', value: '21', precent: '40%',
+    
+                        },
+                        {
+                            name: '良好', value: '33', precent: '50%',
+                        },
+                        {
+                            name: '及格', value: '44', precent: '60%',
+                        },
+                        {
+                            name: '不及格', value: '55', precent: '70%',
+                        }
+                    ]
+                }
+            },
+            "art": {
+                "attitude": { // 教学态度 标准: 58 57 54 54
+                    "chartData": [
+                        {
+                            name: '优秀', value: '20', precent: '40%',
+                        },
+                        {
+                            name: '良好', value: '30', precent: '50%',
+                        },
+                        {
+                            name: '及格', value: '40', precent: '60%',
+                        },
+                        {
+                            name: '不及格', value: '50', precent: '70%',
+                        }
+                    ]
+                },
+                "practice": { // 教学实践 标准: 116 114 108 108
+                    "chartData": [
+                        {
+                            name: '优秀', value: '50', precent: '42%',
+    
+                        },
+                        {
+                            name: '良好', value: '30', precent: '35%',
+                        },
+                        {
+                            name: '及格', value: '20', precent: '65%',
+                        },
+                        {
+                            name: '不及格', value: '60', precent: '71%',
+                        }
+                    ]
+                },
+                "comprehensive": { // 教学实践 标准:88 86 81 81
+                    "chartData": [
+                        {
+                            name: '优秀', value: '24', precent: '40%',
+    
+                        },
+                        {
+                            name: '良好', value: '36', precent: '52%',
+                        },
+                        {
+                            name: '及格', value: '45', precent: '62%',
+                        },
+                        {
+                            name: '不及格', value: '51', precent: '74%',
+                        }
+                    ]
+                },
+                "development": { // 自主发展 标准:88 86 81 81
+                    "chartData": [
+                        {
+                            name: '优秀', value: '21', precent: '40%',
+    
+                        },
+                        {
+                            name: '良好', value: '33', precent: '50%',
+                        },
+                        {
+                            name: '及格', value: '44', precent: '60%',
+                        },
+                        {
+                            name: '不及格', value: '55', precent: '70%',
+                        }
+                    ]
+                }
+            },
+            
         }
     },
     "modules": [

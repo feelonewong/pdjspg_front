@@ -140,28 +140,140 @@ export const CompEdu = {
             },
         },
         "dimensionRating": {
-            "chartData": data.allResult.dimensionRating.chartData,
+            "wrap": {
+                "chn":{
+                    "chartData": data.allResult.dimensionRating.chnChartData
+                },
+                "math":{
+                    "chartData": data.allResult.dimensionRating.mathChartData
+                },
+                "eng":{
+                    "chartData": data.allResult.dimensionRating.engChartData
+                },
+                "soc":{
+                    "chartData": data.allResult.dimensionRating.socChartData
+                },
+                "sci":{
+                    "chartData": data.allResult.dimensionRating.sciChartData
+                },
+                "art":{
+                    "chartData": data.allResult.dimensionRating.artChartData
+                },
+
+            },
             "tableInfo": {
                 "data": data.allResult.dimensionRating.tableData,
                 "config": tableConfig
             }
         },
         "eachScoreDistribution": {
-            "attitude": {
-                "title": "教学态度",
-                "chartData": data.allResult.eachScoreDistribution.attitude.chartData,
+            "chn":{
+                "attitude": {
+                    "title": "职业态度",
+                    "chartData": data.allResult.eachScoreDistribution.chn.attitude.chartData,
+                },
+                "practice": {
+                    "title": "教学实践",
+                    "chartData": data.allResult.eachScoreDistribution.chn.practice.chartData,
+                },
+                "comprehensive": {
+                    "title": "综合育人",
+                    "chartData": data.allResult.eachScoreDistribution.chn.comprehensive.chartData,
+                },
+                "development": {
+                    "title": "自主发展",
+                    "chartData": data.allResult.eachScoreDistribution.chn.development.chartData,
+                }
             },
-            "practice": {
-                "title": "教学实践",
-                "chartData": data.allResult.eachScoreDistribution.practice.chartData,
+            "math":{
+                "attitude": {
+                    "title": "职业态度",
+                    "chartData": data.allResult.eachScoreDistribution.math.attitude.chartData,
+                },
+                "practice": {
+                    "title": "教学实践",
+                    "chartData": data.allResult.eachScoreDistribution.math.practice.chartData,
+                },
+                "comprehensive": {
+                    "title": "综合育人",
+                    "chartData": data.allResult.eachScoreDistribution.math.comprehensive.chartData,
+                },
+                "development": {
+                    "title": "自主发展",
+                    "chartData": data.allResult.eachScoreDistribution.math.development.chartData,
+                }
             },
-            "comprehensive": {
-                "title": "综合育人",
-                "chartData": data.allResult.eachScoreDistribution.comprehensive.chartData,
+            "eng":{
+                "attitude": {
+                    "title": "职业态度",
+                    "chartData": data.allResult.eachScoreDistribution.eng.attitude.chartData,
+                },
+                "practice": {
+                    "title": "教学实践",
+                    "chartData": data.allResult.eachScoreDistribution.eng.practice.chartData,
+                },
+                "comprehensive": {
+                    "title": "综合育人",
+                    "chartData": data.allResult.eachScoreDistribution.eng.comprehensive.chartData,
+                },
+                "development": {
+                    "title": "自主发展",
+                    "chartData": data.allResult.eachScoreDistribution.eng.development.chartData,
+                }
             },
-            "development": {
-                "title": "自主发展",
-                "chartData": data.allResult.eachScoreDistribution.development.chartData,
+            "soc":{
+                "attitude": {
+                    "title": "职业态度",
+                    "chartData": data.allResult.eachScoreDistribution.soc.attitude.chartData,
+                },
+                "practice": {
+                    "title": "教学实践",
+                    "chartData": data.allResult.eachScoreDistribution.soc.practice.chartData,
+                },
+                "comprehensive": {
+                    "title": "综合育人",
+                    "chartData": data.allResult.eachScoreDistribution.soc.comprehensive.chartData,
+                },
+                "development": {
+                    "title": "自主发展",
+                    "chartData": data.allResult.eachScoreDistribution.soc.development.chartData,
+                }
+            },
+            "sci":{
+                "attitude": {
+                    "title": "教学态度",
+                    "chartData": data.allResult.eachScoreDistribution.sci.attitude.chartData,
+                },
+                "practice": {
+                    "title": "教学实践",
+                    "chartData": data.allResult.eachScoreDistribution.sci.practice.chartData,
+                },
+                "comprehensive": {
+                    "title": "综合育人",
+                    "chartData": data.allResult.eachScoreDistribution.sci.comprehensive.chartData,
+                },
+                "development": {
+                    "title": "自主发展",
+                    "chartData": data.allResult.eachScoreDistribution.sci.development.chartData,
+                }
+            },
+            "art":{
+                "attitude": {
+                    "title": "教学态度",
+                    "chartData": data.allResult.eachScoreDistribution.art.attitude.chartData,
+                },
+                "practice": {
+                    "title": "教学实践",
+                    "chartData": data.allResult.eachScoreDistribution.art.practice.chartData,
+                },
+                "comprehensive": {
+                    "title": "综合育人",
+                    "chartData": data.allResult.eachScoreDistribution.art.comprehensive.chartData,
+                },
+                "development": {
+                    "title": "自主发展",
+                    "chartData": data.allResult.eachScoreDistribution.art.development.chartData,
+                }
             }
         }
     },

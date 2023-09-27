@@ -197,25 +197,52 @@
     <br />
     <h2 class="title">3.2.1.1 全区义务教育学段各维度得分率</h2>
     <br />
+    <!-- 得分率开始 -->
     <div class="wrap-d">
       <div class="area-left">
-        <PieRoseChart
+        
+        <!-- <PieRoseChart
           :title="emptyTitle"
           :chartData="allResult.dimensionRating.chartData"
-        ></PieRoseChart>
+        ></PieRoseChart> -->
       </div>
       <div class="area-right">
-        <CommonTable
-          :tableInfo="allResult.dimensionRating.tableInfo"
-        ></CommonTable>
+       
       </div>
     </div>
-    <h2 class="title">3.2.1.2 全区义务教育学段各维度得分分布情况</h2>
-    <br />
-    <div class="wrap-d">
+    <div class="wrap-d-wrap">
       <div
         class="area-left"
-        v-for="(eachItem, eachIndex) in allResult.eachScoreDistribution"
+        v-for="(eachItem, eachIndex) in allResult.dimensionRating.wrap"
+        :key="eachIndex"
+        style="width: 33%;"
+      >
+        <PieRoseChart :title="emptyTitle" :chartData="eachItem.chartData"></PieRoseChart>
+       
+         <desc-slot>
+          整体得分率:{{ eachItem.chartData[0].value }} <br />
+          职业态度:{{ eachItem.chartData[1].value }} <br />
+          教学实践:{{ eachItem.chartData[2].value }}<br />
+          综合育人:{{ eachItem.chartData[3].value }}<br />
+          自主发展:{{ eachItem.chartData[4].value }}<br />
+        </desc-slot> 
+      </div>
+    </div>
+    <div style="width: 80%; margin: 0 auto;">
+      <CommonTable
+          :tableInfo="allResult.dimensionRating.tableInfo"
+        ></CommonTable>
+    </div>
+    
+    <!-- 得分率结束 -->
+    <h2 class="title">3.2.1.2 全区义务教育学段各维度得分分布情况</h2>
+    <br />
+    <!-- 得分分布 -->
+    <div class="wrap-d" style="position: relative;" v-for="(wapItem, wapIndex) in allResult.eachScoreDistribution" :key="index">
+      <div style="width: 500px; position: absolute; left: 10px;">{{ subProject[wapIndex] }}</div>
+      <div
+        class="area-left"
+        v-for="(eachItem, eachIndex) in wapItem"
         :key="eachIndex"
       >
         <PieChart :title="emptyTitle" :chartData="eachItem.chartData"></PieChart>
@@ -350,6 +377,14 @@ export default {
       emptyTitle: '',
       allResult: {},
       compEduData: {},
+      subProject: {
+        "chn": "义务教育语文学科",
+        "math": "义务教育数学学科",
+        "eng": "义务教育英语学科",
+        "soc": "义务教育社会学科",
+        "sci": "义务教育理工学科",
+        "art": "义务教育艺体学科",
+      }
     };
   },
   mounted() {
