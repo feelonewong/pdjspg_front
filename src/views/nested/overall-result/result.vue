@@ -6,35 +6,33 @@
     <br />
     <h2>1.1.1 全区整体得分率与得分分布情况</h2>
     <p class="pfont">(1)全区整体得分率</p>
-    <div style="display: flex; box-sizing: border-box">
-      <mip-chart
-        :chartData="allResultRating"
-        :width="'50%'"
-        :height="'600px'"
-      ></mip-chart>
-      <el-card
-        class="box-card"
-        style="width: 500px; margin-right: 10%; height: 550px"
-      >
-        <div slot="header">
-          <span>全区整体得分率情况</span>
-        </div>
-        <div
-          style="display: flex; justify-content: center; align-items: center"
-        ></div>
-        <p v-for="(item, index) in allResultRating.data" :key="index">
-          <span>{{ item.name }}得分率为: {{ item.value }}%</span>
-        </p>
-      </el-card>
-    </div>
-    <p class="pfont">(2)全区整体得分分布情况</p>
+    <!-- <div class="wrap-d">
+      <div class="area-left">
+        <PieRoseChart
+          :title="emptyTitle"
+          :chartData="allResult.allScoreRating.chartData"
+        ></PieRoseChart>
+      </div>
+      <div class="area-right">
+        <desc-slot>
+          高中教育学科整体得分率为:<br>
+
+          {{
+            allResult.allScoreRating.max
+          }}得分率最高<br>
+          {{
+            allResult.allScoreRating.min
+          }}得分率最低<br>
+        </desc-slot>
+      </div>
+    </div> -->
     <div style="display: flex; box-sizing: border-box">
       <PieChart
         :chartData="allScore"
         :width="'50%'"
         :height="'280px'"
       ></PieChart>
-      <el-card
+      <!-- <el-card
         class="box-card"
         style="width: 500px; margin-right: 10%; height: 350px"
       >
@@ -47,7 +45,7 @@
         <p v-for="(item, index) in allScore.data" :key="index">
           <span>{{ item.name }}得分率为: {{ item.value }}%</span>
         </p>
-      </el-card>
+      </el-card> -->
     </div>
     <!-- 四个维度循环 -->
     <template v-for="(item, index) in newFourModuleResult">
@@ -165,8 +163,8 @@ import PieChartAll from "./components/all/PieChart";
 import DescSlot from "./components/all/desc-slot.vue";
 import CommonTable from "./components/all/common-table.vue";
 import BoxPlotChart from "@/components/Charts/BoxPlotChart";
-
 import HistogramChart from "./components/all/HistogramChart.vue";
+import PieRoseChart from "@/components/Charts/PieRoseChart";
 
 export default {
   components: {
@@ -177,7 +175,8 @@ export default {
     DescSlot,
     CommonTable,
     HistogramChart,
-    BoxPlotChart
+    BoxPlotChart,
+    PieRoseChart
   },
   data() {
     return {
