@@ -11,7 +11,6 @@
 import echarts from "echarts";
 require("echarts/theme/macarons"); // echarts theme
 import resize from "@/components/Charts/mixins/resize";
-import { RadarOptions } from "../../constant/index";
 export default {
   mixins: [resize],
   props: {
@@ -76,23 +75,18 @@ export default {
         },
         radar: {
           // shape: 'circle',
-          indicator: RadarOptions,
+          indicator: this.chartData.config,
         },
         tooltip: {
           trigger: "item",
-          formatter: function (params) {
-            if (params.value) {
-              return params.name + ": " + params.value + "%";
-            }
-          },
         },
         series: [
           {
-            name: "Budget vs spending",
+            name: "",
             type: "radar",
             data: [
               {
-                value: this.chartData.scoreRateDistribution || [],
+                value: this.chartData.data || [],
                 name: "",
               }
             ],

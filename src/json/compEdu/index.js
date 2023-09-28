@@ -629,132 +629,256 @@ export const data = {
     },
     "modules": [
         {
-            "scoreRating": { //*** 职业态度维度得分率: 最低、最高、中位数、平均得分率
-                "chartData": [{
-                    "name": "职业态度维度",
-                    "min": 10.37,
-                    "median": 10,
-                    "average": 12,
-                    "max": 30,
-                  },]
+            "scoreRating": { //*** 义务教育职业态度得分率
+                // 义务教育语文、数学、英语、社会、理工、艺体的得分率 顺序要一致
+                "chartData": [20.3,22,33,21.5,22.3,33.2]
             },
             "eachScoreDistribution": { //*** 职业态度维度得分分布情况
                 "tableData": [
-                    {
-                        "name": "职业态度",
+                    {   "name": "义务教育语文科",
                         "excellent": "20%(200人)",
                         "good": "30%(300人)",
                         "pass": "40%(400人)",
                         "fail": "50%(500人)",
-                    }
+                    },
+                    {   "name": "义务教育数学科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                    {   "name": "义务教育英语科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                    {   "name": "义务教育社会科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                    {   "name": "义务教育理工科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                    {   "name": "义务教育艺体科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
                 ],
-                "chartData": [
+                "chnChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "mathChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "engChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "socChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "sciChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "artChartData": [
                     {"name": '优秀', "value": '20',  "precent": '40%',},
                     {"name": '良好', "value": '30',  "precent": '50%',},
                     {"name": '及格', "value": '40',  "precent": '60%',},
                     {"name": '不及格'," value": '50', "precent": '70%',}
                 ]
             },
-            "averageScore": {
+            "averageScore": { // 职业态度、各科平均分
+                // 四个维度满分分别为: 60 120 90 90
                 "all": {
-                    "chartData": [{"name": "职业态度平均分", "value": "100"}]
-                },
-                "selfAndSecene": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
                     "chartData": [
-                        {"name": "自陈问题", "value": "20"},
-                        {"name": "情景问题", "value": "20"},
+                        {"name": "义务教育语文科", "value": "20"},
+                        {"name": "义务教育数学科", "value": "30"},
+                        {"name": "义务教育英语科", "value": "40"},
+                        {"name": "义务教育社会科", "value": "50"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"},
+                    ]
+                },
+                "self": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "20"},
+                        {"name": "义务教育数学科", "value": "30"},
+                        {"name": "义务教育英语科", "value": "40"},
+                        {"name": "义务教育社会科", "value": "50"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"},
+                    ]
+                },
+                "scene": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "20"},
+                        {"name": "义务教育数学科", "value": "30"},
+                        {"name": "义务教育英语科", "value": "40"},
+                        {"name": "义务教育社会科", "value": "50"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"},
                     ]
                 }
             },
-            "standardScore": {
-                "chartData": [
-                    {"name":"自陈问题标准差", "value":"200"},
-                    {"name":"情景问题标准差", "value":"100"},
-                ]
+            "standardScore": { // 各个小的维度、标准差
+                "self": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "10"},
+                        {"name": "义务教育数学科", "value": "20"},
+                        {"name": "义务教育英语科", "value": "30"},
+                        {"name": "义务教育社会科", "value": "40"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"}
+                    ]
+                },
+                "scene": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "10"},
+                        {"name": "义务教育数学科", "value": "20"},
+                        {"name": "义务教育英语科", "value": "30"},
+                        {"name": "义务教育社会科", "value": "40"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"}
+                    ]
+                }
             },
             "minMaxSocre": {
-                "chartData": [{
-                    "name": "职业态度分数",
-                    "min": 10.37,
-                    "median": 10,
-                    "average": 12,
-                    "max": 30,
-                  },]
+                "self": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "义务教育理工科", // 中位数最高的学科
+                    "midMin": "义务教育数学科",  // 中位数最低的学科
+                    "chartData": [
+                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                    ]
+                },
+                "scene": {
+                    "max": "义务教育语文", // 分数最高的学科
+                    "min": "义务教育数学", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "义务教育理工科",  // 中位数最高的学科
+                    "midMin": "义务教育数学科",  // 中位数最低的学科
+                    "chartData": [
+                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                    ]
+                }
             }
         },{
             "scoreRating": { //*** 教学实践维度得分率: 最低、最高、中位数、平均得分率
-                "chartData": [{
-                    "name": "教学实践维度",
-                    "min": 10.37,
-                    "median": 10,
-                    "average": 12,
-                    "max": 30,
-                  }]
+                "chartData": [20.3,22,33,21.5,22.3,33.2]
+
             },
             "eachScoreDistribution": { //*** 职业态度维度得分分布情况
                 "tableData": [
-                    {
-                        "name": "教学实践",
-                        "excellent": "20%(200人)",
-                        "good": "40%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    }
-                ],
-                "chartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ]
-            },
-            "averageScore": {
-                "all": {
-                    "chartData": [{"name": "教学实践平均分", "value": "100"}]
-                },
-                "selfAndSecene": {
-                    "chartData": [
-                        {"name": "自陈问题", "value": "20"},
-                        {"name": "情景问题", "value": "20"},
-                    ]
-                }
-            },
-            "standardScore": {
-                "chartData": [
-                    {"name":"自陈问题标准差", "value":"200"},
-                    {"name":"情景问题标准差", "value":"100"},
-                ]
-            },
-            "minMaxSocre": {
-                "chartData": [{
-                    "name": "教学实践分数",
-                    "min": 10.37,
-                    "median": 10,
-                    "average": 12,
-                    "max": 30,
-                  },]
-            }
-        },{
-            "scoreRating": { //*** 综合育人维度得分率: 最低、最高、中位数、平均得分率
-                "chartData": [{
-                    "name": "综合育人维度",
-                    "min": 10.37,
-                    "median": 10,
-                    "average": 12,
-                    "max": 30,
-                  }]
-            },
-            "eachScoreDistribution": { //*** 综合育人维度得分分布情况
-                "tableData": [
-                    {
-                        "name": "综合育人",
+                    {   "name": "义务教育语文科",
                         "excellent": "20%(200人)",
                         "good": "30%(300人)",
                         "pass": "40%(400人)",
                         "fail": "50%(500人)",
-                    }
+                    },
+                    {   "name": "义务教育数学科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                    {   "name": "义务教育英语科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                    {   "name": "义务教育社会科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                    {   "name": "义务教育理工科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                    {   "name": "义务教育艺体科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
                 ],
-                "chartData": [
+                "chnChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "mathChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "engChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "socChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "sciChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "artChartData": [
                     {"name": '优秀', "value": '20',  "precent": '40%',},
                     {"name": '良好', "value": '30',  "precent": '50%',},
                     {"name": '及格', "value": '40',  "precent": '60%',},
@@ -763,39 +887,276 @@ export const data = {
             },
             "averageScore": {
                 "all": {
-                    "chartData": [{"name": "综合育人平均分", "value": "100"}]
-                },
-                "selfAndSecene": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
                     "chartData": [
-                        {"name": "自陈问题", "value": "20"},
-                        {"name": "情景问题", "value": "20"},
+                        {"name": "义务教育语文科", "value": "20"},
+                        {"name": "义务教育数学科", "value": "30"},
+                        {"name": "义务教育英语科", "value": "40"},
+                        {"name": "义务教育社会科", "value": "50"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"},
+                    ]
+                },
+                "self": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "20"},
+                        {"name": "义务教育数学科", "value": "30"},
+                        {"name": "义务教育英语科", "value": "40"},
+                        {"name": "义务教育社会科", "value": "50"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"},
+                    ]
+                },
+                "scene": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "20"},
+                        {"name": "义务教育数学科", "value": "30"},
+                        {"name": "义务教育英语科", "value": "40"},
+                        {"name": "义务教育社会科", "value": "50"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"},
                     ]
                 }
             },
-            "standardScore": {
-                "chartData": [
-                    {"name":"自陈问题标准差", "value":"200"},
-                    {"name":"情景问题标准差", "value":"100"},
-                ]
+            "standardScore": { // 各个小的维度、标准差
+                "self": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "10"},
+                        {"name": "义务教育数学科", "value": "20"},
+                        {"name": "义务教育英语科", "value": "30"},
+                        {"name": "义务教育社会科", "value": "40"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"}
+                    ]
+                },
+                "scene": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "10"},
+                        {"name": "义务教育数学科", "value": "20"},
+                        {"name": "义务教育英语科", "value": "30"},
+                        {"name": "义务教育社会科", "value": "40"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"}
+                    ]
+                }
             },
             "minMaxSocre": {
-                "chartData": [{
-                    "name": "综合育人分数",
-                    "min": 10.37,
-                    "median": 10,
-                    "average": 12,
-                    "max": 30,
-                  },]
+                "self": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "义务教育理工科",
+                    "midMin": "义务教育数学科", 
+                    "chartData": [
+                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                    ]
+                },
+                "scene": {
+                    "max": "义务教育语文", // 分数最高的学科
+                    "min": "义务教育数学", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "义务教育理工科",
+                    "midMin": "义务教育数学科", 
+                    "chartData": [
+                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                    ]
+                }
+            }
+        },{
+            "scoreRating": { //*** 综合育人维度得分率: 最低、最高、中位数、平均得分率
+                "chartData": [20.3,22,33,21.5,22.3,33.2]
+            },
+            "eachScoreDistribution": { //*** 综合育人维度得分分布情况
+                "tableData": [
+                    {   "name": "义务教育语文科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                    {   "name": "义务教育数学科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                    {   "name": "义务教育英语科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                    {   "name": "义务教育社会科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                    {   "name": "义务教育理工科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                    {   "name": "义务教育艺体科",
+                        "excellent": "20%(200人)",
+                        "good": "30%(300人)",
+                        "pass": "40%(400人)",
+                        "fail": "50%(500人)",
+                    },
+                ],
+                // 各科、职业态度、value: 人  precent代表占比
+                "chnChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "mathChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "engChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "socChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "sciChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "artChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ]
+            },
+            "averageScore": {
+                "all": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "20"},
+                        {"name": "义务教育数学科", "value": "30"},
+                        {"name": "义务教育英语科", "value": "40"},
+                        {"name": "义务教育社会科", "value": "50"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"},
+                    ]
+                },
+                "self": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "20"},
+                        {"name": "义务教育数学科", "value": "30"},
+                        {"name": "义务教育英语科", "value": "40"},
+                        {"name": "义务教育社会科", "value": "50"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"},
+                    ]
+                },
+                "scene": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "20"},
+                        {"name": "义务教育数学科", "value": "30"},
+                        {"name": "义务教育英语科", "value": "40"},
+                        {"name": "义务教育社会科", "value": "50"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"},
+                    ]
+                }
+            },
+            "standardScore": { // 各个小的维度、标准差
+                "self": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "10"},
+                        {"name": "义务教育数学科", "value": "20"},
+                        {"name": "义务教育英语科", "value": "30"},
+                        {"name": "义务教育社会科", "value": "40"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"}
+                    ]
+                },
+                "scene": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "10"},
+                        {"name": "义务教育数学科", "value": "20"},
+                        {"name": "义务教育英语科", "value": "30"},
+                        {"name": "义务教育社会科", "value": "40"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"}
+                    ]
+                }
+            },
+            "minMaxSocre": {
+                "self": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "义务教育理工科",
+                    "midMin": "义务教育数学科", 
+                    "chartData": [
+                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                    ]
+                },
+                "scene": {
+                    "max": "义务教育语文", // 分数最高的学科
+                    "min": "义务教育数学", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "义务教育理工科",
+                    "midMin": "义务教育数学科", 
+                    "chartData": [
+                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                    ]
+                }
             }
         },{
             "scoreRating": { //*** 自主发展维度得分率: 最低、最高、中位数、平均得分率
-                "chartData": [{
-                    "name": "自主发展维度",
-                    "min": 20.37,
-                    "median": 40,
-                    "average": 32,
-                    "max": 60,
-                  }]
+                "chartData": [20.3,22,33,21.5,22.3,33.2]
             },
             "eachScoreDistribution": { //*** 自主发展维度得分分布情况
                 "tableData": [
@@ -807,7 +1168,37 @@ export const data = {
                         "fail": "50%(500人)",
                     }
                 ],
-                "chartData": [
+                "chnChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "mathChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "engChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "socChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "sciChartData": [
+                    {"name": '优秀', "value": '20',  "precent": '40%',},
+                    {"name": '良好', "value": '30',  "precent": '50%',},
+                    {"name": '及格', "value": '40',  "precent": '60%',},
+                    {"name": '不及格'," value": '50', "precent": '70%',}
+                ],
+                "artChartData": [
                     {"name": '优秀', "value": '20',  "precent": '40%',},
                     {"name": '良好', "value": '30',  "precent": '50%',},
                     {"name": '及格', "value": '40',  "precent": '60%',},
@@ -816,29 +1207,97 @@ export const data = {
             },
             "averageScore": {
                 "all": {
-                    "chartData": [{"name": "自主发展平均分", "value": "100"}]
-                },
-                "selfAndSecene": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
                     "chartData": [
-                        {"name": "自陈问题", "value": "20"},
-                        {"name": "情景问题", "value": "20"},
+                        {"name": "义务教育语文科", "value": "20"},
+                        {"name": "义务教育数学科", "value": "30"},
+                        {"name": "义务教育英语科", "value": "40"},
+                        {"name": "义务教育社会科", "value": "50"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"},
+                    ]
+                },
+                "self": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "20"},
+                        {"name": "义务教育数学科", "value": "30"},
+                        {"name": "义务教育英语科", "value": "40"},
+                        {"name": "义务教育社会科", "value": "50"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"},
+                    ]
+                },
+                "scene": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "20"},
+                        {"name": "义务教育数学科", "value": "30"},
+                        {"name": "义务教育英语科", "value": "40"},
+                        {"name": "义务教育社会科", "value": "50"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"},
                     ]
                 }
             },
-            "standardScore": {
-                "chartData": [
-                    {"name":"自陈问题标准差", "value":"200"},
-                    {"name":"情景问题标准差", "value":"100"},
-                ]
+            "standardScore": { // 各个小的维度、标准差
+                "self": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "10"},
+                        {"name": "义务教育数学科", "value": "20"},
+                        {"name": "义务教育英语科", "value": "30"},
+                        {"name": "义务教育社会科", "value": "40"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"}
+                    ]
+                },
+                "scene": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "chartData": [
+                        {"name": "义务教育语文科", "value": "10"},
+                        {"name": "义务教育数学科", "value": "20"},
+                        {"name": "义务教育英语科", "value": "30"},
+                        {"name": "义务教育社会科", "value": "40"},
+                        {"name": "义务教育理工科", "value": "60"},
+                        {"name": "义务教育艺体科", "value": "70"}
+                    ]
+                }
             },
             "minMaxSocre": {
-                "chartData": [{
-                    "name": "自主发展分数",
-                    "min": 10.37,
-                    "median": 10,
-                    "average": 12,
-                    "max": 30,
-                  },]
+                "self": {
+                    "max": "义务教育艺体", // 分数最高的学科
+                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "义务教育理工科",
+                    "midMin": "义务教育数学科", 
+                    "chartData": [
+                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                    ]
+                },
+                "scene": {
+                    "max": "义务教育语文", // 分数最高的学科
+                    "min": "义务教育数学", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "义务教育理工科",
+                    "midMin": "义务教育数学科", 
+                    "chartData": [
+                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                    ]
+                }
             }
         }
     ]

@@ -291,22 +291,72 @@ export const CompEdu = {
                     "config": moduleTableConfig,
                     "data": data.modules[0].eachScoreDistribution.tableData,
                 },
-                "chartData": data.modules[0].eachScoreDistribution.chartData,
+                "wap": {
+                    "chn": {
+                        chartData: data.modules[0].eachScoreDistribution.chnChartData
+                    },
+                    "math": {
+                        chartData: data.modules[0].eachScoreDistribution.mathChartData
+                    },
+                    "eng": {
+                        chartData: data.modules[0].eachScoreDistribution.engChartData
+                    },
+                    "soc": {
+                        chartData: data.modules[0].eachScoreDistribution.socChartData
+                    },
+                    "sci": {
+                        chartData: data.modules[0].eachScoreDistribution.sciChartData
+                    },
+                    "art": {
+                        chartData: data.modules[0].eachScoreDistribution.artChartData
+                    }
+                }
             },
             "averageScore": {
                 "title": "职业态度",
                 "all": {
+                    "max": data.modules[0].averageScore.all.max,
+                    "min": data.modules[0].averageScore.all.min,
                     "chartData": data.modules[0].averageScore.all.chartData,
                 },
-                "selfAndSecene": {
-                    "chartData": data.modules[0].averageScore.selfAndSecene.chartData,
-                }
+                "self": {
+                    "max": data.modules[0].averageScore.self.max,
+                    "min": data.modules[0].averageScore.self.min,
+                    "chartData": data.modules[0].averageScore.self.chartData,
+                },
+                "scene": {
+                    "max": data.modules[0].averageScore.scene.max,
+                    "min": data.modules[0].averageScore.scene.min,
+                    "chartData": data.modules[0].averageScore.scene.chartData,
+                },
             },
             "standardScore": {
-                "chartData": data.modules[0].standardScore.chartData,
+                "self": {
+                    "max": data.modules[0].standardScore.self.max,
+                    "min": data.modules[0].standardScore.self.min,
+                    "chartData": data.modules[0].standardScore.self.chartData,
+                },
+                "scene": {
+                    "max": data.modules[0].standardScore.scene.max,
+                    "min": data.modules[0].standardScore.scene.min,
+                    "chartData": data.modules[0].standardScore.scene.chartData,
+                }
             },
             "minMaxSocre": {
-                "chartData": data.modules[0].minMaxSocre.chartData,
+                "self": {
+                    "max": data.modules[0].minMaxSocre.self.max,
+                    "min": data.modules[0].minMaxSocre.self.min,
+                    "midMax": data.modules[0].minMaxSocre.self.midMax,
+                    "midMin": data.modules[0].minMaxSocre.self.midMin,
+                    "chartData": data.modules[0].minMaxSocre.self.chartData,
+                },
+                "scene": {
+                    "max": data.modules[0].minMaxSocre.scene.max,
+                    "min": data.modules[0].minMaxSocre.scene.min,
+                    "midMax": data.modules[0].minMaxSocre.scene.midMax,
+                    "midMin": data.modules[0].minMaxSocre.scene.midMin,
+                    "chartData": data.modules[0].minMaxSocre.scene.chartData,
+                }
             }
         },
         {
@@ -325,19 +375,50 @@ export const CompEdu = {
                 "chartData": data.modules[1].eachScoreDistribution.chartData,
             },
             "averageScore": {
-                "title": "教学实践",
-                "all": {
-                    "chartData": data.modules[1].averageScore.all.chartData,
+                    "title": "教学实践",
+                    "all": {
+                        "max": data.modules[1].averageScore.all.max,
+                        "min": data.modules[1].averageScore.all.min,
+                        "chartData": data.modules[1].averageScore.all.chartData,
+                    },
+                    "self": {
+                        "max": data.modules[1].averageScore.self.max,
+                        "min": data.modules[1].averageScore.self.min,
+                        "chartData": data.modules[1].averageScore.self.chartData,
+                    },
+                    "scene": {
+                        "max": data.modules[1].averageScore.scene.max,
+                        "min": data.modules[1].averageScore.scene.min,
+                        "chartData": data.modules[1].averageScore.scene.chartData,
                 },
-                "selfAndSecene": {
-                    "chartData": data.modules[1].averageScore.selfAndSecene.chartData,
-                }
             },
             "standardScore": {
-                "chartData": data.modules[1].standardScore.chartData,
+                "self": {
+                    "max": data.modules[1].standardScore.self.max,
+                    "min": data.modules[1].standardScore.self.min,
+                    "chartData": data.modules[1].standardScore.self.chartData,
+                },
+                "scene": {
+                    "max": data.modules[1].standardScore.scene.max,
+                    "min": data.modules[1].standardScore.scene.min,
+                    "chartData": data.modules[1].standardScore.scene.chartData,
+                }
             },
             "minMaxSocre": {
-                "chartData": data.modules[1].minMaxSocre.chartData,
+                    "self": {
+                        "max": data.modules[1].minMaxSocre.self.max,
+                        "min": data.modules[1].minMaxSocre.self.min,
+                        "midMax": data.modules[1].minMaxSocre.self.midMax,
+                        "midMin": data.modules[1].minMaxSocre.self.midMin,
+                        "chartData": data.modules[1].minMaxSocre.self.chartData,
+                    },
+                    "scene": {
+                        "max": data.modules[1].minMaxSocre.scene.max,
+                        "min": data.modules[1].minMaxSocre.scene.min,
+                        "midMax": data.modules[1].minMaxSocre.scene.midMax,
+                        "midMin": data.modules[1].minMaxSocre.scene.midMin,
+                        "chartData": data.modules[1].minMaxSocre.scene.chartData,
+                    }
             }
         },
         {
@@ -357,18 +438,49 @@ export const CompEdu = {
             },
             "averageScore": {
                 "title": "综合育人",
-                "all": {
-                    "chartData": data.modules[2].averageScore.all.chartData,
+                    "all": {
+                        "max": data.modules[2].averageScore.all.max,
+                        "min": data.modules[2].averageScore.all.min,
+                        "chartData": data.modules[2].averageScore.all.chartData,
+                    },
+                    "self": {
+                        "max": data.modules[2].averageScore.self.max,
+                        "min": data.modules[2].averageScore.self.min,
+                        "chartData": data.modules[2].averageScore.self.chartData,
+                    },
+                    "scene": {
+                        "max": data.modules[2].averageScore.scene.max,
+                        "min": data.modules[2].averageScore.scene.min,
+                        "chartData": data.modules[2].averageScore.scene.chartData,
                 },
-                "selfAndSecene": {
-                    "chartData": data.modules[2].averageScore.selfAndSecene.chartData,
-                }
             },
             "standardScore": {
-                "chartData": data.modules[2].standardScore.chartData,
+                "self": {
+                    "max": data.modules[2].standardScore.self.max,
+                    "min": data.modules[2].standardScore.self.min,
+                    "chartData": data.modules[2].standardScore.self.chartData,
+                },
+                "scene": {
+                    "max": data.modules[2].standardScore.scene.max,
+                    "min": data.modules[2].standardScore.scene.min,
+                    "chartData": data.modules[2].standardScore.scene.chartData,
+                }
             },
             "minMaxSocre": {
-                "chartData": data.modules[2].minMaxSocre.chartData,
+                    "self": {
+                        "max": data.modules[2].minMaxSocre.self.max,
+                        "min": data.modules[2].minMaxSocre.self.min,
+                        "midMax": data.modules[2].minMaxSocre.self.midMax,
+                        "midMin": data.modules[2].minMaxSocre.self.midMin,
+                        "chartData": data.modules[2].minMaxSocre.self.chartData,
+                    },
+                    "scene": {
+                        "max": data.modules[2].minMaxSocre.scene.max,
+                        "min": data.modules[2].minMaxSocre.scene.min,
+                        "midMax": data.modules[2].minMaxSocre.scene.midMax,
+                        "midMin": data.modules[2].minMaxSocre.scene.midMin,
+                        "chartData": data.modules[2].minMaxSocre.scene.chartData,
+                    }
             }
         },
         {
@@ -388,19 +500,50 @@ export const CompEdu = {
             },
             "averageScore": {
                 "title": "自主发展",
-                "all": {
-                    "chartData": data.modules[3].averageScore.all.chartData,
+                    "all": {
+                        "max": data.modules[3].averageScore.all.max,
+                        "min": data.modules[3].averageScore.all.min,
+                        "chartData": data.modules[3].averageScore.all.chartData,
+                    },
+                    "self": {
+                        "max": data.modules[3].averageScore.self.max,
+                        "min": data.modules[3].averageScore.self.min,
+                        "chartData": data.modules[3].averageScore.self.chartData,
+                    },
+                    "scene": {
+                        "max": data.modules[3].averageScore.scene.max,
+                        "min": data.modules[3].averageScore.scene.min,
+                        "chartData": data.modules[3].averageScore.scene.chartData,
                 },
-                "selfAndSecene": {
-                    "chartData": data.modules[3].averageScore.selfAndSecene.chartData,
-                }
             },
             "standardScore": {
-                "chartData": data.modules[3].standardScore.chartData,
+                "self": {
+                    "max": data.modules[3].standardScore.self.max,
+                    "min": data.modules[3].standardScore.self.min,
+                    "chartData": data.modules[3].standardScore.self.chartData,
+                },
+                "scene": {
+                    "max": data.modules[3].standardScore.scene.max,
+                    "min": data.modules[3].standardScore.scene.min,
+                    "chartData": data.modules[3].standardScore.scene.chartData,
+                }
             },
             "minMaxSocre": {
-                "chartData": data.modules[3].minMaxSocre.chartData,
-            }
+                    "self": {
+                        "max": data.modules[3].minMaxSocre.self.max,
+                        "min": data.modules[3].minMaxSocre.self.min,
+                        "midMax": data.modules[3].minMaxSocre.self.midMax,
+                        "midMin": data.modules[3].minMaxSocre.self.midMin,
+                        "chartData": data.modules[3].minMaxSocre.self.chartData,
+                    },
+                    "scene": {
+                        "max": data.modules[3].minMaxSocre.scene.max,
+                        "min": data.modules[3].minMaxSocre.scene.min,
+                        "midMax": data.modules[3].minMaxSocre.scene.midMax,
+                        "midMin": data.modules[3].minMaxSocre.scene.midMin,
+                        "chartData": data.modules[3].minMaxSocre.scene.chartData,
+                    }
+                }
         }
     ]
 }
