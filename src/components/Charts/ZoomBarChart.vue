@@ -40,7 +40,7 @@ export default {
     },
     maxValue: {
       type: Number,
-      default: 100,
+      // default: 100,
     },
     chartData: {
       type: Array,
@@ -84,8 +84,8 @@ export default {
         dataZoom: [
           {
             show: true,
-            start: 0, // 起始的百分比
-            end: 100, // 结束的百分比
+            // start: 0, // 起始的百分比
+            // end: 100, // 结束的百分比
           },
         ],
         xAxis: [

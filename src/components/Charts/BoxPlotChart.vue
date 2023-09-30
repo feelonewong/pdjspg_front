@@ -74,13 +74,17 @@ export default {
           nameLocation: "middle",
           nameGap: 30,
           scale: true,
+          
         },
         yAxis: {
           type: "category",
+         
           // data: this.$props.chartData.map((item) => item.name),
         },
         grid: {
           bottom: 100,
+          left: 190,
+          // containLabel: true
         },
         dataZoom: [
           {

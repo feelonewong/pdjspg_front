@@ -466,10 +466,8 @@ import PieRoseChart from "@/components/Charts/PieRoseChart";
 import PieChart from "@/components/Charts/PieChart.vue";
 import DescSlot from "./components/all/desc-slot.vue";
 import CommonTable from "./components/all/common-table.vue";
-import HistogramChart from "./components/all/HistogramChart.vue";
 import ZoomBarChart from "@/components/Charts/ZoomBarChart";
 import RadarChart from './components/all/RadarChart2.vue'
-import { CompEdu } from "./constant/compEdu/index";
 import {HighEdu} from './constant/highEdu/index'
 export default {
   components: {
@@ -478,7 +476,6 @@ export default {
     DescSlot,
     CommonTable,
     BoxPlotChart,
-    HistogramChart,
     RadarChart,
     ZoomBarChart,
     PieRoseChart,
