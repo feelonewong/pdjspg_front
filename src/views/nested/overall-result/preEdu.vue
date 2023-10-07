@@ -1,15 +1,15 @@
 <template>
   <div style="margin-bottom: 50px">
-    <h2>二、学前教育与特殊教育学段调研结果</h2>
+    <h2 >二、学前教育与特殊教育学段调研结果</h2>
     <br />
-    <h2 class="title">2.1全区学前教育学段整体得分率与得分分布情况</h2>
+    <h2 class="title" style="margin-top: 30px; margin-bottom: 30px; ">2.1全区学前教育学段整体得分率与得分分布情况</h2>
     <br />
-    <h2 class="title">2.1.1全区学前教育学段整体得分率</h2>
+    <h2 class="title"  style="margin-top: 10px; margin-bottom: 60px; ">2.1.1全区学前教育学段整体得分率</h2>
     <br />
     <div class="wrap-d">
       <div class="area-left">
         <BoxPlotChart
-          :title="allResult.allScoreRating.title"
+          :title="'整体得分率'"
           :chartData="allResult.allScoreRating.chartData"
         />
       </div>
@@ -21,9 +21,9 @@
         </desc-slot>
       </div>
     </div>
-    <h2 class="title">2.1.2全区学前教育学段整体得分分布情况</h2>
+    <h2 class="title"  style="margin-top: 30px; margin-bottom: 30px; ">2.1.2全区学前教育学段整体得分分布情况</h2>
     <br />
-    <h2 class="title">2.1.2.1全区学前教育学段总体得分分布情况</h2>
+    <h2 class="title" style="margin-top: 10px; margin-bottom: 70px; ">2.1.2.1全区学前教育学段总体得分分布情况</h2>
     <br />
     <div>
       <div class="wrap-d">
@@ -56,26 +56,26 @@
         </div>
       </div>
     </div>
-    <h2 class="title">2.1.2.2学前教育学科整体平均分、中位数、标准差</h2>
+    <h2 class="title" style="margin-top: 50px; margin-bottom: 40px; ">2.1.2.2学前教育学科整体平均分、中位数、标准差</h2>
     <br />
     <div class="wrap-d">
       <div class="area-left">
         <BoxPlotChart
-          :title="emptyTitle"
+          :title="'学前教育学科整体平均分'"
           :chartData="allResult.minMaxScore.all.chartData"
         />
       </div>
       <div class="area-right">
         <BoxPlotChart
-          :title="emptyTitle"
+          :title="'学前教育学科自陈问题平均分'"
           :chartData="allResult.minMaxScore.self.chartData"
         />
       </div>
     </div>
-    <div class="wrap-d">
+    <div class="wrap-d" style="margin-top: 50px; margin-bottom: 30px;">
       <div class="area-left">
         <BoxPlotChart
-          :title="emptyTitle"
+          :title="'学前教育学科情景问题平均分'"
           :chartData="allResult.minMaxScore.secene.chartData"
         />
       </div>
@@ -105,7 +105,7 @@
     <div class="wrap-d">
       <div class="area-left">
         <ZoomBarChart
-          :title="emptyTitle"
+          :title="'学前教育学科自陈问题、情景问题标准差'"
           :chartData="allResult.standradScore.chartData"
         ></ZoomBarChart>
       </div>
@@ -118,16 +118,16 @@
         </desc-slot>
       </div>
     </div>
-    <h2 class="title">2.2 全区学前教育学段各维度调研结果</h2>
+    <h2 class="title" style="margin-top: 30px; margin-bottom: 30px; ">2.2 全区学前教育学段各维度调研结果</h2>
     <br />
-    <h2 class="title">2.2.1 全区学前教育学段各维度得分率与得分分布情况</h2>
+    <h2 class="title" style="margin-top: 10px; margin-bottom: 30px; ">2.2.1 全区学前教育学段各维度得分率与得分分布情况</h2>
     <br />
-    <h2 class="title">2.2.1.1 全区学前教育学段各维度得分率</h2>
+    <h2 class="title" style="margin-top: 10px; margin-bottom: 60px; ">2.2.1.1 全区学前教育学段各维度得分率</h2>
     <br />
     <div class="wrap-d">
       <div class="area-left">
         <PieRoseChart
-          :title="emptyTitle"
+          :title="'学前教育学科各维度得分率'"
           :chartData="allResult.dimensionRating.chartData"
         ></PieRoseChart>
       </div>
@@ -137,17 +137,18 @@
         ></CommonTable>
       </div>
     </div>
-    <h2 class="title">2.2.1.2 全区学前教育学段各维度得分分布情况</h2>
+    <h2 class="title" style="margin-top: 40px; margin-bottom: 40px; ">2.2.1.2 全区学前教育学段各维度得分分布情况</h2>
     <br />
-    <div class="wrap-d">
+    <div style="display: flex; flex-wrap: wrap;">
       <div
         class="area-left"
         v-for="(eachItem, eachIndex) in allResult.eachScoreDistribution"
         :key="eachIndex"
+        style="margin-bottom: 30px; width: 50%;"
       >
-        <PieChart :title="emptyTitle" :chartData="eachItem.chartData"></PieChart>
+        <PieChart :title="eachItem.title" :chartData="eachItem.chartData"></PieChart>
         <desc-slot>
-          {{ eachItem.title }}维度结果如下:<br />
+          <span style="font-weight: bold; font-size: 20px;">{{ eachItem.title }}</span>维度结果如下:<br />
           优秀人数:{{ eachItem.chartData[0].value }} 占比({{
             eachItem.chartData[0].precent
           }})<br />
@@ -165,17 +166,17 @@
     </div>
     <template v-for="(item, index) in preEduData.modules">
       <div :key="index">
-        <h2>{{ item.title }}</h2>
+        <h2 style="margin-bottom: 20px;">{{ item.title }}</h2>
         <br />
-        <h2 class="title">{{ item.subTitle }}</h2>
+        <h2 class="title" style="margin-bottom: 30px; margin-top: 20px;">{{ item.subTitle }}</h2>
         <br />
         <div class="wrap-d">
           <div class="area-left">
-            <BoxPlotChart :title="''" :chartData="item.scoreRating.chartData" />
+            <BoxPlotChart :title="item.scoreRating.title+'得分率'" :chartData="item.scoreRating.chartData" />
           </div>
           <div class="area-right">
             <desc-slot>
-              学前教育学段{{ item.scoreRating.title }}维度结果如下: <br />
+              学前教育学段<span style="font-weight: 600; font-size: 20px;">{{ item.scoreRating.title }}</span>维度结果如下: <br />
               得分率平均为:{{ item.scoreRating.chartData[0].average }} <br />
               得分率中位数为:{{ item.scoreRating.chartData[0].median }} <br />
               得分率最高数为:{{ item.scoreRating.chartData[0].max }} <br />
@@ -183,9 +184,9 @@
             </desc-slot>
           </div>
         </div>
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin-top: 20px; margin-bottom: 50px;">
           <div class="area-left">
-            <PieChart :title="emptyTitle" :chartData="item.eachScoreDistribution.chartData"></PieChart>
+            <PieChart :title="item.scoreRating.title+'得分分布情况'" :chartData="item.eachScoreDistribution.chartData"></PieChart>
           </div>
           <div class="area-right">
             <CommonTable
@@ -193,17 +194,17 @@
             ></CommonTable>
           </div>
         </div>
-        <h2 class="title">{{ item.second }}</h2>
+        <h2 class="title"  style="margin-top: 20px; margin-bottom: 50px;">{{ item.second }}</h2>
         <div class="wrap-d">
           <div class="area-left">
               <ZoomBarChart
-                :title="emptyTitle"
+                :title="item.scoreRating.title+'总体平均分'"
                 :chartData="item.averageScore.all.chartData"
               ></ZoomBarChart>
           </div>
           <div class="area-left">
               <ZoomBarChart
-                :title="emptyTitle"
+                :title="item.scoreRating.title+'自陈问题平均分、情景问题平均分'"
                 :chartData="item.averageScore.selfAndSecene.chartData"
               ></ZoomBarChart>
           </div>
@@ -216,9 +217,11 @@
             </desc-slot>
           </div>
         </div>
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin-top: 30px; margin-bottom: 30px;">
           <div class="area-left">
-            <BoxPlotChart :title="''" :chartData="item.minMaxSocre.chartData" />
+            <BoxPlotChart 
+            :title="item.scoreRating.title+'最低分、中位数、最高分'"
+            :chartData="item.minMaxSocre.chartData" />
           </div>
           <div class="area-right">
             <desc-slot>
@@ -230,10 +233,10 @@
             </desc-slot>
           </div>
         </div>
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin-bottom: 50px;">
           <div class="area-left">
             <ZoomBarChart
-                :title="emptyTitle"
+                :title="item.scoreRating.title+'标准差'"
                 :chartData="item.standardScore.chartData"
               ></ZoomBarChart>
           </div>
