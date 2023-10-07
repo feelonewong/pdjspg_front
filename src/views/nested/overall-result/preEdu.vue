@@ -168,7 +168,7 @@
       <div :key="index">
         <h2 style="margin-bottom: 20px;">{{ item.title }}</h2>
         <br />
-        <h2 class="title" style="margin-bottom: 30px; margin-top: 20px;">{{ item.subTitle }}</h2>
+        <h2 class="title" style="margin-bottom: 50px; margin-top: 20px;">{{ item.subTitle }}</h2>
         <br />
         <div class="wrap-d">
           <div class="area-left">

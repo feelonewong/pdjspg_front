@@ -2,14 +2,14 @@
   <div style="margin-bottom: 50px">
     <h2>二、义务教育与特殊教育学段调研结果</h2>
     <br />
-    <h2 class="title">3.1全区义务教育学段整体得分率与得分分布情况</h2>
+    <h2 class="title" style="margin-top: 20px; margin-bottom: 30px;">3.1全区义务教育学段整体得分率与得分分布情况</h2>
     <br />
-    <h2 class="title">3.1.1全区义务教育学段整体得分率</h2>
+    <h2 class="title" style="margin-bottom: 70px;">3.1.1全区义务教育学段整体得分率</h2>
     <br />
-    <div class="wrap-d">
+    <div class="wrap-d" style="margin-bottom: 30px;">
       <div class="area-left">
         <PieRoseChart
-          :title="emptyTitle"
+          :title="'义务教育各学科得分率'"
           :chartData="allResult.allScoreRating.chartData"
         ></PieRoseChart>
       </div>
@@ -28,13 +28,13 @@
     </div>
     <h2 class="title">3.1.2全区义务教育学段整体得分分布情况</h2>
     <br />
-    <h2 class="title">3.1.2.1全区义务教育学段总体得分分布情况</h2>
+    <h2 class="title" style="margin-top: 20px; margin-bottom: 50px;">3.1.2.1全区义务教育学段总体得分分布情况</h2>
     <br />
     <div>
-      <div class="wrap-d">
+      <div class="wrap-d" style="margin-bottom: 50px;">
         <div class="area-left">
           <PieChart
-            :title="''"
+            :title="'义务教育各学科得分分布情况'"
             :chartData="allResult.scoreDistribution.chartData"
           ></PieChart>
         </div>
@@ -67,10 +67,12 @@
         class="area-left"
         v-for="(eachItem, eachIndex) in allResult.subjectScoreDistribution"
         :key="eachIndex"
-        style="width: 33%;"
+        style="width: 33%; margin-bottom: 40px;"
       >
-        <PieChart :title="emptyTitle" :chartData="eachItem.chartData"></PieChart>
+        <PieChart :title="eachItem.title" :chartData="eachItem.chartData"></PieChart>
         <desc-slot>
+          <span style="font-weight: 600; font-size: 20px;">{{ eachItem.title }}</span>结果如下:<br />
+
           优秀人数:{{ eachItem.chartData[0].value }} 占比({{
             eachItem.chartData[0].precent
           }})<br />
@@ -89,16 +91,16 @@
 
     <h2 class="title">3.1.2.2义务教育学科整体平均分、中位数、标准差</h2>
     <br />
-    <div class="wrap-d">
+    <div class="wrap-d" style="margin: 30px 0;">
       <div class="area-left">
         <ZoomBarChart
-          :title="emptyTitle"
+          :title="'义务教育各学科整体平均分'"
           :chartData="allResult.minMaxScore.all.chartData"
         ></ZoomBarChart>
       </div>
       <div class="area-right">
         <ZoomBarChart
-          :title="emptyTitle"
+          :title="'义务教育各学科自陈问题平均分'"
           :chartData="allResult.minMaxScore.self.chartData"
         ></ZoomBarChart>
       </div>
@@ -106,7 +108,7 @@
     <div class="wrap-d">
       <div class="area-left">
         <ZoomBarChart
-          :title="emptyTitle"
+          :title="'义务教育各学科情景问题平均分'"
           :chartData="allResult.minMaxScore.scene.chartData"
         ></ZoomBarChart>
       </div>
@@ -140,12 +142,12 @@
         </desc-slot>
       </div>
     </div>
-    <div class="wrap-d">
+    <div class="wrap-d" style="margin: 30px 0;">
           <div class="area-left">
-            <BoxPlotChart :title="''" :chartData="allResult.midMaxMinSceneAndSelf.self.chartData" />
+            <BoxPlotChart :title="'义务教育各学科自陈问题最低分、中位数、最高分'" :chartData="allResult.midMaxMinSceneAndSelf.self.chartData" />
           </div>
           <div class="area-left">
-            <BoxPlotChart :title="''" :chartData="allResult.midMaxMinSceneAndSelf.scene.chartData" />
+            <BoxPlotChart :title="'义务教育各学科情景问题最低分、中位数、最高分'" :chartData="allResult.midMaxMinSceneAndSelf.scene.chartData" />
           </div>
          
       </div>
@@ -164,17 +166,17 @@
                 分数最低的学科为: {{ allResult.midMaxMinSceneAndSelf.scene.min }}<br/>
             </desc-slot>
       </div>
-    <div class="wrap-d">
+    <div class="wrap-d" style="margin: 50px 0;">
       <div class="area-left">
         <ZoomBarChart
-          :title="emptyTitle"
+          :title="'义务教育各学科自陈问题标准差'"
           :chartData="allResult.standradScore.self.chartData"
         ></ZoomBarChart>
       </div>
       
       <div class="area-left">
         <ZoomBarChart
-          :title="emptyTitle"
+          :title="'义务教育各学科情景问题标准差'"
           :chartData="allResult.standradScore.scene.chartData"
         ></ZoomBarChart>
       </div>
@@ -198,26 +200,14 @@
     <h2 class="title">3.2.1.1 全区义务教育学段各维度得分率</h2>
     <br />
     <!-- 得分率开始 -->
-    <div class="wrap-d">
-      <div class="area-left">
-        
-        <!-- <PieRoseChart
-          :title="emptyTitle"
-          :chartData="allResult.dimensionRating.chartData"
-        ></PieRoseChart> -->
-      </div>
-      <div class="area-right">
-       
-      </div>
-    </div>
     <div class="wrap-d-wrap">
       <div
         class="area-left"
         v-for="(eachItem, eachIndex) in allResult.dimensionRating.wrap"
         :key="eachIndex"
-        style="width: 33%;"
+        style="width: 33%; margin-top: 30px; margin-bottom: 30px;"
       >
-        <PieRoseChart :title="emptyTitle" :chartData="eachItem.chartData"></PieRoseChart>
+        <PieRoseChart :title="eachItem.title" :chartData="eachItem.chartData"></PieRoseChart>
        
          <desc-slot>
           整体得分率:{{ eachItem.chartData[0].value }} <br />
@@ -235,17 +225,20 @@
     </div>
     
     <!-- 得分率结束 -->
-    <h2 class="title">3.2.1.2 全区义务教育学段各维度得分分布情况</h2>
+    <h2 class="title" style="margin-top: 30px; margin-bottom: 30px;">3.2.1.2 全区义务教育学段各维度得分分布情况</h2>
     <br />
     <!-- 得分分布 -->
-    <div class="wrap-d" style="position: relative;" v-for="(wapItem, wapIndex) in allResult.eachScoreDistribution" :key="index">
-      <div style="width: 500px; position: absolute; left: 10px;">{{ subProject[wapIndex] }}</div>
+    <div  style="display: flex; flex-wrap: wrap;" v-for="(wapItem, wapIndex) in allResult.eachScoreDistribution" :key="index">
+      <!-- <div style="width: 500px; position: absolute; left: 10px;">{{ subProject[wapIndex] }}</div> -->
       <div
         class="area-left"
         v-for="(eachItem, eachIndex) in wapItem"
         :key="eachIndex"
+        style="margin-top: 30px; margin-bottom: 30px; width: 50%;"
       >
-        <PieChart :title="emptyTitle" :chartData="eachItem.chartData"></PieChart>
+        <PieChart 
+          :title="subProject[wapIndex]" 
+          :chartData="eachItem.chartData"></PieChart>
         <desc-slot>
           {{ eachItem.title }}维度结果如下:<br />
           优秀人数:{{ eachItem.chartData[0].value }} 占比({{
@@ -269,9 +262,10 @@
         <br />
         <h2 class="title">{{ item.subTitle }}</h2>
         <br />
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin-top: 20px; margin-bottom: 20px;">
           <div class="area-left">
             <RadarChart :chartData="{
+              title: item.scoreRating.title+'各学科得分分布情况',
               config: radarChartOptions,
               data: item.scoreRating.chartData
             }"></RadarChart>
@@ -293,9 +287,9 @@
             class="area-left"
             v-for="(eachItem, eachIndex) in item.eachScoreDistribution.wap"
             :key="eachIndex"
-            style="width: 33%;"
+            style="width: 33%; margin-bottom: 40px;"
           >
-            <PieChart :title="emptyTitle" :chartData="eachItem.chartData"></PieChart>
+            <PieChart :title="eachItem.title" :chartData="eachItem.chartData"></PieChart>
             <desc-slot>
               优秀人数:{{ eachItem.chartData[0].value }} 占比({{
                 eachItem.chartData[0].precent
@@ -317,39 +311,11 @@
               :tableInfo="item.eachScoreDistribution.tableInfo"
             ></CommonTable>
         </div>
-        <h2 class="title">{{ item.second }}</h2>
-        <!-- <div class="wrap-d">
+        <h2 class="title" style="margin-top: 50px; margin-bottom: 50px;">{{ item.second }}</h2>
+        <div class="wrap-d" style="margin-top: 30px; margin-bottom: 20px;">
           <div class="area-left">
               <ZoomBarChart
-                :title="emptyTitle"
-                :chartData="item.averageScore.all.chartData"
-              ></ZoomBarChart>
-          </div>
-          <div class="area-left">
-              <ZoomBarChart
-                :title="emptyTitle"
-                :chartData="item.averageScore.self.chartData"
-              ></ZoomBarChart>
-          </div>
-          <div class="area-left">
-              <ZoomBarChart
-                :title="emptyTitle"
-                :chartData="item.averageScore.scene.chartData"
-              ></ZoomBarChart>
-          </div>
-          <div class="area-left">
-            <desc-slot>
-              义务教育学段{{ item.averageScore.title }}维度：<br />
-              总体平均分为:{{ item.averageScore.all.chartData[0].value }} <br />
-              自我问题平均分为:{{ item.averageScore.selfAndSecene.chartData[0].value }} <br />
-              情景问题平均分为:{{ item.averageScore.selfAndSecene.chartData[1].value }} <br />
-            </desc-slot>
-          </div>
-        </div> -->
-        <div class="wrap-d">
-          <div class="area-left">
-              <ZoomBarChart
-                :title="emptyTitle"
+                :title="item.scoreRating.title+'各维度整体平均分'"
                 :chartData="item.averageScore.all.chartData"
               ></ZoomBarChart>
           </div>
@@ -361,10 +327,10 @@
             </desc-slot>
           </div>
         </div>
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin-top: 50px; margin-bottom: 50px;">
           <div class="area-left">
               <ZoomBarChart
-                :title="emptyTitle"
+                :title="item.scoreRating.title+'各维度自陈问题平均分'"
                 :chartData="item.averageScore.self.chartData"
               ></ZoomBarChart>
           </div>
@@ -376,10 +342,10 @@
             </desc-slot>
           </div>
         </div>
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin-top: 30px; margin-bottom: 30px;">
           <div class="area-left">
               <ZoomBarChart
-                :title="emptyTitle"
+                :title="item.scoreRating.title+'情景问题平均分'"
                 :chartData="item.averageScore.scene.chartData"
               ></ZoomBarChart>
           </div>
@@ -394,7 +360,9 @@
         <!-- 最低分 最高分 中位数 -->
         <div class="wrap-d">
           <div class="area-left">
-            <BoxPlotChart :title="''" :chartData="item.minMaxSocre.self.chartData" />
+            <BoxPlotChart 
+            :title="item.scoreRating.title+'自陈问题最低分、 中位数、最高分'"
+            :chartData="item.minMaxSocre.self.chartData" />
           </div>
           <div class="area-right">
             <desc-slot>
@@ -409,7 +377,9 @@
         </div>
      <div class="wrap-d">
           <div class="area-left">
-            <BoxPlotChart :title="''" :chartData="item.minMaxSocre.scene.chartData" />
+            <BoxPlotChart
+            :title="item.scoreRating.title+'情景问题最低分、 中位数、最高分'"
+            :chartData="item.minMaxSocre.scene.chartData" />
           </div>
           <div class="area-right">
             <desc-slot>
@@ -424,10 +394,10 @@
         </div>
      
         <!-- 标准差 -->
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin: 40px 0;">
           <div class="area-left">
             <ZoomBarChart
-                :title="emptyTitle"
+                :title="item.scoreRating.title+'维度自陈问题标准差'"
                 :chartData="item.standardScore.self.chartData"
               ></ZoomBarChart>
           </div>
@@ -439,10 +409,10 @@
             </desc-slot>
           </div>
         </div>
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin: 50px 0;">
           <div class="area-left">
             <ZoomBarChart
-                :title="emptyTitle"
+                :title="item.scoreRating.title+'维度情景问题标准差'"
                 :chartData="item.standardScore.scene.chartData"
               ></ZoomBarChart>
           </div>
