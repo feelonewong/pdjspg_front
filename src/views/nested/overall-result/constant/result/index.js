@@ -279,9 +279,9 @@ export const ResponsResult = {
     },
     "modules": [
         {
-            "title": "3.2.2 全区义务教育学段职业态度",
-            "subTitle": "3.2.2.1 全区义务教育学段职业态度得分率与得分分布情况",
-            "second": "3.2.2.2 全区义务教育学段职业态度平均分、中位数、标准差",
+            "title": "1.2.2 全区学段职业态度",
+            "subTitle": "1.2.2.1 全区学段职业态度得分率与得分分布情况",
+            "second": "1.2.2.2 全区学段职业态度平均分、中位数、标准差",
             "scoreRating": {
                 "title": "职业态度",
                 "chartData": data.modules[0].scoreRating.chartData,
@@ -292,6 +292,12 @@ export const ResponsResult = {
                     "data": data.modules[0].eachScoreDistribution.tableData,
                 },
                 "wap": {
+                    "all": {
+                        chartData: data.modules[0].eachScoreDistribution.allChartData
+                    },
+                    "child": {
+                        chartData: data.modules[0].eachScoreDistribution.childChartData
+                    },
                     "chn": {
                         chartData: data.modules[0].eachScoreDistribution.chnChartData
                     },
@@ -309,36 +315,54 @@ export const ResponsResult = {
                     },
                     "art": {
                         chartData: data.modules[0].eachScoreDistribution.artChartData
+                    },
+                    "highChn": {
+                        chartData: data.modules[0].eachScoreDistribution.highChnChartData
+                    },
+                    "highMath": {
+                        chartData: data.modules[0].eachScoreDistribution.highMathChartData
+                    },
+                    "highEng": {
+                        chartData: data.modules[0].eachScoreDistribution.highEngChartData
+                    },
+                    "highSoc": {
+                        chartData: data.modules[0].eachScoreDistribution.highSocChartData
+                    },
+                    "highSci": {
+                        chartData: data.modules[0].eachScoreDistribution.highSciChartData
+                    },
+                    "highArt": {
+                        chartData: data.modules[0].eachScoreDistribution.highArtChartData
                     }
                 }
             },
             "averageScore": {
                 "title": "职业态度",
                 "all": {
-                    "max": data.modules[0].averageScore.all.max,
-                    "min": data.modules[0].averageScore.all.min,
+                    "max": findMaxAndMin(data.modules[0].averageScore.all.chartData).max.name,
+                    "min": findMaxAndMin(data.modules[0].averageScore.all.chartData).min.name,
                     "chartData": data.modules[0].averageScore.all.chartData,
                 },
                 "self": {
-                    "max": data.modules[0].averageScore.self.max,
-                    "min": data.modules[0].averageScore.self.min,
+                    "max": findMaxAndMin(data.modules[0].averageScore.all.chartData).max.name,
+                    "min": findMaxAndMin(data.modules[0].averageScore.all.chartData).min.name,
                     "chartData": data.modules[0].averageScore.self.chartData,
                 },
                 "scene": {
-                    "max": data.modules[0].averageScore.scene.max,
-                    "min": data.modules[0].averageScore.scene.min,
+                    "max": findMaxAndMin(data.modules[0].averageScore.all.chartData).max.name,
+                    "min": findMaxAndMin(data.modules[0].averageScore.all.chartData).min.name,
                     "chartData": data.modules[0].averageScore.scene.chartData,
                 },
             },
             "standardScore": {
                 "self": {
-                    "max": data.modules[0].standardScore.self.max,
-                    "min": data.modules[0].standardScore.self.min,
+                    "max": findMaxAndMin(data.modules[0].standardScore.self.chartData).max.name,
+                    "min": findMaxAndMin(data.modules[0].standardScore.self.chartData).min.name,
                     "chartData": data.modules[0].standardScore.self.chartData,
                 },
                 "scene": {
-                    "max": data.modules[0].standardScore.scene.max,
-                    "min": data.modules[0].standardScore.scene.min,
+                    "max": findMaxAndMin(data.modules[0].standardScore.self.chartData).max.name,
+                    "min": findMaxAndMin(data.modules[0].standardScore.self.chartData).min.name,
                     "chartData": data.modules[0].standardScore.scene.chartData,
                 }
             },
@@ -360,9 +384,9 @@ export const ResponsResult = {
             }
         },
         {
-            "title": "3.2.3 全区义务教育学段教学实践",
-            "subTitle": "3.2.3.1 全区义务教育学段教学实践得分率与得分分布情况",
-            "second": "3.2.2.3 全区义务教育学段教学实践平均分、中位数、标准差",
+            "title": "1.2.3 全区学段教学实践",
+            "subTitle": "1.2.3.1 全区学段教学实践得分率与得分分布情况",
+            "second": "1.2.2.3 全区学段教学实践平均分、中位数、标准差",
             "scoreRating": {
                 "title": "教学实践",
                 "chartData": data.modules[1].scoreRating.chartData,
@@ -372,35 +396,78 @@ export const ResponsResult = {
                     "config": moduleTableConfig,
                     "data": data.modules[1].eachScoreDistribution.tableData,
                 },
-                "chartData": data.modules[1].eachScoreDistribution.chartData,
+                "wap": {
+                    "all": {
+                        chartData: data.modules[1].eachScoreDistribution.allChartData
+                    },
+                    "child": {
+                        chartData: data.modules[1].eachScoreDistribution.childChartData
+                    },
+                    "chn": {
+                        chartData: data.modules[1].eachScoreDistribution.chnChartData
+                    },
+                    "math": {
+                        chartData: data.modules[1].eachScoreDistribution.mathChartData
+                    },
+                    "eng": {
+                        chartData: data.modules[1].eachScoreDistribution.engChartData
+                    },
+                    "soc": {
+                        chartData: data.modules[1].eachScoreDistribution.socChartData
+                    },
+                    "sci": {
+                        chartData: data.modules[1].eachScoreDistribution.sciChartData
+                    },
+                    "art": {
+                        chartData: data.modules[1].eachScoreDistribution.artChartData
+                    },
+                    "highChn": {
+                        chartData: data.modules[1].eachScoreDistribution.highChnChartData
+                    },
+                    "highMath": {
+                        chartData: data.modules[1].eachScoreDistribution.highMathChartData
+                    },
+                    "highEng": {
+                        chartData: data.modules[1].eachScoreDistribution.highEngChartData
+                    },
+                    "highSoc": {
+                        chartData: data.modules[1].eachScoreDistribution.highSocChartData
+                    },
+                    "highSci": {
+                        chartData: data.modules[1].eachScoreDistribution.highSciChartData
+                    },
+                    "highArt": {
+                        chartData: data.modules[1].eachScoreDistribution.highArtChartData
+                    }
+                }
             },
             "averageScore": {
                     "title": "教学实践",
                     "all": {
-                        "max": data.modules[1].averageScore.all.max,
-                        "min": data.modules[1].averageScore.all.min,
+                        "max": findMaxAndMin(data.modules[1].averageScore.all.chartData).max.name,
+                        "min": findMaxAndMin(data.modules[1].averageScore.all.chartData).min.name,
                         "chartData": data.modules[1].averageScore.all.chartData,
                     },
                     "self": {
-                        "max": data.modules[1].averageScore.self.max,
-                        "min": data.modules[1].averageScore.self.min,
+                        "max": findMaxAndMin(data.modules[1].averageScore.all.chartData).max.name,
+                        "min": findMaxAndMin(data.modules[1].averageScore.all.chartData).min.name,
                         "chartData": data.modules[1].averageScore.self.chartData,
                     },
                     "scene": {
-                        "max": data.modules[1].averageScore.scene.max,
-                        "min": data.modules[1].averageScore.scene.min,
+                        "max": findMaxAndMin(data.modules[1].averageScore.all.chartData).max.name,
+                        "min": findMaxAndMin(data.modules[1].averageScore.all.chartData).min.name,
                         "chartData": data.modules[1].averageScore.scene.chartData,
                 },
             },
             "standardScore": {
                 "self": {
-                    "max": data.modules[1].standardScore.self.max,
-                    "min": data.modules[1].standardScore.self.min,
+                    "max": findMaxAndMin(data.modules[1].standardScore.self.chartData).max.name,
+                    "min": findMaxAndMin(data.modules[1].standardScore.self.chartData).min.name,
                     "chartData": data.modules[1].standardScore.self.chartData,
                 },
                 "scene": {
-                    "max": data.modules[1].standardScore.scene.max,
-                    "min": data.modules[1].standardScore.scene.min,
+                    "max": findMaxAndMin(data.modules[1].standardScore.self.chartData).max.name,
+                    "min": findMaxAndMin(data.modules[1].standardScore.self.chartData).min.name,
                     "chartData": data.modules[1].standardScore.scene.chartData,
                 }
             },
@@ -422,9 +489,9 @@ export const ResponsResult = {
             }
         },
         {
-            "title": "3.2.4 全区义务教育学段综合育人",
-            "subTitle": "3.2.4.1 全区义务教育学段综合育人得分率与得分分布情况",
-            "second": "3.2.2.4 全区义务教育学段综合育人平均分、中位数、标准差",
+            "title": "1.2.4 全区学段综合育人",
+            "subTitle": "1.2.4.1 全区学段综合育人得分率与得分分布情况",
+            "second": "1.2.2.4 全区学段综合育人平均分、中位数、标准差",
             "scoreRating": {
                 "title": "综合育人",
                 "chartData": data.modules[2].scoreRating.chartData,
@@ -432,37 +499,79 @@ export const ResponsResult = {
             "eachScoreDistribution": {
                 "tableInfo":{
                     "config": moduleTableConfig,
-                    "data": data.modules[2].eachScoreDistribution.tableData,
                 },
-                "chartData": data.modules[2].eachScoreDistribution.chartData,
+                "wap": {
+                    "all": {
+                        chartData: data.modules[2].eachScoreDistribution.allChartData
+                    },
+                    "child": {
+                        chartData: data.modules[2].eachScoreDistribution.childChartData
+                    },
+                    "chn": {
+                        chartData: data.modules[2].eachScoreDistribution.chnChartData
+                    },
+                    "math": {
+                        chartData: data.modules[2].eachScoreDistribution.mathChartData
+                    },
+                    "eng": {
+                        chartData: data.modules[2].eachScoreDistribution.engChartData
+                    },
+                    "soc": {
+                        chartData: data.modules[2].eachScoreDistribution.socChartData
+                    },
+                    "sci": {
+                        chartData: data.modules[2].eachScoreDistribution.sciChartData
+                    },
+                    "art": {
+                        chartData: data.modules[2].eachScoreDistribution.artChartData
+                    },
+                    "highChn": {
+                        chartData: data.modules[2].eachScoreDistribution.highChnChartData
+                    },
+                    "highMath": {
+                        chartData: data.modules[2].eachScoreDistribution.highMathChartData
+                    },
+                    "highEng": {
+                        chartData: data.modules[2].eachScoreDistribution.highEngChartData
+                    },
+                    "highSoc": {
+                        chartData: data.modules[2].eachScoreDistribution.highSocChartData
+                    },
+                    "highSci": {
+                        chartData: data.modules[2].eachScoreDistribution.highSciChartData
+                    },
+                    "highArt": {
+                        chartData: data.modules[2].eachScoreDistribution.highArtChartData
+                    }
+                }
             },
             "averageScore": {
                 "title": "综合育人",
                     "all": {
-                        "max": data.modules[2].averageScore.all.max,
-                        "min": data.modules[2].averageScore.all.min,
+                        "max": findMaxAndMin(data.modules[2].averageScore.all.chartData).max.name,
+                        "min": findMaxAndMin(data.modules[2].averageScore.all.chartData).min.name,
                         "chartData": data.modules[2].averageScore.all.chartData,
                     },
                     "self": {
-                        "max": data.modules[2].averageScore.self.max,
-                        "min": data.modules[2].averageScore.self.min,
+                        "max": findMaxAndMin(data.modules[2].averageScore.all.chartData).max.name,
+                        "min": findMaxAndMin(data.modules[2].averageScore.all.chartData).min.name,
                         "chartData": data.modules[2].averageScore.self.chartData,
                     },
                     "scene": {
-                        "max": data.modules[2].averageScore.scene.max,
-                        "min": data.modules[2].averageScore.scene.min,
+                        "max": findMaxAndMin(data.modules[2].averageScore.all.chartData).max.name,
+                        "min": findMaxAndMin(data.modules[2].averageScore.all.chartData).min.name,
                         "chartData": data.modules[2].averageScore.scene.chartData,
                 },
             },
             "standardScore": {
                 "self": {
-                    "max": data.modules[2].standardScore.self.max,
-                    "min": data.modules[2].standardScore.self.min,
+                    "max": findMaxAndMin(data.modules[2].standardScore.self.chartData).max.name,
+                    "min": findMaxAndMin(data.modules[2].standardScore.self.chartData).min.name,
                     "chartData": data.modules[2].standardScore.self.chartData,
                 },
                 "scene": {
-                    "max": data.modules[2].standardScore.scene.max,
-                    "min": data.modules[2].standardScore.scene.min,
+                    "max": findMaxAndMin(data.modules[2].standardScore.self.chartData).max.name,
+                    "min": findMaxAndMin(data.modules[2].standardScore.self.chartData).min.name,
                     "chartData": data.modules[2].standardScore.scene.chartData,
                 }
             },
@@ -484,9 +593,9 @@ export const ResponsResult = {
             }
         },
         {
-            "title": "3.2.5 全区义务教育学段自主发展",
-            "subTitle": "3.2.5.1 全区义务教育学段自主发展得分率与得分分布情况",
-            "second": "3.2.5.2 全区义务教育学段自主发展平均分、中位数、标准差",
+            "title": "1.2.5 全区学段自主发展",
+            "subTitle": "1.2.5.1 全区学段自主发展得分率与得分分布情况",
+            "second": "1.2.5.2 全区学段自主发展平均分、中位数、标准差",
             "scoreRating": {
                 "title": "自主发展",
                 "chartData": data.modules[3].scoreRating.chartData,
@@ -496,35 +605,78 @@ export const ResponsResult = {
                     "config": moduleTableConfig,
                     "data": data.modules[3].eachScoreDistribution.tableData,
                 },
-                "chartData": data.modules[3].eachScoreDistribution.chartData,
+                "wap": {
+                    "all": {
+                        chartData: data.modules[3].eachScoreDistribution.allChartData
+                    },
+                    "child": {
+                        chartData: data.modules[3].eachScoreDistribution.childChartData
+                    },
+                    "chn": {
+                        chartData: data.modules[3].eachScoreDistribution.chnChartData
+                    },
+                    "math": {
+                        chartData: data.modules[3].eachScoreDistribution.mathChartData
+                    },
+                    "eng": {
+                        chartData: data.modules[3].eachScoreDistribution.engChartData
+                    },
+                    "soc": {
+                        chartData: data.modules[3].eachScoreDistribution.socChartData
+                    },
+                    "sci": {
+                        chartData: data.modules[3].eachScoreDistribution.sciChartData
+                    },
+                    "art": {
+                        chartData: data.modules[3].eachScoreDistribution.artChartData
+                    },
+                    "highChn": {
+                        chartData: data.modules[3].eachScoreDistribution.highChnChartData
+                    },
+                    "highMath": {
+                        chartData: data.modules[3].eachScoreDistribution.highMathChartData
+                    },
+                    "highEng": {
+                        chartData: data.modules[3].eachScoreDistribution.highEngChartData
+                    },
+                    "highSoc": {
+                        chartData: data.modules[3].eachScoreDistribution.highSocChartData
+                    },
+                    "highSci": {
+                        chartData: data.modules[3].eachScoreDistribution.highSciChartData
+                    },
+                    "highArt": {
+                        chartData: data.modules[3].eachScoreDistribution.highArtChartData
+                    }
+                }
             },
             "averageScore": {
                 "title": "自主发展",
                     "all": {
-                        "max": data.modules[3].averageScore.all.max,
-                        "min": data.modules[3].averageScore.all.min,
+                        "max": findMaxAndMin(data.modules[3].averageScore.all.chartData).max.name,
+                        "min": findMaxAndMin(data.modules[3].averageScore.all.chartData).min.name,
                         "chartData": data.modules[3].averageScore.all.chartData,
                     },
                     "self": {
-                        "max": data.modules[3].averageScore.self.max,
-                        "min": data.modules[3].averageScore.self.min,
+                        "max": findMaxAndMin(data.modules[3].averageScore.all.chartData).max.name,
+                        "min": findMaxAndMin(data.modules[3].averageScore.all.chartData).min.name,
                         "chartData": data.modules[3].averageScore.self.chartData,
                     },
                     "scene": {
-                        "max": data.modules[3].averageScore.scene.max,
-                        "min": data.modules[3].averageScore.scene.min,
+                        "max": findMaxAndMin(data.modules[3].averageScore.all.chartData).max.name,
+                        "min": findMaxAndMin(data.modules[3].averageScore.all.chartData).min.name,
                         "chartData": data.modules[3].averageScore.scene.chartData,
                 },
             },
             "standardScore": {
                 "self": {
-                    "max": data.modules[3].standardScore.self.max,
-                    "min": data.modules[3].standardScore.self.min,
+                    "max": findMaxAndMin(data.modules[3].standardScore.self.chartData).max.name,
+                    "min": findMaxAndMin(data.modules[3].standardScore.self.chartData).min.name,
                     "chartData": data.modules[3].standardScore.self.chartData,
                 },
                 "scene": {
-                    "max": data.modules[3].standardScore.scene.max,
-                    "min": data.modules[3].standardScore.scene.min,
+                    "max": findMaxAndMin(data.modules[3].standardScore.self.chartData).max.name,
+                    "min": findMaxAndMin(data.modules[3].standardScore.self.chartData).min.name,
                     "chartData": data.modules[3].standardScore.scene.chartData,
                 }
             },

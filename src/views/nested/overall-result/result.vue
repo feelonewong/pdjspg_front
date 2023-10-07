@@ -321,13 +321,24 @@
           </div>
           <div class="area-right">
             <desc-slot>
-              义务教育学段{{ item.scoreRating.title }}维度结果如下: <br />
-              义务教育语文科得分率为:{{ item.scoreRating.chartData[0] }} <br />
-              义务教育数学科得分率为:{{ item.scoreRating.chartData[1] }} <br />
-              义务教育英语科得分率为:{{ item.scoreRating.chartData[2] }} <br />
-              义务教育社会科得分率为:{{ item.scoreRating.chartData[3] }} <br />
-              义务教育理工科得分率为:{{ item.scoreRating.chartData[4] }} <br />
-              义务教育艺体科得分率为:{{ item.scoreRating.chartData[5] }} <br />
+              全区{{ item.scoreRating.title }}维度结果如下: <br />
+              全区教育学科得分率为:{{ item.scoreRating.chartData[0] }} <br />
+
+              学前教育科得分率为:{{ item.scoreRating.chartData[1] }} <br />
+              义务教育语文科得分率为:{{ item.scoreRating.chartData[2] }} <br />
+              义务教育数学科得分率为:{{ item.scoreRating.chartData[3] }} <br />
+              义务教育英语科得分率为:{{ item.scoreRating.chartData[4] }} <br />
+              义务教育社会科得分率为:{{ item.scoreRating.chartData[5] }} <br />
+              义务教育理工科得分率为:{{ item.scoreRating.chartData[6] }} <br />
+              义务教育艺体科得分率为:{{ item.scoreRating.chartData[7] }} <br />
+              
+              高中教育学科语文科得分率为:{{ item.scoreRating.chartData[7] }} <br />
+              高中教育学科数学科得分率为:{{ item.scoreRating.chartData[8] }} <br />
+              高中教育学科英语科得分率为:{{ item.scoreRating.chartData[9] }} <br />
+              高中教育学科社会科得分率为:{{ item.scoreRating.chartData[10] }} <br />
+              高中教育学科理工科得分率为:{{ item.scoreRating.chartData[11] }} <br />
+              高中教育学科艺体科得分率为:{{ item.scoreRating.chartData[12] }} <br />
+              高中教育学科艺体科得分率为:{{ item.scoreRating.chartData[13] }} <br />
             </desc-slot>
           </div>
         </div>
@@ -344,17 +355,17 @@
             ></PieChart>
             <desc-slot>
               优秀人数:{{ eachItem.chartData[0].value }} 占比({{
-                eachItem.chartData[0].precent
-              }})<br />
+                eachItem.chartData[0].proportion
+              }}%)<br />
               良好人数:{{ eachItem.chartData[1].value }} 占比({{
-                eachItem.chartData[1].precent
-              }})<br />
+                eachItem.chartData[1].proportion
+              }}%)<br />
               及格人数:{{ eachItem.chartData[2].value }} 占比({{
-                eachItem.chartData[2].precent
-              }})<br />
+                eachItem.chartData[2].proportion
+              }}%)<br />
               不及格人数:{{ eachItem.chartData[3].value }} 占比({{
-                eachItem.chartData[3].precent
-              }})<br />
+                eachItem.chartData[3].proportion
+              }}%)<br />
             </desc-slot>
           </div>
         </div>
@@ -373,7 +384,7 @@
           </div>
           <div class="area-left">
             <desc-slot>
-              义务教育学段{{ item.averageScore.title }}维度：<br />
+              全区教育学段{{ item.averageScore.title }}维度：<br />
               平均分最低的学科为:{{ item.averageScore.all.min }} <br />
               平均分最高的学科为:{{ item.averageScore.all.max }} <br />
             </desc-slot>
@@ -388,7 +399,7 @@
           </div>
           <div class="area-left">
             <desc-slot>
-              义务教育学段{{ item.averageScore.title }}维度：<br />
+              全区教育学段{{ item.averageScore.title }}维度：<br />
               自陈问题平均分最低的学科为:{{ item.averageScore.self.min }} <br />
               自陈问题平均分最高的学科为:{{ item.averageScore.self.max }} <br />
             </desc-slot>
@@ -403,7 +414,7 @@
           </div>
           <div class="area-left">
             <desc-slot>
-              义务教育学段{{ item.averageScore.title }}维度：<br />
+              全区教育学段{{ item.averageScore.title }}维度：<br />
               情景问题平均分最低的学科为:{{ item.averageScore.scene.min }}
               <br />
               情景问题平均分最高的学科为:{{ item.averageScore.scene.max }}
@@ -421,7 +432,7 @@
           </div>
           <div class="area-right">
             <desc-slot>
-              义务教育学段{{ item.scoreRating.title }}维度结果如下(自陈问题):
+              全区学段{{ item.scoreRating.title }}维度结果如下(自陈问题):
               <br />
               中位数最高的学科为:{{ item.minMaxSocre.self.midMax }} <br />
               中位数最低的学科为:{{ item.minMaxSocre.self.midMin }} <br />
@@ -439,7 +450,7 @@
           </div>
           <div class="area-right">
             <desc-slot>
-              义务教育学段{{ item.scoreRating.title }}维度结果如下(情景问题):
+              全区学段{{ item.scoreRating.title }}维度结果如下(情景问题):
               <br />
               中位数最高的学科为:{{ item.minMaxSocre.scene.midMax }} <br />
               中位数最低的学科为:{{ item.minMaxSocre.scene.midMin }} <br />
@@ -459,7 +470,7 @@
           </div>
           <div class="area-right">
             <desc-slot>
-              义务教育学段{{ item.scoreRating.title }}维度标准差结果如下: <br />
+              全区教育学段{{ item.scoreRating.title }}维度标准差结果如下: <br />
               自陈问题标准差最大的学科为:{{ item.standardScore.self.max }}
               <br />
               自陈问题标准差最大的学科为:{{ item.standardScore.self.min }}
@@ -476,7 +487,7 @@
           </div>
           <div class="area-right">
             <desc-slot>
-              义务教育学段{{ item.scoreRating.title }}维度标准差结果如下: <br />
+              全区教育学段{{ item.scoreRating.title }}维度标准差结果如下: <br />
               情景问题标准差最大的学科为:{{ item.standardScore.scene.max }}
               <br />
               情景问题标准差最大的学科为:{{ item.standardScore.scene.min }}
@@ -528,12 +539,20 @@ export default {
         art: "义务教育艺体学科",
       },
       radarChartOptions: [
+        {name: "全区总体得分率", max: 100},
+        {name: "学前教育学科教师", max: 100},
         { name: "义务教育语文科教师", max: 100 },
         { name: "义务教育数学科教师", max: 100 },
         { name: "义务教育英语科教师", max: 100 },
         { name: "义务教育社会科教师", max: 100 },
         { name: "义务教育理工科教师", max: 100 },
         { name: "义务教育艺体科教师", max: 100 },
+        { name: "高中教育语文科教师", max: 100 },
+        { name: "高中教育数学科教师", max: 100 },
+        { name: "高中教育英语科教师", max: 100 },
+        { name: "高中教育社会科教师", max: 100 },
+        { name: "高中教育理工科教师", max: 100 },
+        { name: "高中教育艺体科教师", max: 100 },
       ],
     };
   },

@@ -1,1301 +1,3012 @@
 // 义务教育JSON数据
 export const data = {
-    "allResult": {
-        "allScoreRating": { //***整体得分率(分数/对应的总分)
-            "chartData": [
-                {"name": "义务教务语文学科", "value":"20"},
-                {"name": "义务教务数学学科", "value":"30"},
-                {"name": "义务教务英语学科", "value":"40"},
-                {"name": "义务教务社会学科", "value":"50"},
-                {"name": "义务教务理工学科", "value":"20"},
-                {"name": "义务教务艺体学科", "value":"20"},
+    "allResult":{
+        "allScoreRating":{
+            "chartData":[
+                {
+                    "name":"义务教育艺体科教师",
+                    "value":"91.60"
+                },
+                {
+                    "name":"义务教育语文教师",
+                    "value":"90.30"
+                },
+                {
+                    "name":"义务教育英语教师",
+                    "value":"91.20"
+                },
+                {
+                    "name":"义务教育理工科教师",
+                    "value":"89.08"
+                },
+                {
+                    "name":"义务教育数学教师",
+                    "value":"89.92"
+                },
+                {
+                    "name":"义务教育社会科教师",
+                    "value":"90.10"
+                }
             ]
         },
-        "scoreDistribution": { // 义务教育学段所有老师总体分布情况
-            "chartData": [
-                { "value": 20.33, "name": "优秀", precent: "40%" },
-                { "value": 19.25, "name": "良好", precent: "38%" },
-                { "value": 30.33, "name": "及格", precent: "32%" },
-                { "value": 30.22, "name": "不及格", precent: "30%" },
+        "scoreDistribution":{
+            "chartData":[
+                {
+                    "name":"优秀",
+                    "value":"11",
+                    "precent":"0.73"
+                },
+                {
+                    "name":"良好",
+                    "value":"154",
+                    "precent":"10.19"
+                },
+                {
+                    "name":"合格",
+                    "value":"792",
+                    "precent":"52.38"
+                },
+                {
+                    "name":"不合格",
+                    "value":"555",
+                    "precent":"36.71"
+                }
             ]
         },
-        "subjectScoreDistribution":{  // 6个学科 各个学科的老师占比
-            "chnChartData": [
-                {name: '优秀', value: '200', precent: '20%'},
-                {name: '良好', value: '120', precent: '20%'},
-                {name: '及格', value: '30', precent: '20%'},
-                {name: '不及格', value: '400', precent: '20%'}
+        "subjectScoreDistribution":{
+            "chnChartData":[
+                {
+                    "name":"优秀",
+                    "value":"1",
+                    "precent":"0.23"
+                },
+                {
+                    "name":"良好",
+                    "value":"41",
+                    "precent":"9.45"
+                },
+                {
+                    "name":"合格",
+                    "value":"227",
+                    "precent":"52.30"
+                },
+                {
+                    "name":"不合格",
+                    "value":"165",
+                    "precent":"38.02"
+                }
             ],
-            "mathChartData": [
-                {name: '优秀', value: '200', precent: '20%'},
-                {name: '良好', value: '120', precent: '20%'},
-                {name: '及格', value: '30', precent: '20%'},
-                {name: '不及格', value: '400', precent: '20%'}
+            "mathChartData":[
+                {
+                    "name":"优秀",
+                    "value":"0",
+                    "precent":"0"
+                },
+                {
+                    "name":"良好",
+                    "value":"22",
+                    "precent":"7.38"
+                },
+                {
+                    "name":"合格",
+                    "value":"153",
+                    "precent":"51.34"
+                },
+                {
+                    "name":"不合格",
+                    "value":"123",
+                    "precent":"41.28"
+                }
             ],
-            "engChartData": [
-                {name: '优秀', value: '200', precent: '20%'},
-                {name: '良好', value: '120', precent: '20%'},
-                {name: '及格', value: '30', precent: '20%'},
-                {name: '不及格', value: '400', precent: '20%'}
+            "engChartData":[
+                {
+                    "name":"优秀",
+                    "value":"2",
+                    "precent":"0.95"
+                },
+                {
+                    "name":"良好",
+                    "value":"23",
+                    "precent":"10.95"
+                },
+                {
+                    "name":"合格",
+                    "value":"123",
+                    "precent":"58.57"
+                },
+                {
+                    "name":"不合格",
+                    "value":"62",
+                    "precent":"29.52"
+                }
             ],
-            "socChartData": [
-                {name: '优秀', value: '200', precent: '20%'},
-                {name: '良好', value: '120', precent: '20%'},
-                {name: '及格', value: '30', precent: '20%'},
-                {name: '不及格', value: '400', precent: '20%'}
+            "socChartData":[
+                {
+                    "name":"优秀",
+                    "value":"3",
+                    "precent":"1.88"
+                },
+                {
+                    "name":"良好",
+                    "value":"14",
+                    "precent":"8.75"
+                },
+                {
+                    "name":"合格",
+                    "value":"71",
+                    "precent":"44.38"
+                },
+                {
+                    "name":"不合格",
+                    "value":"72",
+                    "precent":"45.00"
+                }
             ],
-            "sciChartData": [
-                {name: '优秀', value: '200', precent: '20%'},
-                {name: '良好', value: '120', precent: '20%'},
-                {name: '及格', value: '30', precent: '20%'},
-                {name: '不及格', value: '400', precent: '20%'}
+            "sciChartData":[
+                {
+                    "name":"优秀",
+                    "value":"0",
+                    "precent":"0"
+                },
+                {
+                    "name":"良好",
+                    "value":"5",
+                    "precent":"4.07"
+                },
+                {
+                    "name":"合格",
+                    "value":"57",
+                    "precent":"46.34"
+                },
+                {
+                    "name":"不合格",
+                    "value":"61",
+                    "precent":"49.59"
+                }
             ],
-            "artChartData": [
-                {name: '优秀', value: '200', precent: '20%'},
-                {name: '良好', value: '120', precent: '20%'},
-                {name: '及格', value: '30', precent: '20%'},
-                {name: '不及格', value: '400', precent: '20%'}
-            ],
-        },
-        "minMaxScore": { //***义务教育学段平均分、自陈问题、情景问题平均分
-            "all": {
-                // 如有多个学科分数相同请用,隔开
-                "max": "义务教育语文学科",
-                "min": "义务教育数学学科,义务教育英语学科",
-                "chartData": [
-                    {"name": "义务教务语文学科", "value":"20"},
-                    {"name": "义务教务数学学科", "value":"30"},
-                    {"name": "义务教务英语学科", "value":"40"},
-                    {"name": "义务教务社会学科", "value":"50"},
-                    {"name": "义务教务理工学科", "value":"20"},
-                    {"name": "义务教务艺体学科", "value":"20"}
-                ]
-            },
-            "self": {
-                "max": "义务教育语文学科,义务教育艺体学科",
-                "min": "义务教育数学学科",
-                "chartData": [
-                    {"name": "义务教务语文学科", "value":"20"},
-                    {"name": "义务教务数学学科", "value":"30"},
-                    {"name": "义务教务英语学科", "value":"40"},
-                    {"name": "义务教务社会学科", "value":"50"},
-                    {"name": "义务教务理工学科", "value":"20"},
-                    {"name": "义务教务艺体学科", "value":"20"}
-                ]
-            },
-            "scene": {
-                "max": "义务教育语文学科",
-                "min": "义务教育数学学科",
-                "chartData": [
-                    {"name": "义务教务语文学科", "value":"20"},
-                    {"name": "义务教务数学学科", "value":"30"},
-                    {"name": "义务教务英语学科", "value":"40"},
-                    {"name": "义务教务社会学科", "value":"50"},
-                    {"name": "义务教务理工学科", "value":"20"},
-                    {"name": "义务教务艺体学科", "value":"20"}
-                ]
-            },
-        },
-        "standradScore": { // 义务教育、各学科、标准差、最大值的学科、最小值的学科
-            "self":{ // 义务教育、自陈问题标准差
-                "max": "义务教育语文学科,义务教育数学学科",
-                "min": "义务教育英语学科",
-                "chartData": [
-                    {"name":"义务教育语文学科", "value": "100"},
-                    {"name":"义务教育数学学科", "value": "20"},
-                    {"name":"义务教育英语学科", "value": "32"},
-                    {"name":"义务教育社会学科", "value": "40"},
-                    {"name":"义务教育理工学科", "value": "10"},
-                    {"name":"义务教育艺体学科", "value": "40"},
-                ]
-            },
-            "scene":{ // 义务教育、情景问题标准差、最大值的学科、最小值的学科
-                "max": "义务教育语文学科,义务教育数学学科",
-                "min": "义务教育英语学科",
-                "chartData": [
-                    {"name":"义务教育语文学科", "value": "60"},
-                    {"name":"义务教育数学学科", "value": "23"},
-                    {"name":"义务教育英语学科", "value": "44"},
-                    {"name":"义务教育社会学科", "value": "30"},
-                    {"name":"义务教育理工学科", "value": "40"},
-                    {"name":"义务教育艺体学科", "value": "10"},
-                ]
-            },
-        },
-        "midMaxMinSceneAndSelf":{ // 义务教育、各学科、中位数、最大数、最小数
-            // midMax: 中位数最大的学科、midMin中位数最小的学科 min: 最小分学科 max: 最大分学科
-            "self": {
-                "midMax": "义务教育语文,义务教育数学",
-                "midMin": "义务教育英语,义务教育艺体",
-                "min": "义务教育英语",
-                "max": "义务教育艺体",
-                "chartData": [
-                    { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
-                    { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
-                    { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
-                    { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                    { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                    { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                ]
-            },
-            // midMax: 中位数最大的学科、midMin中位数最小的学科 min: 最小分学科 max: 最大分学科
-            "scene": {
-                "midMax": "义务教育语文,义务教育数学",
-                "midMin": "义务教育英语,义务教育艺体",
-                "min": "义务教育数学",
-                "max": "义务教育英语",
-                "chartData": [
-                    { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
-                    { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
-                    { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
-                    { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                    { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                    { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                ]
-            },
-        },
-        "dimensionRating": { //***义务教育学段各维度得分率
-                "chnChartData": [ // 义务教育、语文、各维度得分率
-                    {name: '整体得分率', value: '24.32'},
-                    {name: '职业态度', value: '34.33'},
-                    {name: '教学实践', value: '42.44'},
-                    {name: '综合育人', value: '24.55'},
-                    {name: '自主发展', value: '62.55'}
-                ],
-                "mathChartData":  [ // 义务教育、数学、各维度得分率
-                {name: '整体得分率', value: '44.33'},
-                {name: '职业态度', value: '34.22'},
-                {name: '教学实践', value: '42.11'},
-                {name: '综合育人', value: '24.23'},
-                {name: '自主发展', value: '62.43'}
-            ],
-            "engChartData":  [ // 义务教育、英语、各维度得分率
-                {name: '整体得分率', value: '44'},
-                {name: '职业态度', value: '34'},
-                {name: '教学时间', value: '42'},
-                {name: '综合育人', value: '24'},
-                {name: '自主发展', value: '62'}
-            ],
-            "socChartData":  [ // 义务教育、社会、各维度得分率
-                {name: '整体得分率', value: '44'},
-                {name: '职业态度', value: '34'},
-                {name: '教学实践', value: '42'},
-                {name: '综合育人', value: '24'},
-                {name: '自主发展', value: '62'}
-            ],
-            "sciChartData":  [ // 义务教育、理工、各维度得分率
-                {name: '整体得分率', value: '44'},
-                {name: '职业态度', value: '34'},
-                {name: '教学实践', value: '42'},
-                {name: '综合育人', value: '24'},
-                {name: '自主发展', value: '62'}
-            ],
-            "artChartData":  [ // 义务教育、艺体、各维度得分率
-                {name: '整体得分率', value: '44'},
-                {name: '职业态度', value: '34'},
-                {name: '教学实践', value: '42'},
-                {name: '综合育人', value: '24'},
-                {name: '自主发展', value: '62'}
-                ],
-            "tableData": [
-                {"name": '义务教育语文科', "all":"80", "attitude": '30',"practice": '40',"comprehensive": '20',"development": '40',},
-                {"name": '义务教育数学科', "all":"80", "attitude": '30',"practice": '40',"comprehensive": '20',"development": '40',},
-                {"name": '义务教育英语科', "all":"80", "attitude": '30',"practice": '40',"comprehensive": '20',"development": '40',},
-                {"name": '义务教育社会科', "all":"80", "attitude": '30',"practice": '40',"comprehensive": '20',"development": '40',},
-                {"name": '义务教育理工科', "all":"80", "attitude": '30',"practice": '40',"comprehensive": '20',"development": '40',},
-                {"name": '义务教育艺体科', "all":"80", "attitude": '30',"practice": '40',"comprehensive": '20',"development": '40',},
-            
+            "artChartData":[
+                {
+                    "name":"优秀",
+                    "value":"5",
+                    "precent":"1.74"
+                },
+                {
+                    "name":"良好",
+                    "value":"49",
+                    "precent":"17.07"
+                },
+                {
+                    "name":"合格",
+                    "value":"161",
+                    "precent":"56.10"
+                },
+                {
+                    "name":"不合格",
+                    "value":"72",
+                    "precent":"25.09"
+                }
             ]
         },
-        "eachScoreDistribution": { //*** 各维度得分分布情况
-            // 各学科、各维度、得分分布情况
-            "chn": {
-                "attitude": { // 教学态度 标准: 58 57 54 54
-                    "chartData": [
+        "minMaxScore":{
+            "all":{
+                "max":"义务教育社会科教师",
+                "min":"义务教育艺体科教师",
+                "chartData":[
+                    {
+                        "name":"义务教育艺体科教师",
+                        "value":"330"
+                    },
+                    {
+                        "name":"义务教育语文教师",
+                        "value":"325"
+                    },
+                    {
+                        "name":"义务教育英语教师",
+                        "value":"328"
+                    },
+                    {
+                        "name":"义务教育理工科教师",
+                        "value":"321"
+                    },
+                    {
+                        "name":"义务教育数学教师",
+                        "value":"324"
+                    },
+                    {
+                        "name":"义务教育社会科教师",
+                        "value":"324"
+                    }
+                ]
+            },
+            "self":{
+                "max":"义务教育社会科教师",
+                "min":"义务教育理工科教师",
+                "chartData":[
+                    {
+                        "name":"义务教育艺体科教师",
+                        "value":"158"
+                    },
+                    {
+                        "name":"义务教育语文教师",
+                        "value":"154"
+                    },
+                    {
+                        "name":"义务教育英语教师",
+                        "value":"156"
+                    },
+                    {
+                        "name":"义务教育理工科教师",
+                        "value":"152"
+                    },
+                    {
+                        "name":"义务教育数学教师",
+                        "value":"154"
+                    },
+                    {
+                        "name":"义务教育社会科教师",
+                        "value":"157"
+                    }
+                ]
+            },
+            "scene":{
+                "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师",
+                "min":"义务教育艺体科教师",
+                "chartData":[
+                    {
+                        "name":"义务教育艺体科教师",
+                        "value":"172"
+                    },
+                    {
+                        "name":"义务教育语文教师",
+                        "value":"171"
+                    },
+                    {
+                        "name":"义务教育英语教师",
+                        "value":"172"
+                    },
+                    {
+                        "name":"义务教育理工科教师",
+                        "value":"168"
+                    },
+                    {
+                        "name":"义务教育数学教师",
+                        "value":"170"
+                    },
+                    {
+                        "name":"义务教育社会科教师",
+                        "value":"168"
+                    }
+                ]
+            }
+        },
+        "standradScore":{
+            "self":{
+                "max":"义务教育社会科教师",
+                "min":"义务教育理工科教师",
+                "chartData":[
+                    {
+                        "name":"义务教育艺体科教师",
+                        "value":"9.05"
+                    },
+                    {
+                        "name":"义务教育语文教师",
+                        "value":"9.13"
+                    },
+                    {
+                        "name":"义务教育英语教师",
+                        "value":"9.28"
+                    },
+                    {
+                        "name":"义务教育理工科教师",
+                        "value":"7.69"
+                    },
+                    {
+                        "name":"义务教育数学教师",
+                        "value":"8.73"
+                    },
+                    {
+                        "name":"义务教育社会科教师",
+                        "value":"9.73"
+                    }
+                ]
+            },
+            "scene":{
+                "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师",
+                "min":"义务教育艺体科教师",
+                "chartData":[
+                    {
+                        "name":"义务教育艺体科教师",
+                        "value":"12.02"
+                    },
+                    {
+                        "name":"义务教育语文教师",
+                        "value":"12.07"
+                    },
+                    {
+                        "name":"义务教育英语教师",
+                        "value":"10.2"
+                    },
+                    {
+                        "name":"义务教育理工科教师",
+                        "value":"14.06"
+                    },
+                    {
+                        "name":"义务教育数学教师",
+                        "value":"12.37"
+                    },
+                    {
+                        "name":"义务教育社会科教师",
+                        "value":"13.7"
+                    }
+                ]
+            }
+        },
+        "midMaxMinSceneAndSelf":{
+            "self":{
+                "max":"义务教育社会科教师",
+                "min":"义务教育理工科教师",
+                "midMax":"义务教育艺体科教师,义务教育社会科教师",
+                "midMin":"义务教育语文教师,义务教育理工科教师,义务教育数学教师",
+                "chartData":[
+                    {
+                        "name":"义务教育艺体科教师",
+                        "min":"120",
+                        "median":"160.0",
+                        "average":"158.0",
+                        "max":"180"
+                    },
+                    {
+                        "name":"义务教育语文教师",
+                        "min":"120",
+                        "median":"155.0",
+                        "average":"154.0",
+                        "max":"175"
+                    },
+                    {
+                        "name":"义务教育英语教师",
+                        "min":"120",
+                        "median":"157.5",
+                        "average":"156.0",
+                        "max":"175"
+                    },
+                    {
+                        "name":"义务教育理工科教师",
+                        "min":"130",
+                        "median":"155.0",
+                        "average":"152.0",
+                        "max":"170"
+                    },
+                    {
+                        "name":"义务教育数学教师",
+                        "min":"100",
+                        "median":"155.0",
+                        "average":"154.0",
+                        "max":"175"
+                    },
+                    {
+                        "name":"义务教育社会科教师",
+                        "min":"100",
+                        "median":"160.0",
+                        "average":"157.0",
+                        "max":"180"
+                    }
+                ]
+            },
+            "scene":{
+                "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师",
+                "min":"义务教育艺体科教师",
+                "midMax":"义务教育艺体科教师",
+                "midMin":"义务教育社会科教师",
+                "chartData":[
+                    {
+                        "name":"义务教育艺体科教师",
+                        "min":"120",
+                        "median":"180.0",
+                        "average":"172.0",
+                        "max":"180"
+                    },
+                    {
+                        "name":"义务教育语文教师",
+                        "min":"132",
+                        "median":"177.0",
+                        "average":"171.0",
+                        "max":"180"
+                    },
+                    {
+                        "name":"义务教育英语教师",
+                        "min":"136",
+                        "median":"178.0",
+                        "average":"172.0",
+                        "max":"180"
+                    },
+                    {
+                        "name":"义务教育理工科教师",
+                        "min":"129",
+                        "median":"176.0",
+                        "average":"168.0",
+                        "max":"180"
+                    },
+                    {
+                        "name":"义务教育数学教师",
+                        "min":"133",
+                        "median":"176.0",
+                        "average":"170.0",
+                        "max":"180"
+                    },
+                    {
+                        "name":"义务教育社会科教师",
+                        "min":"126",
+                        "median":"173.0",
+                        "average":"168.0",
+                        "max":"180"
+                    }
+                ]
+            }
+        },
+        "dimensionRating":{
+            "chnChartData":[
+                {
+                    "name":"整体得分率",
+                    "value":"90.30"
+                },
+                {
+                    "name":"职业态度",
+                    "value":"98.13"
+                },
+                {
+                    "name":"教学实践",
+                    "value":"90.72"
+                },
+                {
+                    "name":"综合育人",
+                    "value":"88.82"
+                },
+                {
+                    "name":"自主发展",
+                    "value":"86.00"
+                }
+            ],
+            "mathChartData":[
+                {
+                    "name":"整体得分率",
+                    "value":"89.92"
+                },
+                {
+                    "name":"职业态度",
+                    "value":"98.04"
+                },
+                {
+                    "name":"教学实践",
+                    "value":"89.92"
+                },
+                {
+                    "name":"综合育人",
+                    "value":"88.96"
+                },
+                {
+                    "name":"自主发展",
+                    "value":"85.44"
+                }
+            ],
+            "engChartData":[
+                {
+                    "name":"整体得分率",
+                    "value":"91.20"
+                },
+                {
+                    "name":"职业态度",
+                    "value":"93.23"
+                },
+                {
+                    "name":"教学实践",
+                    "value":"91.73"
+                },
+                {
+                    "name":"综合育人",
+                    "value":"90.20"
+                },
+                {
+                    "name":"自主发展",
+                    "value":"90.15"
+                }
+            ],
+            "socChartData":[
+                {
+                    "name":"整体得分率",
+                    "value":"90.10"
+                },
+                {
+                    "name":"职业态度",
+                    "value":"95.73"
+                },
+                {
+                    "name":"教学实践",
+                    "value":"85.72"
+                },
+                {
+                    "name":"综合育人",
+                    "value":"91.07"
+                },
+                {
+                    "name":"自主发展",
+                    "value":"91.23"
+                }
+            ],
+            "sciChartData":[
+                {
+                    "name":"整体得分率",
+                    "value":"89.08"
+                },
+                {
+                    "name":"职业态度",
+                    "value":"98.04"
+                },
+                {
+                    "name":"教学实践",
+                    "value":"85.49"
+                },
+                {
+                    "name":"综合育人",
+                    "value":"88.87"
+                },
+                {
+                    "name":"自主发展",
+                    "value":"88.10"
+                }
+            ],
+            "artChartData":[
+                {
+                    "name":"整体得分率",
+                    "value":"91.60"
+                },
+                {
+                    "name":"职业态度",
+                    "value":"93.36"
+                },
+                {
+                    "name":"教学实践",
+                    "value":"93.32"
+                },
+                {
+                    "name":"综合育人",
+                    "value":"91.23"
+                },
+                {
+                    "name":"自主发展",
+                    "value":"88.49"
+                }
+            ],
+            "tableData":[
+                {
+                    "name":"义务教育语文教师",
+                    "all":"90.30",
+                    "attitude":"98.13",
+                    "practice":"90.72",
+                    "comprehensive":"88.82",
+                    "development":"86.00"
+                },
+                {
+                    "name":"义务教育数学教师",
+                    "all":"89.92",
+                    "attitude":"98.04",
+                    "practice":"89.92",
+                    "comprehensive":"88.96",
+                    "development":"85.44"
+                },
+                {
+                    "name":"义务教育英语教师",
+                    "all":"91.20",
+                    "attitude":"93.23",
+                    "practice":"91.73",
+                    "comprehensive":"90.20",
+                    "development":"90.15"
+                },
+                {
+                    "name":"义务教育理工科教师",
+                    "all":"89.08",
+                    "attitude":"98.04",
+                    "practice":"85.49",
+                    "comprehensive":"88.87",
+                    "development":"88.10"
+                },
+                {
+                    "name":"义务教育艺体科教师",
+                    "all":"91.60",
+                    "attitude":"93.36",
+                    "practice":"93.32",
+                    "comprehensive":"91.23",
+                    "development":"88.49"
+                },
+                {
+                    "name":"义务教育社会科教师",
+                    "all":"90.10",
+                    "attitude":"95.73",
+                    "practice":"85.72",
+                    "comprehensive":"91.07",
+                    "development":"91.23"
+                }
+            ]
+        },
+        "eachScoreDistribution":{
+            "chn":{
+                "attitude":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '20', precent: '40%',
+                            "name":"优秀",
+                            "value":"350",
+                            "precent":"80.65"
                         },
                         {
-                            name: '良好', value: '30', precent: '50%',
+                            "name":"良好",
+                            "value":"6",
+                            "precent":"1.38"
                         },
                         {
-                            name: '及格', value: '40', precent: '60%',
+                            "name":"合格",
+                            "value":"69",
+                            "precent":"15.90"
                         },
                         {
-                            name: '不及格', value: '50', precent: '70%',
+                            "name":"不合格",
+                            "value":"9",
+                            "precent":"2.07"
                         }
                     ]
                 },
-                "practice": { // 教学实践 标准: 116 114 108 108
-                    "chartData": [
+                "practice":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '50', precent: '42%',
-    
+                            "name":"优秀",
+                            "value":"63",
+                            "precent":"14.52"
                         },
                         {
-                            name: '良好', value: '30', precent: '35%',
+                            "name":"良好",
+                            "value":"95",
+                            "precent":"21.89"
                         },
                         {
-                            name: '及格', value: '20', precent: '65%',
+                            "name":"合格",
+                            "value":"113",
+                            "precent":"26.04"
                         },
                         {
-                            name: '不及格', value: '60', precent: '71%',
+                            "name":"不合格",
+                            "value":"163",
+                            "precent":"37.56"
                         }
                     ]
                 },
-                "comprehensive": { // 教学实践 标准:88 86 81 81
-                    "chartData": [
+                "comprehensive":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '24', precent: '40%',
-    
+                            "name":"优秀",
+                            "value":"19",
+                            "precent":"4.38"
                         },
                         {
-                            name: '良好', value: '36', precent: '52%',
+                            "name":"良好",
+                            "value":"2",
+                            "precent":"0.46"
                         },
                         {
-                            name: '及格', value: '45', precent: '62%',
+                            "name":"合格",
+                            "value":"151",
+                            "precent":"34.79"
                         },
                         {
-                            name: '不及格', value: '51', precent: '74%',
+                            "name":"不合格",
+                            "value":"262",
+                            "precent":"60.37"
                         }
                     ]
                 },
-                "development": { // 自主发展 标准:88 86 81 81
-                    "chartData": [
+                "development":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '21', precent: '40%',
-    
+                            "name":"优秀",
+                            "value":"5",
+                            "precent":"1.15"
                         },
                         {
-                            name: '良好', value: '33', precent: '50%',
+                            "name":"良好",
+                            "value":"0",
+                            "precent":"0"
                         },
                         {
-                            name: '及格', value: '44', precent: '60%',
+                            "name":"合格",
+                            "value":"72",
+                            "precent":"16.59"
                         },
                         {
-                            name: '不及格', value: '55', precent: '70%',
+                            "name":"不合格",
+                            "value":"357",
+                            "precent":"82.26"
                         }
                     ]
                 }
-
             },
-            "math": {
-                "attitude": { // 教学态度 标准: 58 57 54 54
-                    "chartData": [
+            "math":{
+                "attitude":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '20', precent: '40%',
+                            "name":"优秀",
+                            "value":"240",
+                            "precent":"80.54"
                         },
                         {
-                            name: '良好', value: '30', precent: '50%',
+                            "name":"良好",
+                            "value":"5",
+                            "precent":"1.68"
                         },
                         {
-                            name: '及格', value: '40', precent: '60%',
+                            "name":"合格",
+                            "value":"43",
+                            "precent":"14.43"
                         },
                         {
-                            name: '不及格', value: '50', precent: '70%',
+                            "name":"不合格",
+                            "value":"10",
+                            "precent":"3.36"
                         }
                     ]
                 },
-                "practice": { // 教学实践 标准: 116 114 108 108
-                    "chartData": [
+                "practice":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '50', precent: '42%',
-    
+                            "name":"优秀",
+                            "value":"24",
+                            "precent":"8.05"
                         },
                         {
-                            name: '良好', value: '30', precent: '35%',
+                            "name":"良好",
+                            "value":"65",
+                            "precent":"21.81"
                         },
                         {
-                            name: '及格', value: '20', precent: '65%',
+                            "name":"合格",
+                            "value":"81",
+                            "precent":"27.18"
                         },
                         {
-                            name: '不及格', value: '60', precent: '71%',
+                            "name":"不合格",
+                            "value":"128",
+                            "precent":"42.95"
                         }
                     ]
                 },
-                "comprehensive": { // 教学实践 标准:88 86 81 81
-                    "chartData": [
+                "comprehensive":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '24', precent: '40%',
-    
+                            "name":"优秀",
+                            "value":"20",
+                            "precent":"6.71"
                         },
                         {
-                            name: '良好', value: '36', precent: '52%',
+                            "name":"良好",
+                            "value":"3",
+                            "precent":"1.01"
                         },
                         {
-                            name: '及格', value: '45', precent: '62%',
+                            "name":"合格",
+                            "value":"111",
+                            "precent":"37.25"
                         },
                         {
-                            name: '不及格', value: '51', precent: '74%',
+                            "name":"不合格",
+                            "value":"164",
+                            "precent":"55.03"
                         }
                     ]
                 },
-                "development": { // 自主发展 标准:88 86 81 81
-                    "chartData": [
+                "development":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '21', precent: '40%',
-    
+                            "name":"优秀",
+                            "value":"0",
+                            "precent":"0"
                         },
                         {
-                            name: '良好', value: '33', precent: '50%',
+                            "name":"良好",
+                            "value":"1",
+                            "precent":"0.34"
                         },
                         {
-                            name: '及格', value: '44', precent: '60%',
+                            "name":"合格",
+                            "value":"38",
+                            "precent":"12.75"
                         },
                         {
-                            name: '不及格', value: '55', precent: '70%',
+                            "name":"不合格",
+                            "value":"259",
+                            "precent":"86.91"
                         }
                     ]
                 }
             },
-            "eng": {
-                "attitude": { // 教学态度 标准: 58 57 54 54
-                    "chartData": [
+            "eng":{
+                "attitude":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '20', precent: '40%',
+                            "name":"优秀",
+                            "value":"68",
+                            "precent":"32.38"
                         },
                         {
-                            name: '良好', value: '30', precent: '50%',
+                            "name":"良好",
+                            "value":"0",
+                            "precent":"0"
                         },
                         {
-                            name: '及格', value: '40', precent: '60%',
+                            "name":"合格",
+                            "value":"117",
+                            "precent":"55.71"
                         },
                         {
-                            name: '不及格', value: '50', precent: '70%',
+                            "name":"不合格",
+                            "value":"25",
+                            "precent":"11.90"
                         }
                     ]
                 },
-                "practice": { // 教学实践 标准: 116 114 108 108
-                    "chartData": [
+                "practice":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '50', precent: '42%',
-    
+                            "name":"优秀",
+                            "value":"38",
+                            "precent":"18.10"
                         },
                         {
-                            name: '良好', value: '30', precent: '35%',
+                            "name":"良好",
+                            "value":"46",
+                            "precent":"21.90"
                         },
                         {
-                            name: '及格', value: '20', precent: '65%',
+                            "name":"合格",
+                            "value":"55",
+                            "precent":"26.19"
                         },
                         {
-                            name: '不及格', value: '60', precent: '71%',
+                            "name":"不合格",
+                            "value":"71",
+                            "precent":"33.81"
                         }
                     ]
                 },
-                "comprehensive": { // 教学实践 标准:88 86 81 81
-                    "chartData": [
+                "comprehensive":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '24', precent: '40%',
-    
+                            "name":"优秀",
+                            "value":"16",
+                            "precent":"7.62"
                         },
                         {
-                            name: '良好', value: '36', precent: '52%',
+                            "name":"良好",
+                            "value":"3",
+                            "precent":"1.43"
                         },
                         {
-                            name: '及格', value: '45', precent: '62%',
+                            "name":"合格",
+                            "value":"76",
+                            "precent":"36.19"
                         },
                         {
-                            name: '不及格', value: '51', precent: '74%',
+                            "name":"不合格",
+                            "value":"115",
+                            "precent":"54.76"
                         }
                     ]
                 },
-                "development": { // 自主发展 标准:88 86 81 81
-                    "chartData": [
+                "development":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '21', precent: '40%',
-    
+                            "name":"优秀",
+                            "value":"17",
+                            "precent":"8.10"
                         },
                         {
-                            name: '良好', value: '33', precent: '50%',
+                            "name":"良好",
+                            "value":"6",
+                            "precent":"2.86"
                         },
                         {
-                            name: '及格', value: '44', precent: '60%',
+                            "name":"合格",
+                            "value":"93",
+                            "precent":"44.29"
                         },
                         {
-                            name: '不及格', value: '55', precent: '70%',
+                            "name":"不合格",
+                            "value":"94",
+                            "precent":"44.76"
                         }
                     ]
                 }
             },
-            "soc": {
-                "attitude": { // 教学态度 标准: 58 57 54 54
-                    "chartData": [
+            "soc":{
+                "attitude":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '20', precent: '40%',
+                            "name":"优秀",
+                            "value":"95",
+                            "precent":"59.38"
                         },
                         {
-                            name: '良好', value: '30', precent: '50%',
+                            "name":"良好",
+                            "value":"1",
+                            "precent":"0.63"
                         },
                         {
-                            name: '及格', value: '40', precent: '60%',
+                            "name":"合格",
+                            "value":"53",
+                            "precent":"33.13"
                         },
                         {
-                            name: '不及格', value: '50', precent: '70%',
+                            "name":"不合格",
+                            "value":"11",
+                            "precent":"6.88"
                         }
                     ]
                 },
-                "practice": { // 教学实践 标准: 116 114 108 108
-                    "chartData": [
+                "practice":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '50', precent: '42%',
-    
+                            "name":"优秀",
+                            "value":"4",
+                            "precent":"2.50"
                         },
                         {
-                            name: '良好', value: '30', precent: '35%',
+                            "name":"良好",
+                            "value":"12",
+                            "precent":"7.50"
                         },
                         {
-                            name: '及格', value: '20', precent: '65%',
+                            "name":"合格",
+                            "value":"28",
+                            "precent":"17.50"
                         },
                         {
-                            name: '不及格', value: '60', precent: '71%',
+                            "name":"不合格",
+                            "value":"116",
+                            "precent":"72.50"
                         }
                     ]
                 },
-                "comprehensive": { // 教学实践 标准:88 86 81 81
-                    "chartData": [
+                "comprehensive":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '24', precent: '40%',
-    
+                            "name":"优秀",
+                            "value":"20",
+                            "precent":"12.50"
                         },
                         {
-                            name: '良好', value: '36', precent: '52%',
+                            "name":"良好",
+                            "value":"1",
+                            "precent":"0.63"
                         },
                         {
-                            name: '及格', value: '45', precent: '62%',
+                            "name":"合格",
+                            "value":"78",
+                            "precent":"48.75"
                         },
                         {
-                            name: '不及格', value: '51', precent: '74%',
+                            "name":"不合格",
+                            "value":"61",
+                            "precent":"38.13"
                         }
                     ]
                 },
-                "development": { // 自主发展 标准:88 86 81 81
-                    "chartData": [
+                "development":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '21', precent: '40%',
-    
+                            "name":"优秀",
+                            "value":"29",
+                            "precent":"18.13"
                         },
                         {
-                            name: '良好', value: '33', precent: '50%',
+                            "name":"良好",
+                            "value":"3",
+                            "precent":"1.88"
                         },
                         {
-                            name: '及格', value: '44', precent: '60%',
+                            "name":"合格",
+                            "value":"66",
+                            "precent":"41.25"
                         },
                         {
-                            name: '不及格', value: '55', precent: '70%',
+                            "name":"不合格",
+                            "value":"62",
+                            "precent":"38.75"
                         }
                     ]
                 }
             },
-            "sci": {
-                "attitude": { // 教学态度 标准: 58 57 54 54
-                    "chartData": [
+            "sci":{
+                "attitude":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '20', precent: '40%',
+                            "name":"优秀",
+                            "value":"100",
+                            "precent":"81.30"
                         },
                         {
-                            name: '良好', value: '30', precent: '50%',
+                            "name":"良好",
+                            "value":"0",
+                            "precent":"0"
                         },
                         {
-                            name: '及格', value: '40', precent: '60%',
+                            "name":"合格",
+                            "value":"18",
+                            "precent":"14.63"
                         },
                         {
-                            name: '不及格', value: '50', precent: '70%',
+                            "name":"不合格",
+                            "value":"5",
+                            "precent":"4.07"
                         }
                     ]
                 },
-                "practice": { // 教学实践 标准: 116 114 108 108
-                    "chartData": [
+                "practice":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '50', precent: '42%',
-    
+                            "name":"优秀",
+                            "value":"0",
+                            "precent":"0"
                         },
                         {
-                            name: '良好', value: '30', precent: '35%',
+                            "name":"良好",
+                            "value":"10",
+                            "precent":"8.13"
                         },
                         {
-                            name: '及格', value: '20', precent: '65%',
+                            "name":"合格",
+                            "value":"31",
+                            "precent":"25.20"
                         },
                         {
-                            name: '不及格', value: '60', precent: '71%',
+                            "name":"不合格",
+                            "value":"82",
+                            "precent":"66.67"
                         }
                     ]
                 },
-                "comprehensive": { // 教学实践 标准:88 86 81 81
-                    "chartData": [
+                "comprehensive":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '24', precent: '40%',
-    
+                            "name":"优秀",
+                            "value":"5",
+                            "precent":"4.07"
                         },
                         {
-                            name: '良好', value: '36', precent: '52%',
+                            "name":"良好",
+                            "value":"1",
+                            "precent":"0.81"
                         },
                         {
-                            name: '及格', value: '45', precent: '62%',
+                            "name":"合格",
+                            "value":"42",
+                            "precent":"34.15"
                         },
                         {
-                            name: '不及格', value: '51', precent: '74%',
+                            "name":"不合格",
+                            "value":"75",
+                            "precent":"60.98"
                         }
                     ]
                 },
-                "development": { // 自主发展 标准:88 86 81 81
-                    "chartData": [
+                "development":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '21', precent: '40%',
-    
+                            "name":"优秀",
+                            "value":"11",
+                            "precent":"8.94"
                         },
                         {
-                            name: '良好', value: '33', precent: '50%',
+                            "name":"良好",
+                            "value":"0",
+                            "precent":"0"
                         },
                         {
-                            name: '及格', value: '44', precent: '60%',
+                            "name":"合格",
+                            "value":"32",
+                            "precent":"26.02"
                         },
                         {
-                            name: '不及格', value: '55', precent: '70%',
+                            "name":"不合格",
+                            "value":"80",
+                            "precent":"65.04"
                         }
                     ]
                 }
             },
-            "art": {
-                "attitude": { // 教学态度 标准: 58 57 54 54
-                    "chartData": [
+            "art":{
+                "attitude":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '20', precent: '40%',
+                            "name":"优秀",
+                            "value":"101",
+                            "precent":"35.19"
                         },
                         {
-                            name: '良好', value: '30', precent: '50%',
+                            "name":"良好",
+                            "value":"1",
+                            "precent":"0.35"
                         },
                         {
-                            name: '及格', value: '40', precent: '60%',
+                            "name":"合格",
+                            "value":"150",
+                            "precent":"52.26"
                         },
                         {
-                            name: '不及格', value: '50', precent: '70%',
+                            "name":"不合格",
+                            "value":"35",
+                            "precent":"12.20"
                         }
                     ]
                 },
-                "practice": { // 教学实践 标准: 116 114 108 108
-                    "chartData": [
+                "practice":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '50', precent: '42%',
-    
+                            "name":"优秀",
+                            "value":"80",
+                            "precent":"27.87"
                         },
                         {
-                            name: '良好', value: '30', precent: '35%',
+                            "name":"良好",
+                            "value":"70",
+                            "precent":"24.39"
                         },
                         {
-                            name: '及格', value: '20', precent: '65%',
+                            "name":"合格",
+                            "value":"71",
+                            "precent":"24.74"
                         },
                         {
-                            name: '不及格', value: '60', precent: '71%',
+                            "name":"不合格",
+                            "value":"66",
+                            "precent":"23.00"
                         }
                     ]
                 },
-                "comprehensive": { // 教学实践 标准:88 86 81 81
-                    "chartData": [
+                "comprehensive":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '24', precent: '40%',
-    
+                            "name":"优秀",
+                            "value":"25",
+                            "precent":"8.71"
                         },
                         {
-                            name: '良好', value: '36', precent: '52%',
+                            "name":"良好",
+                            "value":"3",
+                            "precent":"1.05"
                         },
                         {
-                            name: '及格', value: '45', precent: '62%',
+                            "name":"合格",
+                            "value":"147",
+                            "precent":"51.22"
                         },
                         {
-                            name: '不及格', value: '51', precent: '74%',
+                            "name":"不合格",
+                            "value":"112",
+                            "precent":"39.02"
                         }
                     ]
                 },
-                "development": { // 自主发展 标准:88 86 81 81
-                    "chartData": [
+                "development":{
+                    "chartData":[
                         {
-                            name: '优秀', value: '21', precent: '40%',
-    
+                            "name":"优秀",
+                            "value":"30",
+                            "precent":"10.45"
                         },
                         {
-                            name: '良好', value: '33', precent: '50%',
+                            "name":"良好",
+                            "value":"1",
+                            "precent":"0.35"
                         },
                         {
-                            name: '及格', value: '44', precent: '60%',
+                            "name":"合格",
+                            "value":"89",
+                            "precent":"31.01"
                         },
                         {
-                            name: '不及格', value: '55', precent: '70%',
+                            "name":"不合格",
+                            "value":"167",
+                            "precent":"58.19"
                         }
                     ]
                 }
-            },
-            
+            }
         }
     },
-    "modules": [
+    "modules":[
         {
-            "scoreRating": { //*** 义务教育职业态度得分率
-                // 义务教育语文、数学、英语、社会、理工、艺体的得分率 顺序要一致
-                "chartData": [20.3,22,33,21.5,22.3,33.2]
-            },
-            "eachScoreDistribution": { //*** 职业态度维度得分分布情况
-                "tableData": [
-                    {   "name": "义务教育语文科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育数学科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育英语科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育社会科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育理工科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育艺体科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                ],
-                "chnChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "mathChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "engChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "socChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "sciChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "artChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
+            "scoreRating":{
+                "chartData":[
+                    "95.83",
+                    "96.48",
+                    "98.13",
+                    "98.04",
+                    "93.23",
+                    "93.36",
+                    "95.73",
+                    "98.04",
+                    "96.18",
+                    "96.07",
+                    "95.17",
+                    "90.44",
+                    "90.79",
+                    "95.25"
                 ]
             },
-            "averageScore": { // 职业态度、各科平均分
-                // 四个维度满分分别为: 60 120 90 90
-                "all": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "20"},
-                        {"name": "义务教育数学科", "value": "30"},
-                        {"name": "义务教育英语科", "value": "40"},
-                        {"name": "义务教育社会科", "value": "50"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"},
-                    ]
-                },
-                "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "20"},
-                        {"name": "义务教育数学科", "value": "30"},
-                        {"name": "义务教育英语科", "value": "40"},
-                        {"name": "义务教育社会科", "value": "50"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"},
-                    ]
-                },
-                "scene": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "20"},
-                        {"name": "义务教育数学科", "value": "30"},
-                        {"name": "义务教育英语科", "value": "40"},
-                        {"name": "义务教育社会科", "value": "50"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"},
-                    ]
-                }
-            },
-            "standardScore": { // 各个小的维度、标准差
-                "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "10"},
-                        {"name": "义务教育数学科", "value": "20"},
-                        {"name": "义务教育英语科", "value": "30"},
-                        {"name": "义务教育社会科", "value": "40"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"}
-                    ]
-                },
-                "scene": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "10"},
-                        {"name": "义务教育数学科", "value": "20"},
-                        {"name": "义务教育英语科", "value": "30"},
-                        {"name": "义务教育社会科", "value": "40"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"}
-                    ]
-                }
-            },
-            "minMaxSocre": {
-                "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科", // 中位数最高的学科
-                    "midMin": "义务教育数学科",  // 中位数最低的学科
-                    "chartData": [
-                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                    ]
-                },
-                "scene": {
-                    "max": "义务教育语文", // 分数最高的学科
-                    "min": "义务教育数学", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",  // 中位数最高的学科
-                    "midMin": "义务教育数学科",  // 中位数最低的学科
-                    "chartData": [
-                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                    ]
-                }
-            }
-        },{
-            "scoreRating": { //*** 教学实践维度得分率: 最低、最高、中位数、平均得分率
-                "chartData": [20.3,22,33,21.5,22.3,33.2]
-
-            },
-            "eachScoreDistribution": { //*** 职业态度维度得分分布情况
-                "tableData": [
-                    {   "name": "义务教育语文科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育数学科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育英语科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育社会科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育理工科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育艺体科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                ],
-                "chnChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "mathChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "engChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "socChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "sciChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "artChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ]
-            },
-            "averageScore": {
-                "all": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "20"},
-                        {"name": "义务教育数学科", "value": "30"},
-                        {"name": "义务教育英语科", "value": "40"},
-                        {"name": "义务教育社会科", "value": "50"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"},
-                    ]
-                },
-                "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "20"},
-                        {"name": "义务教育数学科", "value": "30"},
-                        {"name": "义务教育英语科", "value": "40"},
-                        {"name": "义务教育社会科", "value": "50"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"},
-                    ]
-                },
-                "scene": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "20"},
-                        {"name": "义务教育数学科", "value": "30"},
-                        {"name": "义务教育英语科", "value": "40"},
-                        {"name": "义务教育社会科", "value": "50"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"},
-                    ]
-                }
-            },
-            "standardScore": { // 各个小的维度、标准差
-                "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "10"},
-                        {"name": "义务教育数学科", "value": "20"},
-                        {"name": "义务教育英语科", "value": "30"},
-                        {"name": "义务教育社会科", "value": "40"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"}
-                    ]
-                },
-                "scene": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "10"},
-                        {"name": "义务教育数学科", "value": "20"},
-                        {"name": "义务教育英语科", "value": "30"},
-                        {"name": "义务教育社会科", "value": "40"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"}
-                    ]
-                }
-            },
-            "minMaxSocre": {
-                "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",
-                    "midMin": "义务教育数学科", 
-                    "chartData": [
-                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                    ]
-                },
-                "scene": {
-                    "max": "义务教育语文", // 分数最高的学科
-                    "min": "义务教育数学", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",
-                    "midMin": "义务教育数学科", 
-                    "chartData": [
-                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                    ]
-                }
-            }
-        },{
-            "scoreRating": { //*** 综合育人维度得分率: 最低、最高、中位数、平均得分率
-                "chartData": [20.3,22,33,21.5,22.3,33.2]
-            },
-            "eachScoreDistribution": { //*** 综合育人维度得分分布情况
-                "tableData": [
-                    {   "name": "义务教育语文科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育数学科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育英语科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育社会科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育理工科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                    {   "name": "义务教育艺体科",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
-                    },
-                ],
-                // 各科、职业态度、value: 人  precent代表占比
-                "chnChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "mathChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "engChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "socChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "sciChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ],
-                "artChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
-                ]
-            },
-            "averageScore": {
-                "all": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "20"},
-                        {"name": "义务教育数学科", "value": "30"},
-                        {"name": "义务教育英语科", "value": "40"},
-                        {"name": "义务教育社会科", "value": "50"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"},
-                    ]
-                },
-                "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "20"},
-                        {"name": "义务教育数学科", "value": "30"},
-                        {"name": "义务教育英语科", "value": "40"},
-                        {"name": "义务教育社会科", "value": "50"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"},
-                    ]
-                },
-                "scene": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "20"},
-                        {"name": "义务教育数学科", "value": "30"},
-                        {"name": "义务教育英语科", "value": "40"},
-                        {"name": "义务教育社会科", "value": "50"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"},
-                    ]
-                }
-            },
-            "standardScore": { // 各个小的维度、标准差
-                "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "10"},
-                        {"name": "义务教育数学科", "value": "20"},
-                        {"name": "义务教育英语科", "value": "30"},
-                        {"name": "义务教育社会科", "value": "40"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"}
-                    ]
-                },
-                "scene": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "10"},
-                        {"name": "义务教育数学科", "value": "20"},
-                        {"name": "义务教育英语科", "value": "30"},
-                        {"name": "义务教育社会科", "value": "40"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"}
-                    ]
-                }
-            },
-            "minMaxSocre": {
-                "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",
-                    "midMin": "义务教育数学科", 
-                    "chartData": [
-                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                    ]
-                },
-                "scene": {
-                    "max": "义务教育语文", // 分数最高的学科
-                    "min": "义务教育数学", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",
-                    "midMin": "义务教育数学科", 
-                    "chartData": [
-                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                    ]
-                }
-            }
-        },{
-            "scoreRating": { //*** 自主发展维度得分率: 最低、最高、中位数、平均得分率
-                "chartData": [20.3,22,33,21.5,22.3,33.2]
-            },
-            "eachScoreDistribution": { //*** 自主发展维度得分分布情况
-                "tableData": [
+            "eachScoreDistribution":{
+                "tableData":[
                     {
-                        "name": "自主发展",
-                        "excellent": "20%(200人)",
-                        "good": "30%(300人)",
-                        "pass": "40%(400人)",
-                        "fail": "50%(500人)",
+                        "name":"义务教育语文教师",
+                        "excellent":"80.65%(350人)",
+                        "good":"1.38%(6人)",
+                        "pass":"15.9%(69人)",
+                        "fail":"2.07%(9人)"
+                    },
+                    {
+                        "name":"义务教育数学教师",
+                        "excellent":"80.54%(240人)",
+                        "good":"1.68%(5人)",
+                        "pass":"14.43%(43人)",
+                        "fail":"3.36%(10人)"
+                    },
+                    {
+                        "name":"义务教育英语教师",
+                        "excellent":"32.38%(68人)",
+                        "good":"0.0%(0人)",
+                        "pass":"55.71%(117人)",
+                        "fail":"11.9%(25人)"
+                    },
+                    {
+                        "name":"义务教育理工科教师",
+                        "excellent":"81.3%(100人)",
+                        "good":"0.0%(0人)",
+                        "pass":"14.63%(18人)",
+                        "fail":"4.07%(5人)"
+                    },
+                    {
+                        "name":"义务教育艺体科教师",
+                        "excellent":"35.19%(101人)",
+                        "good":"0.35%(1人)",
+                        "pass":"52.26%(150人)",
+                        "fail":"12.2%(35人)"
+                    },
+                    {
+                        "name":"义务教育社会科教师",
+                        "excellent":"59.38%(95人)",
+                        "good":"0.63%(1人)",
+                        "pass":"33.13%(53人)",
+                        "fail":"6.88%(11人)"
                     }
                 ],
-                "chnChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
+                "chnChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"350",
+                        "precent":"80.65"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"6",
+                        "precent":"1.38"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"69",
+                        "precent":"15.90"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"9",
+                        "precent":"2.07"
+                    }
                 ],
-                "mathChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
+                "mathChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"240",
+                        "precent":"80.54"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"5",
+                        "precent":"1.68"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"43",
+                        "precent":"14.43"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"10",
+                        "precent":"3.36"
+                    }
                 ],
-                "engChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
+                "engChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"68",
+                        "precent":"32.38"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"0",
+                        "precent":"0"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"117",
+                        "precent":"55.71"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"25",
+                        "precent":"11.90"
+                    }
                 ],
-                "socChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
+                "socChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"95",
+                        "precent":"59.38"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"1",
+                        "precent":"0.63"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"53",
+                        "precent":"33.13"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"11",
+                        "precent":"6.88"
+                    }
                 ],
-                "sciChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
+                "sciChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"100",
+                        "precent":"81.30"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"0",
+                        "precent":"0"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"18",
+                        "precent":"14.63"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"5",
+                        "precent":"4.07"
+                    }
                 ],
-                "artChartData": [
-                    {"name": '优秀', "value": '20',  "precent": '40%',},
-                    {"name": '良好', "value": '30',  "precent": '50%',},
-                    {"name": '及格', "value": '40',  "precent": '60%',},
-                    {"name": '不及格'," value": '50', "precent": '70%',}
+                "artChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"101",
+                        "precent":"35.19"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"1",
+                        "precent":"0.35"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"150",
+                        "precent":"52.26"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"35",
+                        "precent":"12.20"
+                    }
                 ]
             },
-            "averageScore": {
-                "all": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "20"},
-                        {"name": "义务教育数学科", "value": "30"},
-                        {"name": "义务教育英语科", "value": "40"},
-                        {"name": "义务教育社会科", "value": "50"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"},
+            "averageScore":{
+                "all":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育英语教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"56.02"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"58.88"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"55.94"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"58.82"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"58.83"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"57.44"
+                        }
                     ]
                 },
-                "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "20"},
-                        {"name": "义务教育数学科", "value": "30"},
-                        {"name": "义务教育英语科", "value": "40"},
-                        {"name": "义务教育社会科", "value": "50"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"},
+                "self":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育艺体科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"26.29"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"29.25"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"26.21"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"29.43"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"29.30"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"27.97"
+                        }
                     ]
                 },
-                "scene": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "20"},
-                        {"name": "义务教育数学科", "value": "30"},
-                        {"name": "义务教育英语科", "value": "40"},
-                        {"name": "义务教育社会科", "value": "50"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"},
+                "scene":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育英语教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"29.73"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"29.63"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"29.72"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"29.39"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"29.53"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"29.47"
+                        }
                     ]
                 }
             },
-            "standardScore": { // 各个小的维度、标准差
-                "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "10"},
-                        {"name": "义务教育数学科", "value": "20"},
-                        {"name": "义务教育英语科", "value": "30"},
-                        {"name": "义务教育社会科", "value": "40"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"}
+            "standardScore":{
+                "self":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育艺体科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"3.33"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"1.78"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"3.02"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"1.59"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"1.88"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"2.87"
+                        }
                     ]
                 },
-                "scene": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "chartData": [
-                        {"name": "义务教育语文科", "value": "10"},
-                        {"name": "义务教育数学科", "value": "20"},
-                        {"name": "义务教育英语科", "value": "30"},
-                        {"name": "义务教育社会科", "value": "40"},
-                        {"name": "义务教育理工科", "value": "60"},
-                        {"name": "义务教育艺体科", "value": "70"}
+                "scene":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育英语教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"1.17"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"1.18"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"1.79"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"1.65"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"1.37"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"1.37"
+                        }
                     ]
                 }
             },
-            "minMaxSocre": {
-                "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",
-                    "midMin": "义务教育数学科", 
-                    "chartData": [
-                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+            "minMaxSocre":{
+                "self":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育艺体科教师",
+                    "midMax":"义务教育语文教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "midMin":"义务教育艺体科教师,义务教育英语教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "min":"15",
+                            "median":"25.0",
+                            "average":"26.29",
+                            "max":"30"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "min":"25",
+                            "median":"30.0",
+                            "average":"29.25",
+                            "max":"30"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "min":"20",
+                            "median":"25.0",
+                            "average":"26.21",
+                            "max":"30"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "min":"25",
+                            "median":"30.0",
+                            "average":"29.43",
+                            "max":"30"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "min":"20",
+                            "median":"30.0",
+                            "average":"29.3",
+                            "max":"30"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "min":"20",
+                            "median":"30.0",
+                            "average":"27.97",
+                            "max":"30"
+                        }
                     ]
                 },
-                "scene": {
-                    "max": "义务教育语文", // 分数最高的学科
-                    "min": "义务教育数学", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",
-                    "midMin": "义务教育数学科", 
-                    "chartData": [
-                        { "name": "义务教育语文", "min": 20.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育数学", "min": 30.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育英语", "min": 40.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育社会", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育理工", "min": 10.37, "median": 40, "average": 12, "max": 30,},
-                        { "name": "义务教育艺体", "min": 10.37, "median": 40, "average": 12, "max": 30,},
+                "scene":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育英语教师",
+                    "midMax":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "midMin":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "min":"22",
+                            "median":"25.0",
+                            "average":"29.73",
+                            "max":"30"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "min":"22",
+                            "median":"30.0",
+                            "average":"29.63",
+                            "max":"30"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "min":"6",
+                            "median":"25.0",
+                            "average":"29.72",
+                            "max":"30"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "min":"23",
+                            "median":"30.0",
+                            "average":"29.39",
+                            "max":"30"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "min":"21",
+                            "median":"30.0",
+                            "average":"29.53",
+                            "max":"30"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "min":"24",
+                            "median":"30.0",
+                            "average":"29.47",
+                            "max":"30"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "scoreRating":{
+                "chartData":[
+                    "90.72",
+                    "89.92",
+                    "91.73",
+                    "85.49",
+                    "93.32",
+                    "85.72"
+                ]
+            },
+            "eachScoreDistribution":{
+                "tableData":[
+                    {
+                        "name":"义务教育语文教师",
+                        "excellent":"14.52%(63人)",
+                        "good":"21.89%(95人)",
+                        "pass":"26.04%(113人)",
+                        "fail":"37.56%(163人)"
+                    },
+                    {
+                        "name":"义务教育数学教师",
+                        "excellent":"8.05%(24人)",
+                        "good":"21.81%(65人)",
+                        "pass":"27.18%(81人)",
+                        "fail":"42.95%(128人)"
+                    },
+                    {
+                        "name":"义务教育英语教师",
+                        "excellent":"18.1%(38人)",
+                        "good":"21.9%(46人)",
+                        "pass":"26.19%(55人)",
+                        "fail":"33.81%(71人)"
+                    },
+                    {
+                        "name":"义务教育理工科教师",
+                        "excellent":"0.0%(0人)",
+                        "good":"8.13%(10人)",
+                        "pass":"25.2%(31人)",
+                        "fail":"66.67%(82人)"
+                    },
+                    {
+                        "name":"义务教育艺体科教师",
+                        "excellent":"27.87%(80人)",
+                        "good":"24.39%(70人)",
+                        "pass":"24.74%(71人)",
+                        "fail":"23.0%(66人)"
+                    },
+                    {
+                        "name":"义务教育社会科教师",
+                        "excellent":"2.5%(4人)",
+                        "good":"7.5%(12人)",
+                        "pass":"17.5%(28人)",
+                        "fail":"72.5%(116人)"
+                    }
+                ],
+                "chnChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"63",
+                        "precent":"14.52"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"95",
+                        "precent":"21.89"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"113",
+                        "precent":"26.04"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"163",
+                        "precent":"37.56"
+                    }
+                ],
+                "mathChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"24",
+                        "precent":"8.05"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"65",
+                        "precent":"21.81"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"81",
+                        "precent":"27.18"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"128",
+                        "precent":"42.95"
+                    }
+                ],
+                "engChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"38",
+                        "precent":"18.10"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"46",
+                        "precent":"21.90"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"55",
+                        "precent":"26.19"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"71",
+                        "precent":"33.81"
+                    }
+                ],
+                "socChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"4",
+                        "precent":"2.50"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"12",
+                        "precent":"7.50"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"28",
+                        "precent":"17.50"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"116",
+                        "precent":"72.50"
+                    }
+                ],
+                "sciChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"0",
+                        "precent":"0"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"10",
+                        "precent":"8.13"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"31",
+                        "precent":"25.20"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"82",
+                        "precent":"66.67"
+                    }
+                ],
+                "artChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"80",
+                        "precent":"27.87"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"70",
+                        "precent":"24.39"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"71",
+                        "precent":"24.74"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"66",
+                        "precent":"23.00"
+                    }
+                ]
+            },
+            "averageScore":{
+                "all":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育理工科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"112"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"109"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"110"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"103"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"108"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"103"
+                        }
+                    ]
+                },
+                "self":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育社会科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"55.12"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"52.73"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"53.07"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"46.79"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"52.20"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"47.50"
+                        }
+                    ]
+                },
+                "scene":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育社会科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"56.86"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"56.13"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"57.01"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"55.80"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"55.71"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"55.37"
+                        }
+                    ]
+                }
+            },
+            "standardScore":{
+                "self":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育社会科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"4.71"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"5.69"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"5.97"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"5.74"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"5.43"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"6.64"
+                        }
+                    ]
+                },
+                "scene":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育社会科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"4.91"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"5.11"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"4.07"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"5.38"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"4.98"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"5.36"
+                        }
+                    ]
+                }
+            },
+            "minMaxSocre":{
+                "self":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育社会科教师",
+                    "midMax":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育数学教师",
+                    "midMin":"义务教育理工科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "min":"35",
+                            "median":"55.0",
+                            "average":"55.12",
+                            "max":"60"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "min":"30",
+                            "median":"55.0",
+                            "average":"52.73",
+                            "max":"60"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "min":"30",
+                            "median":"55.0",
+                            "average":"53.07",
+                            "max":"60"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "min":"25",
+                            "median":"45.0",
+                            "average":"46.79",
+                            "max":"55"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "min":"30",
+                            "median":"55.0",
+                            "average":"52.2",
+                            "max":"60"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "min":"15",
+                            "median":"50.0",
+                            "average":"47.5",
+                            "max":"60"
+                        }
+                    ]
+                },
+                "scene":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育社会科教师",
+                    "midMax":"义务教育艺体科教师,义务教育英语教师",
+                    "midMin":"义务教育数学教师,义务教育社会科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "min":"39",
+                            "median":"55.0",
+                            "average":"56.86",
+                            "max":"60"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "min":"39",
+                            "median":"55.0",
+                            "average":"56.13",
+                            "max":"60"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "min":"41",
+                            "median":"55.0",
+                            "average":"57.01",
+                            "max":"60"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "min":"41",
+                            "median":"45.0",
+                            "average":"55.8",
+                            "max":"60"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "min":"42",
+                            "median":"55.0",
+                            "average":"55.71",
+                            "max":"60"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "min":"36",
+                            "median":"50.0",
+                            "average":"55.37",
+                            "max":"60"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "scoreRating":{
+                "chartData":[
+                    "88.82",
+                    "88.96",
+                    "90.20",
+                    "88.87",
+                    "91.23",
+                    "91.07"
+                ]
+            },
+            "eachScoreDistribution":{
+                "tableData":[
+                    {
+                        "name":"义务教育语文教师",
+                        "excellent":"4.38%(19人)",
+                        "good":"0.46%(2人)",
+                        "pass":"34.79%(151人)",
+                        "fail":"60.37%(262人)"
+                    },
+                    {
+                        "name":"义务教育数学教师",
+                        "excellent":"6.71%(20人)",
+                        "good":"1.01%(3人)",
+                        "pass":"37.25%(111人)",
+                        "fail":"55.03%(164人)"
+                    },
+                    {
+                        "name":"义务教育英语教师",
+                        "excellent":"7.62%(16人)",
+                        "good":"1.43%(3人)",
+                        "pass":"36.19%(76人)",
+                        "fail":"54.76%(115人)"
+                    },
+                    {
+                        "name":"义务教育理工科教师",
+                        "excellent":"4.07%(5人)",
+                        "good":"0.81%(1人)",
+                        "pass":"34.15%(42人)",
+                        "fail":"60.98%(75人)"
+                    },
+                    {
+                        "name":"义务教育艺体科教师",
+                        "excellent":"8.71%(25人)",
+                        "good":"1.05%(3人)",
+                        "pass":"51.22%(147人)",
+                        "fail":"39.02%(112人)"
+                    },
+                    {
+                        "name":"义务教育社会科教师",
+                        "excellent":"12.5%(20人)",
+                        "good":"0.63%(1人)",
+                        "pass":"48.75%(78人)",
+                        "fail":"38.13%(61人)"
+                    }
+                ],
+                "chnChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"19",
+                        "precent":"4.38"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"2",
+                        "precent":"0.46"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"151",
+                        "precent":"34.79"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"262",
+                        "precent":"60.37"
+                    }
+                ],
+                "mathChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"20",
+                        "precent":"6.71"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"3",
+                        "precent":"1.01"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"111",
+                        "precent":"37.25"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"164",
+                        "precent":"55.03"
+                    }
+                ],
+                "engChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"16",
+                        "precent":"7.62"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"3",
+                        "precent":"1.43"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"76",
+                        "precent":"36.19"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"115",
+                        "precent":"54.76"
+                    }
+                ],
+                "socChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"20",
+                        "precent":"12.50"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"1",
+                        "precent":"0.63"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"78",
+                        "precent":"48.75"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"61",
+                        "precent":"38.13"
+                    }
+                ],
+                "sciChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"5",
+                        "precent":"4.07"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"1",
+                        "precent":"0.81"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"42",
+                        "precent":"34.15"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"75",
+                        "precent":"60.98"
+                    }
+                ],
+                "artChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"25",
+                        "precent":"8.71"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"3",
+                        "precent":"1.05"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"147",
+                        "precent":"51.22"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"112",
+                        "precent":"39.02"
+                    }
+                ]
+            },
+            "averageScore":{
+                "all":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育数学教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"82.11"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"79.94"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"81.18"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"79.98"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"80.06"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"81.96"
+                        }
+                    ]
+                },
+                "self":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育数学教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"39.11"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"37.05"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"37.81"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"37.97"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"37.43"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"40.31"
+                        }
+                    ]
+                },
+                "scene":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育艺体科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"43.00"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"42.89"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"43.37"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"42.02"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"42.63"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"41.65"
+                        }
+                    ]
+                }
+            },
+            "standardScore":{
+                "self":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育数学教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"3.73"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"4.16"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"3.68"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"3.6"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"4.78"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"3.29"
+                        }
+                    ]
+                },
+                "scene":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育艺体科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"3.39"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"3.24"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"2.63"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"3.83"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"3.16"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"4.08"
+                        }
+                    ]
+                }
+            },
+            "minMaxSocre":{
+                "self":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育数学教师",
+                    "midMax":"义务教育艺体科教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "midMin":"义务教育语文教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "min":"25",
+                            "median":"40.0",
+                            "average":"39.11",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "min":"20",
+                            "median":"35.0",
+                            "average":"37.05",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "min":"30",
+                            "median":"40.0",
+                            "average":"37.81",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "min":"30",
+                            "median":"40.0",
+                            "average":"37.97",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "min":"10",
+                            "median":"40.0",
+                            "average":"37.43",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "min":"25",
+                            "median":"40.0",
+                            "average":"40.31",
+                            "max":"45"
+                        }
+                    ]
+                },
+                "scene":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育艺体科教师",
+                    "midMax":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育数学教师",
+                    "midMin":"义务教育理工科教师,义务教育社会科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "min":"28",
+                            "median":"40.0",
+                            "average":"43.0",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "min":"30",
+                            "median":"35.0",
+                            "average":"42.89",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "min":"35",
+                            "median":"40.0",
+                            "average":"43.37",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "min":"32",
+                            "median":"40.0",
+                            "average":"42.02",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "min":"34",
+                            "median":"40.0",
+                            "average":"42.63",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "min":"29",
+                            "median":"40.0",
+                            "average":"41.65",
+                            "max":"45"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "scoreRating":{
+                "chartData":[
+                    "86.00",
+                    "85.44",
+                    "90.15",
+                    "88.10",
+                    "88.49",
+                    "91.23"
+                ]
+            },
+            "eachScoreDistribution":{
+                "tableData":[
+                    {
+                        "name":"义务教育语文教师",
+                        "excellent":"1.15%(5人)",
+                        "good":"0.0%(0人)",
+                        "pass":"16.59%(72人)",
+                        "fail":"82.26%(357人)"
+                    },
+                    {
+                        "name":"义务教育数学教师",
+                        "excellent":"0.0%(0人)",
+                        "good":"0.34%(1人)",
+                        "pass":"12.75%(38人)",
+                        "fail":"86.91%(259人)"
+                    },
+                    {
+                        "name":"义务教育英语教师",
+                        "excellent":"8.1%(17人)",
+                        "good":"2.86%(6人)",
+                        "pass":"44.29%(93人)",
+                        "fail":"44.76%(94人)"
+                    },
+                    {
+                        "name":"义务教育理工科教师",
+                        "excellent":"8.94%(11人)",
+                        "good":"0.0%(0人)",
+                        "pass":"26.02%(32人)",
+                        "fail":"65.04%(80人)"
+                    },
+                    {
+                        "name":"义务教育艺体科教师",
+                        "excellent":"10.45%(30人)",
+                        "good":"0.35%(1人)",
+                        "pass":"31.01%(89人)",
+                        "fail":"58.19%(167人)"
+                    },
+                    {
+                        "name":"义务教育社会科教师",
+                        "excellent":"18.13%(29人)",
+                        "good":"1.88%(3人)",
+                        "pass":"41.25%(66人)",
+                        "fail":"38.75%(62人)"
+                    }
+                ],
+                "chnChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"5",
+                        "precent":"1.15"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"0",
+                        "precent":"0"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"72",
+                        "precent":"16.59"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"357",
+                        "precent":"82.26"
+                    }
+                ],
+                "mathChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"0",
+                        "precent":"0"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"1",
+                        "precent":"0.34"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"38",
+                        "precent":"12.75"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"259",
+                        "precent":"86.91"
+                    }
+                ],
+                "engChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"17",
+                        "precent":"8.10"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"6",
+                        "precent":"2.86"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"93",
+                        "precent":"44.29"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"94",
+                        "precent":"44.76"
+                    }
+                ],
+                "socChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"29",
+                        "precent":"18.13"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"3",
+                        "precent":"1.88"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"66",
+                        "precent":"41.25"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"62",
+                        "precent":"38.75"
+                    }
+                ],
+                "sciChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"11",
+                        "precent":"8.94"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"0",
+                        "precent":"0"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"32",
+                        "precent":"26.02"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"80",
+                        "precent":"65.04"
+                    }
+                ],
+                "artChartData":[
+                    {
+                        "name":"优秀",
+                        "value":"30",
+                        "precent":"10.45"
+                    },
+                    {
+                        "name":"良好",
+                        "value":"1",
+                        "precent":"0.35"
+                    },
+                    {
+                        "name":"合格",
+                        "value":"89",
+                        "precent":"31.01"
+                    },
+                    {
+                        "name":"不合格",
+                        "value":"167",
+                        "precent":"58.19"
+                    }
+                ]
+            },
+            "averageScore":{
+                "all":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育社会科教师",
+                    "min":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"79.64"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"77.40"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"81.13"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"79.29"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"76.90"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"82.11"
+                        }
+                    ]
+                },
+                "self":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育语文教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"37.02"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"35.37"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"39.00"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"38.25"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"35.25"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"40.88"
+                        }
+                    ]
+                },
+                "scene":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育数学教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"42.62"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"42.03"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"42.13"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"41.04"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"41.65"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"41.23"
+                        }
+                    ]
+                }
+            },
+            "standardScore":{
+                "self":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育语文教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"5.34"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"4.08"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"4.05"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"3.55"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"3.23"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"3.29"
+                        }
+                    ]
+                },
+                "scene":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育数学教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "value":"3.78"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "value":"3.87"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "value":"3.75"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "value":"4.69"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "value":"4.13"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "value":"4.42"
+                        }
+                    ]
+                }
+            },
+            "minMaxSocre":{
+                "self":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育语文教师",
+                    "midMax":"义务教育艺体科教师,义务教育英语教师,义务教育理工科教师,义务教育社会科教师",
+                    "midMin":"义务教育语文教师,义务教育数学教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "min":"25",
+                            "median":"40.0",
+                            "average":"37.02",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "min":"20",
+                            "median":"35.0",
+                            "average":"35.37",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "min":"25",
+                            "median":"40.0",
+                            "average":"39.0",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "min":"30",
+                            "median":"40.0",
+                            "average":"38.25",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "min":"25",
+                            "median":"35.0",
+                            "average":"35.25",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "min":"25",
+                            "median":"40.0",
+                            "average":"40.88",
+                            "max":"45"
+                        }
+                    ]
+                },
+                "scene":{
+                    "max":"义务教育艺体科教师,义务教育语文教师,义务教育英语教师,义务教育理工科教师,义务教育数学教师,义务教育社会科教师",
+                    "min":"义务教育数学教师",
+                    "midMax":"义务教育艺体科教师,义务教育语文教师",
+                    "midMin":"义务教育社会科教师",
+                    "chartData":[
+                        {
+                            "name":"义务教育艺体科教师",
+                            "min":"28",
+                            "median":"40.0",
+                            "average":"42.62",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育语文教师",
+                            "min":"28",
+                            "median":"35.0",
+                            "average":"42.03",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育英语教师",
+                            "min":"28",
+                            "median":"40.0",
+                            "average":"42.13",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育理工科教师",
+                            "min":"28",
+                            "median":"40.0",
+                            "average":"41.04",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育数学教师",
+                            "min":"27",
+                            "median":"35.0",
+                            "average":"41.65",
+                            "max":"45"
+                        },
+                        {
+                            "name":"义务教育社会科教师",
+                            "min":"28",
+                            "median":"40.0",
+                            "average":"41.23",
+                            "max":"45"
+                        }
                     ]
                 }
             }
