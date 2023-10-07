@@ -238,11 +238,11 @@
         </desc-slot>
       </div>
     </div>
-    <h2 class="title mtb-15">3.2 全区义务教育学段各维度调研结果</h2>
+    <h2 class="title mtb-15">1.2 全区各维度调研结果</h2>
     <br />
-    <h2 class="title mtb-15">3.2.1 全区义务教育学段各维度得分率与得分分布情况</h2>
+    <h2 class="title mtb-15">1.2.1 全区各维度得分率与得分分布情况</h2>
     <br />
-    <h2 class="title mtb-15"  style="margin-bottom: 30px;">3.2.1.1 全区义务教育学段各维度得分率</h2>
+    <h2 class="title mtb-15"  style="margin-bottom: 30px;">1.2.1.1 全区各维度得分率</h2>
     <br />
     <!-- 得分率开始 -->
     <div class="wrap-d">
@@ -281,7 +281,7 @@
     </div>
 
     <!-- 得分率结束 -->
-    <h2 class="title" style="margin-bottom: 60px; margin-top: 30px;">3.2.1.2 全区义务教育学段各维度得分分布情况</h2>
+    <h2 class="title" style="margin-bottom: 60px; margin-top: 30px;">1.2.1.2 全区各维度得分分布情况</h2>
     <br />
     <!-- 得分分布 -->
     <div class="wrap-d-wrap" style="position: relative">
