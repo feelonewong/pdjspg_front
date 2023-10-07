@@ -76,21 +76,27 @@ export const HighEdu = {
         },
         "subjectScoreDistribution":{
             "chn":{
+                "title": "高中教育语文学科",
                 "chartData": data.allResult.subjectScoreDistribution.chnChartData
             },
             "math":{
+                "title": "高中教育数学学科",
                 "chartData": data.allResult.subjectScoreDistribution.mathChartData
             },
             "eng":{
+                "title": "高中教育英语学科",
                 "chartData": data.allResult.subjectScoreDistribution.engChartData
             },
             "soc":{
+                "title": "高中教育社会学科",
                 "chartData": data.allResult.subjectScoreDistribution.socChartData
             },
             "sci":{
+                "title": "高中教育理工学科",
                 "chartData": data.allResult.subjectScoreDistribution.sciChartData
             },
             "art":{
+                "title": "高中教育艺体学科",
                 "chartData": data.allResult.subjectScoreDistribution.artChartData
             },
         },
@@ -142,21 +148,27 @@ export const HighEdu = {
         "dimensionRating": {
             "wrap": {
                 "chn":{
+                    "title": "高中教育语文学科",
                     "chartData": data.allResult.dimensionRating.chnChartData
                 },
                 "math":{
+                    "title": "高中教育数学学科",
                     "chartData": data.allResult.dimensionRating.mathChartData
                 },
                 "eng":{
+                    "title": "高中教育英语学科",
                     "chartData": data.allResult.dimensionRating.engChartData
                 },
                 "soc":{
+                    "title": "高中教育社会学科",
                     "chartData": data.allResult.dimensionRating.socChartData
                 },
                 "sci":{
+                    "title": "高中教育理工学科",
                     "chartData": data.allResult.dimensionRating.sciChartData
                 },
                 "art":{
+                    "title": "高中教育艺体学科",
                     "chartData": data.allResult.dimensionRating.artChartData
                 },
 
