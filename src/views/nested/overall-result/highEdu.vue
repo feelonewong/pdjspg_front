@@ -270,9 +270,10 @@
         <br />
         <h2 class="title">{{ item.subTitle }}</h2>
         <br />
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin-top: 40px;">
           <div class="area-left">
             <RadarChart :chartData="{
+              title: '全区高中教育'+item.scoreRating.title+'得分率',
               config: radarChartOptions,
               data: item.scoreRating.chartData
             }"></RadarChart>
@@ -296,7 +297,7 @@
             :key="eachIndex"
             style="width: 33%;"
           >
-            <PieChart :title="emptyTitle" :chartData="eachItem.chartData"></PieChart>
+            <PieChart :title="eachItem.title" :chartData="eachItem.chartData"></PieChart>
             <desc-slot>
               优秀人数:{{ eachItem.chartData[0].value }} 占比({{
                 eachItem.chartData[0].precent
@@ -313,16 +314,16 @@
             </desc-slot>
           </div>
         </div> 
-        <div style="width: 80%; margin: 0 auto">
+        <div style="width: 80%; margin: 0 auto; margin-top: 40px; margin-bottom: 40px;">
           <CommonTable
               :tableInfo="item.eachScoreDistribution.tableInfo"
             ></CommonTable>
         </div>
         <h2 class="title">{{ item.second }}</h2>
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin: 30px 0;">
           <div class="area-left">
               <ZoomBarChart
-                :title="emptyTitle"
+                :title="'全区高中教育'+item.scoreRating.title+'整体平均分'"
                 :chartData="item.averageScore.all.chartData"
               ></ZoomBarChart>
           </div>
@@ -334,10 +335,10 @@
             </desc-slot>
           </div>
         </div>
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin: 40px 0;">
           <div class="area-left">
               <ZoomBarChart
-                :title="emptyTitle"
+                :title="'全区高中教育'+item.scoreRating.title+'自陈问题平均分'"
                 :chartData="item.averageScore.self.chartData"
               ></ZoomBarChart>
           </div>
@@ -352,7 +353,7 @@
         <div class="wrap-d">
           <div class="area-left">
               <ZoomBarChart
-                :title="emptyTitle"
+              :title="'全区高中教育'+item.scoreRating.title+'情景问题平均分'"
                 :chartData="item.averageScore.scene.chartData"
               ></ZoomBarChart>
           </div>
@@ -365,9 +366,11 @@
           </div>
         </div>
         <!-- 最低分 最高分 中位数 -->
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin: 30px 0;">
           <div class="area-left">
-            <BoxPlotChart :title="''" :chartData="item.minMaxSocre.self.chartData" />
+            <BoxPlotChart
+            :title="'全区高中教育'+item.scoreRating.title+'自陈问题最低分、中位数、最高分'"            
+            :chartData="item.minMaxSocre.self.chartData" />
           </div>
           <div class="area-right">
             <desc-slot>
@@ -382,7 +385,9 @@
         </div>
      <div class="wrap-d">
           <div class="area-left">
-            <BoxPlotChart :title="''" :chartData="item.minMaxSocre.scene.chartData" />
+            <BoxPlotChart
+            :title="'全区高中教育'+item.scoreRating.title+'情景问题最低分、中位数、最高分'"            
+            :chartData="item.minMaxSocre.scene.chartData" />
           </div>
           <div class="area-right">
             <desc-slot>
@@ -400,7 +405,7 @@
         <div class="wrap-d">
           <div class="area-left">
             <ZoomBarChart
-                :title="emptyTitle"
+                :title="'全区高中教育'+item.scoreRating.title+'自陈问题标准差'"            
                 :chartData="item.standardScore.self.chartData"
               ></ZoomBarChart>
           </div>
@@ -412,10 +417,10 @@
             </desc-slot>
           </div>
         </div>
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin: 50px 0;">
           <div class="area-left">
             <ZoomBarChart
-                :title="emptyTitle"
+                :title="'全区高中教育'+item.scoreRating.title+'情景问题标准差'"            
                 :chartData="item.standardScore.scene.chartData"
               ></ZoomBarChart>
           </div>
