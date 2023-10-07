@@ -1,20 +1,20 @@
 <template>
   <div style="margin-bottom: 50px">
-    <h2>一、全区调研结果</h2>
+    <h2 class="mtb-15">一、全区调研结果</h2>
     <br />
-    <h2 class="title">1.1全区整体调研结果</h2>
+    <h2 class="title mtb-15">1.1全区整体调研结果</h2>
     <br />
-    <h2 class="title">1.1.1全区整体得分率与得分分布情况</h2>
+    <h2 class="title mtb-15">1.1.1全区整体得分率与得分分布情况</h2>
     <br />
     <div class="wrap-d">
-      <div class="area-left">
+      <div class="area-left" style="width: 70%">
         <PieRoseChart
-          :title="emptyTitle"
+          :title="'全区整体得分率'"
           :height="'520px'"
           :chartData="allResult.allScoreRating.chartData"
         ></PieRoseChart>
       </div>
-      <div class="area-right">
+      <div class="area-right" style="width: 50%">
         <desc-slot>
           全区学科整体得分率为 (%) :<br />
           学前教育学科得分率为: {{ allResult.allScoreRating.chartData[0].value
@@ -49,15 +49,15 @@
         </desc-slot>
       </div>
     </div>
-    <h2 class="title">1.1.2 全区整体得分分布情况</h2>
+    <h2 class="title mtb-15" style="margin-top: 40px">1.1.2 全区整体得分分布情况</h2>
     <br />
-    <h2 class="title">1.1.2.1全区总体得分分布情况</h2>
+    <h2 class="title mtb-15">1.1.2.1全区总体得分分布情况</h2>
     <br />
     <div>
       <div class="wrap-d">
         <div class="area-left">
           <PieChart
-            :title="''"
+            :title="'全区得分分布情况'"
             :chartData="allResult.scoreDistribution.chartData"
           ></PieChart>
         </div>
@@ -96,37 +96,40 @@
         class="area-left"
         v-for="(eachItem, eachIndex) in allResult.subjectScoreDistribution"
         :key="eachIndex"
-        style="width: 33%"
+        style="width: 33%; margin-top: 15px"
       >
         <PieChart
-          :title="emptyTitle"
+          :title="eachItem.title"
           :chartData="eachItem.chartData"
         ></PieChart>
         <desc-slot>
-          结果如下:<br />
+          <span style="font-weight: 600; font-size: 18px">
+            {{ eachItem.title }}
+          </span
+          >结果如下:<br />
           优秀人数:{{ eachItem.chartData[0].value }} 占比({{
             eachItem.chartData[0].proportion
-          }})<br />
+          }} %)<br />
           良好人数:{{ eachItem.chartData[1].value }} 占比({{
             eachItem.chartData[1].proportion
-          }})<br />
+          }} %)<br />
           及格人数:{{ eachItem.chartData[2].value }} 占比({{
             eachItem.chartData[2].proportion
-          }})<br />
+          }} %)<br />
           不及格人数:{{ eachItem.chartData[3].value }} 占比({{
             eachItem.chartData[3].proportion
-          }})<br />
+          }} %)<br />
         </desc-slot>
       </div>
     </div>
     <!-- 平均分、中位数、标准差 -->
-    <h2 class="title">3.1.2.2全区学科整体平均分、中位数、标准差</h2>
+    <h2 class="title mtb-15">1.1.2.2全区学科整体平均分、中位数、标准差</h2>
     <br />
     <!-- 整体平均分 -->
     <div class="wrap-d">
       <div class="area-left">
         <ZoomBarChart
-          :title="emptyTitle"
+          :title="'全区学科整体平均分'"
           :chartData="allResult.minMaxScore.all.chartData"
         ></ZoomBarChart>
       </div>
@@ -142,7 +145,7 @@
     <div class="wrap-d">
       <div class="area-left">
         <ZoomBarChart
-          :title="emptyTitle"
+          :title="'全区自陈问题平均分'"
           :chartData="allResult.minMaxScore.self.chartData"
         ></ZoomBarChart>
       </div>
@@ -160,7 +163,7 @@
     <div class="wrap-d">
       <div class="area-left">
         <ZoomBarChart
-          :title="emptyTitle"
+          :title="'全区情景问题平均分'"
           :chartData="allResult.minMaxScore.scene.chartData"
         ></ZoomBarChart>
       </div>
@@ -177,13 +180,13 @@
     <div class="wrap-d">
       <div class="area-left">
         <BoxPlotChart
-          :title="''"
+          :title="'自陈问题最低分、中位数、最高分'"
           :chartData="allResult.midMaxMinSceneAndSelf.self.chartData"
         />
       </div>
       <div class="area-left">
         <BoxPlotChart
-          :title="''"
+          :title="'情景问题最低分、中位数、最高分'"
           :chartData="allResult.midMaxMinSceneAndSelf.scene.chartData"
         />
       </div>
@@ -207,18 +210,18 @@
         分数最低的学科为: {{ allResult.midMaxMinSceneAndSelf.scene.min }}<br />
       </desc-slot>
     </div>
-    <!--  -->
+    <!-- 标准差  -->
     <div class="wrap-d">
       <div class="area-left">
         <ZoomBarChart
-          :title="emptyTitle"
+          :title="'自陈问题标准差'"
           :chartData="allResult.standradScore.self.chartData"
         ></ZoomBarChart>
       </div>
 
       <div class="area-left">
         <ZoomBarChart
-          :title="emptyTitle"
+          :title="'情景问题标准差'"
           :chartData="allResult.standradScore.scene.chartData"
         ></ZoomBarChart>
       </div>
@@ -235,11 +238,11 @@
         </desc-slot>
       </div>
     </div>
-    <h2 class="title">3.2 全区义务教育学段各维度调研结果</h2>
+    <h2 class="title mtb-15">3.2 全区义务教育学段各维度调研结果</h2>
     <br />
-    <h2 class="title">3.2.1 全区义务教育学段各维度得分率与得分分布情况</h2>
+    <h2 class="title mtb-15">3.2.1 全区义务教育学段各维度得分率与得分分布情况</h2>
     <br />
-    <h2 class="title">3.2.1.1 全区义务教育学段各维度得分率</h2>
+    <h2 class="title mtb-15"  style="margin-bottom: 30px;">3.2.1.1 全区义务教育学段各维度得分率</h2>
     <br />
     <!-- 得分率开始 -->
     <div class="wrap-d">
@@ -251,20 +254,23 @@
         class="area-left"
         v-for="(eachItem, eachIndex) in allResult.dimensionRating.wrap"
         :key="eachIndex"
-        style="width: 33%"
+        style="width: 33%;padding: 20px;"
       >
         <PieRoseChart
-          :title="emptyTitle"
+          :title="eachItem.title+'得分率'"
           :chartData="eachItem.chartData"
         ></PieRoseChart>
 
         <desc-slot>
-          在{{ eachItem.title }}中整体结果如下:<br />
-          整体得分率:{{ eachItem.chartData[0].value }} <br />
-          职业态度:{{ eachItem.chartData[1].value }} <br />
-          教学实践:{{ eachItem.chartData[2].value }}<br />
-          综合育人:{{ eachItem.chartData[3].value }}<br />
-          自主发展:{{ eachItem.chartData[4].value }}<br />
+          在<span style="font-weight: 600; font-size: 18px">{{
+            eachItem.title
+          }}</span
+          >中整体结果如下:<br />
+          整体得分率: {{ eachItem.chartData[0].value }}% <br />
+          职业态度: {{ eachItem.chartData[1].value }}% <br />
+          教学实践: {{ eachItem.chartData[2].value }}%<br />
+          综合育人: {{ eachItem.chartData[3].value }}%<br />
+          自主发展: {{ eachItem.chartData[4].value }}%<br />
         </desc-slot>
       </div>
     </div>
@@ -275,13 +281,10 @@
     </div>
 
     <!-- 得分率结束 -->
-    <h2 class="title">3.2.1.2 全区义务教育学段各维度得分分布情况</h2>
+    <h2 class="title" style="margin-bottom: 60px; margin-top: 30px;">3.2.1.2 全区义务教育学段各维度得分分布情况</h2>
     <br />
     <!-- 得分分布 -->
-    <div
-      class="wrap-d-wrap"
-      style="position: relative"
-    >
+    <div class="wrap-d-wrap" style="position: relative">
       <div style="width: 500px; position: absolute; left: 10px">
         <!-- {{ subProject[wapIndex] }} -->
       </div>
@@ -292,11 +295,14 @@
         :key="eachIndex"
       >
         <PieChart
-          :title="emptyTitle"
+          :title="eachItem.title"
           :chartData="eachItem.chartData"
         ></PieChart>
         <desc-slot>
-          <span style="font-weight: 600; font-size: 18px;">{{ eachItem.title }}</span>维度结果如下:<br />
+          <span style="font-weight: 600; font-size: 18px">{{
+            eachItem.title
+          }}</span
+          >维度结果如下:<br />
           优秀人数:{{ eachItem.chartData[0].value }} <br />
           良好人数:{{ eachItem.chartData[1].value }}<br />
           及格人数:{{ eachItem.chartData[2].value }}<br />
@@ -305,15 +311,16 @@
       </div>
     </div>
     <template v-for="(item, index) in compEduData.modules">
-      <div :key="index">
-        <h2>{{ item.title }}</h2>
+      <div :key="index" style="margin-bottom: 30px">
+        <h2 style="margin-bottom: 40px; margin-top: 10px;">{{ item.title }}</h2>
         <br />
-        <h2 class="title">{{ item.subTitle }}</h2>
+        <h2 class="title" style="margin-bottom: 60px; margin-top: 10px;">{{ item.subTitle }}</h2>
         <br />
-        <div class="wrap-d">
+        <div class="wrap-d" style="margin-bottom: 40px; margin-top: 10px;">
           <div class="area-left">
             <RadarChart
               :chartData="{
+                title: '全区'+item.scoreRating.title + '得分率',
                 config: radarChartOptions,
                 data: item.scoreRating.chartData,
               }"
@@ -321,7 +328,10 @@
           </div>
           <div class="area-right">
             <desc-slot>
-              全区{{ item.scoreRating.title }}维度结果如下: <br />
+              全区<span style="font-weight: 600; font-size: 18px">{{
+            item.scoreRating.title
+          }}</span
+          >维度结果如下: <br />
               全区教育学科得分率为:{{ item.scoreRating.chartData[0] }} <br />
 
               学前教育科得分率为:{{ item.scoreRating.chartData[1] }} <br />
@@ -331,14 +341,21 @@
               义务教育社会科得分率为:{{ item.scoreRating.chartData[5] }} <br />
               义务教育理工科得分率为:{{ item.scoreRating.chartData[6] }} <br />
               义务教育艺体科得分率为:{{ item.scoreRating.chartData[7] }} <br />
-              
-              高中教育学科语文科得分率为:{{ item.scoreRating.chartData[7] }} <br />
-              高中教育学科数学科得分率为:{{ item.scoreRating.chartData[8] }} <br />
-              高中教育学科英语科得分率为:{{ item.scoreRating.chartData[9] }} <br />
-              高中教育学科社会科得分率为:{{ item.scoreRating.chartData[10] }} <br />
-              高中教育学科理工科得分率为:{{ item.scoreRating.chartData[11] }} <br />
-              高中教育学科艺体科得分率为:{{ item.scoreRating.chartData[12] }} <br />
-              高中教育学科艺体科得分率为:{{ item.scoreRating.chartData[13] }} <br />
+
+              高中教育学科语文科得分率为:{{ item.scoreRating.chartData[7] }}
+              <br />
+              高中教育学科数学科得分率为:{{ item.scoreRating.chartData[8] }}
+              <br />
+              高中教育学科英语科得分率为:{{ item.scoreRating.chartData[9] }}
+              <br />
+              高中教育学科社会科得分率为:{{ item.scoreRating.chartData[10] }}
+              <br />
+              高中教育学科理工科得分率为:{{ item.scoreRating.chartData[11] }}
+              <br />
+              高中教育学科艺体科得分率为:{{ item.scoreRating.chartData[12] }}
+              <br />
+              高中教育学科艺体科得分率为:{{ item.scoreRating.chartData[13] }}
+              <br />
             </desc-slot>
           </div>
         </div>
@@ -350,10 +367,13 @@
             style="width: 33%"
           >
             <PieChart
-              :title="emptyTitle"
+              :title="eachItem.title"
               :chartData="eachItem.chartData"
             ></PieChart>
             <desc-slot>
+              <span style="font-weight: 600; font-size: 18px">结果如下:</span
+          ><br/>
+              
               优秀人数:{{ eachItem.chartData[0].value }} 占比({{
                 eachItem.chartData[0].proportion
               }}%)<br />
@@ -374,11 +394,11 @@
             :tableInfo="item.eachScoreDistribution.tableInfo"
           ></CommonTable>
         </div>
-        <h2 class="title">{{ item.second }}</h2>
+        <h2 class="title" style="margin-bottom: 60px; margin-top: 40px;">{{ item.second }}</h2>
         <div class="wrap-d">
           <div class="area-left">
             <ZoomBarChart
-              :title="emptyTitle"
+              :title="item.averageScore.title+'整体平均分'"
               :chartData="item.averageScore.all.chartData"
             ></ZoomBarChart>
           </div>
@@ -393,7 +413,7 @@
         <div class="wrap-d">
           <div class="area-left">
             <ZoomBarChart
-              :title="emptyTitle"
+              :title="item.averageScore.title+'自陈问题平均分'"
               :chartData="item.averageScore.self.chartData"
             ></ZoomBarChart>
           </div>
@@ -408,7 +428,7 @@
         <div class="wrap-d">
           <div class="area-left">
             <ZoomBarChart
-              :title="emptyTitle"
+              :title="item.averageScore.title+'情景问题平均分'"
               :chartData="item.averageScore.scene.chartData"
             ></ZoomBarChart>
           </div>
@@ -426,7 +446,7 @@
         <div class="wrap-d">
           <div class="area-left">
             <BoxPlotChart
-              :title="''"
+              :title="item.averageScore.title+'自陈问题问题最低分、中位数、最高分'"  
               :chartData="item.minMaxSocre.self.chartData"
             />
           </div>
@@ -444,7 +464,7 @@
         <div class="wrap-d">
           <div class="area-left">
             <BoxPlotChart
-              :title="''"
+            :title="item.averageScore.title+'情景问题问题最低分、中位数、最高分'"  
               :chartData="item.minMaxSocre.scene.chartData"
             />
           </div>
@@ -464,7 +484,7 @@
         <div class="wrap-d">
           <div class="area-left">
             <ZoomBarChart
-              :title="emptyTitle"
+              :title="item.averageScore.title+'自陈问题问题标准差'"  
               :chartData="item.standardScore.self.chartData"
             ></ZoomBarChart>
           </div>
@@ -481,7 +501,7 @@
         <div class="wrap-d">
           <div class="area-left">
             <ZoomBarChart
-              :title="emptyTitle"
+              :title="item.averageScore.title+'情景问题问题标准差'"  
               :chartData="item.standardScore.scene.chartData"
             ></ZoomBarChart>
           </div>
@@ -539,8 +559,8 @@ export default {
         art: "义务教育艺体学科",
       },
       radarChartOptions: [
-        {name: "全区总体得分率", max: 100},
-        {name: "学前教育学科教师", max: 100},
+        { name: "全区总体得分率", max: 100 },
+        { name: "学前教育学科教师", max: 100 },
         { name: "义务教育语文科教师", max: 100 },
         { name: "义务教育数学科教师", max: 100 },
         { name: "义务教育英语科教师", max: 100 },
@@ -553,6 +573,21 @@ export default {
         { name: "高中教育社会科教师", max: 100 },
         { name: "高中教育理工科教师", max: 100 },
         { name: "高中教育艺体科教师", max: 100 },
+      ],
+      subProjectArr: [
+        "学前教育学科",
+        "义务教育语文",
+        "义务教育数学",
+        "义务教育英语",
+        "义务教育社会",
+        "义务教育理工",
+        "义务教育艺体",
+        "高中教育语文",
+        "高中教育数学",
+        "高中教育英语",
+        "高中教育社会",
+        "高中教育理工",
+        "高中教育艺体",
       ],
     };
   },
@@ -617,5 +652,9 @@ h2::after {
 .area-right {
   width: 100%;
   margin: auto 0;
+}
+.mtb-15 {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 </style>

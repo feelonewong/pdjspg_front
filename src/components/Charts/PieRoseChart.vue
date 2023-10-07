@@ -52,8 +52,12 @@ export default {
       return {
         title: {
           text: this.$props.title,
-          // subtext: "Fake Data",
-          left: "left",
+          left: "center",
+          textVerticalAlign: 'bottom',
+          textStyle: {
+            fontSize: 16,
+            fontWeight: "bold",
+          },
         },
         tooltip: {
           trigger: "item",
@@ -66,15 +70,16 @@ export default {
           {
             name: this.$props.title,
             type: "pie",
-            radius: [50, 150],
+            radius: [40, 140],
             center: ["50%", "50%"],
             roseType: "area",
             label: {
+              position: "outside",
               show: true,
-              formatter: "{b}:{c} ({d}%)",
+              formatter: "{b}\n {c} ({d}%)",
             },
             itemStyle: {
-              borderRadius: 8,
+              borderRadius: 6,
             },
             data: this.$props.chartData,
           },

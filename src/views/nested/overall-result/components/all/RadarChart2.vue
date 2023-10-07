@@ -68,7 +68,13 @@ export default {
     setOptions({ expectedData, actualData } = {}) {
       this.chart.setOption({
         title: {
-          text: "",
+          text: this.$props.chartData.title || '',
+          left: "center",
+          textVerticalAlign: 'bottom',
+          textStyle: {
+            fontSize: 16,
+            fontWeight: "bold",
+          },
         },
         legend: {
           data: ["Allocated Budget"],

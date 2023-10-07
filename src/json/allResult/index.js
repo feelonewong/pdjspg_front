@@ -2395,46 +2395,18 @@ export const data = {
             },
             "minMaxSocre": {
                 "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科", // 中位数最高的学科
-                    "midMin": "义务教育数学科",  // 中位数最低的学科
-                    "chartData": [
-                        { "name": "学前教育学段学科", "min": 31, "median": 60, "average": 45.5, "max": 60,},
-                        { "name": "义务教育语文学科", "min": 39, "median": 59, "average": 49.5, "max": 60,},
-                        { "name": "义务教育数学学科", "min": 42, "median": 58, "average": 12, "max": 60,},
-                        { "name": "义务教育英语学科", "min": 41, "median": 60, "average": 50.5, "max": 60,},
-                        { "name": "义务教育社会学科", "min": 39, "median": 60, "average": 49.5, "max": 60,},
-                        { "name": "义务教育理工学科", "min": 36, "median": 57, "average": 48, "max": 60,},
-                        { "name": "义务教育艺体学科", "min": 41, "median": 59, "average": 50.5, "max": 60,},
-                        { "name": "高中教育语文学科", "min": 40, "median": 55, "average": 50, "max": 60,},
-                        { "name": "高中教育数学学科", "min": 36, "median": 58, "average": 48, "max": 60,},
-                        { "name": "高中教育英语学科", "min": 38, "median": 60, "average": 49, "max": 60,},
-                        { "name": "高中教育社会学科", "min": 44, "median": 59, "average": 52, "max": 60,},
-                        { "name": "高中教育理工学科", "min": 40, "median": 60, "average": 50, "max": 60,},
-                        { "name": "高中教育艺体学科", "min": 35, "median": 58, "average": 45.25, "max": 60,},
-                    ]
+                    "max": "义务教育艺体科教师", // 分数最高的学科
+                    "min": "高中学段（含职校）艺体科教师", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "全体学科", // 中位数最高的学科
+                    "midMin": "全体学科",  // 中位数最低的学科
+                    "chartData": [{"name":"幼儿园教师","min":22.0,"median":30.0,"average":29.67,"max":30.0},{"name":"义务教育语文教师","min":22.0,"median":30.0,"average":29.63,"max":30.0},{"name":"义务教育数学教师","min":21.0,"median":30.0,"average":29.53,"max":30.0},{"name":"义务教育英语教师","min":6.0,"median":30.0,"average":29.72,"max":30.0},{"name":"义务教育社会科教师","min":24.0,"median":30.0,"average":29.47,"max":30.0},{"name":"义务教育理工科教师","min":23.0,"median":30.0,"average":29.39,"max":30.0},{"name":"义务教育艺体科教师","min":22.0,"median":30.0,"average":29.73,"max":30.0},{"name":"高中教育（含职业院校）语文教师","min":12.0,"median":30.0,"average":28.72,"max":30.0},{"name":"高中学段（含职校）数学教师","min":18.0,"median":30.0,"average":28.97,"max":30.0},{"name":"高中学段（含职校） 英语教师","min":24.0,"median":30.0,"average":29.54,"max":30.0},{"name":"高中学段（含职校）社会科教师","min":23.0,"median":30.0,"average":29.06,"max":30.0},{"name":"高中学段（含职校）理工科教师","min":22.0,"median":30.0,"average":29.34,"max":30.0},{"name":"高中学段（含职校）艺体科教师","min":6.0,"median":30.0,"average":28.64,"max":30.0}]
                 },
                 "scene": {
-                    "max": "义务教育语文", // 分数最高的学科
-                    "min": "义务教育数学", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",  // 中位数最高的学科
-                    "midMin": "义务教育数学科",  // 中位数最低的学科
-                    "chartData": [
-                        { "name": "学前教育学段学科", "min": 35, "median": 60, "average": 45.25, "max": 60,},
-                        { "name": "义务教育语文学科", "min": 30, "median": 55, "average": 45, "max": 60,},
-                        { "name": "义务教育数学学科", "min": 30, "median": 55, "average": 45, "max": 60,},
-                        { "name": "义务教育英语学科", "min": 30, "median": 55, "average": 45, "max": 60,},
-                        { "name": "义务教育社会学科", "min": 15, "median": 50, "average": 37.5, "max": 60,},
-                        { "name": "义务教育理工学科", "min": 25, "median": 45, "average": 42.25, "max": 60,},
-                        { "name": "义务教育艺体学科", "min": 30, "median": 50, "average": 45, "max": 60,},
-                        { "name": "高中教育语文学科", "min": 15, "median": 50, "average": 35.75, "max": 60,},
-                        { "name": "高中教育数学学科", "min": 25, "median": 45, "average": 40, "max": 55,},
-                        { "name": "高中教育英语学科", "min": 30, "median": 50, "average": 45, "max": 60,},
-                        { "name": "高中教育社会学科", "min": 40, "median": 55, "average": 50, "max": 60,},
-                        { "name": "高中教育理工学科", "min": 35, "median": 45, "average": 45, "max": 55,},
-                        { "name": "高中教育艺体学科", "min": 20, "median": 45, "average": 35.75, "max": 55,},
-                    ]
+                    "max": "义务教育理工科教师", // 分数最高的学科
+                    "min": "高中学段（含职校）理工科教师", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "幼儿园教师, 义务教育语文教师, 义务教育数学教师, 义务教育社会科教师, 义务教育理工科教师, 高中教育（含职业院校）语文教师, 高中学段（含职校）数学教师, 高中学段（含职校） 英语教师, 高中学段（含职校）社会科教师",  // 中位数最高的学科
+                    "midMin": "义务教育英语教师, 义务教育艺体科教师, 高中学段（含职校）理工科教师, 高中学段（含职校）艺体科教师",  // 中位数最低的学科
+                    "chartData": [{"name":"幼儿园教师","min":15.0,"median":30.0,"average":28.22,"max":30.0},{"name":"义务教育语文教师","min":25.0,"median":30.0,"average":29.25,"max":30.0},{"name":"义务教育数学教师","min":20.0,"median":30.0,"average":29.3,"max":30.0},{"name":"义务教育英语教师","min":20.0,"median":25.0,"average":26.21,"max":30.0},{"name":"义务教育社会科教师","min":20.0,"median":30.0,"average":27.97,"max":30.0},{"name":"义务教育理工科教师","min":25.0,"median":30.0,"average":29.43,"max":30.0},{"name":"义务教育艺体科教师","min":15.0,"median":25.0,"average":26.29,"max":30.0},{"name":"高中教育（含职业院校）语文教师","min":20.0,"median":30.0,"average":28.99,"max":30.0},{"name":"高中学段（含职校）数学教师","min":15.0,"median":30.0,"average":28.67,"max":30.0},{"name":"高中学段（含职校） 英语教师","min":20.0,"median":30.0,"average":27.56,"max":30.0},{"name":"高中学段（含职校）社会科教师","min":20.0,"median":30.0,"average":28.09,"max":30.0},{"name":"高中学段（含职校）理工科教师","min":20.0,"median":25.0,"average":24.93,"max":30.0},{"name":"高中学段（含职校）艺体科教师","min":15.0,"median":25.0,"average":25.83,"max":30.0}]
                 }
             }
         },{
@@ -3154,46 +3126,18 @@ export const data = {
             },
             "minMaxSocre": {
                 "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",
-                    "midMin": "义务教育数学科", 
-                    "chartData": [
-                        { "name": "学前教育学段学科", "min": 31, "median": 60, "average": 45.5, "max": 60,},
-                        { "name": "义务教育语文学科", "min": 39, "median": 59, "average": 49.5, "max": 60,},
-                        { "name": "义务教育数学学科", "min": 42, "median": 58, "average": 12, "max": 60,},
-                        { "name": "义务教育英语学科", "min": 41, "median": 60, "average": 50.5, "max": 60,},
-                        { "name": "义务教育社会学科", "min": 39, "median": 60, "average": 49.5, "max": 60,},
-                        { "name": "义务教育理工学科", "min": 36, "median": 57, "average": 48, "max": 60,},
-                        { "name": "义务教育艺体学科", "min": 41, "median": 59, "average": 50.5, "max": 60,},
-                        { "name": "高中教育语文学科", "min": 40, "median": 55, "average": 50, "max": 60,},
-                        { "name": "高中教育数学学科", "min": 36, "median": 58, "average": 48, "max": 60,},
-                        { "name": "高中教育英语学科", "min": 38, "median": 60, "average": 49, "max": 60,},
-                        { "name": "高中教育社会学科", "min": 44, "median": 59, "average": 52, "max": 60,},
-                        { "name": "高中教育理工学科", "min": 40, "median": 60, "average": 50, "max": 60,},
-                        { "name": "高中教育艺体学科", "min": 35, "median": 58, "average": 45.25, "max": 60,},
-                    ]
+                    "max": "义务教育英语教师", // 分数最高的学科
+                    "min": "高中教育（含职业院校）语文教师", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "幼儿园教师, 义务教育英语教师, 义务教育艺体科教师, 高中学段（含职校） 英语教师, 高中学段（含职校）艺体科教师",
+                    "midMin": "高中教育（含职业院校）语文教师", 
+                    "chartData": [{"name":"幼儿园教师","min":31.0,"median":60.0,"average":56.37,"max":60.0},{"name":"义务教育语文教师","min":39.0,"median":59.0,"average":56.13,"max":60.0},{"name":"义务教育数学教师","min":42.0,"median":58.0,"average":55.71,"max":60.0},{"name":"义务教育英语教师","min":41.0,"median":60.0,"average":57.01,"max":60.0},{"name":"义务教育社会科教师","min":36.0,"median":57.5,"average":55.37,"max":60.0},{"name":"义务教育理工科教师","min":41.0,"median":59.0,"average":55.8,"max":60.0},{"name":"义务教育艺体科教师","min":39.0,"median":60.0,"average":56.86,"max":60.0},{"name":"高中教育（含职业院校）语文教师","min":40.0,"median":55.0,"average":54.23,"max":60.0},{"name":"高中学段（含职校）数学教师","min":36.0,"median":58.0,"average":54.66,"max":60.0},{"name":"高中学段（含职校） 英语教师","min":38.0,"median":60.0,"average":56.23,"max":60.0},{"name":"高中学段（含职校）社会科教师","min":35.0,"median":58.5,"average":54.95,"max":60.0},{"name":"高中学段（含职校）理工科教师","min":44.0,"median":59.0,"average":56.39,"max":60.0},{"name":"高中学段（含职校）艺体科教师","min":40.0,"median":60.0,"average":55.5,"max":60.0}]
                 },
                 "scene": {
-                    "max": "义务教育语文", // 分数最高的学科
-                    "min": "义务教育数学", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",
-                    "midMin": "义务教育数学科", 
-                    "chartData": [
-                        { "name": "学前教育学段学科", "min": 35, "median": 60, "average": 45.25, "max": 60,},
-                        { "name": "义务教育语文学科", "min": 30, "median": 55, "average": 45, "max": 60,},
-                        { "name": "义务教育数学学科", "min": 30, "median": 55, "average": 45, "max": 60,},
-                        { "name": "义务教育英语学科", "min": 30, "median": 55, "average": 45, "max": 60,},
-                        { "name": "义务教育社会学科", "min": 15, "median": 50, "average": 37.5, "max": 60,},
-                        { "name": "义务教育理工学科", "min": 25, "median": 45, "average": 42.25, "max": 60,},
-                        { "name": "义务教育艺体学科", "min": 30, "median": 50, "average": 45, "max": 60,},
-                        { "name": "高中教育语文学科", "min": 15, "median": 50, "average": 35.75, "max": 60,},
-                        { "name": "高中教育数学学科", "min": 25, "median": 45, "average": 40, "max": 55,},
-                        { "name": "高中教育英语学科", "min": 30, "median": 50, "average": 45, "max": 60,},
-                        { "name": "高中教育社会学科", "min": 40, "median": 55, "average": 50, "max": 60,},
-                        { "name": "高中教育理工学科", "min": 35, "median": 45, "average": 45, "max": 55,},
-                        { "name": "高中教育艺体学科", "min": 20, "median": 45, "average": 35.75, "max": 55,},
-                    ]
+                    "max": "幼儿园教师", // 分数最高的学科
+                    "min": "高中学段（含职校）社会科教师", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "幼儿园教师",
+                    "midMin": "义务教育理工科教师, 高中学段（含职校）社会科教师, 高中学段（含职校）艺体科教师", 
+                    "chartData": [{"name":"幼儿园教师","min":35.0,"median":60.0,"average":58.28,"max":60.0},{"name":"义务教育语文教师","min":30.0,"median":55.0,"average":52.73,"max":60.0},{"name":"义务教育数学教师","min":30.0,"median":55.0,"average":52.2,"max":60.0},{"name":"义务教育英语教师","min":30.0,"median":55.0,"average":53.07,"max":60.0},{"name":"义务教育社会科教师","min":15.0,"median":50.0,"average":47.5,"max":60.0},{"name":"义务教育理工科教师","min":25.0,"median":45.0,"average":46.79,"max":55.0},{"name":"义务教育艺体科教师","min":35.0,"median":55.0,"average":55.12,"max":60.0},{"name":"高中教育（含职业院校）语文教师","min":30.0,"median":50.0,"average":50.87,"max":60.0},{"name":"高中学段（含职校）数学教师","min":40.0,"median":55.0,"average":55.78,"max":60.0},{"name":"高中学段（含职校） 英语教师","min":40.0,"median":55.0,"average":52.44,"max":60.0},{"name":"高中学段（含职校）社会科教师","min":20.0,"median":45.0,"average":44.26,"max":55.0},{"name":"高中学段（含职校）理工科教师","min":25.0,"median":50.0,"average":49.81,"max":60.0},{"name":"高中学段（含职校）艺体科教师","min":35.0,"median":45.0,"average":46.31,"max":55.0}]
                 }
             }
         },{
@@ -3913,46 +3857,18 @@ export const data = {
             },
             "minMaxSocre": {
                 "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",
-                    "midMin": "义务教育数学科", 
-                    "chartData": [
-                        { "name": "学前教育学段学科", "min": 31, "median": 60, "average": 45.5, "max": 60,},
-                        { "name": "义务教育语文学科", "min": 39, "median": 59, "average": 49.5, "max": 60,},
-                        { "name": "义务教育数学学科", "min": 42, "median": 58, "average": 12, "max": 60,},
-                        { "name": "义务教育英语学科", "min": 41, "median": 60, "average": 50.5, "max": 60,},
-                        { "name": "义务教育社会学科", "min": 39, "median": 60, "average": 49.5, "max": 60,},
-                        { "name": "义务教育理工学科", "min": 36, "median": 57, "average": 48, "max": 60,},
-                        { "name": "义务教育艺体学科", "min": 41, "median": 59, "average": 50.5, "max": 60,},
-                        { "name": "高中教育语文学科", "min": 40, "median": 55, "average": 50, "max": 60,},
-                        { "name": "高中教育数学学科", "min": 36, "median": 58, "average": 48, "max": 60,},
-                        { "name": "高中教育英语学科", "min": 38, "median": 60, "average": 49, "max": 60,},
-                        { "name": "高中教育社会学科", "min": 44, "median": 59, "average": 52, "max": 60,},
-                        { "name": "高中教育理工学科", "min": 40, "median": 60, "average": 50, "max": 60,},
-                        { "name": "高中教育艺体学科", "min": 35, "median": 58, "average": 45.25, "max": 60,},
-                    ]
+                    "max": "义务教育英语教师", // 分数最高的学科
+                    "min": "高中学段（含职校）数学教师", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "幼儿园教师, 义务教育语文教师, 义务教育数学教师, 义务教育英语教师, 义务教育艺体科教师, 高中学段（含职校） 英语教师, 高中学段（含职校）理工科教师",
+                    "midMin": "高中教育（含职业院校）语文教师", 
+                    "chartData": [{"name":"幼儿园教师","min":27.0,"median":45.0,"average":42.58,"max":45.0},{"name":"义务教育语文教师","min":30.0,"median":45.0,"average":42.89,"max":45.0},{"name":"义务教育数学教师","min":34.0,"median":45.0,"average":42.63,"max":45.0},{"name":"义务教育英语教师","min":35.0,"median":45.0,"average":43.37,"max":45.0},{"name":"义务教育社会科教师","min":29.0,"median":44.0,"average":41.65,"max":45.0},{"name":"义务教育理工科教师","min":32.0,"median":44.0,"average":42.02,"max":45.0},{"name":"义务教育艺体科教师","min":28.0,"median":45.0,"average":43.0,"max":45.0},{"name":"高中教育（含职业院校）语文教师","min":32.0,"median":42.0,"average":41.26,"max":45.0},{"name":"高中学段（含职校）数学教师","min":27.0,"median":44.0,"average":41.19,"max":45.0},{"name":"高中学段（含职校） 英语教师","min":29.0,"median":45.0,"average":42.42,"max":45.0},{"name":"高中学段（含职校）社会科教师","min":27.0,"median":44.5,"average":41.44,"max":45.0},{"name":"高中学段（含职校）理工科教师","min":34.0,"median":45.0,"average":42.76,"max":45.0},{"name":"高中学段（含职校）艺体科教师","min":36.0,"median":44.5,"average":41.98,"max":45.0}]
                 },
                 "scene": {
-                    "max": "义务教育语文", // 分数最高的学科
-                    "min": "义务教育数学", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",
-                    "midMin": "义务教育数学科", 
-                    "chartData": [
-                        { "name": "学前教育学段学科", "min": 35, "median": 60, "average": 45.25, "max": 60,},
-                        { "name": "义务教育语文学科", "min": 30, "median": 55, "average": 45, "max": 60,},
-                        { "name": "义务教育数学学科", "min": 30, "median": 55, "average": 45, "max": 60,},
-                        { "name": "义务教育英语学科", "min": 30, "median": 55, "average": 45, "max": 60,},
-                        { "name": "义务教育社会学科", "min": 15, "median": 50, "average": 37.5, "max": 60,},
-                        { "name": "义务教育理工学科", "min": 25, "median": 45, "average": 42.25, "max": 60,},
-                        { "name": "义务教育艺体学科", "min": 30, "median": 50, "average": 45, "max": 60,},
-                        { "name": "高中教育语文学科", "min": 15, "median": 50, "average": 35.75, "max": 60,},
-                        { "name": "高中教育数学学科", "min": 25, "median": 45, "average": 40, "max": 55,},
-                        { "name": "高中教育英语学科", "min": 30, "median": 50, "average": 45, "max": 60,},
-                        { "name": "高中教育社会学科", "min": 40, "median": 55, "average": 50, "max": 60,},
-                        { "name": "高中教育理工学科", "min": 35, "median": 45, "average": 45, "max": 55,},
-                        { "name": "高中教育艺体学科", "min": 20, "median": 45, "average": 35.75, "max": 55,},
-                    ]
+                    "max": "幼儿园教师", // 分数最高的学科
+                    "min": "高中学段（含职校）社会科教师", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "幼儿园教师",
+                    "midMin": "高中学段（含职校）社会科教师", 
+                    "chartData": [{"name":"幼儿园教师","min":30.0,"median":45.0,"average":44.32,"max":45.0},{"name":"义务教育语文教师","min":20.0,"median":35.0,"average":37.05,"max":45.0},{"name":"义务教育数学教师","min":10.0,"median":40.0,"average":37.43,"max":45.0},{"name":"义务教育英语教师","min":30.0,"median":40.0,"average":37.81,"max":45.0},{"name":"义务教育社会科教师","min":25.0,"median":40.0,"average":40.31,"max":45.0},{"name":"义务教育理工科教师","min":30.0,"median":40.0,"average":37.97,"max":45.0},{"name":"义务教育艺体科教师","min":25.0,"median":40.0,"average":39.11,"max":45.0},{"name":"高中教育（含职业院校）语文教师","min":25.0,"median":40.0,"average":38.48,"max":45.0},{"name":"高中学段（含职校）数学教师","min":25.0,"median":40.0,"average":38.75,"max":45.0},{"name":"高中学段（含职校） 英语教师","min":25.0,"median":40.0,"average":38.4,"max":45.0},{"name":"高中学段（含职校）社会科教师","min":20.0,"median":30.0,"average":32.75,"max":40.0},{"name":"高中学段（含职校）理工科教师","min":20.0,"median":40.0,"average":39.93,"max":45.0},{"name":"高中学段（含职校）艺体科教师","min":30.0,"median":35.0,"average":36.67,"max":45.0}]
                 }
             }
         },{
@@ -4672,46 +4588,18 @@ export const data = {
             },
             "minMaxSocre": {
                 "self": {
-                    "max": "义务教育艺体", // 分数最高的学科
-                    "min": "义务教育英语", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",
-                    "midMin": "义务教育数学科", 
-                    "chartData": [
-                        { "name": "学前教育学段学科", "min": 31, "median": 60, "average": 45.5, "max": 60,},
-                        { "name": "义务教育语文学科", "min": 39, "median": 59, "average": 49.5, "max": 60,},
-                        { "name": "义务教育数学学科", "min": 42, "median": 58, "average": 12, "max": 60,},
-                        { "name": "义务教育英语学科", "min": 41, "median": 60, "average": 50.5, "max": 60,},
-                        { "name": "义务教育社会学科", "min": 39, "median": 60, "average": 49.5, "max": 60,},
-                        { "name": "义务教育理工学科", "min": 36, "median": 57, "average": 48, "max": 60,},
-                        { "name": "义务教育艺体学科", "min": 41, "median": 59, "average": 50.5, "max": 60,},
-                        { "name": "高中教育语文学科", "min": 40, "median": 55, "average": 50, "max": 60,},
-                        { "name": "高中教育数学学科", "min": 36, "median": 58, "average": 48, "max": 60,},
-                        { "name": "高中教育英语学科", "min": 38, "median": 60, "average": 49, "max": 60,},
-                        { "name": "高中教育社会学科", "min": 44, "median": 59, "average": 52, "max": 60,},
-                        { "name": "高中教育理工学科", "min": 40, "median": 60, "average": 50, "max": 60,},
-                        { "name": "高中教育艺体学科", "min": 35, "median": 58, "average": 45.25, "max": 60,},
-                    ]
+                    "max": "义务教育艺体科教师", // 分数最高的学科
+                    "min": "高中学段（含职校）数学教师", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "义务教育语文教师, 义务教育艺体科教师, 高中学段（含职校） 英语教师, 高中学段（含职校）艺体科教师",
+                    "midMin": "高中教育（含职业院校）语文教师", 
+                    "chartData": [{"name":"幼儿园教师","min":25.0,"median":44.0,"average":41.89,"max":45.0},{"name":"义务教育语文教师","min":28.0,"median":45.0,"average":42.03,"max":45.0},{"name":"义务教育数学教师","min":27.0,"median":44.0,"average":41.65,"max":45.0},{"name":"义务教育英语教师","min":28.0,"median":44.0,"average":42.13,"max":45.0},{"name":"义务教育社会科教师","min":28.0,"median":43.0,"average":41.23,"max":45.0},{"name":"义务教育理工科教师","min":28.0,"median":44.0,"average":41.04,"max":45.0},{"name":"义务教育艺体科教师","min":28.0,"median":45.0,"average":42.62,"max":45.0},{"name":"高中教育（含职业院校）语文教师","min":29.0,"median":41.0,"average":40.65,"max":45.0},{"name":"高中学段（含职校）数学教师","min":26.0,"median":42.0,"average":40.06,"max":45.0},{"name":"高中学段（含职校） 英语教师","min":26.0,"median":45.0,"average":41.38,"max":45.0},{"name":"高中学段（含职校）社会科教师","min":27.0,"median":44.5,"average":41.54,"max":45.0},{"name":"高中学段（含职校）理工科教师","min":32.0,"median":44.0,"average":42.13,"max":45.0},{"name":"高中学段（含职校）艺体科教师","min":30.0,"median":45.0,"average":41.55,"max":45.0}]
                 },
                 "scene": {
-                    "max": "义务教育语文", // 分数最高的学科
-                    "min": "义务教育数学", // 分数最低的学科，相同分数的学科都显示
-                    "midMax": "义务教育理工科",
-                    "midMin": "义务教育数学科", 
-                    "chartData": [
-                        { "name": "学前教育学段学科", "min": 35, "median": 60, "average": 45.25, "max": 60,},
-                        { "name": "义务教育语文学科", "min": 30, "median": 55, "average": 45, "max": 60,},
-                        { "name": "义务教育数学学科", "min": 30, "median": 55, "average": 45, "max": 60,},
-                        { "name": "义务教育英语学科", "min": 30, "median": 55, "average": 45, "max": 60,},
-                        { "name": "义务教育社会学科", "min": 15, "median": 50, "average": 37.5, "max": 60,},
-                        { "name": "义务教育理工学科", "min": 25, "median": 45, "average": 42.25, "max": 60,},
-                        { "name": "义务教育艺体学科", "min": 30, "median": 50, "average": 45, "max": 60,},
-                        { "name": "高中教育语文学科", "min": 15, "median": 50, "average": 35.75, "max": 60,},
-                        { "name": "高中教育数学学科", "min": 25, "median": 45, "average": 40, "max": 55,},
-                        { "name": "高中教育英语学科", "min": 30, "median": 50, "average": 45, "max": 60,},
-                        { "name": "高中教育社会学科", "min": 40, "median": 55, "average": 50, "max": 60,},
-                        { "name": "高中教育理工学科", "min": 35, "median": 45, "average": 45, "max": 55,},
-                        { "name": "高中教育艺体学科", "min": 20, "median": 45, "average": 35.75, "max": 55,},
-                    ]
+                    "max": "幼儿园教师", // 分数最高的学科
+                    "min": "高中学段（含职校）社会科教师", // 分数最低的学科，相同分数的学科都显示
+                    "midMax": "幼儿园教师, 义务教育英语教师, 义务教育社会科教师, 义务教育理工科教师, 义务教育艺体科教师, 高中教育（含职业院校）语文教师, 高中学段（含职校）数学教师, 高中学段（含职校） 英语教师, 高中学段（含职校）理工科教师",
+                    "midMin": "义务教育语文教师, 义务教育数学教师, 高中学段（含职校）社会科教师, 高中学段（含职校）艺体科教师", 
+                    "chartData": [{"name":"幼儿园教师","min":30.0,"median":40.0,"average":41.0,"max":45.0},{"name":"义务教育语文教师","min":20.0,"median":35.0,"average":35.37,"max":45.0},{"name":"义务教育数学教师","min":25.0,"median":35.0,"average":35.25,"max":45.0},{"name":"义务教育英语教师","min":25.0,"median":40.0,"average":39.0,"max":45.0},{"name":"义务教育社会科教师","min":25.0,"median":40.0,"average":40.88,"max":45.0},{"name":"义务教育理工科教师","min":30.0,"median":40.0,"average":38.25,"max":45.0},{"name":"义务教育艺体科教师","min":25.0,"median":40.0,"average":37.02,"max":45.0},{"name":"高中教育（含职业院校）语文教师","min":30.0,"median":40.0,"average":40.65,"max":45.0},{"name":"高中学段（含职校）数学教师","min":25.0,"median":40.0,"average":39.3,"max":45.0},{"name":"高中学段（含职校） 英语教师","min":30.0,"median":40.0,"average":37.88,"max":45.0},{"name":"高中学段（含职校）社会科教师","min":25.0,"median":35.0,"average":34.56,"max":45.0},{"name":"高中学段（含职校）理工科教师","min":15.0,"median":40.0,"average":38.63,"max":45.0},{"name":"高中学段（含职校）艺体科教师","min":25.0,"median":35.0,"average":35.6,"max":45.0}]
                 }
             }
         }

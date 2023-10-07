@@ -61,11 +61,25 @@ export default {
       this.chart && this.chart.setOption(this.optionsData());
     },
     optionsData() {
+      const average = this.$props.chartData.reduce((acc, val) =>{
+        return acc + Number(val.value)
+      }, 0) / this.$props.chartData.length;
+      const itemStyle = this.$props.chartData.map(value => {
+        if (value > average) {
+          return { itemStyle: { color: '#0000FF' } }; // 设置高于平均分的柱子颜色为蓝色
+        } else {
+          return { itemStyle: { color: '#FF0000' } }; // 设置低于平均分的柱子颜色为红色
+        }
+      });
       return {
         title: {
           text: this.$props.title,
-          // subtext: "Fake Data",
-          left: "left",
+          left: "center",
+          textVerticalAlign: 'bottom',
+          textStyle: {
+            fontSize: 16,
+            fontWeight: "bold",
+          },
         },
         legend: {},
         tooltip: {
@@ -112,10 +126,24 @@ export default {
             data: this.$props.chartData.map((item) => item.value),
             colorBy: "data",
             markLine: {
+              lineStyle: {
+                type: "dotted",
+                color: "#8EA0C9",
+              },
               label: { position: "middle", formatter: this.markLineFormatter },
               data: [{ type: "average", name: this.markLineName }],
             },
+            itemStyle: {
+              color: function(value){
+                if (value.data > average) {
+                  return '#67C2A3' // 设置高于平均分的柱子颜色为蓝色
+                } else {
+                  return '#FC8A61' // 设置低于平均分的柱子颜色为红色
+                }
+              }
+            }
           },
+          // ...itemStyle
         ],
       };
     },

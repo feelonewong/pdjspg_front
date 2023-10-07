@@ -52,8 +52,12 @@ export default {
       return {
         title: {
           text: this.$props.title,
-          // subtext: "Fake Data",
-          left: "left",
+          left: "center",
+          textVerticalAlign: 'bottom',
+          textStyle: {
+            fontSize: 16,
+            fontWeight: "bold",
+          },
         },
         tooltip: {
           trigger: "item",

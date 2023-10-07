@@ -76,42 +76,55 @@ export const ResponsResult = {
         },
         "subjectScoreDistribution":{
             "child": {
+                "title": "学前教育学科",
                 "chartData": data.allResult.subjectScoreDistribution.childChartData
             },
             "chn":{
+                "title": "义务教育语文",
                 "chartData": data.allResult.subjectScoreDistribution.chnChartData
             },
             "math":{
+                "title": "义务教育数学",
                 "chartData": data.allResult.subjectScoreDistribution.mathChartData
             },
             "eng":{
+                "title": "义务教育英语",
                 "chartData": data.allResult.subjectScoreDistribution.engChartData
             },
             "soc":{
+                "title": "义务教育社会",
                 "chartData": data.allResult.subjectScoreDistribution.socChartData
             },
             "sci":{
+                "title": "义务教育理科",
                 "chartData": data.allResult.subjectScoreDistribution.sciChartData
             },
             "art":{
+                "title": "义务教育艺术",
                 "chartData": data.allResult.subjectScoreDistribution.artChartData
             },
             "highChn":{
+                "title": "高中(含特教)语文",
                 "chartData": data.allResult.subjectScoreDistribution.highChnChartData
             },
             "highMath":{
+                "title": "高中(含特教)数学",
                 "chartData": data.allResult.subjectScoreDistribution.highMathChartData
             },
             "highEng":{
+                "title": "高中(含特教)英语",
                 "chartData": data.allResult.subjectScoreDistribution.highEngChartData
             },
             "highSoc":{
+                "title": "高中(含特教)社会",
                 "chartData": data.allResult.subjectScoreDistribution.highSocChartData
             },
             "highSci":{
+                "title": "高中(含特教)理科",
                 "chartData": data.allResult.subjectScoreDistribution.highSciChartData
             },
             "highArt":{
+                "title": "高中(含特教)艺术",
                 "chartData": data.allResult.subjectScoreDistribution.highArtChartData
             },
         },
@@ -293,45 +306,59 @@ export const ResponsResult = {
                 },
                 "wap": {
                     "all": {
+                        title: '全区职业态度得分分布情况',
                         chartData: data.modules[0].eachScoreDistribution.allChartData
                     },
                     "child": {
+                        title: '学前教育学科',
                         chartData: data.modules[0].eachScoreDistribution.childChartData
                     },
                     "chn": {
+                        title: '义务教育语文学科',
                         chartData: data.modules[0].eachScoreDistribution.chnChartData
                     },
                     "math": {
+                        title: '义务教育数学学科',
                         chartData: data.modules[0].eachScoreDistribution.mathChartData
                     },
                     "eng": {
+                        title: '义务教育英语学科',
                         chartData: data.modules[0].eachScoreDistribution.engChartData
                     },
                     "soc": {
+                        title: '义务教育社会科学科',
                         chartData: data.modules[0].eachScoreDistribution.socChartData
                     },
                     "sci": {
+                        title: '义务教育理工科学科',
                         chartData: data.modules[0].eachScoreDistribution.sciChartData
                     },
                     "art": {
+                        title: '义务教育艺体科学科',
                         chartData: data.modules[0].eachScoreDistribution.artChartData
                     },
                     "highChn": {
+                        title: '高中(含特教)语文科学科',
                         chartData: data.modules[0].eachScoreDistribution.highChnChartData
                     },
                     "highMath": {
+                        title: '高中(含特教)数学科学科',
                         chartData: data.modules[0].eachScoreDistribution.highMathChartData
                     },
                     "highEng": {
+                        title: '高中(含特教)英语科学科',
                         chartData: data.modules[0].eachScoreDistribution.highEngChartData
                     },
                     "highSoc": {
+                        title: '高中(含特教)社会科学科',
                         chartData: data.modules[0].eachScoreDistribution.highSocChartData
                     },
                     "highSci": {
+                        title: '高中(含特教)理工科学科',
                         chartData: data.modules[0].eachScoreDistribution.highSciChartData
                     },
                     "highArt": {
+                        title: '高中(含特教)艺体科学科',
                         chartData: data.modules[0].eachScoreDistribution.highArtChartData
                     }
                 }
@@ -398,45 +425,59 @@ export const ResponsResult = {
                 },
                 "wap": {
                     "all": {
+                        title: '全区教学实践得分分布情况',
                         chartData: data.modules[1].eachScoreDistribution.allChartData
                     },
                     "child": {
+                        title: '学前教育学科',
                         chartData: data.modules[1].eachScoreDistribution.childChartData
                     },
                     "chn": {
+                        title: '义务教育语文学科',
                         chartData: data.modules[1].eachScoreDistribution.chnChartData
                     },
                     "math": {
+                        title: '义务教育数学学科',
                         chartData: data.modules[1].eachScoreDistribution.mathChartData
                     },
                     "eng": {
+                        title: '义务教育英语学科',
                         chartData: data.modules[1].eachScoreDistribution.engChartData
                     },
                     "soc": {
+                        title: '义务教育社会科学科',
                         chartData: data.modules[1].eachScoreDistribution.socChartData
                     },
                     "sci": {
+                        title: '义务教育理工科学科',
                         chartData: data.modules[1].eachScoreDistribution.sciChartData
                     },
                     "art": {
+                        title: '义务教育艺体科学科',
                         chartData: data.modules[1].eachScoreDistribution.artChartData
                     },
                     "highChn": {
+                        title: '高中(含特教)语文科学科',
                         chartData: data.modules[1].eachScoreDistribution.highChnChartData
                     },
                     "highMath": {
+                        title: '高中(含特教)数学科学科',
                         chartData: data.modules[1].eachScoreDistribution.highMathChartData
                     },
                     "highEng": {
+                        title: '高中(含特教)英语科学科',
                         chartData: data.modules[1].eachScoreDistribution.highEngChartData
                     },
                     "highSoc": {
+                        title: '高中(含特教)社会科学科',
                         chartData: data.modules[1].eachScoreDistribution.highSocChartData
                     },
                     "highSci": {
+                        title: '高中(含特教)理工科学科',
                         chartData: data.modules[1].eachScoreDistribution.highSciChartData
                     },
                     "highArt": {
+                        title: '高中(含特教)艺体科学科',
                         chartData: data.modules[1].eachScoreDistribution.highArtChartData
                     }
                 }
@@ -498,49 +539,64 @@ export const ResponsResult = {
             },
             "eachScoreDistribution": {
                 "tableInfo":{
+                    "data": data.modules[2].eachScoreDistribution.tableData,
                     "config": moduleTableConfig,
                 },
                 "wap": {
                     "all": {
+                        title: '全区综合育人得分分布情况',
                         chartData: data.modules[2].eachScoreDistribution.allChartData
                     },
                     "child": {
+                        title: '学前教育学科',
                         chartData: data.modules[2].eachScoreDistribution.childChartData
                     },
                     "chn": {
+                        title: '义务教育语文学科',
                         chartData: data.modules[2].eachScoreDistribution.chnChartData
                     },
                     "math": {
+                        title: '义务教育数学学科',
                         chartData: data.modules[2].eachScoreDistribution.mathChartData
                     },
                     "eng": {
+                        title: '义务教育英语学科',
                         chartData: data.modules[2].eachScoreDistribution.engChartData
                     },
                     "soc": {
+                        title: '义务教育社会科学科',
                         chartData: data.modules[2].eachScoreDistribution.socChartData
                     },
                     "sci": {
+                        title: '义务教育理工科学科',
                         chartData: data.modules[2].eachScoreDistribution.sciChartData
                     },
                     "art": {
+                        title: '义务教育艺体科学科',
                         chartData: data.modules[2].eachScoreDistribution.artChartData
                     },
                     "highChn": {
+                        title: '高中(含特教)语文科学科',
                         chartData: data.modules[2].eachScoreDistribution.highChnChartData
                     },
                     "highMath": {
+                        title: '高中(含特教)数学科学科',
                         chartData: data.modules[2].eachScoreDistribution.highMathChartData
                     },
                     "highEng": {
+                        title: '高中(含特教)英语科学科',
                         chartData: data.modules[2].eachScoreDistribution.highEngChartData
                     },
                     "highSoc": {
+                        title: '高中(含特教)社会科学科',
                         chartData: data.modules[2].eachScoreDistribution.highSocChartData
                     },
                     "highSci": {
+                        title: '高中(含特教)理工科学科',
                         chartData: data.modules[2].eachScoreDistribution.highSciChartData
                     },
                     "highArt": {
+                        title: '高中(含特教)艺体科学科',
                         chartData: data.modules[2].eachScoreDistribution.highArtChartData
                     }
                 }
@@ -548,6 +604,7 @@ export const ResponsResult = {
             "averageScore": {
                 "title": "综合育人",
                     "all": {
+
                         "max": findMaxAndMin(data.modules[2].averageScore.all.chartData).max.name,
                         "min": findMaxAndMin(data.modules[2].averageScore.all.chartData).min.name,
                         "chartData": data.modules[2].averageScore.all.chartData,
@@ -607,45 +664,59 @@ export const ResponsResult = {
                 },
                 "wap": {
                     "all": {
+                        title: '全区自主发展得分分布情况',
                         chartData: data.modules[3].eachScoreDistribution.allChartData
                     },
                     "child": {
+                        title: '学前教育学科',
                         chartData: data.modules[3].eachScoreDistribution.childChartData
                     },
                     "chn": {
+                        title: '义务教育语文学科',
                         chartData: data.modules[3].eachScoreDistribution.chnChartData
                     },
                     "math": {
+                        title: '义务教育数学学科',
                         chartData: data.modules[3].eachScoreDistribution.mathChartData
                     },
                     "eng": {
+                        title: '义务教育英语学科',
                         chartData: data.modules[3].eachScoreDistribution.engChartData
                     },
                     "soc": {
+                        title: '义务教育社会科学科',
                         chartData: data.modules[3].eachScoreDistribution.socChartData
                     },
                     "sci": {
+                        title: '义务教育理工科学科',
                         chartData: data.modules[3].eachScoreDistribution.sciChartData
                     },
                     "art": {
+                        title: '义务教育艺体科学科',
                         chartData: data.modules[3].eachScoreDistribution.artChartData
                     },
                     "highChn": {
+                        title: '高中(含特教)语文科学科',
                         chartData: data.modules[3].eachScoreDistribution.highChnChartData
                     },
                     "highMath": {
+                        title: '高中(含特教)数学科学科',
                         chartData: data.modules[3].eachScoreDistribution.highMathChartData
                     },
                     "highEng": {
+                        title: '高中(含特教)英语科学科',
                         chartData: data.modules[3].eachScoreDistribution.highEngChartData
                     },
                     "highSoc": {
+                        title: '高中(含特教)社会科学科',
                         chartData: data.modules[3].eachScoreDistribution.highSocChartData
                     },
                     "highSci": {
+                        title: '高中(含特教)理工科学科',
                         chartData: data.modules[3].eachScoreDistribution.highSciChartData
                     },
                     "highArt": {
+                        title: '高中(含特教)艺体科学科',
                         chartData: data.modules[3].eachScoreDistribution.highArtChartData
                     }
                 }
