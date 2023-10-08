@@ -4,9 +4,10 @@
     <br />
     <h2 class="title mtb-15">1.1全区整体调研结果</h2>
     <br />
-    <h2 class="title mtb-15">1.1.1全区整体得分率与得分分布情况</h2>
+    <h2 class="title mtb-15">1.1.1全区整体得分率与得分分布情况</h2> <span>展开更多 <i class="el-icon-arrow-down"></i> </span>
     <br />
-    <div class="wrap-d">
+    <template  v-if="true">
+      <div class="wrap-d">
       <div class="area-left" style="width: 70%">
         <PieRoseChart
           :title="'全区整体得分率'"
@@ -48,7 +49,9 @@
           {{ allResult.allScoreRating.min }}得分率最低<br />
         </desc-slot>
       </div>
-    </div>
+    </div>  
+    </template>
+    
     <h2 class="title mtb-15" style="margin-top: 40px">1.1.2 全区整体得分分布情况</h2>
     <br />
     <h2 class="title mtb-15">1.1.2.1全区总体得分分布情况</h2>

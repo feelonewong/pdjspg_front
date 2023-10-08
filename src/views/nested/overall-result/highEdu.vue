@@ -6,7 +6,7 @@
     <br />
     <h2 class="title">4.1.1全区高中教育学段整体得分率</h2>
     <br />
-    <div class="wrap-d" style="margin: 30px 0;">
+    <div class="wrap-d" style="margin: 30px 0;" >
       <div class="area-left">
         <PieRoseChart
           :title="'高中教育学段整体得分率'"
