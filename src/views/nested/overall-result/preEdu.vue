@@ -48,7 +48,7 @@
               allResult.scoreDistribution.chartData[2].value
             }}
             占比({{ allResult.scoreDistribution.chartData[2].precent }})<br />
-            不及格人数{{
+            待提升人数{{
               allResult.scoreDistribution.chartData[3].value
             }}
             占比({{ allResult.scoreDistribution.chartData[3].precent }})
@@ -56,18 +56,18 @@
         </div>
       </div>
     </div>
-    <h2 class="title" style="margin-top: 50px; margin-bottom: 40px; ">2.1.2.2学前教育学科整体平均分、中位数、标准差</h2>
+    <h2 class="title" style="margin-top: 50px; margin-bottom: 40px; ">2.1.2.2学前教育整体平均分、中位数、标准差</h2>
     <br />
     <div class="wrap-d">
       <div class="area-left">
         <BoxPlotChart
-          :title="'学前教育学科整体平均分'"
+          :title="'学前教育整体平均分'"
           :chartData="allResult.minMaxScore.all.chartData"
         />
       </div>
       <div class="area-right">
         <BoxPlotChart
-          :title="'学前教育学科自陈问题平均分'"
+          :title="'学前教育自陈问题平均分'"
           :chartData="allResult.minMaxScore.self.chartData"
         />
       </div>
@@ -75,7 +75,7 @@
     <div class="wrap-d" style="margin-top: 50px; margin-bottom: 30px;">
       <div class="area-left">
         <BoxPlotChart
-          :title="'学前教育学科情景问题平均分'"
+          :title="'学前教育情景问题平均分'"
           :chartData="allResult.minMaxScore.secene.chartData"
         />
       </div>
@@ -105,7 +105,7 @@
     <div class="wrap-d">
       <div class="area-left">
         <ZoomBarChart
-          :title="'学前教育学科自陈问题、情景问题标准差'"
+          :title="'学前教育自陈问题、情景问题标准差'"
           :chartData="allResult.standradScore.chartData"
         ></ZoomBarChart>
       </div>
@@ -127,7 +127,7 @@
     <div class="wrap-d">
       <div class="area-left">
         <PieRoseChart
-          :title="'学前教育学科各维度得分率'"
+          :title="'学前教育各维度得分率'"
           :chartData="allResult.dimensionRating.chartData"
         ></PieRoseChart>
       </div>
@@ -158,7 +158,7 @@
           及格人数:{{ eachItem.chartData[2].value }} 占比({{
             eachItem.chartData[2].precent
           }})<br />
-          不及格人数:{{ eachItem.chartData[3].value }} 占比({{
+          待提升人数:{{ eachItem.chartData[3].value }} 占比({{
             eachItem.chartData[3].precent
           }})<br />
         </desc-slot>
@@ -259,7 +259,7 @@
             <desc-slot>
               全区学前教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
               优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:,
-              成绩及格人数:, 成绩不及格人数:
+              成绩及格人数:, 成绩待提升人数:
             </desc-slot>
           </div>
         </div>
@@ -271,7 +271,7 @@
             <desc-slot>
               全区学前教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
               优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:,
-              成绩及格人数:, 成绩不及格人数:
+              成绩及格人数:, 成绩待提升人数:
             </desc-slot>
           </div>
         </div> -->
@@ -314,7 +314,7 @@ export default {
           "义务教育学段6个学科职业态度分题型中位数、平均分、最低分、最高分",
         chartData: [
           {
-            name: "学前教育学科",
+            name: "学前教育",
             min: 50,
             median: 70,
             average: 60,

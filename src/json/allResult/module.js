@@ -35,7 +35,7 @@ export const modules = [
                     "proportion":91.54
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":169,
                     "proportion":82.51
                 }
@@ -57,7 +57,7 @@ export const modules = [
                     "proportion":91.59
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":19,
                     "proportion":83.33
                 }
@@ -79,7 +79,7 @@ export const modules = [
                     "proportion":91.59
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":9,
                     "proportion":84.07
                 }
@@ -101,7 +101,7 @@ export const modules = [
                     "proportion":91.67
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":10,
                     "proportion":83.5
                 }
@@ -118,7 +118,7 @@ export const modules = [
                     "proportion":91.55
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":25,
                     "proportion":82.93
                 }
@@ -140,7 +140,7 @@ export const modules = [
                     "proportion":91.6
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":35,
                     "proportion":81.9
                 }
@@ -162,7 +162,7 @@ export const modules = [
                     "proportion":91.42
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":11,
                     "proportion":83.18
                 }
@@ -179,7 +179,7 @@ export const modules = [
                     "proportion":91.3
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":5,
                     "proportion":85.33
                 }
@@ -196,7 +196,7 @@ export const modules = [
                     "proportion":91.77
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":5,
                     "proportion":77.67
                 }
@@ -218,7 +218,7 @@ export const modules = [
                     "proportion":91
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":6,
                     "proportion":78.33
                 }
@@ -235,7 +235,7 @@ export const modules = [
                     "proportion":91.35
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":6,
                     "proportion":83.89
                 }
@@ -252,7 +252,7 @@ export const modules = [
                     "proportion":91.55
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":21,
                     "proportion":83.73
                 }
@@ -274,7 +274,7 @@ export const modules = [
                     "proportion":91.47
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":7,
                     "proportion":76.19
                 }
@@ -296,7 +296,7 @@ export const modules = [
                     "proportion":91.32
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":10,
                     "proportion":83.5
                 }
@@ -838,7 +838,7 @@ export const modules = [
                     "proportion":91.8
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":954,
                     "proportion":83.27
                 }
@@ -860,7 +860,7 @@ export const modules = [
                     "proportion":92.02
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":59,
                     "proportion":84.63
                 }
@@ -882,7 +882,7 @@ export const modules = [
                     "proportion":91.69
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":163,
                     "proportion":83.7
                 }
@@ -904,7 +904,7 @@ export const modules = [
                     "proportion":91.72
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":128,
                     "proportion":84.09
                 }
@@ -926,7 +926,7 @@ export const modules = [
                     "proportion":91.92
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":71,
                     "proportion":84.79
                 }
@@ -948,7 +948,7 @@ export const modules = [
                     "proportion":91.92
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":66,
                     "proportion":84.58
                 }
@@ -970,7 +970,7 @@ export const modules = [
                     "proportion":91.88
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":116,
                     "proportion":82.74
                 }
@@ -987,7 +987,7 @@ export const modules = [
                     "proportion":91.53
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":82,
                     "proportion":81.95
                 }
@@ -1009,7 +1009,7 @@ export const modules = [
                     "proportion":91.48
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":36,
                     "proportion":82.41
                 }
@@ -1031,7 +1031,7 @@ export const modules = [
                     "proportion":91.73
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":21,
                     "proportion":83.85
                 }
@@ -1053,7 +1053,7 @@ export const modules = [
                     "proportion":91.35
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":30,
                     "proportion":83.19
                 }
@@ -1075,7 +1075,7 @@ export const modules = [
                     "proportion":91.79
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":68,
                     "proportion":83.43
                 }
@@ -1092,7 +1092,7 @@ export const modules = [
                     "proportion":91.98
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":31,
                     "proportion":81.94
                 }
@@ -1109,7 +1109,7 @@ export const modules = [
                     "proportion":91.44
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":83,
                     "proportion":80.47
                 }
@@ -1651,7 +1651,7 @@ export const modules = [
                     "proportion":93.43
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":1098,
                     "proportion":84.78
                 }
@@ -1673,7 +1673,7 @@ export const modules = [
                     "proportion":92.6
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":45,
                     "proportion":85.04
                 }
@@ -1695,7 +1695,7 @@ export const modules = [
                     "proportion":93.5
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":262,
                     "proportion":85.28
                 }
@@ -1717,7 +1717,7 @@ export const modules = [
                     "proportion":93.46
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":164,
                     "proportion":84.45
                 }
@@ -1739,7 +1739,7 @@ export const modules = [
                     "proportion":93.65
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":115,
                     "proportion":86.42
                 }
@@ -1761,7 +1761,7 @@ export const modules = [
                     "proportion":93.84
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":112,
                     "proportion":85.76
                 }
@@ -1783,7 +1783,7 @@ export const modules = [
                     "proportion":93.42
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":61,
                     "proportion":85.19
                 }
@@ -1805,7 +1805,7 @@ export const modules = [
                     "proportion":93.73
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":75,
                     "proportion":85.35
                 }
@@ -1827,7 +1827,7 @@ export const modules = [
                     "proportion":93.17
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":33,
                     "proportion":82.49
                 }
@@ -1849,7 +1849,7 @@ export const modules = [
                     "proportion":93.85
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":29,
                     "proportion":81.88
                 }
@@ -1871,7 +1871,7 @@ export const modules = [
                     "proportion":93.49
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":41,
                     "proportion":85.15
                 }
@@ -1893,7 +1893,7 @@ export const modules = [
                     "proportion":93.41
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":40,
                     "proportion":85.31
                 }
@@ -1915,7 +1915,7 @@ export const modules = [
                     "proportion":92.22
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":28,
                     "proportion":84.25
                 }
@@ -1927,7 +1927,7 @@ export const modules = [
                     "proportion":93.58
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":93,
                     "proportion":81.35
                 }

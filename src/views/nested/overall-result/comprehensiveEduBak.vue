@@ -32,7 +32,7 @@
         <p><el-tag>全区义务教育学段成绩优秀的人数为XX (占比XXXX%)</el-tag></p>
         <p><el-tag>成绩良好的人数为XX(占比XX.XX%)</el-tag></p>
         <p><el-tag>成绩及格的人数为XX(占比XX.XX%)</el-tag></p>
-        <p><el-tag> 成绩不及格的人数为XX (占比XX.XX%)</el-tag></p>
+        <p><el-tag> 成绩待提升的人数为XX (占比XX.XX%)</el-tag></p>
       </div>
     </div>
     <!-- 义务教育学段平均分 -->
@@ -47,7 +47,7 @@
         <p><el-tag>全区义务教育学段成绩优秀的人数为XX (占比XXXX%)</el-tag></p>
         <p><el-tag>成绩良好的人数为XX(占比XX.XX%)</el-tag></p>
         <p><el-tag>成绩及格的人数为XX(占比XX.XX%)</el-tag></p>
-        <p><el-tag> 成绩不及格的人数为XX (占比XX.XX%)</el-tag></p>
+        <p><el-tag> 成绩待提升的人数为XX (占比XX.XX%)</el-tag></p>
       </div>
     </div>
     <!-- 义务教育学段6个学科职业态度分题型中位数、平均分、最低分、最高分 -->
@@ -62,7 +62,7 @@
         <p><el-tag>全区义务教育学段成绩优秀的人数为XX (占比XXXX%)</el-tag></p>
         <p><el-tag>成绩良好的人数为XX(占比XX.XX%)</el-tag></p>
         <p><el-tag>成绩及格的人数为XX(占比XX.XX%)</el-tag></p>
-        <p><el-tag> 成绩不及格的人数为XX (占比XX.XX%)</el-tag></p>
+        <p><el-tag> 成绩待提升的人数为XX (占比XX.XX%)</el-tag></p>
       </div>
     </div>
   </div>

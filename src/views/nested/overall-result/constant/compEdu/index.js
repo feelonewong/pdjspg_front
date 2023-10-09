@@ -44,7 +44,7 @@ const moduleTableConfig = [
     },
     {
         "prop": "fail",
-        "label": "不及格",
+        "label": "待提升",
     },
 ]
 function findMaxAndMin(arr) {

@@ -3,7 +3,7 @@ export const data = {
       "allScoreRating": {
         "chartData": [
           {
-            "name": "学前教育学科",
+            "name": "学前教育",
             "min": 80.56,
             "median": 95.83,
             "average": 95.1,
@@ -29,7 +29,7 @@ export const data = {
             "precent": "32.12"
           },
           {
-            "name": "不及格",
+            "name": "待提升",
             "value": 66,
             "precent": "12.04"
           }
@@ -39,7 +39,7 @@ export const data = {
         "all": {
           "chartData": [
             {
-              "name": "学前教育学科",
+              "name": "学前教育",
               "min": 290.0,
               "median": 345.0,
               "average": 342.35,
@@ -107,7 +107,7 @@ export const data = {
                       "precent": "33.03"
                     },
                     {
-                      "name": "不及格",
+                      "name": "待提升",
                       "value": '19',
                       "precent": "3.47"
                     }
@@ -131,7 +131,7 @@ export const data = {
                       "precent": "23.36"
                     },
                     {
-                      "name": "不及格",
+                      "name": "待提升",
                       "value": '59',
                       "precent": "10.77"
                     }
@@ -155,7 +155,7 @@ export const data = {
                       "precent": "22.26"
                     },
                     {
-                      "name": "不及格",
+                      "name": "待提升",
                       "value": '45',
                       "precent": "8.21"
                     }
@@ -179,7 +179,7 @@ export const data = {
                       "precent": "54.74"
                     },
                     {
-                      "name": "不及格",
+                      "name": "待提升",
                       "value": '162',
                       "precent": "29.56"
                     }
@@ -212,7 +212,7 @@ export const data = {
                       {"name": '优秀', "value": '344',  "precent": '62.77%',},
                       {"name": '良好', "value": '4',  "precent": '0.37%',},
                       {"name": '及格', "value": '181',  "precent": '33.03%',},
-                      {"name": '不及格'," value": '19', "precent": '3.47%',}
+                      {"name": '待提升'," value": '19', "precent": '3.47%',}
                   ]
               },
               "averageScore": {
@@ -265,7 +265,7 @@ export const data = {
                       {"name": '优秀', "value": '270',  "precent": '49.27%',},
                       {"name": '良好', "value": '91',  "precent": '16.61%',},
                       {"name": '及格', "value": '128',  "precent": '23.36%',},
-                      {"name": '不及格'," value": '59', "precent": '10.77%',}
+                      {"name": '待提升'," value": '59', "precent": '10.77%',}
                   ]
               },
               "averageScore": {
@@ -318,7 +318,7 @@ export const data = {
                       {"name": '优秀', "value": '327',  "precent": '59.67%',},
                       {"name": '良好', "value": '54',  "precent": '9.85%',},
                       {"name": '及格', "value": '122',  "precent": '22.26%',},
-                      {"name": '不及格'," value": '45', "precent": '8.21%',}
+                      {"name": '待提升'," value": '45', "precent": '8.21%',}
                   ]
               },
               "averageScore": {
@@ -371,7 +371,7 @@ export const data = {
                       {"name": '优秀', "value": '75',  "precent": '13.69%',},
                       {"name": '良好', "value": '11',  "precent": '2.01%',},
                       {"name": '及格', "value": '300',  "precent": '54.74%',},
-                      {"name": '不及格'," value": '162', "precent": '29.56%',}
+                      {"name": '待提升'," value": '162', "precent": '29.56%',}
                   ]
               },
               "averageScore": {

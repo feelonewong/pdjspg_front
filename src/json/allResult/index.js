@@ -75,7 +75,7 @@ export const data = {
                     "proportion":"45.80"
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":860,
                     "proportion":"33.73"
                 }
@@ -99,7 +99,7 @@ export const data = {
                     "proportion":"32.12"
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":66,
                     "proportion":"12.04"
                 }
@@ -121,7 +121,7 @@ export const data = {
                     "proportion":"52.30"
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":165,
                     "proportion":"38.02"
                 }
@@ -143,7 +143,7 @@ export const data = {
                     "proportion":"51.34"
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":123,
                     "proportion":"41.28"
                 }
@@ -152,7 +152,7 @@ export const data = {
                 {
                     "name":"优秀",
                     "value":2,
-                    "proportion":".95"
+                    "proportion":"0.95"
                 },
                 {
                     "name":"良好",
@@ -165,7 +165,7 @@ export const data = {
                     "proportion":"58.57"
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":62,
                     "proportion":"29.52"
                 }
@@ -187,7 +187,7 @@ export const data = {
                     "proportion":"44.38"
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":72,
                     "proportion":"45.00"
                 }
@@ -209,7 +209,7 @@ export const data = {
                     "proportion":"46.34"
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":61,
                     "proportion":"49.59"
                 }
@@ -231,7 +231,7 @@ export const data = {
                     "proportion":"56.10"
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":72,
                     "proportion":"25.09"
                 }
@@ -252,7 +252,7 @@ export const data = {
                 "proportion":"49.28"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":26,
                 "proportion":"37.68"
             }],
@@ -273,7 +273,7 @@ export const data = {
                     "proportion":"23.44"
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":27,
                     "proportion":"42.19"
                 }
@@ -294,7 +294,7 @@ export const data = {
                 "proportion":"48.72"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":30,
                 "proportion":"38.46"
             }],
@@ -315,7 +315,7 @@ export const data = {
                     "proportion":"24.51"
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":77,
                     "proportion":"75.49"
                 }
@@ -337,7 +337,7 @@ export const data = {
                     "proportion":"55.56"
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":50,
                     "proportion":"37.04"
                 }
@@ -359,7 +359,7 @@ export const data = {
                     "proportion":"30.95"
                 },
                 {
-                    "name":"不及格",
+                    "name":"待提升",
                     "value":29,
                     "proportion":"69.05"
                 }
@@ -603,7 +603,7 @@ export const data = {
             },
             "scene":{ // 义务教育、情景问题标准差、最大值的学科、最小值的学科
                 "max": "高中学段(含特教)社会科教师",
-                "min": "学前教育学科教师",
+                "min": "学前教育教师",
                 "chartData": [
                     {
                         "name":"幼儿园教师",
@@ -1271,7 +1271,7 @@ export const data = {
                             name: '及格', value: '40', precent: '60%',
                         },
                         {
-                            name: '不及格', value: '50', precent: '70%',
+                            name: '待提升', value: '50', precent: '70%',
                         }
                     ]
                 },
@@ -1288,7 +1288,7 @@ export const data = {
                             name: '及格', value: '20', precent: '65%',
                         },
                         {
-                            name: '不及格', value: '60', precent: '71%',
+                            name: '待提升', value: '60', precent: '71%',
                         }
                     ]
                 },
@@ -1305,7 +1305,7 @@ export const data = {
                             name: '及格', value: '45', precent: '62%',
                         },
                         {
-                            name: '不及格', value: '51', precent: '74%',
+                            name: '待提升', value: '51', precent: '74%',
                         }
                     ]
                 },
@@ -1322,7 +1322,7 @@ export const data = {
                             name: '及格', value: '44', precent: '60%',
                         },
                         {
-                            name: '不及格', value: '55', precent: '70%',
+                            name: '待提升', value: '55', precent: '70%',
                         }
                     ]
                 }
@@ -1341,7 +1341,7 @@ export const data = {
                             name: '及格', value: '40', precent: '60%',
                         },
                         {
-                            name: '不及格', value: '50', precent: '70%',
+                            name: '待提升', value: '50', precent: '70%',
                         }
                     ]
                 },
@@ -1358,7 +1358,7 @@ export const data = {
                             name: '及格', value: '20', precent: '65%',
                         },
                         {
-                            name: '不及格', value: '60', precent: '71%',
+                            name: '待提升', value: '60', precent: '71%',
                         }
                     ]
                 },
@@ -1375,7 +1375,7 @@ export const data = {
                             name: '及格', value: '45', precent: '62%',
                         },
                         {
-                            name: '不及格', value: '51', precent: '74%',
+                            name: '待提升', value: '51', precent: '74%',
                         }
                     ]
                 },
@@ -1392,7 +1392,7 @@ export const data = {
                             name: '及格', value: '44', precent: '60%',
                         },
                         {
-                            name: '不及格', value: '55', precent: '70%',
+                            name: '待提升', value: '55', precent: '70%',
                         }
                     ]
                 }
@@ -1410,7 +1410,7 @@ export const data = {
                             name: '及格', value: '40', precent: '60%',
                         },
                         {
-                            name: '不及格', value: '50', precent: '70%',
+                            name: '待提升', value: '50', precent: '70%',
                         }
                     ]
                 },
@@ -1427,7 +1427,7 @@ export const data = {
                             name: '及格', value: '20', precent: '65%',
                         },
                         {
-                            name: '不及格', value: '60', precent: '71%',
+                            name: '待提升', value: '60', precent: '71%',
                         }
                     ]
                 },
@@ -1444,7 +1444,7 @@ export const data = {
                             name: '及格', value: '45', precent: '62%',
                         },
                         {
-                            name: '不及格', value: '51', precent: '74%',
+                            name: '待提升', value: '51', precent: '74%',
                         }
                     ]
                 },
@@ -1461,7 +1461,7 @@ export const data = {
                             name: '及格', value: '44', precent: '60%',
                         },
                         {
-                            name: '不及格', value: '55', precent: '70%',
+                            name: '待提升', value: '55', precent: '70%',
                         }
                     ]
                 }
@@ -1479,7 +1479,7 @@ export const data = {
                             name: '及格', value: '40', precent: '60%',
                         },
                         {
-                            name: '不及格', value: '50', precent: '70%',
+                            name: '待提升', value: '50', precent: '70%',
                         }
                     ]
                 },
@@ -1496,7 +1496,7 @@ export const data = {
                             name: '及格', value: '20', precent: '65%',
                         },
                         {
-                            name: '不及格', value: '60', precent: '71%',
+                            name: '待提升', value: '60', precent: '71%',
                         }
                     ]
                 },
@@ -1513,7 +1513,7 @@ export const data = {
                             name: '及格', value: '45', precent: '62%',
                         },
                         {
-                            name: '不及格', value: '51', precent: '74%',
+                            name: '待提升', value: '51', precent: '74%',
                         }
                     ]
                 },
@@ -1530,7 +1530,7 @@ export const data = {
                             name: '及格', value: '44', precent: '60%',
                         },
                         {
-                            name: '不及格', value: '55', precent: '70%',
+                            name: '待提升', value: '55', precent: '70%',
                         }
                     ]
                 }
@@ -1548,7 +1548,7 @@ export const data = {
                             name: '及格', value: '40', precent: '60%',
                         },
                         {
-                            name: '不及格', value: '50', precent: '70%',
+                            name: '待提升', value: '50', precent: '70%',
                         }
                     ]
                 },
@@ -1565,7 +1565,7 @@ export const data = {
                             name: '及格', value: '20', precent: '65%',
                         },
                         {
-                            name: '不及格', value: '60', precent: '71%',
+                            name: '待提升', value: '60', precent: '71%',
                         }
                     ]
                 },
@@ -1582,7 +1582,7 @@ export const data = {
                             name: '及格', value: '45', precent: '62%',
                         },
                         {
-                            name: '不及格', value: '51', precent: '74%',
+                            name: '待提升', value: '51', precent: '74%',
                         }
                     ]
                 },
@@ -1599,7 +1599,7 @@ export const data = {
                             name: '及格', value: '44', precent: '60%',
                         },
                         {
-                            name: '不及格', value: '55', precent: '70%',
+                            name: '待提升', value: '55', precent: '70%',
                         }
                     ]
                 }
@@ -1617,7 +1617,7 @@ export const data = {
                             name: '及格', value: '40', precent: '60%',
                         },
                         {
-                            name: '不及格', value: '50', precent: '70%',
+                            name: '待提升', value: '50', precent: '70%',
                         }
                     ]
                 },
@@ -1634,7 +1634,7 @@ export const data = {
                             name: '及格', value: '20', precent: '65%',
                         },
                         {
-                            name: '不及格', value: '60', precent: '71%',
+                            name: '待提升', value: '60', precent: '71%',
                         }
                     ]
                 },
@@ -1651,7 +1651,7 @@ export const data = {
                             name: '及格', value: '45', precent: '62%',
                         },
                         {
-                            name: '不及格', value: '51', precent: '74%',
+                            name: '待提升', value: '51', precent: '74%',
                         }
                     ]
                 },
@@ -1668,7 +1668,7 @@ export const data = {
                             name: '及格', value: '44', precent: '60%',
                         },
                         {
-                            name: '不及格', value: '55', precent: '70%',
+                            name: '待提升', value: '55', precent: '70%',
                         }
                     ]
                 }
@@ -1806,7 +1806,7 @@ export const data = {
                         "proportion":91.54
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":169,
                         "proportion":82.51
                     }
@@ -1828,7 +1828,7 @@ export const data = {
                         "proportion":91.59
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":19,
                         "proportion":83.33
                     }
@@ -1850,7 +1850,7 @@ export const data = {
                         "proportion":91.59
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":9,
                         "proportion":84.07
                     }
@@ -1872,7 +1872,7 @@ export const data = {
                         "proportion":91.67
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":10,
                         "proportion":83.5
                     }
@@ -1894,7 +1894,7 @@ export const data = {
                         "proportion":91.55
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":25,
                         "proportion":82.93
                     }
@@ -1916,7 +1916,7 @@ export const data = {
                         "proportion":91.6
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":35,
                         "proportion":81.9
                     }
@@ -1938,7 +1938,7 @@ export const data = {
                         "proportion":91.42
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":11,
                         "proportion":83.18
                     }
@@ -1960,7 +1960,7 @@ export const data = {
                         "proportion":91.3
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":5,
                         "proportion":85.33
                     }
@@ -1982,7 +1982,7 @@ export const data = {
                         "proportion":91.77
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":5,
                         "proportion":77.67
                     }
@@ -2004,7 +2004,7 @@ export const data = {
                         "proportion":91
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":6,
                         "proportion":78.33
                     }
@@ -2026,7 +2026,7 @@ export const data = {
                         "proportion":91.35
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":6,
                         "proportion":83.89
                     }
@@ -2048,7 +2048,7 @@ export const data = {
                         "proportion":91.55
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":21,
                         "proportion":83.73
                     }
@@ -2070,7 +2070,7 @@ export const data = {
                         "proportion":91.47
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":7,
                         "proportion":76.19
                     }
@@ -2092,7 +2092,7 @@ export const data = {
                         "proportion":91.32
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":10,
                         "proportion":83.5
                     }
@@ -2538,7 +2538,7 @@ export const data = {
                         "proportion":91.8
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":954,
                         "proportion":83.27
                     }
@@ -2560,7 +2560,7 @@ export const data = {
                         "proportion":92.02
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":59,
                         "proportion":84.63
                     }
@@ -2582,7 +2582,7 @@ export const data = {
                         "proportion":91.69
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":163,
                         "proportion":83.7
                     }
@@ -2604,7 +2604,7 @@ export const data = {
                         "proportion":91.72
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":128,
                         "proportion":84.09
                     }
@@ -2626,7 +2626,7 @@ export const data = {
                         "proportion":91.92
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":71,
                         "proportion":84.79
                     }
@@ -2648,7 +2648,7 @@ export const data = {
                         "proportion":91.92
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":66,
                         "proportion":84.58
                     }
@@ -2670,7 +2670,7 @@ export const data = {
                         "proportion":91.88
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":116,
                         "proportion":82.74
                     }
@@ -2692,7 +2692,7 @@ export const data = {
                         "proportion":91.53
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":82,
                         "proportion":81.95
                     }
@@ -2714,7 +2714,7 @@ export const data = {
                         "proportion":91.48
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":36,
                         "proportion":82.41
                     }
@@ -2736,7 +2736,7 @@ export const data = {
                         "proportion":91.73
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":21,
                         "proportion":83.85
                     }
@@ -2758,7 +2758,7 @@ export const data = {
                         "proportion":91.35
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":30,
                         "proportion":83.19
                     }
@@ -2780,7 +2780,7 @@ export const data = {
                         "proportion":91.79
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":68,
                         "proportion":83.43
                     }
@@ -2802,7 +2802,7 @@ export const data = {
                         "proportion":91.98
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":31,
                         "proportion":81.94
                     }
@@ -2824,7 +2824,7 @@ export const data = {
                         "proportion":91.44
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":83,
                         "proportion":80.47
                     }
@@ -3269,7 +3269,7 @@ export const data = {
                         "proportion":93.43
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":1098,
                         "proportion":84.78
                     }
@@ -3291,7 +3291,7 @@ export const data = {
                         "proportion":92.6
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":45,
                         "proportion":85.04
                     }
@@ -3313,7 +3313,7 @@ export const data = {
                         "proportion":93.5
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":262,
                         "proportion":85.28
                     }
@@ -3335,7 +3335,7 @@ export const data = {
                         "proportion":93.46
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":164,
                         "proportion":84.45
                     }
@@ -3357,7 +3357,7 @@ export const data = {
                         "proportion":93.65
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":115,
                         "proportion":86.42
                     }
@@ -3379,7 +3379,7 @@ export const data = {
                         "proportion":93.84
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":112,
                         "proportion":85.76
                     }
@@ -3401,7 +3401,7 @@ export const data = {
                         "proportion":93.42
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":61,
                         "proportion":85.19
                     }
@@ -3423,7 +3423,7 @@ export const data = {
                         "proportion":93.73
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":75,
                         "proportion":85.35
                     }
@@ -3445,7 +3445,7 @@ export const data = {
                         "proportion":93.17
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":33,
                         "proportion":82.49
                     }
@@ -3467,7 +3467,7 @@ export const data = {
                         "proportion":93.85
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":29,
                         "proportion":81.88
                     }
@@ -3489,7 +3489,7 @@ export const data = {
                         "proportion":93.49
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":41,
                         "proportion":85.15
                     }
@@ -3511,7 +3511,7 @@ export const data = {
                         "proportion":93.41
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":40,
                         "proportion":85.31
                     }
@@ -3533,7 +3533,7 @@ export const data = {
                         "proportion":92.22
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":28,
                         "proportion":84.25
                     }
@@ -3555,7 +3555,7 @@ export const data = {
                         "proportion":93.58
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":93,
                         "proportion":81.35
                     }
@@ -4000,7 +4000,7 @@ export const data = {
                         "proportion":93.63
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":1473,
                         "proportion":84.15
                     }
@@ -4022,7 +4022,7 @@ export const data = {
                         "proportion":93.6
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":162,
                         "proportion":85.56
                     }
@@ -4044,7 +4044,7 @@ export const data = {
                         "proportion":93.72
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":357,
                         "proportion":84.24
                     }
@@ -4066,7 +4066,7 @@ export const data = {
                         "proportion":93.74
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":259,
                         "proportion":84.19
                     }
@@ -4088,7 +4088,7 @@ export const data = {
                         "proportion":93.38
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":94,
                         "proportion":84.88
                     }
@@ -4110,7 +4110,7 @@ export const data = {
                         "proportion":93.93
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":167,
                         "proportion":83.55
                     }
@@ -4132,7 +4132,7 @@ export const data = {
                         "proportion":93.5
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":62,
                         "proportion":84.7
                     }
@@ -4154,7 +4154,7 @@ export const data = {
                         "proportion":94.03
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":80,
                         "proportion":84.17
                     }
@@ -4176,7 +4176,7 @@ export const data = {
                         "proportion":93.28
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":32,
                         "proportion":84.17
                     }
@@ -4198,7 +4198,7 @@ export const data = {
                         "proportion":93.42
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":32,
                         "proportion":81.98
                     }
@@ -4220,7 +4220,7 @@ export const data = {
                         "proportion":93.89
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":47,
                         "proportion":83.45
                     }
@@ -4242,7 +4242,7 @@ export const data = {
                         "proportion":93.51
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":68,
                         "proportion":84.58
                     }
@@ -4254,7 +4254,7 @@ export const data = {
                         "proportion":93.89
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":30,
                         "proportion":82.44
                     },
@@ -4286,7 +4286,7 @@ export const data = {
                         "proportion":93.7
                     },
                     {
-                        "name":"不及格",
+                        "name":"待提升",
                         "value":83,
                         "proportion":82.38
                     }

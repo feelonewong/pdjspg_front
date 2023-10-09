@@ -44,7 +44,7 @@ const moduleTableConfig = [
     },
     {
         "prop": "fail",
-        "label": "不及格",
+        "label": "待提升",
     },
 ]
 function findMaxAndMin(arr) {
@@ -76,7 +76,7 @@ export const ResponsResult = {
         },
         "subjectScoreDistribution":{
             "child": {
-                "title": "学前教育学科",
+                "title": "学前教育",
                 "chartData": data.allResult.subjectScoreDistribution.childChartData
             },
             "chn":{
@@ -176,7 +176,7 @@ export const ResponsResult = {
         "dimensionRating": {
             "wrap": {
                 "pre":{
-                    "title": "学前教育学科",
+                    "title": "学前教育",
                     "chartData": data.allResult.dimensionRating.preChartData
                 },
                 "compChn":{
@@ -237,7 +237,7 @@ export const ResponsResult = {
         },
         "eachScoreDistribution": {
             "child": {
-                "title": "学前教育学科",
+                "title": "学前教育",
                 "chartData": data.allResult.subjectScoreDistribution.childChartData
             },
             "chn":{
@@ -292,9 +292,9 @@ export const ResponsResult = {
     },
     "modules": [
         {
-            "title": "1.2.2 全区学段职业态度",
-            "subTitle": "1.2.2.1 全区学段职业态度得分率与得分分布情况",
-            "second": "1.2.2.2 全区学段职业态度平均分、中位数、标准差",
+            "title": "1.2.2 全区职业态度",
+            "subTitle": "1.2.2.1 全区职业态度得分率与得分分布情况",
+            "second": "1.2.2.2 全区职业态度平均分、中位数、标准差",
             "scoreRating": {
                 "title": "职业态度",
                 "chartData": data.modules[0].scoreRating.chartData,
@@ -310,7 +310,7 @@ export const ResponsResult = {
                         chartData: data.modules[0].eachScoreDistribution.allChartData
                     },
                     "child": {
-                        title: '学前教育学科',
+                        title: '学前教育',
                         chartData: data.modules[0].eachScoreDistribution.childChartData
                     },
                     "chn": {
@@ -411,9 +411,9 @@ export const ResponsResult = {
             }
         },
         {
-            "title": "1.2.3 全区学段教学实践",
-            "subTitle": "1.2.3.1 全区学段教学实践得分率与得分分布情况",
-            "second": "1.2.2.3 全区学段教学实践平均分、中位数、标准差",
+            "title": "1.2.3 全区教学实践",
+            "subTitle": "1.2.3.1 全区教学实践得分率与得分分布情况",
+            "second": "1.2.2.3 全区教学实践平均分、中位数、标准差",
             "scoreRating": {
                 "title": "教学实践",
                 "chartData": data.modules[1].scoreRating.chartData,
@@ -429,7 +429,7 @@ export const ResponsResult = {
                         chartData: data.modules[1].eachScoreDistribution.allChartData
                     },
                     "child": {
-                        title: '学前教育学科',
+                        title: '学前教育',
                         chartData: data.modules[1].eachScoreDistribution.childChartData
                     },
                     "chn": {
@@ -530,9 +530,9 @@ export const ResponsResult = {
             }
         },
         {
-            "title": "1.2.4 全区学段综合育人",
-            "subTitle": "1.2.4.1 全区学段综合育人得分率与得分分布情况",
-            "second": "1.2.2.4 全区学段综合育人平均分、中位数、标准差",
+            "title": "1.2.4 全区综合育人",
+            "subTitle": "1.2.4.1 全区综合育人得分率与得分分布情况",
+            "second": "1.2.2.4 全区综合育人平均分、中位数、标准差",
             "scoreRating": {
                 "title": "综合育人",
                 "chartData": data.modules[2].scoreRating.chartData,
@@ -548,7 +548,7 @@ export const ResponsResult = {
                         chartData: data.modules[2].eachScoreDistribution.allChartData
                     },
                     "child": {
-                        title: '学前教育学科',
+                        title: '学前教育',
                         chartData: data.modules[2].eachScoreDistribution.childChartData
                     },
                     "chn": {
@@ -650,9 +650,9 @@ export const ResponsResult = {
             }
         },
         {
-            "title": "1.2.5 全区学段自主发展",
-            "subTitle": "1.2.5.1 全区学段自主发展得分率与得分分布情况",
-            "second": "1.2.5.2 全区学段自主发展平均分、中位数、标准差",
+            "title": "1.2.5 全区自主发展",
+            "subTitle": "1.2.5.1 全区自主发展得分率与得分分布情况",
+            "second": "1.2.5.2 全区自主发展平均分、中位数、标准差",
             "scoreRating": {
                 "title": "自主发展",
                 "chartData": data.modules[3].scoreRating.chartData,
@@ -668,7 +668,7 @@ export const ResponsResult = {
                         chartData: data.modules[3].eachScoreDistribution.allChartData
                     },
                     "child": {
-                        title: '学前教育学科',
+                        title: '学前教育',
                         chartData: data.modules[3].eachScoreDistribution.childChartData
                     },
                     "chn": {

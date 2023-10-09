@@ -24,7 +24,7 @@ export default {
     },
     height: {
       type: String,
-      default: "420px",
+      default: "520px",
     },
     title: {
       type: String,
@@ -78,7 +78,6 @@ export default {
           textVerticalAlign: 'bottom',
           textStyle: {
             fontSize: 24,
-            
             color: "#000",
             fontWeight: "bold",
           },
@@ -92,9 +91,9 @@ export default {
           },
         },
         grid: {
-          top: "40",
+          top: "110",
           left: "20",
-          right: "20",
+          right: "50",
           containLabel: true,
         },
         dataZoom: [
@@ -112,12 +111,29 @@ export default {
             axisTick: {
               alignWithLabel: true,
             },
+            axisLabel: {
+              fontSize: 14,
+             rotate: 40, // 将x轴标签旋转90度
+            // formatter: function (value) {
+            //   // if(!this.$props.chartData.flag){
+
+              
+            //   // }else {
+            //   //   return value
+                
+            //   // }
+            //   // return value;
+            //     var str = value.split("");
+            //     return str.join("\n");
+            // },
+        }
           },
         ],
         // y-轴
         yAxis: [
           {
             type: "value",
+            scale: true,
             max: this.$props.maxValue,
           },
         ],
@@ -125,11 +141,13 @@ export default {
           {
             type: "bar",
             barMaxWidth: "20",
+            height: "100",
             data: this.$props.chartData.map((item) => item.value),
             colorBy: "data",
             markLine: {
               lineStyle: {
-                type: "dotted",
+                type: "solid",
+                width: 2,
                 color: "#8EA0C9",
               },
               label: { position: "middle", formatter: this.markLineFormatter },

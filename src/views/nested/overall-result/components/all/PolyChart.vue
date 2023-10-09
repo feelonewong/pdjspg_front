@@ -93,7 +93,7 @@ export default {
               type: "boxplot",
               config: {
                 itemNameFormatter: function (params) {
-                  return "学前教育学科";
+                  return "学前教育";
                 },
               },
             },

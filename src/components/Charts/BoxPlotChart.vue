@@ -24,7 +24,7 @@ export default {
     },
     height: {
       type: String,
-      default: "400px",
+      default: "500px",
     },
     title: {
       type: String,
@@ -65,7 +65,8 @@ export default {
           left: "center",
           textVerticalAlign: 'bottom',
           textStyle: {
-            fontSize: 16,
+            fontSize: 24,
+            color: '#000',
             fontWeight: "bold",
           },
         },
@@ -87,7 +88,8 @@ export default {
         },
         grid: {
           bottom: 100,
-          left: 190,
+          top: 120,
+          left: 200,
           // containLabel: true
         },
         dataZoom: [

@@ -71,7 +71,7 @@ export const reuslt = {
                 "proportion":"45.80"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":860,
                 "proportion":"33.73"
             }
@@ -93,7 +93,7 @@ export const reuslt = {
                 "proportion":"32.12"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":66,
                 "proportion":"12.04"
             }
@@ -115,7 +115,7 @@ export const reuslt = {
                 "proportion":"52.30"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":165,
                 "proportion":"38.02"
             }
@@ -137,7 +137,7 @@ export const reuslt = {
                 "proportion":"51.34"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":123,
                 "proportion":"41.28"
             }
@@ -159,7 +159,7 @@ export const reuslt = {
                 "proportion":"58.57"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":62,
                 "proportion":"29.52"
             }
@@ -181,7 +181,7 @@ export const reuslt = {
                 "proportion":"44.38"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":72,
                 "proportion":"45.00"
             }
@@ -203,7 +203,7 @@ export const reuslt = {
                 "proportion":"46.34"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":61,
                 "proportion":"49.59"
             }
@@ -225,7 +225,7 @@ export const reuslt = {
                 "proportion":"56.10"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":72,
                 "proportion":"25.09"
             }
@@ -247,7 +247,7 @@ export const reuslt = {
                 "proportion":"49.28"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":26,
                 "proportion":"37.68"
             }
@@ -269,7 +269,7 @@ export const reuslt = {
                 "proportion":"23.44"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":27,
                 "proportion":"42.19"
             }
@@ -291,7 +291,7 @@ export const reuslt = {
                 "proportion":"48.72"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":30,
                 "proportion":"38.46"
             }
@@ -313,7 +313,7 @@ export const reuslt = {
                 "proportion":"24.51"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":77,
                 "proportion":"75.49"
             }
@@ -335,7 +335,7 @@ export const reuslt = {
                 "proportion":"55.56"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":50,
                 "proportion":"37.04"
             }
@@ -357,7 +357,7 @@ export const reuslt = {
                 "proportion":"30.95"
             },
             {
-                "name":"不及格",
+                "name":"待提升",
                 "value":29,
                 "proportion":"69.05"
             }

@@ -24,7 +24,7 @@ export default {
     },
     height: {
       type: String,
-      default: "400px",
+      default: "420px",
     },
     title: {
       type: String,
@@ -55,13 +55,14 @@ export default {
           left: "center",
           textVerticalAlign: 'bottom',
           textStyle: {
-            fontSize: 16,
+            fontSize: 24,
+            color: '#000',
             fontWeight: "bold",
           },
         },
         tooltip: {
           trigger: "item",
-          formatter: "{a} <br/>{b} : {c} ({d}%)",
+          formatter: "{a} <br/>{b} : {c}%",
         },
         legend: {
           top: "bottom",
@@ -76,7 +77,7 @@ export default {
             label: {
               position: "outside",
               show: true,
-              formatter: "{b}\n {c} ({d}%)",
+              formatter: "{b}\n {c} %",
             },
             itemStyle: {
               borderRadius: 6,

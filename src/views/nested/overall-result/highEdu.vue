@@ -53,7 +53,7 @@
               allResult.scoreDistribution.chartData[2].value
             }}
             占比({{ allResult.scoreDistribution.chartData[2].precent }})<br />
-            不及格人数{{
+            待提升人数{{
               allResult.scoreDistribution.chartData[3].value
             }}
             占比({{ allResult.scoreDistribution.chartData[3].precent }})
@@ -80,7 +80,7 @@
           及格人数:{{ eachItem.chartData[2].value }} 占比({{
             eachItem.chartData[2].precent
           }})<br />
-          不及格人数:{{ eachItem.chartData[3].value }} 占比({{
+          待提升人数:{{ eachItem.chartData[3].value }} 占比({{
             eachItem.chartData[3].precent
           }})<br />
         </desc-slot>
@@ -258,7 +258,7 @@
           及格人数:{{ eachItem.chartData[2].value }} 占比({{
             eachItem.chartData[2].precent
           }})<br />
-          不及格人数:{{ eachItem.chartData[3].value }} 占比({{
+          待提升人数:{{ eachItem.chartData[3].value }} 占比({{
             eachItem.chartData[3].precent
           }})<br />
         </desc-slot>
@@ -308,7 +308,7 @@
               及格人数:{{ eachItem.chartData[2].value }} 占比({{
                 eachItem.chartData[2].precent
               }})<br />
-              不及格人数:{{ eachItem.chartData[3].value }} 占比({{
+              待提升人数:{{ eachItem.chartData[3].value }} 占比({{
                 eachItem.chartData[3].precent
               }})<br />
             </desc-slot>

@@ -72,7 +72,8 @@ export default {
           left: "center",
           textVerticalAlign: 'bottom',
           textStyle: {
-            fontSize: 16,
+            fontSize: 24,
+            color: '#000',
             fontWeight: "bold",
           },
         },

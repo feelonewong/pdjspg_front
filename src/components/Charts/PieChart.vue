@@ -53,11 +53,17 @@ export default {
         title: {
           text: this.$props.title,
           left: "center",
+          top: 0,
           textVerticalAlign: 'bottom',
           textStyle: {
-            fontSize: 16,
+            fontSize: 24,
+            color: '#000',
             fontWeight: "bold",
           },
+        },
+        grid: {
+          top: 100,
+          botttom: 0,
         },
         tooltip: {
           trigger: "item",
@@ -70,11 +76,11 @@ export default {
           {
             name: this.$props.title,
             type: "pie",
-            radius: ["40%", "70%"],
+            radius: ["25%", "50%"],
             label: {
               show: true,
               position: "outside",
-              formatter: "{b}:{c} ({d}%)",
+              formatter: "{b}\n{c} ({d}%)",
             },
             labelLine: {
               show: true,

@@ -16,7 +16,7 @@ const tableConfig = [
         prop: 'pass',
     },
     {
-        label: '不及格',
+        label: '待提升',
         prop: 'fail',
     },
 ]
