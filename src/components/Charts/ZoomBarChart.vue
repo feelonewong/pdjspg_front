@@ -113,7 +113,7 @@ export default {
             },
             axisLabel: {
               fontSize: 14,
-             rotate: 40, // 将x轴标签旋转90度
+            //  rotate: 40, // 将x轴标签旋转90度
             // formatter: function (value) {
             //   // if(!this.$props.chartData.flag){
 
