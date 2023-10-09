@@ -99,7 +99,7 @@ export const data = {
                     {
                       "name": "良好",
                       "value": '4',
-                      "precent": ".73"
+                      "precent": "0.73"
                     },
                     {
                       "name": "及格",

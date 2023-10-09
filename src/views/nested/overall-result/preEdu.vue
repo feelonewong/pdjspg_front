@@ -1,280 +1,450 @@
 <template>
-  <div style="margin-bottom: 50px">
-    <h2 >二、学前教育与特殊教育学段调研结果</h2>
+  <div style="margin-bottom: 50px; padding: 0 20px; box-sizing: border-box">
+    <h2>二、学前教育与特殊教育学段调研结果</h2>
     <br />
-    <h2 class="title" style="margin-top: 30px; margin-bottom: 30px; ">2.1全区学前教育学段整体得分率与得分分布情况</h2>
+    <h2 class="title" style="margin-top: 30px; margin-bottom: 30px">
+      2.1全区学前教育学段整体得分率与得分分布情况
+    </h2>
+    <span
+      @click="
+        handleExpandModule('flag2_1', [
+          'flag2_1',
+          'flag2_1_1',
+          'flag2_1_2_2',
+          'flag2_1_2_1',
+        ])
+      "
+      style="margin-left: 1em; cursor: pointer"
+    >
+      <template v-if="!flag2_1">
+        展开更多 <i class="el-icon-arrow-down"></i>
+      </template>
+      <template v-else> 收起 <i class="el-icon-arrow-up"></i> </template>
+    </span>
     <br />
-    <h2 class="title"  style="margin-top: 10px; margin-bottom: 60px; ">2.1.1全区学前教育学段整体得分率</h2>
+    <h2 class="title" style="margin-top: 10px; margin-bottom: 60px">
+      2.1.1全区学前教育学段整体得分率
+    </h2>
+    <span
+      @click="handleExpand('flag2_1_1')"
+      style="margin-left: 1em; cursor: pointer"
+    >
+      <template v-if="!flag2_1_1">
+        展开更多 <i class="el-icon-arrow-down"></i>
+      </template>
+      <template v-else> 收起 <i class="el-icon-arrow-up"></i> </template>
+    </span>
     <br />
-    <div class="wrap-d">
-      <div class="area-left">
-        <BoxPlotChart
-          :title="'整体得分率'"
-          :chartData="allResult.allScoreRating.chartData"
-        />
-      </div>
-      <div class="area-right">
-        <desc-slot>
-          全区学前教育学段年总体得分率为:{{
-            allResult.allScoreRating.chartData[0].average
-          }}
-        </desc-slot>
-      </div>
-    </div>
-    <h2 class="title"  style="margin-top: 30px; margin-bottom: 30px; ">2.1.2全区学前教育学段整体得分分布情况</h2>
-    <br />
-    <h2 class="title" style="margin-top: 10px; margin-bottom: 70px; ">2.1.2.1全区学前教育学段总体得分分布情况</h2>
-    <br />
-    <div>
-      <div class="wrap-d">
+    <template v-if="flag2_1_1">
+      <div class="wrap-d at8">
         <div class="area-left">
-          <PieChart
-            :title="'总体得分情况'"
-            :chartData="allResult.scoreDistribution.chartData"
-          ></PieChart>
+          <BoxPlotChart
+            :title="'整体得分率'"
+            :chartData="allResult.allScoreRating.chartData"
+          />
         </div>
         <div class="area-right">
           <desc-slot>
-            全区学前教育学段总体得分分布情况:<br />
-            优秀人数:{{
-              allResult.scoreDistribution.chartData[0].value
-            }}
-            占比({{ allResult.scoreDistribution.chartData[0].precent }})<br />
-            良好人数:{{
-              allResult.scoreDistribution.chartData[1].value
-            }}
-            占比({{ allResult.scoreDistribution.chartData[1].precent }})<br />
-            及格人数:{{
-              allResult.scoreDistribution.chartData[2].value
-            }}
-            占比({{ allResult.scoreDistribution.chartData[2].precent }})<br />
-            待提升人数{{
-              allResult.scoreDistribution.chartData[3].value
-            }}
-            占比({{ allResult.scoreDistribution.chartData[3].precent }})
+            全区学前教育学段年总体得分率为:{{
+              allResult.allScoreRating.chartData[0].average
+            }}%
           </desc-slot>
         </div>
       </div>
-    </div>
-    <h2 class="title" style="margin-top: 50px; margin-bottom: 40px; ">2.1.2.2学前教育整体平均分、中位数、标准差</h2>
+    </template>
+    <h2 class="title" style="margin-top: 30px; margin-bottom: 30px">
+      2.1.2全区学前教育学段整体得分分布情况
+    </h2>
+    <span
+      @click="handleExpandModule('flag2_1_2', ['flag2_1_2_1', 'flag2_1_2_2'])"
+      style="margin-left: 1em; cursor: pointer"
+    >
+      <template v-if="!flag2_1_2">
+        展开更多 <i class="el-icon-arrow-down"></i>
+      </template>
+      <template v-else> 收起 <i class="el-icon-arrow-up"></i> </template>
+    </span>
     <br />
-    <div class="wrap-d">
-      <div class="area-left">
-        <BoxPlotChart
-          :title="'学前教育整体平均分'"
-          :chartData="allResult.minMaxScore.all.chartData"
-        />
+    <h2 class="title" style="margin-top: 10px; margin-bottom: 70px">
+      2.1.2.1全区学前教育学段总体得分分布情况
+    </h2>
+    <span
+      @click="handleExpand('flag2_1_2_1')"
+      style="margin-left: 1em; cursor: pointer"
+    >
+      <template v-if="!flag2_1_2_1">
+        展开更多 <i class="el-icon-arrow-down"></i>
+      </template>
+      <template v-else> 收起 <i class="el-icon-arrow-up"></i> </template>
+    </span>
+    <br />
+    <template v-if="flag2_1_2_1">
+      <div>
+        <div class="wrap-d at8">
+          <div class="area-left">
+            <PieChart
+              :title="'总体得分情况'"
+              :chartData="allResult.scoreDistribution.chartData"
+            ></PieChart>
+          </div>
+          <div class="area-right">
+            <desc-slot>
+              全区学前教育学段总体得分分布情况:<br />
+              优秀人数:{{
+                allResult.scoreDistribution.chartData[0].value
+              }}
+              占比({{
+                allResult.scoreDistribution.chartData[0].precent
+              }}%)<br />
+              良好人数:{{
+                allResult.scoreDistribution.chartData[1].value
+              }}
+              占比({{
+                allResult.scoreDistribution.chartData[1].precent
+              }}%)<br />
+              及格人数:{{
+                allResult.scoreDistribution.chartData[2].value
+              }}
+              占比({{
+                allResult.scoreDistribution.chartData[2].precent
+              }}%)<br />
+              待提升人数{{
+                allResult.scoreDistribution.chartData[3].value
+              }}
+              占比({{ allResult.scoreDistribution.chartData[3].precent }}%)
+            </desc-slot>
+          </div>
+        </div>
       </div>
-      <div class="area-right">
-        <BoxPlotChart
-          :title="'学前教育自陈问题平均分'"
-          :chartData="allResult.minMaxScore.self.chartData"
-        />
+    </template>
+    <h2 class="title" style="margin-top: 50px; margin-bottom: 40px">
+      2.1.2.2学前教育整体平均分、中位数、标准差
+    </h2>
+    <span
+      @click="handleExpand('flag2_1_2_2')"
+      style="margin-left: 1em; cursor: pointer"
+    >
+      <template v-if="!flag2_1_2_2">
+        展开更多 <i class="el-icon-arrow-down"></i>
+      </template>
+      <template v-else> 收起 <i class="el-icon-arrow-up"></i> </template>
+    </span>
+    <br />
+
+    <template v-if="flag2_1_2_2">
+      <div class="wrap-d">
+        <div class="area-left">
+          <BoxPlotChart
+            :title="'学前教育整体平均分'"
+            :chartData="allResult.minMaxScore.all.chartData"
+          />
+        </div>
+        <div class="area-right">
+          <BoxPlotChart
+            :title="'学前教育自陈问题平均分'"
+            :chartData="allResult.minMaxScore.self.chartData"
+          />
+        </div>
+        <div class="area-left">
+          <BoxPlotChart
+            :title="'学前教育情景问题平均分'"
+            :chartData="allResult.minMaxScore.secene.chartData"
+          />
+        </div>
       </div>
-    </div>
-    <div class="wrap-d" style="margin-top: 50px; margin-bottom: 30px;">
-      <div class="area-left">
+      <div class="wrap-d" style="margin-top: 50px; margin-bottom: 30px">
+        <!-- <div class="area-left">
         <BoxPlotChart
           :title="'学前教育情景问题平均分'"
           :chartData="allResult.minMaxScore.secene.chartData"
         />
+      </div> -->
+        <div class="area-right at8">
+          <desc-slot>
+            全区学前教育学段整体得分结果如下: <br />
+            总体平均分:{{
+              allResult.minMaxScore.all.chartData[0].average
+            }}
+            总体中位数:{{ allResult.minMaxScore.all.chartData[0].median }}
+            <br />
+            情景问题平均分:
+            {{ allResult.minMaxScore.secene.chartData[0].average }}
+            情景问题中位数:
+            {{
+              allResult.minMaxScore.secene.chartData[0].median
+            }}
+            情景问题最高分:
+            {{ allResult.minMaxScore.secene.chartData[0].max }} 情景问题最低分:
+            {{ allResult.minMaxScore.secene.chartData[0].min }} <br />
+            自我问题平均分:
+            {{
+              allResult.minMaxScore.self.chartData[0].average
+            }}
+            自我问题中位数:
+            {{ allResult.minMaxScore.self.chartData[0].median }} 自我问题最高分:
+            {{ allResult.minMaxScore.self.chartData[0].max }} 自我问题最低分:
+            {{ allResult.minMaxScore.self.chartData[0].min }} <br />
+          </desc-slot>
+        </div>
       </div>
-      <div class="area-right">
-        <desc-slot>
-          全区学前教育学段整体得分结果如下: <br />
-          总体平均分:{{
-            allResult.minMaxScore.all.chartData[0].average
-          }}
-          总体中位数:{{ allResult.minMaxScore.all.chartData[0].median }} <br />
-          情景问题平均分:
-          {{
-            allResult.minMaxScore.secene.chartData[0].average
-          }}
-          情景问题中位数:
-          {{ allResult.minMaxScore.secene.chartData[0].median }} 情景问题最高分:
-          {{ allResult.minMaxScore.secene.chartData[0].max }} 情景问题最低分:
-          {{ allResult.minMaxScore.secene.chartData[0].min }} <br />
-          自我问题平均分:
-          {{ allResult.minMaxScore.self.chartData[0].average }} 自我问题中位数:
-          {{ allResult.minMaxScore.self.chartData[0].median }} 自我问题最高分:
-          {{ allResult.minMaxScore.self.chartData[0].max }} 自我问题最低分:
-          {{ allResult.minMaxScore.self.chartData[0].min }} <br />
-        </desc-slot>
+      <div class="wrap-d at8" style="margin-top: 60px; margin-bottom: 80px">
+        <div class="area-left">
+          <ZoomBarChart
+            :title="'学前教育自陈问题、情景问题标准差'"
+            :chartData="allResult.standradScore.chartData"
+          ></ZoomBarChart>
+        </div>
+        <div class="area-right">
+          <desc-slot>
+            在自陈问题方面，学前教育的标准差为:
+            {{ allResult.standradScore.chartData[0].value }} <br />
+            在情景问题方面，学前教育的标准差为:
+            {{ allResult.standradScore.chartData[1].value }} <br />
+          </desc-slot>
+        </div>
       </div>
-    </div>
-    <div class="wrap-d">
-      <div class="area-left">
-        <ZoomBarChart
-          :title="'学前教育自陈问题、情景问题标准差'"
-          :chartData="allResult.standradScore.chartData"
-        ></ZoomBarChart>
-      </div>
-      <div class="area-right">
-        <desc-slot>
-          在自陈问题方面，学前教育的标准差为:
-          {{ allResult.standradScore.chartData[0].value }} <br />
-          在情景问题方面，学前教育的标准差为:
-          {{ allResult.standradScore.chartData[1].value }} <br />
-        </desc-slot>
-      </div>
-    </div>
-    <h2 class="title" style="margin-top: 30px; margin-bottom: 30px; ">2.2 全区学前教育学段各维度调研结果</h2>
+    </template>
+    <h2 class="title" style="margin-top: 30px; margin-bottom: 30px">
+      2.2 全区学前教育学段各维度调研结果
+    </h2>
+    <span
+      @click="handleExpandModule('flag2_2', ['flag2_2_1_1', 'flag2_2_1_2'])"
+      style="margin-left: 1em; cursor: pointer"
+    >
+      <template v-if="!flag2_2">
+        展开更多 <i class="el-icon-arrow-down"></i>
+      </template>
+      <template v-else> 收起 <i class="el-icon-arrow-up"></i> </template>
+    </span>
     <br />
-    <h2 class="title" style="margin-top: 10px; margin-bottom: 30px; ">2.2.1 全区学前教育学段各维度得分率与得分分布情况</h2>
+    <h2 class="title" style="margin-top: 10px; margin-bottom: 30px">
+      2.2.1 全区学前教育学段各维度得分率与得分分布情况
+    </h2>
+    <span
+      @click="handleExpandModule('flag2_2_1', ['flag2_2_1_1', 'flag2_2_1_2'])"
+      style="margin-left: 1em; cursor: pointer"
+    >
+      <template v-if="!flag2_2_1">
+        展开更多 <i class="el-icon-arrow-down"></i>
+      </template>
+      <template v-else> 收起 <i class="el-icon-arrow-up"></i> </template>
+    </span>
     <br />
-    <h2 class="title" style="margin-top: 10px; margin-bottom: 60px; ">2.2.1.1 全区学前教育学段各维度得分率</h2>
+    <h2 class="title" style="margin-top: 10px; margin-bottom: 60px">
+      2.2.1.1 全区学前教育学段各维度得分率
+    </h2>
+    <span
+      @click="handleExpand('flag2_2_1_1')"
+      style="margin-left: 1em; cursor: pointer"
+    >
+      <template v-if="!flag2_2_1_1">
+        展开更多 <i class="el-icon-arrow-down"></i>
+      </template>
+      <template v-else> 收起 <i class="el-icon-arrow-up"></i> </template>
+    </span>
     <br />
-    <div class="wrap-d">
-      <div class="area-left">
-        <PieRoseChart
-          :title="'学前教育各维度得分率'"
-          :chartData="allResult.dimensionRating.chartData"
-        ></PieRoseChart>
+    <template v-if="flag2_2_1_1">
+      <div class="wrap-d at8">
+        <div class="area-left">
+          <PieRoseChart
+            :title="'学前教育各维度得分率'"
+            :chartData="allResult.dimensionRating.chartData"
+          ></PieRoseChart>
+        </div>
+        <div class="area-right">
+          <CommonTable
+            :tableInfo="allResult.dimensionRating.tableInfo"
+          ></CommonTable>
+        </div>
       </div>
-      <div class="area-right">
-        <CommonTable
-          :tableInfo="allResult.dimensionRating.tableInfo"
-        ></CommonTable>
-      </div>
-    </div>
-    <h2 class="title" style="margin-top: 40px; margin-bottom: 40px; ">2.2.1.2 全区学前教育学段各维度得分分布情况</h2>
+    </template>
+    <h2 class="title" style="margin-top: 40px; margin-bottom: 40px">
+      2.2.1.2 全区学前教育学段各维度得分分布情况
+    </h2>
+    <span
+      @click="handleExpand('flag2_2_1_2')"
+      style="margin-left: 1em; cursor: pointer"
+    >
+      <template v-if="!flag2_2_1_2">
+        展开更多 <i class="el-icon-arrow-down"></i>
+      </template>
+      <template v-else> 收起 <i class="el-icon-arrow-up"></i> </template>
+    </span>
     <br />
-    <div style="display: flex; flex-wrap: wrap;">
-      <div
-        class="area-left"
-        v-for="(eachItem, eachIndex) in allResult.eachScoreDistribution"
-        :key="eachIndex"
-        style="margin-bottom: 30px; width: 50%;"
-      >
-        <PieChart :title="eachItem.title" :chartData="eachItem.chartData"></PieChart>
-        <desc-slot>
-          <span style="font-weight: bold; font-size: 20px;">{{ eachItem.title }}</span>维度结果如下:<br />
-          优秀人数:{{ eachItem.chartData[0].value }} 占比({{
-            eachItem.chartData[0].precent
-          }})<br />
-          良好人数:{{ eachItem.chartData[1].value }} 占比({{
-            eachItem.chartData[1].precent
-          }})<br />
-          及格人数:{{ eachItem.chartData[2].value }} 占比({{
-            eachItem.chartData[2].precent
-          }})<br />
-          待提升人数:{{ eachItem.chartData[3].value }} 占比({{
-            eachItem.chartData[3].precent
-          }})<br />
-        </desc-slot>
+    <template v-if="flag2_2_1_2">
+      <div style="display: flex; flex-wrap: wrap" class="at8">
+        <div
+          class="area-left"
+          v-for="(eachItem, eachIndex) in allResult.eachScoreDistribution"
+          :key="eachIndex"
+          style="margin-bottom: 30px; width: 50%"
+        >
+          <PieChart
+            :title="eachItem.title"
+            :chartData="eachItem.chartData"
+          ></PieChart>
+          <desc-slot>
+            <span style="font-weight: bold; font-size: 20px">{{
+              eachItem.title
+            }}</span
+            >维度结果如下:<br />
+            优秀人数:{{ eachItem.chartData[0].value }} 占比({{
+              eachItem.chartData[0].precent
+            }}%)<br />
+            良好人数:{{ eachItem.chartData[1].value }} 占比({{
+              eachItem.chartData[1].precent
+            }}%)<br />
+            及格人数:{{ eachItem.chartData[2].value }} 占比({{
+              eachItem.chartData[2].precent
+            }}%)<br />
+            待提升人数:{{ eachItem.chartData[3].value }} 占比({{
+              eachItem.chartData[3].precent
+            }}%)<br />
+          </desc-slot>
+        </div>
       </div>
-    </div>
+    </template>
     <template v-for="(item, index) in preEduData.modules">
       <div :key="index">
-        <h2 style="margin-bottom: 20px;">{{ item.title }}</h2>
+        <h2 style="margin-bottom: 20px">{{ item.title }}</h2>
+        <span @click="handleExpandModuleObj(`flagModules`,[`flagObj`, `flagObj2` ], index)" style="margin-left: 1em; cursor: pointer;">
+          <template v-if="!flagModules[index]">
+            展开更多 <i class="el-icon-arrow-down"></i> 
+          </template>
+          <template v-else>
+            收起 <i class="el-icon-arrow-up"></i> 
+          </template>  
+      </span>
         <br />
-        <h2 class="title" style="margin-bottom: 50px; margin-top: 20px;">{{ item.subTitle }}</h2>
+        <h2 class="title" style="margin-bottom: 50px; margin-top: 20px">
+          {{ item.subTitle }}
+        </h2>
+        <span
+          @click="handleExpand2('flagObj', index)"
+          style="margin-left: 1em; cursor: pointer"
+        >
+          <template v-if="!flagObj[index]">
+            展开更多 <i class="el-icon-arrow-down"></i>
+          </template>
+          <template v-else> 收起 <i class="el-icon-arrow-up"></i> </template>
+        </span>
         <br />
-        <div class="wrap-d">
-          <div class="area-left">
-            <BoxPlotChart :title="item.scoreRating.title+'得分率'" :chartData="item.scoreRating.chartData" />
+        <template v-if="flagObj[index]">
+          <div class="wrap-d at8" style="margin-top: 60px; margin-bottom: 60px">
+            <div class="area-left">
+              <BoxPlotChart
+                :title="item.scoreRating.title + '得分率'"
+                :chartData="item.scoreRating.chartData"
+              />
+            </div>
+            <div class="area-right">
+              <desc-slot>
+                学前教育学段<span style="font-weight: 600; font-size: 20px">{{
+                  item.scoreRating.title
+                }}</span
+                >维度结果如下: <br />
+                得分率平均为:{{ item.scoreRating.chartData[0].average }}% <br />
+                得分率中位数为:{{ item.scoreRating.chartData[0].median }}%
+                <br />
+                得分率最高数为:{{ item.scoreRating.chartData[0].max }}% <br />
+                得分率最低数为:{{ item.scoreRating.chartData[0].min }}% <br />
+              </desc-slot>
+            </div>
           </div>
-          <div class="area-right">
-            <desc-slot>
-              学前教育学段<span style="font-weight: 600; font-size: 20px;">{{ item.scoreRating.title }}</span>维度结果如下: <br />
-              得分率平均为:{{ item.scoreRating.chartData[0].average }} <br />
-              得分率中位数为:{{ item.scoreRating.chartData[0].median }} <br />
-              得分率最高数为:{{ item.scoreRating.chartData[0].max }} <br />
-              得分率最低数为:{{ item.scoreRating.chartData[0].min }} <br />
-            </desc-slot>
+          <div class="wrap-d at8" style="margin-top: 80px; margin-bottom: 80px">
+            <div class="area-left">
+              <PieChart
+                :title="item.scoreRating.title + '得分分布情况'"
+                :chartData="item.eachScoreDistribution.chartData"
+              ></PieChart>
+            </div>
+            <div class="area-right">
+              <CommonTable
+                :tableInfo="item.eachScoreDistribution.tableInfo"
+              ></CommonTable>
+            </div>
           </div>
-        </div>
-        <div class="wrap-d" style="margin-top: 20px; margin-bottom: 50px;">
-          <div class="area-left">
-            <PieChart :title="item.scoreRating.title+'得分分布情况'" :chartData="item.eachScoreDistribution.chartData"></PieChart>
-          </div>
-          <div class="area-right">
-            <CommonTable
-              :tableInfo="item.eachScoreDistribution.tableInfo"
-            ></CommonTable>
-          </div>
-        </div>
-        <h2 class="title"  style="margin-top: 20px; margin-bottom: 50px;">{{ item.second }}</h2>
-        <div class="wrap-d">
-          <div class="area-left">
+        </template>
+        <h2 class="title" style="margin-top: 20px; margin-bottom: 50px">
+          {{ item.second }}
+        </h2>
+        <span
+          @click="handleExpand2('flagObj2', index)"
+          style="margin-left: 1em; cursor: pointer"
+        >
+          <template v-if="!flagObj2[index]">
+            展开更多 <i class="el-icon-arrow-down"></i>
+          </template>
+          <template v-else> 收起 <i class="el-icon-arrow-up"></i> </template>
+        </span>
+        <template v-if="flagObj2[index]">
+          <div class="wrap-d at8">
+            <div class="area-left">
               <ZoomBarChart
-                :title="item.scoreRating.title+'总体平均分'"
+                :title="item.scoreRating.title + '总体平均分'"
                 :chartData="item.averageScore.all.chartData"
               ></ZoomBarChart>
-          </div>
-          <div class="area-left">
+            </div>
+            <div class="area-left">
               <ZoomBarChart
-                :title="item.scoreRating.title+'自陈问题平均分、情景问题平均分'"
+                :title="
+                  item.scoreRating.title + '自陈问题平均分、情景问题平均分'
+                "
                 :chartData="item.averageScore.selfAndSecene.chartData"
               ></ZoomBarChart>
+            </div>
+            <div class="area-right">
+              <desc-slot>
+                学前教育学段{{ item.averageScore.title }}维度：<br />
+                总体平均分为:{{ item.averageScore.all.chartData[0].value }}
+                <br />
+                自我问题平均分为:{{
+                  item.averageScore.selfAndSecene.chartData[0].value
+                }}
+                <br />
+                情景问题平均分为:{{
+                  item.averageScore.selfAndSecene.chartData[1].value
+                }}
+                <br />
+              </desc-slot>
+            </div>
           </div>
-          <div class="area-left">
-            <desc-slot>
-              学前教育学段{{ item.averageScore.title }}维度：<br />
-              总体平均分为:{{ item.averageScore.all.chartData[0].value }} <br />
-              自我问题平均分为:{{ item.averageScore.selfAndSecene.chartData[0].value }} <br />
-              情景问题平均分为:{{ item.averageScore.selfAndSecene.chartData[1].value }} <br />
-            </desc-slot>
+          <div class="wrap-d at8" style="margin-top: 80px; margin-bottom: 80px">
+            <div class="area-left">
+              <BoxPlotChart
+                :title="item.scoreRating.title + '最低分、中位数、最高分'"
+                :chartData="item.minMaxSocre.chartData"
+              />
+            </div>
+            <div class="area-right">
+              <desc-slot>
+                学前教育学段{{ item.scoreRating.title }}维度结果如下: <br />
+                得分平均为:{{ item.minMaxSocre.chartData[0].average }} <br />
+                得分中位数为:{{ item.minMaxSocre.chartData[0].median }} <br />
+                得分最高数为:{{ item.minMaxSocre.chartData[0].max }} <br />
+                得分最低数为:{{ item.minMaxSocre.chartData[0].min }} <br />
+              </desc-slot>
+            </div>
           </div>
-        </div>
-        <div class="wrap-d" style="margin-top: 30px; margin-bottom: 30px;">
-          <div class="area-left">
-            <BoxPlotChart 
-            :title="item.scoreRating.title+'最低分、中位数、最高分'"
-            :chartData="item.minMaxSocre.chartData" />
-          </div>
-          <div class="area-right">
-            <desc-slot>
-              学前教育学段{{ item.scoreRating.title }}维度结果如下: <br />
-              得分平均为:{{ item.minMaxSocre.chartData[0].average }} <br />
-              得分中位数为:{{ item.minMaxSocre.chartData[0].median }} <br />
-              得分最高数为:{{ item.minMaxSocre.chartData[0].max }} <br />
-              得分最低数为:{{ item.minMaxSocre.chartData[0].min }} <br />
-            </desc-slot>
-          </div>
-        </div>
-        <div class="wrap-d" style="margin-bottom: 50px;">
-          <div class="area-left">
-            <ZoomBarChart
-                :title="item.scoreRating.title+'标准差'"
+          <div class="wrap-d at8" style="margin-bottom: 50px">
+            <div class="area-left">
+              <ZoomBarChart
+                :title="item.scoreRating.title + '标准差'"
                 :chartData="item.standardScore.chartData"
               ></ZoomBarChart>
+            </div>
+            <div class="area-right">
+              <desc-slot>
+                学前教育学段{{ item.scoreRating.title }}维度标准差结果如下:
+                <br />
+                自陈问题标准差为:{{ item.standardScore.chartData[0].value }}
+                <br />
+                情景问题标准差为:{{ item.standardScore.chartData[1].value }}
+                <br />
+              </desc-slot>
+            </div>
           </div>
-          <div class="area-right">
-            <desc-slot>
-              学前教育学段{{ item.scoreRating.title }}维度标准差结果如下: <br />
-              自陈问题标准差为:{{ item.standardScore.chartData[0].value }} <br />
-              情景问题标准差为:{{ item.standardScore.chartData[1].value }} <br />
-            </desc-slot>
-          </div>
-        </div>
-        <!-- <div class="wrap-d">
-          <div class="area-left">
-            <BoxPlotChart
-              :title="plotData.title"
-              :chartData="plotData.chartData"
-            />
-          </div>
-          <div class="area-right">
-            <desc-slot>
-              全区学前教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
-              优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:,
-              成绩及格人数:, 成绩待提升人数:
-            </desc-slot>
-          </div>
-        </div>
-        <div class="wrap-d">
-          <div class="area-left">
-            <HistogramChart></HistogramChart>
-          </div>
-          <div class="area-right">
-            <desc-slot>
-              全区学前教育学段总体得分分布情况: 优秀人数:学段总体得分分布情况:
-              优秀人数:学段总体得分分布情况: 优秀人数:,成绩良好人数:,
-              成绩及格人数:, 成绩待提升人数:
-            </desc-slot>
-          </div>
-        </div> -->
+        </template>
       </div>
     </template>
     <!-- <CommonTable :TableData="tableData"/> -->
@@ -307,7 +477,7 @@ export default {
   data() {
     return {
       aaa: 100,
-      emptyTitle: '',
+      emptyTitle: "",
       allResult: {},
       plotData: {
         title:
@@ -323,12 +493,58 @@ export default {
         ],
       },
       preEduData: {},
+      flag2_1: true,
+      flag_2_1_2: true,
+      flag2_1_1: true,
+      flag2_1_2_1: true,
+      flag2_1_2_2: true,
+      flag2_2_1_1: true,
+      flag2_2_1_2: true,
+      flag2_2: true,
+      flagModules: {
+        0: true,
+        1: true,
+        2: true,
+        3: true,
+      },
+      flagObj: {
+        0: true,
+        1: true,
+        2: true,
+        3: true,
+      },
+      flagObj2: {
+        0: true,
+        1: true,
+        2: true,
+        3: true,
+      },
     };
   },
   mounted() {
     this.preEduData = PreEdu;
     this.allResult = this.preEduData.allResult;
     // console.log(this.preEduData.allResult.chartData)
+  },
+  methods: {
+    handleExpand(val) {
+      this[val] = !this[val];
+    },
+    handleExpand2(val, index) {
+      this[val][index] = !this[val][index];
+    },
+    handleExpandModule(field, args) {
+      this[field] = !this[field];
+      args.map((item) => {
+        this[item] = this[field];
+      });
+    },
+    handleExpandModuleObj(field, args, index) {
+      this[field][index] = !this[field][index];
+      args.map((item) => {
+        this[item][index] = this[field][index];
+      });
+    },
   },
 };
 </script>
@@ -383,5 +599,9 @@ h2::after {
 .area-right {
   width: 100%;
   margin: auto 0;
+}
+.at8 {
+  width: 80%;
+  margin: 0 auto;
 }
 </style>
