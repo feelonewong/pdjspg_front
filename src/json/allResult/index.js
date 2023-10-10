@@ -1259,7 +1259,7 @@ export const data = {
         "eachScoreDistribution": { //*** 各维度得分分布情况
             // 各学科、各维度、得分分布情况
             "chn": {
-                "attitude": { // 教学态度 标准: 58 57 54 54
+                "attitude": { // 职业态度 标准: 58 57 54 54
                     "chartData": [
                         {
                             name: '优秀', value: '20', precent: '40%',
@@ -1329,7 +1329,7 @@ export const data = {
 
             },
             "math": {
-                "attitude": { // 教学态度 标准: 58 57 54 54
+                "attitude": { // 职业态度 标准: 58 57 54 54
                     "chartData": [
                         {
                             name: '优秀', value: '20', precent: '40%',
@@ -1398,7 +1398,7 @@ export const data = {
                 }
             },
             "eng": {
-                "attitude": { // 教学态度 标准: 58 57 54 54
+                "attitude": { // 职业态度 标准: 58 57 54 54
                     "chartData": [
                         {
                             name: '优秀', value: '20', precent: '40%',
@@ -1467,7 +1467,7 @@ export const data = {
                 }
             },
             "soc": {
-                "attitude": { // 教学态度 标准: 58 57 54 54
+                "attitude": { // 职业态度 标准: 58 57 54 54
                     "chartData": [
                         {
                             name: '优秀', value: '20', precent: '40%',
@@ -1536,7 +1536,7 @@ export const data = {
                 }
             },
             "sci": {
-                "attitude": { // 教学态度 标准: 58 57 54 54
+                "attitude": { // 职业态度 标准: 58 57 54 54
                     "chartData": [
                         {
                             name: '优秀', value: '20', precent: '40%',
@@ -1605,7 +1605,7 @@ export const data = {
                 }
             },
             "art": {
-                "attitude": { // 教学态度 标准: 58 57 54 54
+                "attitude": { // 职业态度 标准: 58 57 54 54
                     "chartData": [
                         {
                             name: '优秀', value: '20', precent: '40%',

@@ -89,7 +89,7 @@ export const data = {
               ]
       },
       "eachScoreDistribution": { //*** 各维度得分分布情况
-              "attitude": { // 教学态度 标准: 58 57 54 54
+              "attitude": { // 职业态度 标准: 58 57 54 54
                   "chartData": [
                     {
                       "name": "优秀",

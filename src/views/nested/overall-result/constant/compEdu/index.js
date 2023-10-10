@@ -253,7 +253,7 @@ export const CompEdu = {
             },
             "sci":{
                 "attitude": {
-                    "title": "教学态度",
+                    "title": "职业态度",
                     "chartData": data.allResult.eachScoreDistribution.sci.attitude.chartData,
                 },
                 "practice": {
@@ -271,7 +271,7 @@ export const CompEdu = {
             },
             "art":{
                 "attitude": {
-                    "title": "教学态度",
+                    "title": "职业态度",
                     "chartData": data.allResult.eachScoreDistribution.art.attitude.chartData,
                 },
                 "practice": {

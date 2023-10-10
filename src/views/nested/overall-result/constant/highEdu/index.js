@@ -253,7 +253,7 @@ export const HighEdu = {
             },
             "sci":{
                 "attitude": {
-                    "title": "教学态度",
+                    "title": "职业态度",
                     "chartData": data.allResult.eachScoreDistribution.sci.attitude.chartData,
                 },
                 "practice": {
@@ -271,7 +271,7 @@ export const HighEdu = {
             },
             "art":{
                 "attitude": {
-                    "title": "教学态度",
+                    "title": "职业态度",
                     "chartData": data.allResult.eachScoreDistribution.art.attitude.chartData,
                 },
                 "practice": {
@@ -291,9 +291,9 @@ export const HighEdu = {
     },
     "modules": [
         {
-            "title": "4.2.2 全区高中教育学段职业态度",
-            "subTitle": "4.2.2.1 全区高中教育学段职业态度得分率与得分分布情况",
-            "second": "4.2.2.2 全区高中教育学段职业态度平均分、中位数、标准差",
+            "title": "4.2.2 全区高中教育职业态度",
+            "subTitle": "4.2.2.1 全区高中教育职业态度得分率与得分分布情况",
+            "second": "4.2.2.2 全区高中教育职业态度平均分、中位数、标准差",
             "scoreRating": {
                 "title": "职业态度",
                 "chartData": data.modules[0].scoreRating.chartData,
@@ -378,9 +378,9 @@ export const HighEdu = {
             }
         },
         {
-            "title": "4.2.3 全区高中教育学段教学实践",
-            "subTitle": "4.2.3.1 全区高中教育学段教学实践得分率与得分分布情况",
-            "second": "4.2.2.3 全区高中教育学段教学实践平均分、中位数、标准差",
+            "title": "4.2.3 全区高中教育教学实践",
+            "subTitle": "4.2.3.1 全区高中教育教学实践得分率与得分分布情况",
+            "second": "4.2.2.3 全区高中教育教学实践平均分、中位数、标准差",
             "scoreRating": {
                 "title": "教学实践",
                 "chartData": data.modules[1].scoreRating.chartData,
@@ -390,7 +390,32 @@ export const HighEdu = {
                     "config": moduleTableConfig,
                     "data": data.modules[1].eachScoreDistribution.tableData,
                 },
-                "chartData": data.modules[1].eachScoreDistribution.chartData,
+                "wap": {
+                    "chn": {
+                        title: "高中教育语文学科",
+                        chartData: data.modules[1].eachScoreDistribution.chnChartData
+                    },
+                    "math": {
+                        title: "高中教育数学学科",
+                        chartData: data.modules[1].eachScoreDistribution.mathChartData
+                    },
+                    "eng": {
+                        title: "高中教育英语学科",
+                        chartData: data.modules[1].eachScoreDistribution.engChartData
+                    },
+                    "soc": {
+                        title: "高中教育社会学科",
+                        chartData: data.modules[1].eachScoreDistribution.socChartData
+                    },
+                    "sci": {
+                        title: "高中教育理工学科",
+                        chartData: data.modules[1].eachScoreDistribution.sciChartData
+                    },
+                    "art": {
+                        title: "高中教育艺体学科",
+                        chartData: data.modules[0].eachScoreDistribution.artChartData
+                    }
+                }
             },
             "averageScore": {
                     "title": "教学实践",
@@ -440,9 +465,9 @@ export const HighEdu = {
             }
         },
         {
-            "title": "4.2.4 全区高中教育学段综合育人",
-            "subTitle": "4.2.4.1 全区高中教育学段综合育人得分率与得分分布情况",
-            "second": "4.2.2.4 全区高中教育学段综合育人平均分、中位数、标准差",
+            "title": "4.2.4 全区高中教育综合育人",
+            "subTitle": "4.2.4.1 全区高中教育综合育人得分率与得分分布情况",
+            "second": "4.2.2.4 全区高中教育综合育人平均分、中位数、标准差",
             "scoreRating": {
                 "title": "综合育人",
                 "chartData": data.modules[2].scoreRating.chartData,
@@ -452,7 +477,32 @@ export const HighEdu = {
                     "config": moduleTableConfig,
                     "data": data.modules[2].eachScoreDistribution.tableData,
                 },
-                "chartData": data.modules[2].eachScoreDistribution.chartData,
+                "wap": {
+                    "chn": {
+                        title: "高中教育语文学科",
+                        chartData: data.modules[2].eachScoreDistribution.chnChartData
+                    },
+                    "math": {
+                        title: "高中教育数学学科",
+                        chartData: data.modules[2].eachScoreDistribution.mathChartData
+                    },
+                    "eng": {
+                        title: "高中教育英语学科",
+                        chartData: data.modules[2].eachScoreDistribution.engChartData
+                    },
+                    "soc": {
+                        title: "高中教育社会学科",
+                        chartData: data.modules[2].eachScoreDistribution.socChartData
+                    },
+                    "sci": {
+                        title: "高中教育理工学科",
+                        chartData: data.modules[2].eachScoreDistribution.sciChartData
+                    },
+                    "art": {
+                        title: "高中教育艺体学科",
+                        chartData: data.modules[2].eachScoreDistribution.artChartData
+                    }
+                }
             },
             "averageScore": {
                 "title": "综合育人",
@@ -502,9 +552,9 @@ export const HighEdu = {
             }
         },
         {
-            "title": "4.2.5 全区高中教育学段自主发展",
-            "subTitle": "4.2.5.1 全区高中教育学段自主发展得分率与得分分布情况",
-            "second": "4.2.5.2 全区高中教育学段自主发展平均分、中位数、标准差",
+            "title": "4.2.5 全区高中教育自主发展",
+            "subTitle": "4.2.5.1 全区高中教育自主发展得分率与得分分布情况",
+            "second": "4.2.5.2 全区高中教育自主发展平均分、中位数、标准差",
             "scoreRating": {
                 "title": "自主发展",
                 "chartData": data.modules[3].scoreRating.chartData,
@@ -514,7 +564,32 @@ export const HighEdu = {
                     "config": moduleTableConfig,
                     "data": data.modules[3].eachScoreDistribution.tableData,
                 },
-                "chartData": data.modules[3].eachScoreDistribution.chartData,
+                "wap": {
+                    "chn": {
+                        title: "高中教育语文学科",
+                        chartData: data.modules[3].eachScoreDistribution.chnChartData
+                    },
+                    "math": {
+                        title: "高中教育数学学科",
+                        chartData: data.modules[3].eachScoreDistribution.mathChartData
+                    },
+                    "eng": {
+                        title: "高中教育英语学科",
+                        chartData: data.modules[3].eachScoreDistribution.engChartData
+                    },
+                    "soc": {
+                        title: "高中教育社会学科",
+                        chartData: data.modules[3].eachScoreDistribution.socChartData
+                    },
+                    "sci": {
+                        title: "高中教育理工学科",
+                        chartData: data.modules[3].eachScoreDistribution.sciChartData
+                    },
+                    "art": {
+                        title: "高中教育艺体学科",
+                        chartData: data.modules[3].eachScoreDistribution.artChartData
+                    }
+                }
             },
             "averageScore": {
                 "title": "自主发展",

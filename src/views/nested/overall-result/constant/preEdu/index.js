@@ -79,7 +79,7 @@ export const PreEdu = {
         },
         "eachScoreDistribution": {
             "attitude": {
-                "title": "教学态度",
+                "title": "职业态度",
                 "chartData": data.allResult.eachScoreDistribution.attitude.chartData,
             },
             "practice": {
