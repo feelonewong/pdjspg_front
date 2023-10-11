@@ -407,7 +407,7 @@
         <template v-if="flagObj[index]">
         <!-- 全区职业态度得分率与得分分布情况 -->
         <div class="wrap-d" style="margin-bottom: 40px; margin-top: 10px;">
-          <div class="area-left">
+          <div class="area-left" style="width: 60%">
             <RadarChart
               :chartData="{
                 title: '全区'+item.scoreRating.title + '得分率',
@@ -416,7 +416,7 @@
               }"
             ></RadarChart>
           </div>
-          <div class="area-right">
+          <div class="area-right" style="width: 40%">
             <desc-slot>
               全区<span style="font-weight: 600; font-size: 18px">{{
             item.scoreRating.title

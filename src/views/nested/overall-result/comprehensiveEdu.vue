@@ -26,13 +26,13 @@
     <br />
     <section v-show="flag3_1_1">
     <div class="wrap-d" style="margin-bottom: 30px;">
-      <div class="area-left">
+      <div class="area-left" style="width: 60%;">
         <PieRoseChart
           :title="'义务教育各学科得分率'"
           :chartData="allResult.allScoreRating.chartData"
         ></PieRoseChart>
       </div>
-      <div class="area-right">
+      <div class="area-right" style="width: 40%;">
         <desc-slot>
           义务教育学科整体得分率为:<br>
 
@@ -323,8 +323,9 @@
         :key="eachIndex"
         style="margin-top: 30px; margin-bottom: 30px; width: 25%;"
       >
+      <!-- {{ eachIndex }} -->
         <PieChart 
-          :title="subProject[wapIndex]" 
+          :title="eachIndex==='attitude'?subProject[wapIndex]:''" 
           :chartData="eachItem.chartData"></PieChart>
         <desc-slot>
           <span style="font-size: 20px; font-weight: 600;">
@@ -479,7 +480,7 @@
         <div class="wrap-d at8" style=" margin-top: 80px; margin-bottom: 80px;">
           <div class="area-left">
             <BoxPlotChart 
-            :title="item.scoreRating.title+'自陈问题最低分、 中位数、最高分'"
+            :title="'自陈问题最低分/中位数/最高分'"
             :chartData="item.minMaxSocre.self.chartData" />
           </div>
           <div class="area-right">
@@ -496,7 +497,7 @@
      <div class="wrap-d at8">
           <div class="area-left">
             <BoxPlotChart
-            :title="item.scoreRating.title+'情景问题最低分、 中位数、最高分'"
+            :title="'情景问题最低分/中位数/最高分'"
             :chartData="item.minMaxSocre.scene.chartData" />
           </div>
           <div class="area-right">

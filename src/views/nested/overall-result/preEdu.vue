@@ -135,19 +135,19 @@
       <div class="wrap-d">
         <div class="area-left">
           <BoxPlotChart
-            :title="'学前教育整体平均分'"
+            :title="'整体平均分'"
             :chartData="allResult.minMaxScore.all.chartData"
           />
         </div>
         <div class="area-right">
           <BoxPlotChart
-            :title="'学前教育自陈问题平均分'"
+            :title="'自陈问题平均分'"
             :chartData="allResult.minMaxScore.self.chartData"
           />
         </div>
         <div class="area-left">
           <BoxPlotChart
-            :title="'学前教育情景问题平均分'"
+            :title="'情景问题平均分'"
             :chartData="allResult.minMaxScore.secene.chartData"
           />
         </div>
@@ -388,7 +388,7 @@
             <div class="area-left">
               <ZoomBarChart
                 :title="
-                  item.scoreRating.title + '自陈问题平均分、情景问题平均分'
+                  item.scoreRating.title + '自陈、情景问题平均分'
                 "
                 :chartData="item.averageScore.selfAndSecene.chartData"
               ></ZoomBarChart>
