@@ -157,7 +157,7 @@
   </template>
 
     <!-- 平均分、中位数、标准差 -->
-    <h2 class="title mtb-15">1.1.2.2全区学科整体平均分、中位数、标准差</h2>
+    <h2 class="title mtb-15" style="margin-top: 60px">1.1.2.2全区学科整体平均分、中位数、标准差</h2>
     <span @click="handleExpand('flag3')" style="margin-left: 1em; cursor: pointer;">
           <template v-if="!flag3">
             展开更多 <i class="el-icon-arrow-down"></i> 

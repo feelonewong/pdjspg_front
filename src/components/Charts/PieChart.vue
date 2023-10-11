@@ -76,7 +76,7 @@ export default {
           {
             name: this.$props.title,
             type: "pie",
-            radius: ["25%", "50%"],
+            radius: ["23%", "45%"],
             label: {
               show: true,
               position: "outside",

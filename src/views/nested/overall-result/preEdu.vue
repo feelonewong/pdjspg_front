@@ -601,7 +601,7 @@ h2::after {
   margin: auto 0;
 }
 .at8 {
-  width: 80%;
+  width: 93%;
   margin: 0 auto;
 }
 </style>

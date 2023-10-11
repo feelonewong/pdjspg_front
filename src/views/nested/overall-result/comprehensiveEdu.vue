@@ -144,19 +144,19 @@
     <div class="wrap-d" style="margin: 30px 0;">
       <div class="area-left">
         <ZoomBarChart
-          :title="'义务教育各学科整体平均分'"
+          :title="'义务教育整体平均分'"
           :chartData="allResult.minMaxScore.all.chartData"
         ></ZoomBarChart>
       </div>
       <div class="area-right">
         <ZoomBarChart
-          :title="'义务教育各学科自陈问题平均分'"
+          :title="'义务教育自陈问题平均分'"
           :chartData="allResult.minMaxScore.self.chartData"
         ></ZoomBarChart>
       </div>
       <div class="area-left">
         <ZoomBarChart
-          :title="'义务教育各学科情景问题平均分'"
+          :title="'义务教育情景问题平均分'"
           :chartData="allResult.minMaxScore.scene.chartData"
         ></ZoomBarChart>
       </div>
@@ -198,12 +198,12 @@
         </desc-slot>
       </div>
     </div>
-    <div class="wrap-d" style="margin: 30px auto; width: 80%;">
+    <div class="wrap-d at8" style="margin: 30px auto;">
           <div class="area-left">
-            <BoxPlotChart :title="'义务教育各学科自陈问题最低分、中位数、最高分'" :chartData="allResult.midMaxMinSceneAndSelf.self.chartData" />
+            <BoxPlotChart :title="'自陈问题最低分/中位数/最高分'" :chartData="allResult.midMaxMinSceneAndSelf.self.chartData" />
           </div>
           <div class="area-left">
-            <BoxPlotChart :title="'义务教育各学科情景问题最低分、中位数、最高分'" :chartData="allResult.midMaxMinSceneAndSelf.scene.chartData" />
+            <BoxPlotChart :title="'情景问题最低分/中位数/最高分'" :chartData="allResult.midMaxMinSceneAndSelf.scene.chartData" />
           </div>
          
       </div>
@@ -705,7 +705,7 @@ h2::after {
   margin: auto 0;
 }
 .at8 {
-  width: 80%;
+  width: 93%;
   margin-left: auto;
   margin-right: auto;
 }

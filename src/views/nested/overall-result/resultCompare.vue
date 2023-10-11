@@ -1,10 +1,11 @@
 <template>
   <div class="container">
     <h2>五、结果比较</h2><br>
-    <h2 class="second">5.1 总体得分校际差异</h2>
-    <el-input v-model="allValue" type="textarea" :rows="10" placeholder="" />
-    <h2 class="second">5.2 各维度得分校际差异</h2>
-    <el-input v-model="everyValue" type="textarea" :rows="10" placeholder="" />
+    <h2 class="second">5.1 总体得分校际差异</h2> <br>
+    <el-input class="input-area" v-model="allValue" type="textarea"  :rows="10" placeholder="" />
+    <br>
+    <h2 class="second">5.2 各维度得分校际差异</h2><br>
+    <el-input class="input-area" v-model="everyValue" type="textarea" :rows="10" placeholder="" />
 
   </div>
 </template>
@@ -18,7 +19,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .container {
   padding: 15px;
 }
@@ -48,5 +49,12 @@ h2::after {
 .second {
   font-size: 20px;
   font-weight: 400;
+}
+.input-area {
+  width: 80%; 
+  margin-left: 10%;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 </style>

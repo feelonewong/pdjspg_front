@@ -6,7 +6,9 @@
           <h2>{{ item.title }}</h2><br />
           <div v-for="(child, index) in item.children" :key="index">
             <h2 class="second">{{child.title}}</h2><br />
-            <el-input type="textarea" :rows="10" placeholder="" v-model="child.value"></el-input>
+            <el-input class="input-area" type="textarea"   
+              show-word-limit
+            :rows="12" placeholder="" v-model="child.value"></el-input>
           </div>
         </div>
       </template>
@@ -58,5 +60,12 @@ p {
 .second {
   font-size: 20px;
   font-weight: 400;
+}
+.input-area {
+  width: 80%; 
+  margin-left: 10%;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 </style>

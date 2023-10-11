@@ -32,13 +32,13 @@
     <br />
     <section v-if="flag4_1_1">
     <div class="wrap-d" style="margin: 50px 0;" >
-      <div class="area-left">
+      <div class="area-left" style="width: 60%;">
         <PieRoseChart
           :title="'高中教育整体得分率'"
           :chartData="allResult.allScoreRating.chartData"
         ></PieRoseChart>
       </div>
-      <div class="area-right">
+      <div class="area-right" style="width: 40%;">
         <desc-slot>
           高中教育学科整体得分率为:<br>
 
@@ -489,7 +489,7 @@
         <div class="wrap-d at8" style="margin-top: 90px;">
           <div class="area-left">
               <ZoomBarChart
-              :title="'全区高中教育'+item.scoreRating.title+'情景问题平均分'"
+              :title="item.scoreRating.title+'情景问题平均分'"
                 :chartData="item.averageScore.scene.chartData"
               ></ZoomBarChart>
           </div>
@@ -505,7 +505,7 @@
         <div class="wrap-d at8" style="margin-top: 90px; margin-bottom: 90px;">
           <div class="area-left">
             <BoxPlotChart
-            :title="'全区高中教育'+item.scoreRating.title+'自陈问题最低分、中位数、最高分'"            
+            :title="'自陈问题最低分/中位数/最高分'"            
             :chartData="item.minMaxSocre.self.chartData" />
           </div>
           <div class="area-right">
@@ -522,7 +522,7 @@
      <div class="wrap-d at8" style="margin-bottom: 90px;">
           <div class="area-left">
             <BoxPlotChart
-            :title="'全区高中教育'+item.scoreRating.title+'情景问题最低分、中位数、最高分'"            
+            :title="'情景问题最低分/中位数/最高分'"            
             :chartData="item.minMaxSocre.scene.chartData" />
           </div>
           <div class="area-right">
@@ -729,6 +729,6 @@ h2::after {
 .at8 {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 90%;
 }
 </style>
