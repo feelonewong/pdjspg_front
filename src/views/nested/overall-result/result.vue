@@ -28,29 +28,29 @@
           <span style="font-size: 20px; font-weight: bold;"> 全区学科整体得分率为 (%) :</span><br />
           学前教育得分率为: {{ allResult.allScoreRating.chartData[0].value
           }}%<br />
-          义务教育语文学科得分率为:
+          义务教育语文得分率为:
           {{ allResult.allScoreRating.chartData[1].value }}%<br />
-          义务教育数学学科得分率为:
+          义务教育数学得分率为:
           {{ allResult.allScoreRating.chartData[2].value }}%<br />
-          义务教育英语学科得分率为:
+          义务教育英语得分率为:
           {{ allResult.allScoreRating.chartData[3].value }}%<br />
-          义务教育社会学科得分率为:
+          义务教育社会得分率为:
           {{ allResult.allScoreRating.chartData[4].value }}%<br />
-          义务教育理工学科得分率为:
+          义务教育理工得分率为:
           {{ allResult.allScoreRating.chartData[5].value }}%<br />
-          义务教育艺体学科得分率为:
+          义务教育艺体得分率为:
           {{ allResult.allScoreRating.chartData[6].value }}%<br />
-          高中语文学科得分率为: {{ allResult.allScoreRating.chartData[7].value
+          高中语文得分率为: {{ allResult.allScoreRating.chartData[7].value
           }}%<br />
-          高中数学学科得分率为: {{ allResult.allScoreRating.chartData[8].value
+          高中数学得分率为: {{ allResult.allScoreRating.chartData[8].value
           }}%<br />
-          高中英语学科得分率为: {{ allResult.allScoreRating.chartData[9].value
+          高中英语得分率为: {{ allResult.allScoreRating.chartData[9].value
           }}%<br />
-          高中社会科得分率为: {{ allResult.allScoreRating.chartData[10].value
+          高中社会得分率为: {{ allResult.allScoreRating.chartData[10].value
           }}%<br />
-          高中理工科得分率为: {{ allResult.allScoreRating.chartData[11].value
+          高中理工得分率为: {{ allResult.allScoreRating.chartData[11].value
           }}%<br />
-          高中艺体科得分率为: {{ allResult.allScoreRating.chartData[12].value
+          高中艺体得分率为: {{ allResult.allScoreRating.chartData[12].value
           }}%<br />
 
           {{ allResult.allScoreRating.max }}得分率最高<br />
@@ -157,7 +157,7 @@
   </template>
 
     <!-- 平均分、中位数、标准差 -->
-    <h2 class="title mtb-15" style="margin-top: 60px">1.1.2.2全区学科整体平均分、中位数、标准差</h2>
+    <h2 class="title mtb-15" style="margin-top: 60px">1.1.2.2全区整体平均分、中位数、标准差</h2>
     <span @click="handleExpand('flag3')" style="margin-left: 1em; cursor: pointer;">
           <template v-if="!flag3">
             展开更多 <i class="el-icon-arrow-down"></i> 
@@ -293,7 +293,7 @@
           </template>  
       </span>
     <br />
-    <h2 class="title mtb-15">1.2.1 全区各维度得分率与得分分布情况</h2>
+    <h2 class="title mtb-15">1.2.1 全区各维度得分率情况</h2>
     <br />
     <h2 class="title mtb-15"  style="margin-bottom: 30px;">1.2.1.1 全区各维度得分率</h2>
     <span @click="handleExpand('flag4')" style="margin-left: 1em; cursor: pointer;">
@@ -343,7 +343,7 @@
     </div>
   </template>
     <!-- 得分率结束 -->
-    <h2 class="title" style="margin-bottom: 60px; margin-top: 30px;">1.2.1.2 全区各维度得分分布情况</h2>
+    <!-- <h2 class="title" style="margin-bottom: 60px; margin-top: 30px;">1.2.1.2 全区各维度得分分布情况</h2>
     <span @click="handleExpand('flag5')" style="margin-left: 1em; cursor: pointer;">
           <template v-if="!flag5">
             展开更多 <i class="el-icon-arrow-down"></i> 
@@ -353,11 +353,9 @@
           </template>  
       </span>
     <br />
-    <!-- 得分分布 -->
     <template v-if="flag5">
     <div class="wrap-d-wrap" style="position: relative">
       <div style="width: 500px; position: absolute; left: 10px">
-        <!-- {{ subProject[wapIndex] }} -->
       </div>
       <div
         class="area-left"
@@ -381,7 +379,7 @@
         </desc-slot>
       </div>
     </div>
-  </template>
+  </template> -->
     <template v-for="(item, index) in compEduData.modules">
       <div :key="index" style="margin-bottom: 30px">
         <h2 style="margin-bottom: 40px; margin-top: 10px;">{{ item.title }}</h2>
@@ -504,7 +502,7 @@
           </div>
           <div class="area-right">
             <desc-slot>
-              全区教育学段{{ item.averageScore.title }}维度：<br />
+              全区{{ item.averageScore.title }}维度：<br />
               平均分最低的学科为：{{ item.averageScore.all.min }} <br />
               平均分最高的学科为：{{ item.averageScore.all.max }} <br />
             </desc-slot>
@@ -519,7 +517,7 @@
           </div>
           <div class="area-right">
             <desc-slot>
-              全区教育学段{{ item.averageScore.title }}维度：<br />
+              全区{{ item.averageScore.title }}维度：<br />
               自陈问题平均分最低的学科为:{{ item.averageScore.self.min }} <br />
               自陈问题平均分最高的学科为:{{ item.averageScore.self.max }} <br />
             </desc-slot>
@@ -534,7 +532,7 @@
           </div>
           <div class="area-right">
             <desc-slot>
-              全区教育学段{{ item.averageScore.title }}维度：<br />
+              全区{{ item.averageScore.title }}维度：<br />
               情景问题平均分最低的学科为:{{ item.averageScore.scene.min }}
               <br />
               情景问题平均分最高的学科为:{{ item.averageScore.scene.max }}
@@ -590,7 +588,7 @@
           </div>
           <div class="area-right">
             <desc-slot>
-              全区教育学段{{ item.scoreRating.title }}维度标准差结果如下: <br />
+              全区{{ item.scoreRating.title }}维度标准差结果如下: <br />
               自陈问题标准差最大的学科为:{{ item.standardScore.self.max }}
               <br />
               自陈问题标准差最大的学科为:{{ item.standardScore.self.min }}
@@ -607,7 +605,7 @@
           </div>
           <div class="area-right">
             <desc-slot>
-              全区教育学段{{ item.scoreRating.title }}维度标准差结果如下: <br />
+              全区{{ item.scoreRating.title }}维度标准差结果如下: <br />
               情景问题标准差最大的学科为:{{ item.standardScore.scene.max }}
               <br />
               情景问题标准差最大的学科为:{{ item.standardScore.scene.min }}
@@ -662,19 +660,19 @@ export default {
       },
       radarChartOptions: [
         { name: "全区总体得分率", max: 100 },
-        { name: "学前教育教师", max: 100 },
-        { name: "义务教育语文科教师", max: 100 },
-        { name: "义务教育数学科教师", max: 100 },
-        { name: "义务教育英语科教师", max: 100 },
-        { name: "义务教育社会科教师", max: 100 },
-        { name: "义务教育理工科教师", max: 100 },
-        { name: "义务教育艺体科教师", max: 100 },
-        { name: "高中教育语文科教师", max: 100 },
-        { name: "高中教育数学科教师", max: 100 },
-        { name: "高中教育英语科教师", max: 100 },
-        { name: "高中教育社会科教师", max: 100 },
-        { name: "高中教育理工科教师", max: 100 },
-        { name: "高中教育艺体科教师", max: 100 },
+        { name: "学前教育", max: 100 },
+        { name: "义务教育语文", max: 100 },
+        { name: "义务教育数学", max: 100 },
+        { name: "义务教育英语", max: 100 },
+        { name: "义务教育社会", max: 100 },
+        { name: "义务教育理工", max: 100 },
+        { name: "义务教育艺体", max: 100 },
+        { name: "高中教育语文", max: 100 },
+        { name: "高中教育数学", max: 100 },
+        { name: "高中教育英语", max: 100 },
+        { name: "高中教育社会", max: 100 },
+        { name: "高中教育理工", max: 100 },
+        { name: "高中教育艺体", max: 100 },
       ],
       subProjectArr: [
         "学前教育",

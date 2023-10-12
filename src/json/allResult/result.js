@@ -53,6 +53,7 @@ export const reuslt = {
             "value":"86.69"
         }
     ],
+   
     "allScoreDistri":{
         "0":[
             {

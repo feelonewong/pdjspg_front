@@ -71,6 +71,18 @@ export default {
           return { itemStyle: { color: '#FF0000' } }; // 设置低于平均分的柱子颜色为红色
         }
       });
+      const minValue = this.$props.chartData.reduce((acc, item) => {
+        const value = typeof item.value === "string" ? Number(item.value) : item.value;
+          return value < acc ? value : acc;
+      }, Infinity);
+      let yMinValue = null;
+      if(minValue <2){
+        yMinValue = 0;
+      }else if (minValue > 2) {
+        yMinValue = minValue - 1;
+      }
+      yMinValue = Number(yMinValue.toFixed(2));
+      // console.log("min", yMinValue);
       return {
         title: {
           text: this.$props.title,
@@ -133,8 +145,9 @@ export default {
         yAxis: [
           {
             type: "value",
-            scale: true,
-            max: this.$props.maxValue,
+            min: yMinValue,
+            // scale: true,
+            // max: this.$props.maxValue,
           },
         ],
         series: [
