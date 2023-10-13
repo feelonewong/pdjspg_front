@@ -71,6 +71,12 @@ export const ResponsResult = {
             "min": findMaxAndMin(data.allResult.allScoreRating.chartData).min.name,
             "chartData": data.allResult.allScoreRating.chartData,
         },
+        "periondScoreRating": {
+            "title": "得分率",
+            "max": "学前教育",
+            "min": "高中教育",
+            "chartData": data.allResult.periondScoreRating.chartData,
+        },
         "scoreDistribution": {
             chartData: data.allResult.scoreDistribution.chartData,
         },
@@ -232,6 +238,26 @@ export const ResponsResult = {
             },
             "tableInfo": {
                 "data": data.allResult.dimensionRating.tableData,
+                "config": tableConfig
+            }
+        },
+        "dimensionPeriondRating": {
+            "wrap": {
+                "preEdu": {
+                    "title": "学前教育",
+                    "chartData": data.allResult.dimensionPeriondRating.preEduChartData
+                },
+                "compEdu": {
+                    "title": "义务教育",
+                    "chartData": data.allResult.dimensionPeriondRating.compEduChartData
+                },
+                "highEdu": {
+                    "title": "高中教育",
+                    "chartData": data.allResult.dimensionPeriondRating.highEduChartData
+                },
+            },
+            "tableInfo": {
+                "data": data.allResult.dimensionPeriondRating.tableData,
                 "config": tableConfig
             }
         },
@@ -445,39 +471,39 @@ export const ResponsResult = {
                         chartData: data.modules[1].eachScoreDistribution.engChartData
                     },
                     "soc": {
-                        title: '义务教育社会科',
+                        title: '义务教育社会',
                         chartData: data.modules[1].eachScoreDistribution.socChartData
                     },
                     "sci": {
-                        title: '义务教育理工科',
+                        title: '义务教育理工',
                         chartData: data.modules[1].eachScoreDistribution.sciChartData
                     },
                     "art": {
-                        title: '义务教育艺体科',
+                        title: '义务教育艺体',
                         chartData: data.modules[1].eachScoreDistribution.artChartData
                     },
                     "highChn": {
-                        title: '高中教育语文科',
+                        title: '高中教育语文',
                         chartData: data.modules[1].eachScoreDistribution.highChnChartData
                     },
                     "highMath": {
-                        title: '高中教育数',
+                        title: '高中教育数学',
                         chartData: data.modules[1].eachScoreDistribution.highMathChartData
                     },
                     "highEng": {
-                        title: '高中教育英语科',
+                        title: '高中教育英语',
                         chartData: data.modules[1].eachScoreDistribution.highEngChartData
                     },
                     "highSoc": {
-                        title: '高中教育社会科',
+                        title: '高中教育社会',
                         chartData: data.modules[1].eachScoreDistribution.highSocChartData
                     },
                     "highSci": {
-                        title: '高中教育理工科',
+                        title: '高中教育理工',
                         chartData: data.modules[1].eachScoreDistribution.highSciChartData
                     },
                     "highArt": {
-                        title: '高中教育艺体科',
+                        title: '高中教育艺体',
                         chartData: data.modules[1].eachScoreDistribution.highArtChartData
                     }
                 }
@@ -564,39 +590,39 @@ export const ResponsResult = {
                         chartData: data.modules[2].eachScoreDistribution.engChartData
                     },
                     "soc": {
-                        title: '义务教育社会科',
+                        title: '义务教育社会',
                         chartData: data.modules[2].eachScoreDistribution.socChartData
                     },
                     "sci": {
-                        title: '义务教育理工科',
+                        title: '义务教育理工',
                         chartData: data.modules[2].eachScoreDistribution.sciChartData
                     },
                     "art": {
-                        title: '义务教育艺体科',
+                        title: '义务教育艺体',
                         chartData: data.modules[2].eachScoreDistribution.artChartData
                     },
                     "highChn": {
-                        title: '高中教育语文科',
+                        title: '高中教育语文',
                         chartData: data.modules[2].eachScoreDistribution.highChnChartData
                     },
                     "highMath": {
-                        title: '高中教育数',
+                        title: '高中教育数学',
                         chartData: data.modules[2].eachScoreDistribution.highMathChartData
                     },
                     "highEng": {
-                        title: '高中教育英语科',
+                        title: '高中教育英语',
                         chartData: data.modules[2].eachScoreDistribution.highEngChartData
                     },
                     "highSoc": {
-                        title: '高中教育社会科',
+                        title: '高中教育社会',
                         chartData: data.modules[2].eachScoreDistribution.highSocChartData
                     },
                     "highSci": {
-                        title: '高中教育理工科',
+                        title: '高中教育理工',
                         chartData: data.modules[2].eachScoreDistribution.highSciChartData
                     },
                     "highArt": {
-                        title: '高中教育艺体科',
+                        title: '高中教育艺体',
                         chartData: data.modules[2].eachScoreDistribution.highArtChartData
                     }
                 }
@@ -684,39 +710,39 @@ export const ResponsResult = {
                         chartData: data.modules[3].eachScoreDistribution.engChartData
                     },
                     "soc": {
-                        title: '义务教育社会科',
+                        title: '义务教育社会',
                         chartData: data.modules[3].eachScoreDistribution.socChartData
                     },
                     "sci": {
-                        title: '义务教育理工科',
+                        title: '义务教育理工',
                         chartData: data.modules[3].eachScoreDistribution.sciChartData
                     },
                     "art": {
-                        title: '义务教育艺体科',
+                        title: '义务教育艺体',
                         chartData: data.modules[3].eachScoreDistribution.artChartData
                     },
                     "highChn": {
-                        title: '高中教育语文科',
+                        title: '高中教育语文',
                         chartData: data.modules[3].eachScoreDistribution.highChnChartData
                     },
                     "highMath": {
-                        title: '高中教育数',
+                        title: '高中教育数学',
                         chartData: data.modules[3].eachScoreDistribution.highMathChartData
                     },
                     "highEng": {
-                        title: '高中教育英语科',
+                        title: '高中教育英语',
                         chartData: data.modules[3].eachScoreDistribution.highEngChartData
                     },
                     "highSoc": {
-                        title: '高中教育社会科',
+                        title: '高中教育社会',
                         chartData: data.modules[3].eachScoreDistribution.highSocChartData
                     },
                     "highSci": {
-                        title: '高中教育理工科',
+                        title: '高中教育理工',
                         chartData: data.modules[3].eachScoreDistribution.highSciChartData
                     },
                     "highArt": {
-                        title: '高中教育艺体科',
+                        title: '高中教育艺体',
                         chartData: data.modules[3].eachScoreDistribution.highArtChartData
                     }
                 }

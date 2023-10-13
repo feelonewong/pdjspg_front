@@ -15,7 +15,7 @@
       </span>
     <br />
     <template  v-if="flag1">
-      <div class="wrap-d">
+      <div class="wrap-d" style="margin-top: 30px;">
       <div class="area-left" style="width: 70%">
         <PieRoseChart
           :title="'全区整体得分率'"
@@ -55,6 +55,30 @@
 
           {{ allResult.allScoreRating.max }}得分率最高<br />
           {{ allResult.allScoreRating.min }}得分率最低<br />
+        </desc-slot>
+      </div>
+    </div>  
+    <div class="wrap-d" style="margin-top: 80px; margin-bottom: 40px;">
+      <div class="area-left" style="width: 70%">
+        <PieRoseChart
+          :title="'全区各学段得分率'"
+          :height="'520px'"
+          :chartData="allResult.periondScoreRating.chartData"
+        ></PieRoseChart>
+      </div>
+      <div class="area-right" style="width: 50%">
+        <desc-slot>
+          <span style="font-size: 20px; font-weight: bold;"> 全区各学段得分率 (%) :</span><br />
+          学前教育得分率为: {{ allResult.periondScoreRating.chartData[0].value
+          }}%<br />
+          义务教育得分率为:
+          {{ allResult.periondScoreRating.chartData[1].value }}%<br />
+          高中教育得分率为:
+          {{ allResult.periondScoreRating.chartData[2].value }}%<br />
+          
+
+          {{ allResult.periondScoreRating.max }}得分率最高<br />
+          {{ allResult.periondScoreRating.min }}得分率最低<br />
         </desc-slot>
       </div>
     </div>  
@@ -135,6 +159,7 @@
           :chartData="eachItem.chartData"
         ></PieChart>
         <desc-slot>
+          
           <span style="font-weight: 600; font-size: 18px">
             {{ eachItem.title }}
           </span
@@ -172,7 +197,7 @@
     <div class="wrap-d" style="margin: 60px 0;">
       <div class="area-left">
         <ZoomBarChart
-          :title="'全区学科整体平均分'"
+          :title="'全区整体平均分'"
           :chartData="allResult.minMaxScore.all.chartData"
         ></ZoomBarChart>
       </div>
@@ -294,8 +319,6 @@
       </span>
     <br />
     <h2 class="title mtb-15">1.2.1 全区各维度得分率情况</h2>
-    <br />
-    <h2 class="title mtb-15"  style="margin-bottom: 30px;">1.2.1.1 全区各维度得分率</h2>
     <span @click="handleExpand('flag4')" style="margin-left: 1em; cursor: pointer;">
           <template v-if="!flag4">
             展开更多 <i class="el-icon-arrow-down"></i> 
@@ -305,6 +328,16 @@
           </template>  
       </span>
     <br />
+    <!-- <h2 class="title mtb-15"  style="margin-bottom: 30px;">1.2.1.1 全区各维度得分率</h2>
+    <span @click="handleExpand('flag4')" style="margin-left: 1em; cursor: pointer;">
+          <template v-if="!flag4">
+            展开更多 <i class="el-icon-arrow-down"></i> 
+          </template>
+          <template v-else>
+            收起 <i class="el-icon-arrow-up"></i> 
+          </template>  
+      </span>
+    <br /> -->
     <!-- 得分率开始 -->
     <template v-if="flag4">
     <div class="wrap-d">
@@ -314,7 +347,7 @@
     <div class="wrap-d-wrap">
       <div
         class="area-left"
-        v-for="(eachItem, eachIndex) in allResult.dimensionRating.wrap"
+        v-for="(eachItem, eachIndex) in allResult.dimensionPeriondRating.wrap"
         :key="eachIndex"
         style="width: 33%;padding: 20px;"
       >
@@ -336,9 +369,9 @@
         </desc-slot>
       </div>
     </div>
-    <div style="width: 80%; margin: 0 auto">
+    <div style="width: 80%; margin: 0 auto; margin-top: 40px; margin-bottom: 40px;">
       <CommonTable
-        :tableInfo="allResult.dimensionRating.tableInfo"
+        :tableInfo="allResult.dimensionPeriondRating.tableInfo"
       ></CommonTable>
     </div>
   </template>
@@ -422,27 +455,27 @@
           >维度结果如下: <br />
               全区教育学科得分率为：{{ item.scoreRating.chartData[0] }}% <br />
 
-              学前教育科得分率为：{{ item.scoreRating.chartData[1] }}% <br />
-              义务教育语文科得分率为：{{ item.scoreRating.chartData[2] }}% <br />
-              义务教育数学科得分率为：{{ item.scoreRating.chartData[3] }}% <br />
-              义务教育英语科得分率为：{{ item.scoreRating.chartData[4] }}% <br />
-              义务教育社会科得分率为：{{ item.scoreRating.chartData[5] }}% <br />
-              义务教育理工科得分率为：{{ item.scoreRating.chartData[6] }}% <br />
-              义务教育艺体科得分率为：{{ item.scoreRating.chartData[7] }}% <br />
+              学前教育得分率为：{{ item.scoreRating.chartData[1] }}% <br />
+              义务教育语文得分率为：{{ item.scoreRating.chartData[2] }}% <br />
+              义务教育数学得分率为：{{ item.scoreRating.chartData[3] }}% <br />
+              义务教育英语得分率为：{{ item.scoreRating.chartData[4] }}% <br />
+              义务教育社会得分率为：{{ item.scoreRating.chartData[5] }}% <br />
+              义务教育理工得分率为：{{ item.scoreRating.chartData[6] }}% <br />
+              义务教育艺体得分率为：{{ item.scoreRating.chartData[7] }}% <br />
 
-              高中教育学科语文科得分率为：{{ item.scoreRating.chartData[7] }}%
+              高中教育语文得分率为：{{ item.scoreRating.chartData[7] }}%
               <br />
-              高中教育学科数学科得分率为：{{ item.scoreRating.chartData[8] }}%
+              高中教育数学得分率为：{{ item.scoreRating.chartData[8] }}%
               <br />
-              高中教育学科英语科得分率为：{{ item.scoreRating.chartData[9] }}%
+              高中教育英语得分率为：{{ item.scoreRating.chartData[9] }}%
               <br />
-              高中教育学科社会科得分率为：{{ item.scoreRating.chartData[10] }}%
+              高中教育社会得分率为：{{ item.scoreRating.chartData[10] }}%
               <br />
-              高中教育学科理工科得分率为：{{ item.scoreRating.chartData[11] }}%
+              高中教育理工得分率为：{{ item.scoreRating.chartData[11] }}%
               <br />
-              高中教育学科艺体科得分率为：{{ item.scoreRating.chartData[12] }}%
+              高中教育艺体得分率为：{{ item.scoreRating.chartData[12] }}%
               <br />
-              高中教育学科艺体科得分率为：{{ item.scoreRating.chartData[13] }}%
+              高中教育艺体得分率为：{{ item.scoreRating.chartData[13] }}%
               <br />
             </desc-slot>
           </div>
@@ -477,7 +510,7 @@
             </desc-slot>
           </div>
         </div>
-        <div style="width: 80%; margin: 0 auto">
+        <div style="width: 80%; margin: 0px auto; margin-bottom: 60px;">
           <CommonTable
             :tableInfo="item.eachScoreDistribution.tableInfo"
           ></CommonTable>

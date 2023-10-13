@@ -48,12 +48,12 @@ const nestedRouter = {
           name: 'highEdu',
           meta: { title: '高中含职校' }
         },
-        {
-          path: 'result-compare',
-          component: () => import('@/views/nested/overall-result/resultCompare.vue'),
-          name: 'resultCompare',
-          meta: { title: '结果比较' }
-        },
+        // {
+        //   path: 'result-compare',
+        //   component: () => import('@/views/nested/overall-result/resultCompare.vue'),
+        //   name: 'resultCompare',
+        //   meta: { title: '结果比较' }
+        // },
         {
           path: 'demographic-info',
           component: () => import('@/views/nested/overall-result/demographicInfo.vue'),

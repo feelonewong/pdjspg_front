@@ -1,9 +1,9 @@
 <template>
   <div style="margin-bottom: 50px; padding: 0 20px; box-sizing: border-box">
-    <h2>二、学前教育与特殊教育学段调研结果</h2>
+    <h2>二、学前教育与特殊教育调研结果</h2>
     <br />
     <h2 class="title" style="margin-top: 30px; margin-bottom: 30px">
-      2.1全区学前教育学段整体得分率与得分分布情况
+      2.1全区学前教育整体得分率与得分分布情况
     </h2>
     <span
       @click="
@@ -23,7 +23,7 @@
     </span>
     <br />
     <h2 class="title" style="margin-top: 10px; margin-bottom: 60px">
-      2.1.1全区学前教育学段整体得分率
+      2.1.1全区学前教育整体得分率
     </h2>
     <span
       @click="handleExpand('flag2_1_1')"
@@ -45,7 +45,7 @@
         </div>
         <div class="area-right">
           <desc-slot>
-            全区学前教育学段年总体得分率为:{{
+            全区学前教育年总体得分率为:{{
               allResult.allScoreRating.chartData[0].average
             }}%
           </desc-slot>
@@ -53,7 +53,7 @@
       </div>
     </template>
     <h2 class="title" style="margin-top: 30px; margin-bottom: 30px">
-      2.1.2全区学前教育学段整体得分分布情况
+      2.1.2全区学前教育整体得分分布情况
     </h2>
     <span
       @click="handleExpandModule('flag2_1_2', ['flag2_1_2_1', 'flag2_1_2_2'])"
@@ -66,7 +66,7 @@
     </span>
     <br />
     <h2 class="title" style="margin-top: 10px; margin-bottom: 70px">
-      2.1.2.1全区学前教育学段总体得分分布情况
+      2.1.2.1全区学前教育总体得分分布情况
     </h2>
     <span
       @click="handleExpand('flag2_1_2_1')"
@@ -89,7 +89,7 @@
           </div>
           <div class="area-right">
             <desc-slot>
-              全区学前教育学段总体得分分布情况:<br />
+              全区学前教育总体得分分布情况:<br />
               优秀人数:{{
                 allResult.scoreDistribution.chartData[0].value
               }}
@@ -161,7 +161,7 @@
       </div> -->
         <div class="area-right at8">
           <desc-slot>
-            全区学前教育学段整体得分结果如下: <br />
+            全区学前教育整体得分结果如下: <br />
             总体平均分:{{
               allResult.minMaxScore.all.chartData[0].average
             }}
@@ -205,7 +205,7 @@
       </div>
     </template>
     <h2 class="title" style="margin-top: 30px; margin-bottom: 30px">
-      2.2 全区学前教育学段各维度调研结果
+      2.2 全区学前教育各维度调研结果
     </h2>
     <span
       @click="handleExpandModule('flag2_2', ['flag2_2_1_1', 'flag2_2_1_2'])"
@@ -218,7 +218,7 @@
     </span>
     <br />
     <h2 class="title" style="margin-top: 10px; margin-bottom: 30px">
-      2.2.1 全区学前教育学段各维度得分率与得分分布情况
+      2.2.1 全区学前教育各维度得分率与得分分布情况
     </h2>
     <span
       @click="handleExpandModule('flag2_2_1', ['flag2_2_1_1', 'flag2_2_1_2'])"
@@ -231,7 +231,7 @@
     </span>
     <br />
     <h2 class="title" style="margin-top: 10px; margin-bottom: 60px">
-      2.2.1.1 全区学前教育学段各维度得分率
+      2.2.1.1 全区学前教育各维度得分率
     </h2>
     <span
       @click="handleExpand('flag2_2_1_1')"
@@ -259,7 +259,7 @@
       </div>
     </template>
     <h2 class="title" style="margin-top: 40px; margin-bottom: 40px">
-      2.2.1.2 全区学前教育学段各维度得分分布情况
+      2.2.1.2 全区学前教育各维度得分分布情况
     </h2>
     <span
       @click="handleExpand('flag2_2_1_2')"
@@ -339,7 +339,7 @@
             </div>
             <div class="area-right">
               <desc-slot>
-                学前教育学段<span style="font-weight: 600; font-size: 20px">{{
+                学前教育<span style="font-weight: 600; font-size: 20px">{{
                   item.scoreRating.title
                 }}</span
                 >维度结果如下: <br />
@@ -395,7 +395,7 @@
             </div>
             <div class="area-right">
               <desc-slot>
-                学前教育学段{{ item.averageScore.title }}维度：<br />
+                学前教育{{ item.averageScore.title }}维度：<br />
                 总体平均分为:{{ item.averageScore.all.chartData[0].value }}
                 <br />
                 自我问题平均分为:{{
@@ -418,7 +418,7 @@
             </div>
             <div class="area-right">
               <desc-slot>
-                学前教育学段{{ item.scoreRating.title }}维度结果如下: <br />
+                学前教育{{ item.scoreRating.title }}维度结果如下: <br />
                 得分平均为:{{ item.minMaxSocre.chartData[0].average }} <br />
                 得分中位数为:{{ item.minMaxSocre.chartData[0].median }} <br />
                 得分最高数为:{{ item.minMaxSocre.chartData[0].max }} <br />
@@ -435,7 +435,7 @@
             </div>
             <div class="area-right">
               <desc-slot>
-                学前教育学段{{ item.scoreRating.title }}维度标准差结果如下:
+                学前教育{{ item.scoreRating.title }}维度标准差结果如下:
                 <br />
                 自陈问题标准差为:{{ item.standardScore.chartData[0].value }}
                 <br />

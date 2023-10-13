@@ -57,6 +57,22 @@ export const data = {
                 }
             ]
         },
+        "periondScoreRating":{
+            "chartData":[ 
+                {
+                    "name":"学前教育",
+                    "value":"95.09"
+                },
+                {
+                    "name":"义务教育",
+                    "value":"90.47"
+                },
+                {
+                    "name":"高中教育",
+                    "value":"88.90"
+                }
+            ]
+        },
          // 这里待修改数据: 针对上面的allScoreRating修改为下面的数据
         "periondScoreRating":{
             "chartData":[ 
@@ -1276,10 +1292,10 @@ export const data = {
         },
         // 这里数据待修改：根据上面的一个数据进行改造
         "dimensionPeriondRating": {
-            "preChartData": [
+            "preEduChartData": [
                 {
                     "name":"整体得分率",
-                    "value":"95.10"
+                    "value":"95.09"
                 },
                 {
                     "name":"职业态度",
@@ -1291,7 +1307,7 @@ export const data = {
                 },
                 {
                     "name":"综合育人",
-                    "value":"96.57"
+                    "value":"96.56"
                 },
                 {
                     "name":"自主发展",
@@ -1301,71 +1317,71 @@ export const data = {
             "compEduChartData": [
                 {
                     "name":"整体得分率",
-                    "value":"95.10"
+                    "value":"90.47"
                 },
                 {
                     "name":"职业态度",
-                    "value":"96.48"
+                    "value":"96.26"
                 },
                 {
                     "name":"教学实践",
-                    "value":"95.55"
+                    "value":"90.24"
                 },
                 {
                     "name":"综合育人",
-                    "value":"96.57"
+                    "value":"89.74"
                 },
                 {
                     "name":"自主发展",
-                    "value":"92.11"
+                    "value":"87.66"
                 }
             ],
             "highEduChartData": [
                 {
                     "name":"整体得分率",
-                    "value":"95.10"
+                    "value":"88.90"
                 },
                 {
                     "name":"职业态度",
-                    "value":"96.48"
+                    "value":"93.76"
                 },
                 {
                     "name":"教学实践",
-                    "value":"95.55"
+                    "value":"87.63"
                 },
                 {
                     "name":"综合育人",
-                    "value":"96.57"
+                    "value":"88.33"
                 },
                 {
                     "name":"自主发展",
-                    "value":"92.11"
+                    "value":"87.92"
                 }
             ],
             "tableData": [ {
                 "name":"学前教育",
-                "all":"95.10",
+                "all":"95.09",
                 "attitude":"96.48",
                 "practice":"95.55",
-                "comprehensive":"96.57",
+                "comprehensive":"96.56",
                 "development":"92.11"
             },
             {
                 "name":"义务教育",
-                "all":"90.30",
-                "attitude":"98.13",
-                "practice":"90.72",
-                "comprehensive":"88.82",
-                "development":"86.00"
+                "all":"90.47",
+                "attitude":"96.26",
+                "practice":"90.24",
+                "comprehensive":"89.74",
+                "development":"87.66"
             },
             {
                 "name":"高中教育",
-                "all":"89.92",
-                "attitude":"98.05",
-                "practice":"89.92",
-                "comprehensive":"88.96",
-                "development":"85.44"
-            },]
+                "all":"88.90",
+                "attitude":"93.76",
+                "practice":"87.63",
+                "comprehensive":"88.33",
+                "development":"87.92"
+            }]
         },
         "eachScoreDistribution": { //*** 各维度得分分布情况
             // 各学、各维度、得分分布情况
