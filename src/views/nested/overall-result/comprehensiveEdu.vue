@@ -171,38 +171,42 @@
       <div class="area-right">
         <desc-slot>
            全区义务教育整体得分结果如下: <br />
-          总体平均分中: {{
+          总体平均分最低的科目为: {{
             allResult.minMaxScore.all.min
-          }}最低<br/>
-          总体平均分: {{
+          }}<br/>
+          总体平均分最高的科目为: {{
             allResult.minMaxScore.all.max
-          }}最高<br/>
+          }}<br/>
           <br>
-           自陈问题平均分:
+           自陈问题平均分最低的科目为:
           {{
             allResult.minMaxScore.self.min
-          }}最低<br/>
+          }}<br/>
+           自陈问题平均分最高的科目为:
            {{
             allResult.minMaxScore.self.max
-          }}最高<br/>
+          }}<br/>
           <br>
 
-         情景问题平均分:
+          情景问题平均分最低的科目为:
           {{
             allResult.minMaxScore.scene.min
-          }}最低<br/>
+          }}<br/>
+          情景问题平均分最高的科目为:
            {{
             allResult.minMaxScore.scene.max
-          }}最高<br/> 
+          }}<br/> 
           
         </desc-slot>
       </div>
     </div>
     <div class="wrap-d at8" style="margin: 30px auto;">
+      <div>
+      </div>
           <div class="area-left">
             <BoxPlotChart :title="'自陈问题最低分/中位数/最高分'" :chartData="allResult.midMaxMinSceneAndSelf.self.chartData" />
           </div>
-          <div class="area-left">
+          <div class="area-right">
             <BoxPlotChart :title="'情景问题最低分/中位数/最高分'" :chartData="allResult.midMaxMinSceneAndSelf.scene.chartData" />
           </div>
          

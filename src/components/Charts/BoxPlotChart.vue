@@ -51,11 +51,11 @@ export default {
     optionsData() {
       const dataArr = this.$props.chartData.map((item) => {
         return [
-          item.min, // 最低分
-          item.median, // 中位数
-          item.average, // 平均分
-          item.average, // 众数不要删除 用作占位
-          item.max, // 最高分
+          Number(item.min), // 最低分
+          Number(item.median) , // 中位数
+          Number(item.average), // 平均分
+          Number(item.average), // 众数不要删除 用作占位
+          Number(item.max), // 最高分
           item.name,
         ];
       });
