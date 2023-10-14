@@ -218,7 +218,7 @@ export const data = {
                     }
                 ]
             },
-            "self":{
+            "scene":{
                 "max":"义务教育社会科教师",
                 "min":"义务教育理工科教师",
                 "chartData":[
@@ -248,7 +248,7 @@ export const data = {
                     }
                 ]
             },
-            "scene":{
+            "self":{
                 "max":"义务教育艺体,义务教育英语",
                 "min":"义务教育理工,义务教育社会",
                 "chartData":[
