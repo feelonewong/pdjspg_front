@@ -83,19 +83,19 @@
             优秀人数:{{
               allResult.scoreDistribution.chartData[0].value
             }}
-            占比({{ allResult.scoreDistribution.chartData[0].precent }})<br />
+            占比({{ allResult.scoreDistribution.chartData[0].precent }}%)<br />
             良好人数:{{
               allResult.scoreDistribution.chartData[1].value
             }}
-            占比({{ allResult.scoreDistribution.chartData[1].precent }})<br />
+            占比({{ allResult.scoreDistribution.chartData[1].precent }}%)<br />
             及格人数:{{
               allResult.scoreDistribution.chartData[2].value
             }}
-            占比({{ allResult.scoreDistribution.chartData[2].precent }})<br />
+            占比({{ allResult.scoreDistribution.chartData[2].precent }}%)<br />
             待提升人数{{
               allResult.scoreDistribution.chartData[3].value
             }}
-            占比({{ allResult.scoreDistribution.chartData[3].precent }})
+            占比({{ allResult.scoreDistribution.chartData[3].precent }}%)
           </desc-slot>
         </div>
       </div>
@@ -114,16 +114,16 @@
 
           优秀人数:{{ eachItem.chartData[0].value }} 占比({{
             eachItem.chartData[0].precent
-          }})<br />
+          }}%)<br />
           良好人数:{{ eachItem.chartData[1].value }} 占比({{
             eachItem.chartData[1].precent
-          }})<br />
+          }}%)<br />
           及格人数:{{ eachItem.chartData[2].value }} 占比({{
             eachItem.chartData[2].precent
-          }})<br />
+          }}%)<br />
           待提升人数:{{ eachItem.chartData[3].value }} 占比({{
             eachItem.chartData[3].precent
-          }})<br />
+          }}%)<br />
         </desc-slot>
       </div>
     </div>
