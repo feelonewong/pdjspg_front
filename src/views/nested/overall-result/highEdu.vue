@@ -1,6 +1,6 @@
 <template>
   <div style="margin-bottom: 50px">
-    <h2>二、高中教育与特殊教育调研结果</h2>
+    <h2>四、高中教育(含其他)调研结果</h2>
     <br />
     <h2 class="title" style="margin-top: 30px; margin-bottom: 40px;">4.1全区高中教育整体得分率与得分分布情况</h2>
     <span

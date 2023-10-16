@@ -1,6 +1,6 @@
 <template>
   <div style="margin-bottom: 50px; padding: 0 20px; box-sizing: border-box">
-    <h2>二、学前教育与特殊教育调研结果</h2>
+    <h2>二、学前教育调研结果</h2>
     <br />
     <h2 class="title" style="margin-top: 30px; margin-bottom: 30px">
       2.1全区学前教育整体得分率与得分分布情况
