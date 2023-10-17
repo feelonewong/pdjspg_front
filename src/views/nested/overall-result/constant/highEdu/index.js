@@ -76,27 +76,27 @@ export const HighEdu = {
         },
         "subjectScoreDistribution":{
             "chn":{
-                "title": "高中教育语文学科",
+                "title": "高中教育语文",
                 "chartData": data.allResult.subjectScoreDistribution.chnChartData
             },
             "math":{
-                "title": "高中教育数学学科",
+                "title": "高中教育数学",
                 "chartData": data.allResult.subjectScoreDistribution.mathChartData
             },
             "eng":{
-                "title": "高中教育英语学科",
+                "title": "高中教育英语",
                 "chartData": data.allResult.subjectScoreDistribution.engChartData
             },
             "soc":{
-                "title": "高中教育社会学科",
+                "title": "高中教育社会",
                 "chartData": data.allResult.subjectScoreDistribution.socChartData
             },
             "sci":{
-                "title": "高中教育理工学科",
+                "title": "高中教育理工",
                 "chartData": data.allResult.subjectScoreDistribution.sciChartData
             },
             "art":{
-                "title": "高中教育艺体学科",
+                "title": "高中教育艺体",
                 "chartData": data.allResult.subjectScoreDistribution.artChartData
             },
         },
@@ -148,27 +148,27 @@ export const HighEdu = {
         "dimensionRating": {
             "wrap": {
                 "chn":{
-                    "title": "高中教育语文学科",
+                    "title": "高中教育语文",
                     "chartData": data.allResult.dimensionRating.chnChartData
                 },
                 "math":{
-                    "title": "高中教育数学学科",
+                    "title": "高中教育数学",
                     "chartData": data.allResult.dimensionRating.mathChartData
                 },
                 "eng":{
-                    "title": "高中教育英语学科",
+                    "title": "高中教育英语",
                     "chartData": data.allResult.dimensionRating.engChartData
                 },
                 "soc":{
-                    "title": "高中教育社会学科",
+                    "title": "高中教育社会",
                     "chartData": data.allResult.dimensionRating.socChartData
                 },
                 "sci":{
-                    "title": "高中教育理工学科",
+                    "title": "高中教育理工",
                     "chartData": data.allResult.dimensionRating.sciChartData
                 },
                 "art":{
-                    "title": "高中教育艺体学科",
+                    "title": "高中教育艺体",
                     "chartData": data.allResult.dimensionRating.artChartData
                 },
 
@@ -305,27 +305,27 @@ export const HighEdu = {
                 },
                 "wap": {
                     "chn": {
-                        title: "高中教育语文学科",
+                        title: "高中教育语文",
                         chartData: data.modules[0].eachScoreDistribution.chnChartData
                     },
                     "math": {
-                        title: "高中教育数学学科",
+                        title: "高中教育数学",
                         chartData: data.modules[0].eachScoreDistribution.mathChartData
                     },
                     "eng": {
-                        title: "高中教育英语学科",
+                        title: "高中教育英语",
                         chartData: data.modules[0].eachScoreDistribution.engChartData
                     },
                     "soc": {
-                        title: "高中教育社会学科",
+                        title: "高中教育社会",
                         chartData: data.modules[0].eachScoreDistribution.socChartData
                     },
                     "sci": {
-                        title: "高中教育理工学科",
+                        title: "高中教育理工",
                         chartData: data.modules[0].eachScoreDistribution.sciChartData
                     },
                     "art": {
-                        title: "高中教育艺体学科",
+                        title: "高中教育艺体",
                         chartData: data.modules[0].eachScoreDistribution.artChartData
                     }
                 }
@@ -392,27 +392,27 @@ export const HighEdu = {
                 },
                 "wap": {
                     "chn": {
-                        title: "高中教育语文学科",
+                        title: "高中教育语文",
                         chartData: data.modules[1].eachScoreDistribution.chnChartData
                     },
                     "math": {
-                        title: "高中教育数学学科",
+                        title: "高中教育数学",
                         chartData: data.modules[1].eachScoreDistribution.mathChartData
                     },
                     "eng": {
-                        title: "高中教育英语学科",
+                        title: "高中教育英语",
                         chartData: data.modules[1].eachScoreDistribution.engChartData
                     },
                     "soc": {
-                        title: "高中教育社会学科",
+                        title: "高中教育社会",
                         chartData: data.modules[1].eachScoreDistribution.socChartData
                     },
                     "sci": {
-                        title: "高中教育理工学科",
+                        title: "高中教育理工",
                         chartData: data.modules[1].eachScoreDistribution.sciChartData
                     },
                     "art": {
-                        title: "高中教育艺体学科",
+                        title: "高中教育艺体",
                         chartData: data.modules[0].eachScoreDistribution.artChartData
                     }
                 }
@@ -479,27 +479,27 @@ export const HighEdu = {
                 },
                 "wap": {
                     "chn": {
-                        title: "高中教育语文学科",
+                        title: "高中教育语文",
                         chartData: data.modules[2].eachScoreDistribution.chnChartData
                     },
                     "math": {
-                        title: "高中教育数学学科",
+                        title: "高中教育数学",
                         chartData: data.modules[2].eachScoreDistribution.mathChartData
                     },
                     "eng": {
-                        title: "高中教育英语学科",
+                        title: "高中教育英语",
                         chartData: data.modules[2].eachScoreDistribution.engChartData
                     },
                     "soc": {
-                        title: "高中教育社会学科",
+                        title: "高中教育社会",
                         chartData: data.modules[2].eachScoreDistribution.socChartData
                     },
                     "sci": {
-                        title: "高中教育理工学科",
+                        title: "高中教育理工",
                         chartData: data.modules[2].eachScoreDistribution.sciChartData
                     },
                     "art": {
-                        title: "高中教育艺体学科",
+                        title: "高中教育艺体",
                         chartData: data.modules[2].eachScoreDistribution.artChartData
                     }
                 }
@@ -566,27 +566,27 @@ export const HighEdu = {
                 },
                 "wap": {
                     "chn": {
-                        title: "高中教育语文学科",
+                        title: "高中教育语文",
                         chartData: data.modules[3].eachScoreDistribution.chnChartData
                     },
                     "math": {
-                        title: "高中教育数学学科",
+                        title: "高中教育数学",
                         chartData: data.modules[3].eachScoreDistribution.mathChartData
                     },
                     "eng": {
-                        title: "高中教育英语学科",
+                        title: "高中教育英语",
                         chartData: data.modules[3].eachScoreDistribution.engChartData
                     },
                     "soc": {
-                        title: "高中教育社会学科",
+                        title: "高中教育社会",
                         chartData: data.modules[3].eachScoreDistribution.socChartData
                     },
                     "sci": {
-                        title: "高中教育理工学科",
+                        title: "高中教育理工",
                         chartData: data.modules[3].eachScoreDistribution.sciChartData
                     },
                     "art": {
-                        title: "高中教育艺体学科",
+                        title: "高中教育艺体",
                         chartData: data.modules[3].eachScoreDistribution.artChartData
                     }
                 }

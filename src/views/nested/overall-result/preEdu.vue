@@ -176,13 +176,13 @@
             情景问题最高分:
             {{ allResult.minMaxScore.secene.chartData[0].max }} 情景问题最低分:
             {{ allResult.minMaxScore.secene.chartData[0].min }} <br />
-            自我问题平均分:
+            自陈问题平均分:
             {{
               allResult.minMaxScore.self.chartData[0].average
             }}
-            自我问题中位数:
-            {{ allResult.minMaxScore.self.chartData[0].median }} 自我问题最高分:
-            {{ allResult.minMaxScore.self.chartData[0].max }} 自我问题最低分:
+            自陈问题中位数:
+            {{ allResult.minMaxScore.self.chartData[0].median }} 自陈问题最高分:
+            {{ allResult.minMaxScore.self.chartData[0].max }} 自陈问题最低分:
             {{ allResult.minMaxScore.self.chartData[0].min }} <br />
           </desc-slot>
         </div>
@@ -398,7 +398,7 @@
                 学前教育{{ item.averageScore.title }}维度：<br />
                 总体平均分为:{{ item.averageScore.all.chartData[0].value }}
                 <br />
-                自我问题平均分为:{{
+                自陈问题平均分为:{{
                   item.averageScore.selfAndSecene.chartData[0].value
                 }}
                 <br />

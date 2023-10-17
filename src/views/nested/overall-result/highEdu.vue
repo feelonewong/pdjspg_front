@@ -40,7 +40,7 @@
       </div>
       <div class="area-right" style="width: 40%;">
         <desc-slot>
-          高中教育学科整体得分率为:<br>
+         <span style="font-size: 20px; font-weight: 600;">高中教育</span>整体得分率为:<br>
 
           {{
             allResult.allScoreRating.max
@@ -138,7 +138,7 @@
       </div>
     </div>
   </section>
-    <h2 class="title">4.1.2.2高中教育学科整体平均分、中位数、标准差</h2>
+    <h2 class="title">4.1.2.2高中教育整体平均分、中位数、标准差</h2>
     <span
       @click="
         handleExpandModule('flag4_1_2_2')
@@ -155,19 +155,19 @@
     <div class="wrap-d" style="margin: 40px 0;">
       <div class="area-left">
         <ZoomBarChart
-          :title="'高中教育学科整体平均分'"
+          :title="'高中教育整体平均分'"
           :chartData="allResult.minMaxScore.all.chartData"
         ></ZoomBarChart>
       </div>
       <div class="area-right">
         <ZoomBarChart
-          :title="'高中教育学科自陈问题平均分'"
+          :title="'高中教育自陈问题平均分'"
           :chartData="allResult.minMaxScore.self.chartData"
         ></ZoomBarChart>
       </div>
       <div class="area-left">
         <ZoomBarChart
-          :title="'高中教育学科情景问题平均分'"
+          :title="'高中教育情景问题平均分'"
           :chartData="allResult.minMaxScore.scene.chartData"
         ></ZoomBarChart>
       </div>
@@ -601,20 +601,20 @@ export default {
       allResult: {},
       compEduData: {},
       subProject: {
-        "chn": "高中教育语文学科",
-        "math": "高中教育数学学科",
-        "eng": "高中教育英语学科",
-        "soc": "高中教育社会学科",
-        "sci": "高中教育理工学科",
-        "art": "高中教育艺体学科",
+        "chn": "高中教育语文",
+        "math": "高中教育数学",
+        "eng": "高中教育英语",
+        "soc": "高中教育社会",
+        "sci": "高中教育理工",
+        "art": "高中教育艺体",
       },
       radarChartOptions:  [
-        { name: "高中教育语文科教师", max: 100 },
-        { name: "高中教育数学科教师", max: 100 },
-        { name: "高中教育英语科教师", max: 100 },
-        { name: "高中教育社会科教师", max: 100 },
-        { name: "高中教育理工科教师", max: 100 },
-        { name: "高中教育艺体科教师", max: 100 },
+        { name: "高中教育语文", max: 100 },
+        { name: "高中教育数学", max: 100 },
+        { name: "高中教育英语", max: 100 },
+        { name: "高中教育社会", max: 100 },
+        { name: "高中教育理工", max: 100 },
+        { name: "高中教育艺体", max: 100 },
       ],
       flag4_1_1: true,
       flag4_1_2_1: true,

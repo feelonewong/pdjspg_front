@@ -76,27 +76,27 @@ export const CompEdu = {
         },
         "subjectScoreDistribution":{
             "chn":{
-                "title": "义务教育语文学科",
+                "title": "义务教育语文",
                 "chartData": data.allResult.subjectScoreDistribution.chnChartData
             },
             "math":{
-                "title": "义务教育数学学科",
+                "title": "义务教育数学",
                 "chartData": data.allResult.subjectScoreDistribution.mathChartData
             },
             "eng":{
-                "title": "义务教育英语学科",
+                "title": "义务教育英语",
                 "chartData": data.allResult.subjectScoreDistribution.engChartData
             },
             "soc":{
-                "title": "义务教育社会学科",
+                "title": "义务教育社会",
                 "chartData": data.allResult.subjectScoreDistribution.socChartData
             },
             "sci":{
-                "title": "义务教育理工学科",
+                "title": "义务教育理工",
                 "chartData": data.allResult.subjectScoreDistribution.sciChartData
             },
             "art":{
-                "title": "义务教育艺术学科",
+                "title": "义务教育艺体",
                 "chartData": data.allResult.subjectScoreDistribution.artChartData
             },
         },
@@ -148,27 +148,27 @@ export const CompEdu = {
         "dimensionRating": {
             "wrap": {
                 "chn":{
-                    "title": "义务教育语文学科",
+                    "title": "义务教育语文",
                     "chartData": data.allResult.dimensionRating.chnChartData
                 },
                 "math":{
-                    "title": "义务教育数学学科",
+                    "title": "义务教育数学",
                     "chartData": data.allResult.dimensionRating.mathChartData
                 },
                 "eng":{
-                    "title": "义务教育英语学科",
+                    "title": "义务教育英语",
                     "chartData": data.allResult.dimensionRating.engChartData
                 },
                 "soc":{
-                    "title": "义务教育社会学科",
+                    "title": "义务教育社会",
                     "chartData": data.allResult.dimensionRating.socChartData
                 },
                 "sci":{
-                    "title": "义务教育理工学科",
+                    "title": "义务教育理工",
                     "chartData": data.allResult.dimensionRating.sciChartData
                 },
                 "art":{
-                    "title": "义务教育艺术学科",
+                    "title": "义务教育艺体",
                     "chartData": data.allResult.dimensionRating.artChartData
                 },
 
@@ -305,27 +305,27 @@ export const CompEdu = {
                 },
                 "wap": {
                     "chn": {
-                        "title": "义务教育语文学科",
+                        "title": "义务教育语文",
                         chartData: data.modules[0].eachScoreDistribution.chnChartData
                     },
                     "math": {
-                        "title": "义务教育数学学科",
+                        "title": "义务教育数学",
                         chartData: data.modules[0].eachScoreDistribution.mathChartData
                     },
                     "eng": {
-                        "title": "义务教育英语学科",
+                        "title": "义务教育英语",
                         chartData: data.modules[0].eachScoreDistribution.engChartData
                     },
                     "soc": {
-                        "title": "义务教育社会学科",
+                        "title": "义务教育社会",
                         chartData: data.modules[0].eachScoreDistribution.socChartData
                     },
                     "sci": {
-                        "title": "义务教育理工学科",
+                        "title": "义务教育理工",
                         chartData: data.modules[0].eachScoreDistribution.sciChartData
                     },
                     "art": {
-                        "title": "义务教育艺术学科",
+                        "title": "义务教育艺体",
                         chartData: data.modules[0].eachScoreDistribution.artChartData
                     }
                 }

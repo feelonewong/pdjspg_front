@@ -106,7 +106,7 @@ export const ResponsResult = {
                 "chartData": data.allResult.subjectScoreDistribution.sciChartData
             },
             "art":{
-                "title": "义务教育艺术",
+                "title": "义务教育艺体",
                 "chartData": data.allResult.subjectScoreDistribution.artChartData
             },
             "highChn":{
@@ -130,7 +130,7 @@ export const ResponsResult = {
                 "chartData": data.allResult.subjectScoreDistribution.highSciChartData
             },
             "highArt":{
-                "title": "高中教育艺术",
+                "title": "高中教育艺体",
                 "chartData": data.allResult.subjectScoreDistribution.highArtChartData
             },
         },

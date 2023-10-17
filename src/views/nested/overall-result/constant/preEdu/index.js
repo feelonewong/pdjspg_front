@@ -98,9 +98,9 @@ export const PreEdu = {
     },
     "modules": [
         {
-            "title": "2.2.2 全区学前教育学段职业态度",
-            "subTitle": "2.2.2.1 全区学前教育学段职业态度得分率与得分分布情况",
-            "second": "2.2.2.2 全区学前教育学段职业态度平均分、中位数、标准差",
+            "title": "2.2.2 全区学前教育职业态度",
+            "subTitle": "2.2.2.1 全区学前教育职业态度得分率与得分分布情况",
+            "second": "2.2.2.2 全区学前教育职业态度平均分、中位数、标准差",
             "scoreRating": {
                 "title": "职业态度",
                 "chartData": data.modules[0].scoreRating.chartData,
@@ -129,9 +129,9 @@ export const PreEdu = {
             }
         },
         {
-            "title": "2.2.3 全区学前教育学段教学实践",
-            "subTitle": "2.2.3.1 全区学前教育学段教学实践得分率与得分分布情况",
-            "second": "2.2.2.3 全区学前教育学段教学实践平均分、中位数、标准差",
+            "title": "2.2.3 全区学前教育教学实践",
+            "subTitle": "2.2.3.1 全区学前教育教学实践得分率与得分分布情况",
+            "second": "2.2.2.3 全区学前教育教学实践平均分、中位数、标准差",
             "scoreRating": {
                 "title": "教学实践",
                 "chartData": data.modules[1].scoreRating.chartData,
@@ -160,9 +160,9 @@ export const PreEdu = {
             }
         },
         {
-            "title": "2.2.4 全区学前教育学段综合育人",
-            "subTitle": "2.2.4.1 全区学前教育学段综合育人得分率与得分分布情况",
-            "second": "2.2.2.4 全区学前教育学段综合育人平均分、中位数、标准差",
+            "title": "2.2.4 全区学前教育综合育人",
+            "subTitle": "2.2.4.1 全区学前教育综合育人得分率与得分分布情况",
+            "second": "2.2.2.4 全区学前教育综合育人平均分、中位数、标准差",
             "scoreRating": {
                 "title": "综合育人",
                 "chartData": data.modules[2].scoreRating.chartData,
@@ -191,9 +191,9 @@ export const PreEdu = {
             }
         },
         {
-            "title": "2.2.5 全区学前教育学段自主发展",
-            "subTitle": "2.2.5.1 全区学前教育学段自主发展得分率与得分分布情况",
-            "second": "2.2.5.2 全区学前教育学段自主发展平均分、中位数、标准差",
+            "title": "2.2.5 全区学前教育自主发展",
+            "subTitle": "2.2.5.1 全区学前教育自主发展得分率与得分分布情况",
+            "second": "2.2.5.2 全区学前教育自主发展平均分、中位数、标准差",
             "scoreRating": {
                 "title": "自主发展",
                 "chartData": data.modules[3].scoreRating.chartData,
