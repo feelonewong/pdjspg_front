@@ -593,51 +593,51 @@ export const data = {
             "tableData":[
                 {
                     "name":"义务教育语文",
-                    "all":"90.30",
-                    "attitude":"98.13",
-                    "practice":"90.72",
-                    "comprehensive":"88.82",
-                    "development":"86.00"
+                    "all":"90.30%",
+                    "attitude":"98.13%",
+                    "practice":"90.72%",
+                    "comprehensive":"88.82%",
+                    "development":"86.00%"
                 },
                 {
                     "name":"义务教育数学",
-                    "all":"89.92",
-                    "attitude":"98.04",
-                    "practice":"89.92",
-                    "comprehensive":"88.96",
-                    "development":"85.44"
+                    "all":"89.92%",
+                    "attitude":"98.04%",
+                    "practice":"89.92%",
+                    "comprehensive":"88.96%",
+                    "development":"85.44%"
                 },
                 {
                     "name":"义务教育英语",
-                    "all":"91.20",
-                    "attitude":"93.23",
-                    "practice":"91.73",
-                    "comprehensive":"90.20",
-                    "development":"90.15"
+                    "all":"91.20%",
+                    "attitude":"93.23%",
+                    "practice":"91.73%",
+                    "comprehensive":"90.20%",
+                    "development":"90.15%"
                 },
                 {
                     "name":"义务教育理工",
-                    "all":"89.08",
-                    "attitude":"98.04",
-                    "practice":"85.49",
-                    "comprehensive":"88.87",
-                    "development":"88.10"
+                    "all":"89.08%",
+                    "attitude":"98.04%",
+                    "practice":"85.49%",
+                    "comprehensive":"88.87%",
+                    "development":"88.10%"
                 },
                 {
                     "name":"义务教育艺体",
-                    "all":"91.60",
-                    "attitude":"93.36",
-                    "practice":"93.32",
-                    "comprehensive":"91.23",
-                    "development":"88.49"
+                    "all":"91.60%",
+                    "attitude":"93.36%",
+                    "practice":"93.32%",
+                    "comprehensive":"91.23%",
+                    "development":"88.49%"
                 },
                 {
                     "name":"义务教育社会",
-                    "all":"90.10",
-                    "attitude":"95.73",
-                    "practice":"85.72",
-                    "comprehensive":"91.07",
-                    "development":"91.23"
+                    "all":"90.10%",
+                    "attitude":"95.73%",
+                    "practice":"85.72%",
+                    "comprehensive":"91.07%",
+                    "development":"91.23%"
                 }
             ]
         },

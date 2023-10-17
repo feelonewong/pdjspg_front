@@ -85,7 +85,7 @@ export const data = {
                   {"name": '自主发展', "value": '92.11'},
               ],
               "tableData": [
-                  {"name": '学前教育', "all":'95.10', "attitude": '96.48',"practice": '95.55',"comprehensive": '96.57',"development": '92.11',},
+                  {"name": '学前教育', "all":'95.10%', "attitude": '96.48%',"practice": '95.55%',"comprehensive": '96.57%',"development": '92.11%',},
               ]
       },
       "eachScoreDistribution": { //*** 各维度得分分布情况

@@ -356,16 +356,16 @@
          <span style="font-size: 20px; font-weight: 600;">{{ subProject[wapIndex] }}</span>中{{ eachItem.title }}维度结果如下:<br />
           优秀人数:{{ eachItem.chartData[0].value }} 占比({{
             eachItem.chartData[0].precent
-          }})<br />
+          }}%)<br />
           良好人数:{{ eachItem.chartData[1].value }} 占比({{
             eachItem.chartData[1].precent
-          }})<br />
+          }}%)<br />
           及格人数:{{ eachItem.chartData[2].value }} 占比({{
             eachItem.chartData[2].precent
-          }})<br />
+          }}%)<br />
           待提升人数:{{ eachItem.chartData[3].value }} 占比({{
             eachItem.chartData[3].precent
-          }})<br />
+          }}%)<br />
         </desc-slot>
       </div>
     </div>
@@ -425,16 +425,16 @@
             <desc-slot>
               优秀人数:{{ eachItem.chartData[0].value }} 占比({{
                 eachItem.chartData[0].precent
-              }})<br />
+              }}%)<br />
               良好人数:{{ eachItem.chartData[1].value }} 占比({{
                 eachItem.chartData[1].precent
-              }})<br />
+              }}%)<br />
               及格人数:{{ eachItem.chartData[2].value }} 占比({{
                 eachItem.chartData[2].precent
-              }})<br />
+              }}%)<br />
               待提升人数:{{ eachItem.chartData[3].value }} 占比({{
                 eachItem.chartData[3].precent
-              }})<br />
+              }}%)<br />
             </desc-slot>
           </div>
         </div> 

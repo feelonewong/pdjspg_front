@@ -590,51 +590,51 @@ export const data = {
             "tableData":[
                 {
                     "name":"高中教育语文",
-                    "all":"89.96",
-                    "attitude":"96.18",
-                    "practice":"87.58",
-                    "comprehensive":"88.60",
-                    "development":"90.34"
+                    "all":"89.96%",
+                    "attitude":"96.18%",
+                    "practice":"87.58%",
+                    "comprehensive":"88.60%",
+                    "development":"90.34%"
                 },
                 {
                     "name":"高中教育数学",
-                    "all":"90.94",
-                    "attitude":"96.07",
-                    "practice":"92.03",
-                    "comprehensive":"88.82",
-                    "development":"88.18"
+                    "all":"90.94%",
+                    "attitude":"96.07%",
+                    "practice":"92.03%",
+                    "comprehensive":"88.82%",
+                    "development":"88.18%"
                 },
                 {
                     "name":"高中教育英语",
-                    "all":"90.52",
-                    "attitude":"95.17",
-                    "practice":"90.56",
-                    "comprehensive":"89.80",
-                    "development":"88.08"
+                    "all":"90.52%",
+                    "attitude":"95.17%",
+                    "practice":"90.56%",
+                    "comprehensive":"89.80%",
+                    "development":"88.08%"
                 },
                 {
                     "name":"高中教育理工",
-                    "all":"89.98",
-                    "attitude":"90.44",
-                    "practice":"88.51",
-                    "comprehensive":"91.87",
-                    "development":"89.73"
+                    "all":"89.98%",
+                    "attitude":"90.44%",
+                    "practice":"88.51%",
+                    "comprehensive":"91.87%",
+                    "development":"89.73%"
                 },
                 {
                     "name":"高中教育艺体",
-                    "all":"86.69",
-                    "attitude":"90.79",
-                    "practice":"84.84",
-                    "comprehensive":"87.38",
-                    "development":"85.71"
+                    "all":"86.69%",
+                    "attitude":"90.79%",
+                    "practice":"84.84%",
+                    "comprehensive":"87.38%",
+                    "development":"85.71%"
                 },
                 {
                     "name":"高中教育社会",
-                    "all":"85.18",
-                    "attitude":"95.25",
-                    "practice":"82.68",
-                    "comprehensive":"82.43",
-                    "development":"84.55"
+                    "all":"85.18%",
+                    "attitude":"95.25%",
+                    "practice":"82.68%",
+                    "comprehensive":"82.43%",
+                    "development":"84.55%"
                 }
             ]
         },
