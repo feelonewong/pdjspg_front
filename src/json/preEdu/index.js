@@ -72,8 +72,8 @@ export const data = {
       },
       "standradScore": {
               "chartData": [
-              { "value": 177, "name": "自陈问题" },
-              { "value": 175, "name": "情景问题" },
+              { "value": 12.41, "name": "自陈问题" },
+              { "value": 6.7, "name": "情景问题" },
           ]
       },
       "dimensionRating": { //***学前教育学段各维度得分率
