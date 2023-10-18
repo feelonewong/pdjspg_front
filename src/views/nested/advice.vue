@@ -6,9 +6,10 @@
           <h2>{{ item.title }}</h2><br />
           <div v-for="(child, index) in item.children" :key="index">
             <h2 class="second">{{child.title}}</h2><br />
-            <el-input class="input-area" type="textarea"   
-              show-word-limit
-            :rows="12" placeholder="" v-model="child.value"></el-input>
+            <el-card class="box-card text">
+  <!-- {{ child.value }} -->
+  <div v-html="child.value"></div>
+</el-card>
           </div>
         </div>
       </template>
@@ -41,6 +42,8 @@ h2 {
 h3 {
   margin-top: 20px;
   display: inline-block;
+  font-size: 24px;
+
   position: relative;
   color: #409eff;
 }
@@ -68,4 +71,17 @@ p {
   margin-top: 30px;
   margin-bottom: 50px;
 }
+
+.text {
+    font-size: 22px;
+    line-height: 1.8;
+  }
+
+  .item {
+    padding: 18px 0;
+  }
+
+  .box-card {
+    width: 100%;
+  }
 </style>
