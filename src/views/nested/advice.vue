@@ -73,8 +73,8 @@ p {
 }
 
 .text {
-    font-size: 22px;
-    line-height: 1.8;
+    font-size: 19px;
+    line-height: 2em;
   }
 
   .item {

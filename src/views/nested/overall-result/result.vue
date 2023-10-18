@@ -475,8 +475,6 @@
               <br />
               高中教育艺体得分率为：{{ item.scoreRating.chartData[12] }}%
               <br />
-              高中教育艺体得分率为：{{ item.scoreRating.chartData[13] }}%
-              <br />
             </desc-slot>
           </div>
         </div>
