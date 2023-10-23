@@ -442,7 +442,7 @@ export const CompEdu = {
         {
             "title": "3.2.4 全区义务教育综合育人",
             "subTitle": "3.2.4.1 全区义务教育综合育人得分率与得分分布情况",
-            "second": "3.2.2.4 全区义务教育综合育人平均分、中位数、标准差",
+            "second": "3.2.4.2 全区义务教育综合育人平均分、中位数、标准差",
             "scoreRating": {
                 "title": "综合育人",
                 "chartData": data.modules[2].scoreRating.chartData,

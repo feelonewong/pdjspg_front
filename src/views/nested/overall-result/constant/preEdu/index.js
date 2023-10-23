@@ -131,7 +131,7 @@ export const PreEdu = {
         {
             "title": "2.2.3 全区学前教育教学实践",
             "subTitle": "2.2.3.1 全区学前教育教学实践得分率与得分分布情况",
-            "second": "2.2.2.3 全区学前教育教学实践平均分、中位数、标准差",
+            "second": "2.2.3.2 全区学前教育教学实践平均分、中位数、标准差",
             "scoreRating": {
                 "title": "教学实践",
                 "chartData": data.modules[1].scoreRating.chartData,
@@ -162,7 +162,7 @@ export const PreEdu = {
         {
             "title": "2.2.4 全区学前教育综合育人",
             "subTitle": "2.2.4.1 全区学前教育综合育人得分率与得分分布情况",
-            "second": "2.2.2.4 全区学前教育综合育人平均分、中位数、标准差",
+            "second": "2.2.4.2 全区学前教育综合育人平均分、中位数、标准差",
             "scoreRating": {
                 "title": "综合育人",
                 "chartData": data.modules[2].scoreRating.chartData,
