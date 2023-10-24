@@ -8,7 +8,7 @@
     />
     <breadcrumb id="breadcrumb-container" class="breadcrumb-container" />
 
-    <div class="right-menu" >
+    <div class="right-menu">
       <template v-if="device !== 'mobile'">
         <!-- <search id="header-search" class="right-menu-item" /> -->
 
@@ -24,11 +24,9 @@
         class="avatar-container right-menu-item hover-effect"
         trigger="click"
       >
-        <div class="avatar-wrapper">
-          <!-- <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar"> -->
-          <i class="el-icon-user-solid"></i>
-          <i class="el-icon-caret-bottom" />
-        </div>
+        <el-button  size="medium" plain  style="padding: 6px;">
+          更多<i class="el-icon-arrow-down el-icon--right"></i>
+        </el-button>
         <el-dropdown-menu slot="dropdown">
           <!-- <router-link to="/">
             <el-dropdown-item>Dashboard</el-dropdown-item>
@@ -39,11 +37,17 @@
           <a target="_blank" href="https://panjiachen.github.io/vue-element-admin-site/#/">
             <el-dropdown-item>Docs</el-dropdown-item>
           </a> -->
-          <el-dropdown-item divided @click.native="logout">
-            <span style="display: block">退出</span>
+          <el-dropdown-item>
             <span style="display: block" @click="handleDownload">
               下载报告
             </span>
+          </el-dropdown-item>
+          <el-dropdown-item
+            divided
+            @click.native="logout"
+            style="text-align: center"
+          >
+            <span style="display: block">退出</span>
           </el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
@@ -59,7 +63,7 @@ import ErrorLog from "@/components/ErrorLog";
 import Screenfull from "@/components/Screenfull";
 import SizeSelect from "@/components/SizeSelect";
 import Search from "@/components/HeaderSearch";
-
+import FileSaver from "file-saver";
 export default {
   components: {
     Breadcrumb,
@@ -80,14 +84,20 @@ export default {
       this.$router.push(`/login?redirect=${this.$route.fullPath}`);
     },
     handleDownload() {
-      let fileName = "浦东新区见习教师专业胜任力调查报告"
-      let filePath = "https://pdpx.open.ai-study.net/bg/浦东新区见习教师专业胜任力调查报告.pdf"
-      let link = document.createElement('a')
-      link.style.display = 'none'
-      link.href = filePath
-      link.setAttribute('download', `${fileName}.pdf`)
-      document.body.appendChild(link)
-      link.click()
+      let fileName = "浦东新区见习教师专业胜任力调查报告.pdf";
+      let filePath =
+        "https://pdpx.open.ai-study.net/bg/%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA%E8%A7%81%E4%B9%A0%E6%95%99%E5%B8%88%E4%B8%93%E4%B8%9A%E8%83%9C%E4%BB%BB%E5%8A%9B%E8%B0%83%E6%9F%A5%E6%8A%A5%E5%91%8A.pdf";
+      var oReq = new XMLHttpRequest();
+      var URL = filePath; // URL 为URL地址
+      oReq.open("GET", URL, true);
+      oReq.responseType = "blob";
+      oReq.onload = function () {
+        var file = new Blob([oReq.response], {
+          type: "blob",
+        });
+        FileSaver.saveAs(file, fileName); // that.name为文件名
+      };
+      oReq.send();
     },
   },
 };
@@ -134,7 +144,7 @@ export default {
 
     .right-menu-item {
       display: inline-block;
-      padding: 0 8px;
+      padding: 0 0px;
       height: 100%;
       font-size: 18px;
       color: #5a5e66;
