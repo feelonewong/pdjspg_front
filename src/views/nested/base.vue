@@ -35,7 +35,7 @@
       border
       style="width: 50%"
       :span-method="objectSpanMethod3"
-      height="500"
+
     >
       <el-table-column prop="period" label="学段" align="center" />
       <el-table-column prop="subject" label="学科" align="center" />
@@ -53,7 +53,6 @@
       border
       style="width: 80%"
       :span-method="objectSpanMethod2"
-      height="500"
     >
       <el-table-column prop="first" width="120" label="一级" align="center" />
       <el-table-column prop="second" width="180" label="二级" align="center" />
@@ -67,7 +66,6 @@
       border
       style="width: 80%"
       :span-method="objectSpanMethod"
-      height="500"
     >
       <el-table-column prop="first" width="120" label="一级" align="center" />
       <el-table-column prop="second" width="180" label="二级" align="center" />
