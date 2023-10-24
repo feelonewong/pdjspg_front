@@ -8,14 +8,11 @@
     />
     <breadcrumb id="breadcrumb-container" class="breadcrumb-container" />
 
-    <div class="right-menu" style="border: 1px solid red; display: flex">
+    <div class="right-menu" >
       <template v-if="device !== 'mobile'">
         <!-- <search id="header-search" class="right-menu-item" /> -->
 
         <!-- <error-log class="errLog-container right-menu-item hover-effect" /> -->
-        <section>
-          <el-button size="medium" type="primary">下载报告</el-button>
-        </section>
         <screenfull id="screenfull" class="right-menu-item hover-effect" />
 
         <el-tooltip content="Global Size" effect="dark" placement="bottom">
