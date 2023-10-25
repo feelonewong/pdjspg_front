@@ -24,7 +24,7 @@
         class="avatar-container right-menu-item hover-effect"
         trigger="click"
       >
-        <el-button  size="medium" plain  style="padding: 6px;">
+        <el-button  size="medium" plain  style="padding: 10px;">
           更多<i class="el-icon-arrow-down el-icon--right"></i>
         </el-button>
         <el-dropdown-menu slot="dropdown">
@@ -68,8 +68,6 @@ export default {
   components: {
     Breadcrumb,
     Hamburger,
-    Screenfull,
-    SizeSelect,
     Search,
   },
   computed: {
@@ -80,8 +78,24 @@ export default {
       this.$store.dispatch("app/toggleSideBar");
     },
     async logout() {
-      await this.$store.dispatch("user/logout");
-      this.$router.push(`/login?redirect=${this.$route.fullPath}`);
+      
+       this.$confirm('是否退出当前系统?', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(async () => {
+          await this.$store.dispatch("user/logout");
+          this.$router.push(`/login?redirect=${this.$route.fullPath}`);
+          this.$message({
+            type: 'success',
+            message: '已退出!'
+          });
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消退出'
+          });          
+        });
     },
     handleDownload() {
       let fileName = "浦东新区见习教师专业胜任力调查报告.pdf";
