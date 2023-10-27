@@ -38,8 +38,13 @@
             <el-dropdown-item>Docs</el-dropdown-item>
           </a> -->
           <el-dropdown-item>
-            <span style="display: block" @click="handleDownload">
-              下载报告
+            <span style="display: block" @click="handleDownloadPrint">
+              下载PDF报告（打印版）
+            </span>
+          </el-dropdown-item>
+          <el-dropdown-item>
+            <span style="display: block" @click="handleDownloadPic">
+              下载PDF报告（分图版）
             </span>
           </el-dropdown-item>
           <el-dropdown-item
@@ -97,10 +102,27 @@ export default {
           });          
         });
     },
-    handleDownload() {
+    handleDownloadPic(){
       let fileName = "浦东新区见习教师专业胜任力调查报告.pdf";
       let filePath =
-        "https://pdpx.open.ai-study.net/bg/%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA%E8%A7%81%E4%B9%A0%E6%95%99%E5%B8%88%E4%B8%93%E4%B8%9A%E8%83%9C%E4%BB%BB%E5%8A%9B%E8%B0%83%E6%9F%A5%E6%8A%A5%E5%91%8A.pdf";
+        "https://seslms-open-ai-study-net.oss-cn-shanghai.aliyuncs.com/pdpx-open-ai-study-net/bg/%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA%E8%A7%81%E4%B9%A0%E6%95%99%E5%B8%88%E4%B8%93%E4%B8%9A%E8%83%9C%E4%BB%BB%E5%8A%9B%E8%B0%83%E6%9F%A5%E6%8A%A5%E5%91%8A1.pdf";
+      var oReq = new XMLHttpRequest();
+      var URL = filePath; // URL 为URL地址
+      oReq.open("GET", URL, true);
+      oReq.responseType = "blob";
+      oReq.onload = function () {
+        var file = new Blob([oReq.response], {
+          type: "blob",
+        });
+        FileSaver.saveAs(file, fileName); // that.name为文件名
+      };
+      oReq.send();
+
+    },
+    handleDownloadPrint(){
+      let fileName = "浦东新区见习教师专业胜任力调查报告.pdf";
+      let filePath =
+        "https://seslms-open-ai-study-net.oss-cn-shanghai.aliyuncs.com/pdpx-open-ai-study-net/bg/%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA%E8%A7%81%E4%B9%A0%E6%95%99%E5%B8%88%E4%B8%93%E4%B8%9A%E8%83%9C%E4%BB%BB%E5%8A%9B%E8%B0%83%E6%9F%A5%E6%8A%A5%E5%91%8A2.pdf";
       var oReq = new XMLHttpRequest();
       var URL = filePath; // URL 为URL地址
       oReq.open("GET", URL, true);
