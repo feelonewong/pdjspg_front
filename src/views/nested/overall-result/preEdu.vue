@@ -381,18 +381,18 @@
           <div class="wrap-d at8">
             <div class="area-left">
               <ZoomBarChart
-                :title="item.scoreRating.title + '总体平均分'"
-                :chartData="item.averageScore.all.chartData"
+                :title="item.scoreRating.title + '总体平均分 '+item.scoreRating.title + '自陈、情景问题平均分'"
+                :chartData="item.averageScore.all.chartData.concat(item.averageScore.selfAndSecene.chartData)"
               ></ZoomBarChart>
             </div>
-            <div class="area-left">
+            <!-- <div class="area-left">
               <ZoomBarChart
                 :title="
                   item.scoreRating.title + '自陈、情景问题平均分'
                 "
                 :chartData="item.averageScore.selfAndSecene.chartData"
               ></ZoomBarChart>
-            </div>
+            </div> -->
             <div class="area-right">
               <desc-slot>
                 学前教育{{ item.averageScore.title }}维度：<br />

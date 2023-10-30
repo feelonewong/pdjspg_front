@@ -64,6 +64,7 @@ export default {
       const average = this.$props.chartData.reduce((acc, val) =>{
         return acc + Number(val.value)
       }, 0) / this.$props.chartData.length;
+      const axisLabelLength = this.$props.chartData.length
       const itemStyle = this.$props.chartData.map(value => {
         if (value > average) {
           return { itemStyle: { color: '#0000FF' } }; // 设置高于平均分的柱子颜色为蓝色
@@ -126,18 +127,16 @@ export default {
             axisLabel: {
               fontSize: 14,
             //  rotate: 40, // 将x轴标签旋转90度
-            // formatter: function (value) {
-            //   // if(!this.$props.chartData.flag){
-
-              
-            //   // }else {
-            //   //   return value
+            formatter: function (value, index) {
+              if(axisLabelLength > 3){
+                  // 树列显示
+                  var str = value.split("");
+                  return str.join("\n");
+              }else {
+                return value
                 
-            //   // }
-            //   // return value;
-            //     var str = value.split("");
-            //     return str.join("\n");
-            // },
+              }
+            },
         }
           },
         ],
@@ -157,6 +156,12 @@ export default {
             height: "100",
             data: this.$props.chartData.map((item) => item.value),
             colorBy: "data",
+            label: {
+              show: true,
+              position: "top",
+              fontSize: 14,
+              color: "#000",
+            },
             markLine: {
               lineStyle: {
                 type: "solid",
