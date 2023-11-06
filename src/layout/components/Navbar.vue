@@ -24,7 +24,7 @@
         class="avatar-container right-menu-item hover-effect"
         trigger="click"
       >
-        <el-button  size="medium" plain  style="padding: 10px;">
+        <el-button size="medium" plain style="padding: 10px">
           更多<i class="el-icon-arrow-down el-icon--right"></i>
         </el-button>
         <el-dropdown-menu slot="dropdown">
@@ -69,11 +69,14 @@ import Screenfull from "@/components/Screenfull";
 import SizeSelect from "@/components/SizeSelect";
 import Search from "@/components/HeaderSearch";
 import FileSaver from "file-saver";
+import { Loading } from "element-ui";
+import "@/assets/custom-theme/test.css"
 export default {
   components: {
     Breadcrumb,
     Hamburger,
     Search,
+    // SizeSelect
   },
   computed: {
     ...mapGetters(["sidebar", "avatar", "device"]),
@@ -83,57 +86,79 @@ export default {
       this.$store.dispatch("app/toggleSideBar");
     },
     async logout() {
-      
-       this.$confirm('是否退出当前系统?', '提示', {
-          confirmButtonText: '确定',
-          cancelButtonText: '取消',
-          type: 'warning'
-        }).then(async () => {
+      this.$confirm("是否退出当前系统?", "提示", {
+        confirmButtonText: "确定",
+        cancelButtonText: "取消",
+        type: "warning",
+      })
+        .then(async () => {
           await this.$store.dispatch("user/logout");
           this.$router.push(`/login?redirect=${this.$route.fullPath}`);
           this.$message({
-            type: 'success',
-            message: '已退出!'
+            type: "success",
+            message: "已退出!",
           });
-        }).catch(() => {
+        })
+        .catch(() => {
           this.$message({
-            type: 'info',
-            message: '已取消退出'
-          });          
+            type: "info",
+            message: "已取消退出",
+          });
         });
     },
-    handleDownloadPic(){
-      let fileName = "浦东新区见习教师专业胜任力调查报告.pdf";
+    handleDownloadPic() {
+      let loadingInstance = Loading.service({
+        lock: true,
+        text: "正在生成PDF报告，请稍等...",
+        spinner: "el-icon-loading",
+        background: "rgba(0, 0, 0, 0.8)",
+        customClass: "osloading",
+      });
+      setTimeout(() => {
+      
+        let fileName = "浦东新区见习教师专业胜任力调查报告.pdf";
       let filePath =
         "https://seslms-open-ai-study-net.oss-cn-shanghai.aliyuncs.com/pdpx-open-ai-study-net/bg/%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA%E8%A7%81%E4%B9%A0%E6%95%99%E5%B8%88%E4%B8%93%E4%B8%9A%E8%83%9C%E4%BB%BB%E5%8A%9B%E8%B0%83%E6%9F%A5%E6%8A%A5%E5%91%8A1.pdf";
-      var oReq = new XMLHttpRequest();
-      var URL = filePath; // URL 为URL地址
-      oReq.open("GET", URL, true);
-      oReq.responseType = "blob";
-      oReq.onload = function () {
-        var file = new Blob([oReq.response], {
-          type: "blob",
-        });
-        FileSaver.saveAs(file, fileName); // that.name为文件名
-      };
-      oReq.send();
-
+        var oReq = new XMLHttpRequest();
+        var URL = filePath; // URL 为URL地址
+        oReq.open("GET", URL, true);
+        oReq.responseType = "blob";
+        oReq.onload = function () {
+          var file = new Blob([oReq.response], {
+            type: "blob",
+          });
+          FileSaver.saveAs(file, fileName); // that.name为文件名
+        };
+        oReq.send();
+        loadingInstance.close();
+      }, 1200);
+      
     },
-    handleDownloadPrint(){
-      let fileName = "浦东新区见习教师专业胜任力调查报告.pdf";
-      let filePath =
-        "https://seslms-open-ai-study-net.oss-cn-shanghai.aliyuncs.com/pdpx-open-ai-study-net/bg/%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA%E8%A7%81%E4%B9%A0%E6%95%99%E5%B8%88%E4%B8%93%E4%B8%9A%E8%83%9C%E4%BB%BB%E5%8A%9B%E8%B0%83%E6%9F%A5%E6%8A%A5%E5%91%8A2.pdf";
-      var oReq = new XMLHttpRequest();
-      var URL = filePath; // URL 为URL地址
-      oReq.open("GET", URL, true);
-      oReq.responseType = "blob";
-      oReq.onload = function () {
-        var file = new Blob([oReq.response], {
-          type: "blob",
-        });
-        FileSaver.saveAs(file, fileName); // that.name为文件名
-      };
-      oReq.send();
+    handleDownloadPrint() {
+      let loadingInstance = Loading.service({
+        lock: true,
+        text: "正在生成PDF报告，请稍等...",
+        spinner: "el-icon-loading",
+        background: "rgba(0, 0, 0, 0.8)",
+        customClass: "osloading",
+      });
+      setTimeout(() => {
+        let fileName = "浦东新区见习教师专业胜任力调查报告.pdf";
+        let filePath =
+          "https://seslms-open-ai-study-net.oss-cn-shanghai.aliyuncs.com/pdpx-open-ai-study-net/bg/%E6%B5%A6%E4%B8%9C%E6%96%B0%E5%8C%BA%E8%A7%81%E4%B9%A0%E6%95%99%E5%B8%88%E4%B8%93%E4%B8%9A%E8%83%9C%E4%BB%BB%E5%8A%9B%E8%B0%83%E6%9F%A5%E6%8A%A5%E5%91%8A2.pdf";
+        var oReq = new XMLHttpRequest();
+        var URL = filePath; // URL 为URL地址
+        oReq.open("GET", URL, true);
+        oReq.responseType = "blob";
+        oReq.onload = function () {
+          var file = new Blob([oReq.response], {
+            type: "blob",
+          });
+          FileSaver.saveAs(file, fileName); // that.name为文件名
+        };
+        oReq.send();
+        loadingInstance.close();
+      }, 1200);
     },
   },
 };
@@ -221,4 +246,5 @@ export default {
     }
   }
 }
+
 </style>

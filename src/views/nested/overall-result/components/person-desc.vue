@@ -2,10 +2,10 @@
   <div>
     <div class="tip">
       <h3>对于浦东新区来说:</h3>
-      <p v-for="item in descInfo.factionList">
+      <p v-for="item in descInfo.factionList" class="fz19">
       <span class="f600w">{{ item.name }}</span>总分平均分为{{ item.average }}, 标准差为{{ item.standardDeviation }}。
       </p>
-      <p v-for="item in descInfo.typeList">
+      <p class="fz19" v-for="item in descInfo.typeList">
       在<span class="f600w">{{ item.tag }}</span>维度, <span class="f600w">{{ item.type1 }}</span>总分显著高于{{ item.type2 }}总分
       </p>
       <el-alert
@@ -17,7 +17,7 @@
         :closable="false"
         show-icon>
       </el-alert>
-      <p v-for="item in descInfo.averageList">
+      <p v-for="item in descInfo.averageList" class="fz19">
       <span>{{ item.tag }}</span>总分(M ± SD)：{{ item.num0 }} <span style="margin-right: 1em;"></span> 职业态度(M ± SD)：{{ item.num1 }}<span style="margin-right: 1em;"></span> 教学实践(M ± SD)：{{ item.num2 }}<span style="margin-right: 1em;"></span> 综合育人(M ± SD)：{{ item.num3 }}<span style="margin-right: 1em;"></span> 自主发展(M ± SD)：{{ item.num4 }}
       </p>
     </div>
@@ -31,7 +31,7 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
  .tip {
     padding: 8px 16px;
     width: 80%;
@@ -56,6 +56,9 @@ export default {
 }
 .f600w {
   font-weight: 600;
+}
+.fz19 {
+  font-size: 19px;
 }
 
 </style>

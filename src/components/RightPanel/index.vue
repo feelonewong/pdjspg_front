@@ -126,6 +126,7 @@ export default {
 
 .handle-button {
   width: 48px;
+  display: none;
   height: 48px;
   position: absolute;
   left: -48px;
@@ -136,7 +137,7 @@ export default {
   pointer-events: auto;
   cursor: pointer;
   color: #fff;
-  display: none;
+  // display: none;
   line-height: 48px;
   i {
     font-size: 24px;

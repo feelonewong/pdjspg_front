@@ -83,7 +83,12 @@ export default {
         },
         yAxis: {
           type: "category",
-         
+          axisLabel: {
+            textStyle: {
+            fontSize: 16
+          }
+          }
+          
           // data: this.$props.chartData.map((item) => item.name),
         },
         grid: {

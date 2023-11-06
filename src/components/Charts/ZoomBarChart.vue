@@ -125,7 +125,7 @@ export default {
               alignWithLabel: true,
             },
             axisLabel: {
-              fontSize: 14,
+              fontSize: 17,
             //  rotate: 40, // 将x轴标签旋转90度
             formatter: function (value, index) {
               if(axisLabelLength > 3){

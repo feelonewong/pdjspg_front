@@ -66,6 +66,9 @@ export default {
         },
         legend: {
           top: "bottom",
+          textStyle: {
+                fontSize: 17
+          }
         },
         series: [
           {
@@ -78,6 +81,7 @@ export default {
               position: "outside",
               show: true,
               formatter: "{b}\n {c} %",
+              fontSize: 17
             },
             itemStyle: {
               borderRadius: 6,

@@ -8,7 +8,7 @@
           <div>
             <DescComp :descInfo="item.desc" v-if="index !==6"></DescComp>
           </div>
-          <p>柱状图 总分与各维度分对比情况</p>
+          <p style="font-size: 19px;">柱状图 总分与各维度分对比情况</p>
           <div>
             <PersonChart :chartData="item.chart"></PersonChart>
           </div>
@@ -42,7 +42,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
 h2 {
   margin-top: 20px;
   margin-left: 20px;
@@ -71,5 +71,13 @@ h2::after {
 }
 .container {
   margin-bottom: 50px;
+}
+
+.container {
+  ::v-deep {
+    tr {
+      font-size: 18px;
+    }
+}
 }
 </style>

@@ -71,6 +71,9 @@ export default {
         },
         legend: {
           top: "bottom",
+          textStyle: {
+            fontSize: 17
+          }
         },
         series: [
           {
@@ -80,6 +83,7 @@ export default {
             label: {
               show: true,
               position: "outside",
+              fontSize: 18,
               formatter: "{b}\n{c} ({d}%)",
             },
             labelLine: {
@@ -93,7 +97,7 @@ export default {
             emphasis: {
               label: {
                 show: true,
-                fontSize: 16,
+                fontSize: 17,
                 fontWeight: "bold",
               },
             },
