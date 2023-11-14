@@ -58,7 +58,7 @@ export const data = {
             ]
         },
         "periondScoreRating":{
-            "chartData":[ 
+            "chartData":[
                 {
                     "name":"学前教育",
                     "value":"95.09"
@@ -75,7 +75,7 @@ export const data = {
         },
          // 这里待修改数据: 针对上面的allScoreRating修改为下面的数据
         "periondScoreRating":{
-            "chartData":[ 
+            "chartData":[
                 {
                     "name":"学前教育",
                     "value":"95.10"
@@ -1158,7 +1158,7 @@ export const data = {
                     "value":"89.73"
                 }
                 ],
-                
+
                 "highArtChartData":  [ // 义务教育、艺体、各维度得分率
                 {
                     "name":"整体得分率",
@@ -1286,9 +1286,9 @@ export const data = {
                     "comprehensive":"87.38",
                     "development":"85.71"
                 }
-            
+
             ],
-            
+
         },
         // 这里数据待修改：根据上面的一个数据进行改造
         "dimensionPeriondRating": {
@@ -1406,7 +1406,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '50', precent: '42%',
-    
+
                         },
                         {
                             name: '良好', value: '30', precent: '35%',
@@ -1423,7 +1423,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '24', precent: '40%',
-    
+
                         },
                         {
                             name: '良好', value: '36', precent: '52%',
@@ -1440,7 +1440,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '21', precent: '40%',
-    
+
                         },
                         {
                             name: '良好', value: '33', precent: '50%',
@@ -1476,7 +1476,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '50', precent: '42%',
-    
+
                         },
                         {
                             name: '良好', value: '30', precent: '35%',
@@ -1493,7 +1493,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '24', precent: '40%',
-    
+
                         },
                         {
                             name: '良好', value: '36', precent: '52%',
@@ -1510,7 +1510,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '21', precent: '40%',
-    
+
                         },
                         {
                             name: '良好', value: '33', precent: '50%',
@@ -1545,7 +1545,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '50', precent: '42%',
-    
+
                         },
                         {
                             name: '良好', value: '30', precent: '35%',
@@ -1562,7 +1562,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '24', precent: '40%',
-    
+
                         },
                         {
                             name: '良好', value: '36', precent: '52%',
@@ -1579,7 +1579,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '21', precent: '40%',
-    
+
                         },
                         {
                             name: '良好', value: '33', precent: '50%',
@@ -1614,7 +1614,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '50', precent: '42%',
-    
+
                         },
                         {
                             name: '良好', value: '30', precent: '35%',
@@ -1631,7 +1631,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '24', precent: '40%',
-    
+
                         },
                         {
                             name: '良好', value: '36', precent: '52%',
@@ -1648,7 +1648,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '21', precent: '40%',
-    
+
                         },
                         {
                             name: '良好', value: '33', precent: '50%',
@@ -1683,7 +1683,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '50', precent: '42%',
-    
+
                         },
                         {
                             name: '良好', value: '30', precent: '35%',
@@ -1700,7 +1700,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '24', precent: '40%',
-    
+
                         },
                         {
                             name: '良好', value: '36', precent: '52%',
@@ -1717,7 +1717,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '21', precent: '40%',
-    
+
                         },
                         {
                             name: '良好', value: '33', precent: '50%',
@@ -1752,7 +1752,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '50', precent: '42%',
-    
+
                         },
                         {
                             name: '良好', value: '30', precent: '35%',
@@ -1769,7 +1769,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '24', precent: '40%',
-    
+
                         },
                         {
                             name: '良好', value: '36', precent: '52%',
@@ -1786,7 +1786,7 @@ export const data = {
                     "chartData": [
                         {
                             name: '优秀', value: '21', precent: '40%',
-    
+
                         },
                         {
                             name: '良好', value: '33', precent: '50%',
@@ -1800,7 +1800,7 @@ export const data = {
                     ]
                 }
             },
-            
+
         }
     },
     "modules": [
@@ -1920,310 +1920,310 @@ export const data = {
                     {
                         "name":"优秀",
                         "value":1499,
-                        "proportion":99.81
+                        "proportion":58.78
                     },
                     {
                         "name":"良好",
                         "value":22,
-                        "proportion":95
+                        "proportion":0.86
                     },
                     {
                         "name":"及格",
                         "value":860,
-                        "proportion":91.54
+                        "proportion":33.73
                     },
                     {
                         "name":"待提升",
                         "value":169,
-                        "proportion":82.51
+                        "proportion":6.63
                     }
                 ],
                 "childChartData": [
                     {
                         "name":"优秀",
                         "value":344,
-                        "proportion":99.8
+                        "proportion":62.77
                     },
                     {
                         "name":"良好",
                         "value":4,
-                        "proportion":95
+                        "proportion":0.73
                     },
                     {
                         "name":"及格",
                         "value":181,
-                        "proportion":91.59
+                        "proportion":33.03
                     },
                     {
                         "name":"待提升",
                         "value":19,
-                        "proportion":83.33
+                        "proportion":3.47
                     }
                 ],
                 "chnChartData": [
                     {
                         "name":"优秀",
                         "value":350,
-                        "proportion":99.84
+                        "proportion":80.65
                     },
                     {
                         "name":"良好",
                         "value":6,
-                        "proportion":95
+                        "proportion":1.38
                     },
                     {
                         "name":"及格",
                         "value":69,
-                        "proportion":91.59
+                        "proportion":15.9
                     },
                     {
                         "name":"待提升",
                         "value":9,
-                        "proportion":84.07
+                        "proportion":2.07
                     }
                 ],
                 "mathChartData": [
                     {
                         "name":"优秀",
                         "value":240,
-                        "proportion":99.85
+                        "proportion":80.54
                     },
                     {
                         "name":"良好",
                         "value":5,
-                        "proportion":95
+                        "proportion":1.68
                     },
                     {
                         "name":"及格",
                         "value":43,
-                        "proportion":91.67
+                        "proportion":14.43
                     },
                     {
                         "name":"待提升",
                         "value":10,
-                        "proportion":83.5
+                        "proportion":3.35
                     }
                 ],
                 "engChartData": [
                     {
                         "name":"优秀",
                         "value":68,
-                        "proportion":99.9
+                        "proportion":28.1
                     },
                     {
                         "name":"良好",
                         "value":32,
-                        "proportion":91.35
+                        "proportion":13.22
                     },
                     {
                         "name":"及格",
                         "value":117,
-                        "proportion":91.55
+                        "proportion":48.35
                     },
                     {
                         "name":"待提升",
                         "value":25,
-                        "proportion":82.93
+                        "proportion":10.33
                     }
                 ],
                 "socChartData": [
                     {
                         "name":"优秀",
                         "value":101,
-                        "proportion":99.93
+                        "proportion":35.19
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":95
+                        "proportion":0.35
                     },
                     {
                         "name":"及格",
                         "value":150,
-                        "proportion":91.6
+                        "proportion":52.26
                     },
                     {
                         "name":"待提升",
                         "value":35,
-                        "proportion":81.9
+                        "proportion":12.2
                     }
                 ],
                 "sciChartData": [
                     {
                         "name":"优秀",
                         "value":95,
-                        "proportion":99.6
+                        "proportion":59.38
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":95
+                        "proportion":0.62
                     },
                     {
                         "name":"及格",
                         "value":53,
-                        "proportion":91.42
+                        "proportion":33.12
                     },
                     {
                         "name":"待提升",
                         "value":11,
-                        "proportion":83.18
+                        "proportion":6.88
                     }
                 ],
                 "artChartData": [
                     {
                         "name":"优秀",
                         "value":100,
-                        "proportion":99.88
+                        "proportion":64.52
                     },
                     {
                         "name":"良好",
                         "value":32,
-                        "proportion":91.35
+                        "proportion":20.64
                     },
                     {
                         "name":"及格",
                         "value":18,
-                        "proportion":91.3
+                        "proportion":11.61
                     },
                     {
                         "name":"待提升",
                         "value":5,
-                        "proportion":85.33
+                        "proportion":3.23
                     }
                 ],
                 "highChnChartData": [
                     {
                         "name":"优秀",
                         "value":48,
-                        "proportion":99.58
+                        "proportion":47.53
                     },
                     {
                         "name":"良好",
                         "value":32,
-                        "proportion":91.35
+                        "proportion":31.68
                     },
                     {
                         "name":"及格",
                         "value":16,
-                        "proportion":91.77
+                        "proportion":15.84
                     },
                     {
                         "name":"待提升",
                         "value":5,
-                        "proportion":77.67
+                        "proportion":4.95
                     }
                 ],
                 "highMathChartData": [
                     {
                         "name":"优秀",
                         "value":45,
-                        "proportion":99.63
+                        "proportion":70.31
                     },
                     {
                         "name":"良好",
                         "value":3,
-                        "proportion":95
+                        "proportion":4.69
                     },
                     {
                         "name":"及格",
                         "value":10,
-                        "proportion":91
+                        "proportion":15.63
                     },
                     {
                         "name":"待提升",
                         "value":6,
-                        "proportion":78.33
+                        "proportion":9.37
                     }
-                ], 
+                ],
                 "highEngChartData": [
                     {
                         "name":"优秀",
                         "value":40,
-                        "proportion":99.92
+                        "proportion":36.36
                     },
                     {
                         "name":"良好",
                         "value":32,
-                        "proportion":91.35
+                        "proportion":29.09
                     },
                     {
                         "name":"及格",
                         "value":32,
-                        "proportion":91.35
+                        "proportion":29.09
                     },
                     {
                         "name":"待提升",
                         "value":6,
-                        "proportion":83.89
+                        "proportion":5.46
                     }
-                ], 
+                ],
                 "highSocChartData": [
                     {
                         "name":"优秀",
                         "value":2,
-                        "proportion":99.17
+                        "proportion":1.46
                     },
                     {
                         "name":"良好",
                         "value":2,
-                        "proportion":99.17
+                        "proportion":1.46
                     },
                     {
                         "name":"及格",
                         "value":112,
-                        "proportion":91.55
+                        "proportion":81.75
                     },
                     {
                         "name":"待提升",
                         "value":21,
-                        "proportion":83.73
+                        "proportion":15.33
                     }
-                ], 
+                ],
                 "highSciChartData": [
                     {
                         "name":"优秀",
                         "value":9,
-                        "proportion":99.81
+                        "proportion":21.43
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":95
+                        "proportion":2.38
                     },
                     {
                         "name":"及格",
                         "value":25,
-                        "proportion":91.47
+                        "proportion":59.52
                     },
                     {
                         "name":"待提升",
                         "value":7,
-                        "proportion":76.19
+                        "proportion":16.67
                     }
-                ], 
+                ],
                 "highArtChartData": [
                     {
                         "name":"优秀",
                         "value":57,
-                        "proportion":99.65
+                        "proportion":55.88
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":95
+                        "proportion":0.98
                     },
                     {
                         "name":"及格",
                         "value":34,
-                        "proportion":91.32
+                        "proportion":33.33
                     },
                     {
                         "name":"待提升",
                         "value":10,
-                        "proportion":83.5
+                        "proportion":9.81
                     }
-                ],   
+                ],
             },
             "averageScore": { // 职业态度、各平均分
                 // 四个维度满分分别为: 60 120 90 90
@@ -2652,310 +2652,310 @@ export const data = {
                     {
                         "name":"优秀",
                         "value":515,
-                        "proportion":99.57
+                        "proportion":20.2
                     },
                     {
                         "name":"良好",
                         "value":458,
-                        "proportion":95.72
+                        "proportion":17.96
                     },
                     {
                         "name":"及格",
                         "value":623,
-                        "proportion":91.8
+                        "proportion":24.43
                     },
                     {
                         "name":"待提升",
                         "value":954,
-                        "proportion":83.27
+                        "proportion":37.41
                     }
                 ],
                 "childChartData": [
                     {
                         "name":"优秀",
                         "value":270,
-                        "proportion":99.57
+                        "proportion":49.27
                     },
                     {
                         "name":"良好",
                         "value":91,
-                        "proportion":95.63
+                        "proportion":16.6
                     },
                     {
                         "name":"及格",
                         "value":128,
-                        "proportion":92.02
+                        "proportion":23.36
                     },
                     {
                         "name":"待提升",
                         "value":59,
-                        "proportion":84.63
+                        "proportion":10.77
                     }
                 ],
                 "chnChartData": [
                     {
                         "name":"优秀",
                         "value":63,
-                        "proportion":99.51
+                        "proportion":14.51
                     },
                     {
                         "name":"良好",
                         "value":95,
-                        "proportion":95.76
+                        "proportion":21.89
                     },
                     {
                         "name":"及格",
                         "value":113,
-                        "proportion":91.69
+                        "proportion":26.04
                     },
                     {
                         "name":"待提升",
                         "value":163,
-                        "proportion":83.7
+                        "proportion":37.56
                     }
                 ],
                 "mathChartData": [
                     {
                         "name":"优秀",
                         "value":24,
-                        "proportion":99.34
+                        "proportion":8.06
                     },
                     {
                         "name":"良好",
                         "value":65,
-                        "proportion":95.71
+                        "proportion":21.81
                     },
                     {
                         "name":"及格",
                         "value":81,
-                        "proportion":91.72
+                        "proportion":27.18
                     },
                     {
                         "name":"待提升",
                         "value":128,
-                        "proportion":84.09
+                        "proportion":42.95
                     }
                 ],
                 "engChartData": [
                     {
                         "name":"优秀",
                         "value":38,
-                        "proportion":99.58
+                        "proportion":18.1
                     },
                     {
                         "name":"良好",
                         "value":46,
-                        "proportion":95.74
+                        "proportion":21.9
                     },
                     {
                         "name":"及格",
                         "value":55,
-                        "proportion":91.92
+                        "proportion":26.19
                     },
                     {
                         "name":"待提升",
                         "value":71,
-                        "proportion":84.79
+                        "proportion":33.81
                     }
                 ],
                 "socChartData": [
                     {
                         "name":"优秀",
                         "value":80,
-                        "proportion":99.63
+                        "proportion":27.87
                     },
                     {
                         "name":"良好",
                         "value":70,
-                        "proportion":95.75
+                        "proportion":24.39
                     },
                     {
                         "name":"及格",
                         "value":71,
-                        "proportion":91.92
+                        "proportion":24.74
                     },
                     {
                         "name":"待提升",
                         "value":66,
-                        "proportion":84.58
+                        "proportion":23
                     }
                 ],
                 "sciChartData": [
                     {
                         "name":"优秀",
                         "value":4,
-                        "proportion":99.17
+                        "proportion":2.5
                     },
                     {
                         "name":"良好",
                         "value":12,
-                        "proportion":95.69
+                        "proportion":7.5
                     },
                     {
                         "name":"及格",
                         "value":28,
-                        "proportion":91.88
+                        "proportion":17.5
                     },
                     {
                         "name":"待提升",
                         "value":116,
-                        "proportion":82.74
+                        "proportion":72.5
                     }
                 ],
                 "artChartData": [
                     {
                         "name":"优秀",
                         "value":3,
-                        "proportion":99.17
+                        "proportion":2.38
                     },
                     {
                         "name":"良好",
                         "value":10,
-                        "proportion":95.75
+                        "proportion":7.94
                     },
                     {
                         "name":"及格",
                         "value":31,
-                        "proportion":91.53
+                        "proportion":24.6
                     },
                     {
                         "name":"待提升",
                         "value":82,
-                        "proportion":81.95
+                        "proportion":65.08
                     }
                 ],
                 "highChnChartData": [
                     {
                         "name":"优秀",
                         "value":3,
-                        "proportion":99.17
+                        "proportion":4.35
                     },
                     {
                         "name":"良好",
                         "value":8,
-                        "proportion":95.83
+                        "proportion":11.6
                     },
                     {
                         "name":"及格",
                         "value":22,
-                        "proportion":91.48
+                        "proportion":31.88
                     },
                     {
                         "name":"待提升",
                         "value":36,
-                        "proportion":82.41
+                        "proportion":52.17
                     }
                 ],
                 "highMathChartData": [
                     {
                         "name":"优秀",
                         "value":16,
-                        "proportion":99.79
+                        "proportion":25
                     },
                     {
                         "name":"良好",
                         "value":14,
-                        "proportion":95.71
+                        "proportion":21.88
                     },
                     {
                         "name":"及格",
                         "value":13,
-                        "proportion":91.73
+                        "proportion":20.31
                     },
                     {
                         "name":"待提升",
                         "value":21,
-                        "proportion":83.85
+                        "proportion":32.81
                     }
-                ], 
+                ],
                 "highEngChartData": [
                     {
                         "name":"优秀",
                         "value":10,
-                        "proportion":99.83
+                        "proportion":12.82
                     },
                     {
                         "name":"良好",
                         "value":22,
-                        "proportion":95.8
+                        "proportion":28.21
                     },
                     {
                         "name":"及格",
                         "value":16,
-                        "proportion":91.35
+                        "proportion":20.51
                     },
                     {
                         "name":"待提升",
                         "value":30,
-                        "proportion":83.19
+                        "proportion":38.46
                     }
-                ], 
+                ],
                 "highSocChartData": [
                     {
                         "name":"优秀",
                         "value":7,
-                        "proportion":100
+                        "proportion":5.19
                     },
                     {
                         "name":"良好",
                         "value":18,
-                        "proportion":95.56
+                        "proportion":13.33
                     },
                     {
                         "name":"及格",
                         "value":42,
-                        "proportion":91.79
+                        "proportion":31.11
                     },
                     {
                         "name":"待提升",
                         "value":68,
-                        "proportion":83.43
+                        "proportion":50.37
                     }
-                ], 
+                ],
                 "highSciChartData": [
                     {
                         "name":"优秀",
                         "value":3,
-                        "proportion":95.83
+                        "proportion":6.67
                     },
                     {
                         "name":"良好",
                         "value":3,
-                        "proportion":95.83
+                        "proportion":6.66
                     },
                     {
                         "name":"及格",
                         "value":8,
-                        "proportion":91.98
+                        "proportion":17.78
                     },
                     {
                         "name":"待提升",
                         "value":31,
-                        "proportion":81.94
+                        "proportion":68.89
                     }
-                ], 
+                ],
                 "highArtChartData": [
                     {
                         "name":"优秀",
                         "value":4,
-                        "proportion":95.63
+                        "proportion":3.78
                     },
                     {
                         "name":"良好",
                         "value":4,
-                        "proportion":95.63
+                        "proportion":3.77
                     },
                     {
                         "name":"及格",
                         "value":15,
-                        "proportion":91.44
+                        "proportion":14.15
                     },
                     {
                         "name":"待提升",
                         "value":83,
-                        "proportion":80.47
+                        "proportion":78.3
                     }
-                ], 
+                ],
             },
             "averageScore": {
                 "all": {
@@ -3256,14 +3256,14 @@ export const data = {
                     "max": "义务教育英语", // 分数最高的学
                     "min": "高中教育语文", // 分数最低的学，相同分数的学都显示
                     "midMax": "学前教育, 义务教育英语, 义务教育艺体, 高中教育英语, 高中教育艺体",
-                    "midMin": "高中教育语文", 
+                    "midMin": "高中教育语文",
                     "chartData": [{"name":"学前教育","min":31.0,"median":60.0,"average":56.37,"max":60.0},{"name":"义务教育语文","min":39.0,"median":59.0,"average":56.13,"max":60.0},{"name":"义务教育数学","min":42.0,"median":58.0,"average":55.71,"max":60.0},{"name":"义务教育英语","min":41.0,"median":60.0,"average":57.01,"max":60.0},{"name":"义务教育社会","min":36.0,"median":57.5,"average":55.37,"max":60.0},{"name":"义务教育理工","min":41.0,"median":59.0,"average":55.8,"max":60.0},{"name":"义务教育艺体","min":39.0,"median":60.0,"average":56.86,"max":60.0},{"name":"高中教育语文","min":40.0,"median":55.0,"average":54.23,"max":60.0},{"name":"高中教育数学","min":36.0,"median":58.0,"average":54.66,"max":60.0},{"name":"高中教育英语","min":38.0,"median":60.0,"average":56.23,"max":60.0},{"name":"高中教育社会","min":35.0,"median":58.5,"average":54.95,"max":60.0},{"name":"高中教育理工","min":44.0,"median":59.0,"average":56.39,"max":60.0},{"name":"高中教育艺体","min":40.0,"median":60.0,"average":55.5,"max":60.0}]
                 },
                 "scene": {
                     "max": "学前教育", // 分数最高的学
                     "min": "高中教育社会", // 分数最低的学，相同分数的学都显示
                     "midMax": "学前教育",
-                    "midMin": "义务教育理工, 高中教育社会, 高中教育艺体", 
+                    "midMin": "义务教育理工, 高中教育社会, 高中教育艺体",
                     "chartData": [{"name":"学前教育","min":35.0,"median":60.0,"average":58.28,"max":60.0},{"name":"义务教育语文","min":30.0,"median":55.0,"average":52.73,"max":60.0},{"name":"义务教育数学","min":30.0,"median":55.0,"average":52.2,"max":60.0},{"name":"义务教育英语","min":30.0,"median":55.0,"average":53.07,"max":60.0},{"name":"义务教育社会","min":15.0,"median":50.0,"average":47.5,"max":60.0},{"name":"义务教育理工","min":25.0,"median":45.0,"average":46.79,"max":55.0},{"name":"义务教育艺体","min":35.0,"median":55.0,"average":55.12,"max":60.0},{"name":"高中教育语文","min":30.0,"median":50.0,"average":50.87,"max":60.0},{"name":"高中教育数学","min":40.0,"median":55.0,"average":55.78,"max":60.0},{"name":"高中教育英语","min":40.0,"median":55.0,"average":52.44,"max":60.0},{"name":"高中教育社会","min":20.0,"median":45.0,"average":44.26,"max":55.0},{"name":"高中教育理工","min":25.0,"median":50.0,"average":49.81,"max":60.0},{"name":"高中教育艺体","min":35.0,"median":45.0,"average":46.31,"max":55.0}]
                 }
             }
@@ -3383,310 +3383,310 @@ export const data = {
                     {
                         "name":"优秀",
                         "value":466,
-                        "proportion":99.72
+                        "proportion":18.27
                     },
                     {
                         "name":"良好",
                         "value":81,
-                        "proportion":96.02
+                        "proportion":3.18
                     },
                     {
                         "name":"及格",
                         "value":905,
-                        "proportion":93.43
+                        "proportion":35.49
                     },
                     {
                         "name":"待提升",
                         "value":1098,
-                        "proportion":84.78
+                        "proportion":43.06
                     }
                 ],
                 "childChartData": [
                     {
                         "name":"优秀",
                         "value":327,
-                        "proportion":99.72
+                        "proportion":59.67
                     },
                     {
                         "name":"良好",
                         "value":54,
-                        "proportion":96.03
+                        "proportion":9.86
                     },
                     {
                         "name":"及格",
                         "value":122,
-                        "proportion":92.6
+                        "proportion":22.26
                     },
                     {
                         "name":"待提升",
                         "value":45,
-                        "proportion":85.04
+                        "proportion":8.21
                     }
                 ],
                 "chnChartData": [
                     {
                         "name":"优秀",
                         "value":19,
-                        "proportion":99.77
+                        "proportion":4.38
                     },
                     {
                         "name":"良好",
                         "value":2,
-                        "proportion":95.56
+                        "proportion":0.46
                     },
                     {
                         "name":"及格",
                         "value":151,
-                        "proportion":93.5
+                        "proportion":34.79
                     },
                     {
                         "name":"待提升",
                         "value":262,
-                        "proportion":85.28
+                        "proportion":60.37
                     }
                 ],
                 "mathChartData": [
                     {
                         "name":"优秀",
                         "value":20,
-                        "proportion":99.83
+                        "proportion":6.71
                     },
                     {
                         "name":"良好",
                         "value":3,
-                        "proportion":96.3
+                        "proportion":1.01
                     },
                     {
                         "name":"及格",
                         "value":111,
-                        "proportion":93.46
+                        "proportion":37.25
                     },
                     {
                         "name":"待提升",
                         "value":164,
-                        "proportion":84.45
+                        "proportion":55.03
                     }
                 ],
                 "engChartData": [
                     {
                         "name":"优秀",
                         "value":16,
-                        "proportion":99.93
+                        "proportion":7.62
                     },
                     {
                         "name":"良好",
                         "value":3,
-                        "proportion":95.56
+                        "proportion":1.43
                     },
                     {
                         "name":"及格",
                         "value":76,
-                        "proportion":93.65
+                        "proportion":36.19
                     },
                     {
                         "name":"待提升",
                         "value":115,
-                        "proportion":86.42
+                        "proportion":54.76
                     }
                 ],
                 "socChartData": [
                     {
                         "name":"优秀",
                         "value":25,
-                        "proportion":99.78
+                        "proportion":8.71
                     },
                     {
                         "name":"良好",
                         "value":3,
-                        "proportion":96.3
+                        "proportion":1.05
                     },
                     {
                         "name":"及格",
                         "value":147,
-                        "proportion":93.84
+                        "proportion":51.22
                     },
                     {
                         "name":"待提升",
                         "value":112,
-                        "proportion":85.76
+                        "proportion":39.02
                     }
                 ],
                 "sciChartData": [
                     {
                         "name":"优秀",
                         "value":20,
-                        "proportion":99.56
+                        "proportion":12.5
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":96.67
+                        "proportion":0.63
                     },
                     {
                         "name":"及格",
                         "value":78,
-                        "proportion":93.42
+                        "proportion":48.75
                     },
                     {
                         "name":"待提升",
                         "value":61,
-                        "proportion":85.19
+                        "proportion":38.12
                     }
                 ],
                 "artChartData": [
                     {
                         "name":"优秀",
                         "value":5,
-                        "proportion":99.33
+                        "proportion":4.06
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":96.67
+                        "proportion":0.81
                     },
                     {
                         "name":"及格",
                         "value":42,
-                        "proportion":93.73
+                        "proportion":34.15
                     },
                     {
                         "name":"待提升",
                         "value":75,
-                        "proportion":85.35
+                        "proportion":60.98
                     }
                 ],
                 "highChnChartData": [
                     {
                         "name":"优秀",
                         "value":3,
-                        "proportion":99.63
+                        "proportion":4.35
                     },
                     {
                         "name":"良好",
                         "value":6,
-                        "proportion":96.11
+                        "proportion":8.69
                     },
                     {
                         "name":"及格",
                         "value":27,
-                        "proportion":93.17
+                        "proportion":39.13
                     },
                     {
                         "name":"待提升",
                         "value":33,
-                        "proportion":82.49
+                        "proportion":47.83
                     }
                 ],
                 "highMathChartData": [
                     {
                         "name":"优秀",
                         "value":4,
-                        "proportion":99.72
+                        "proportion":6.25
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":95.56
+                        "proportion":1.56
                     },
                     {
                         "name":"及格",
                         "value":30,
-                        "proportion":93.85
+                        "proportion":46.88
                     },
                     {
                         "name":"待提升",
                         "value":29,
-                        "proportion":81.88
+                        "proportion":45.31
                     }
-                ], 
+                ],
                 "highEngChartData": [
                     {
                         "name":"优秀",
                         "value":8,
-                        "proportion":99.86
+                        "proportion":10.26
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":96.67
+                        "proportion":1.28
                     },
                     {
                         "name":"及格",
                         "value":28,
-                        "proportion":93.49
+                        "proportion": 35.9
                     },
                     {
                         "name":"待提升",
                         "value":41,
-                        "proportion":85.15
+                        "proportion":52.56
                     }
-                ], 
+                ],
                 "highSocChartData": [
                     {
                         "name":"优秀",
                         "value":17,
-                        "proportion":99.61
+                        "proportion":12.59
                     },
                     {
                         "name":"良好",
                         "value":5,
-                        "proportion":95.56
+                        "proportion":3.7
                     },
                     {
                         "name":"及格",
                         "value":73,
-                        "proportion":93.41
+                        "proportion": 54.08
                     },
                     {
                         "name":"待提升",
                         "value":40,
-                        "proportion":85.31
+                        "proportion":29.63
                     }
-                ], 
+                ],
                 "highSciChartData": [
                     {
                         "name":"优秀",
                         "value":2,
-                        "proportion":100
+                        "proportion":4.76
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":96.67
+                        "proportion":2.38
                     },
                     {
                         "name":"及格",
                         "value":11,
-                        "proportion":92.22
+                        "proportion":26.19
                     },
                     {
                         "name":"待提升",
                         "value":28,
-                        "proportion":84.25
+                        "proportion":66.67
                     }
-                ], 
+                ],
                 "highArtChartData": [
                     {
                         "name":"优秀",
                         "value":2,
-                        "proportion":100
+                        "proportion":1.91
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":96.67
+                        "proportion":0.95
                     },
                     {
                         "name":"及格",
                         "value":9,
-                        "proportion":93.58
+                        "proportion":8.57
                     },
                     {
                         "name":"待提升",
                         "value":93,
-                        "proportion":81.35
+                        "proportion":88.57
                     }
-                ], 
+                ],
             },
             "averageScore": {
                 "all": {
@@ -3987,14 +3987,14 @@ export const data = {
                     "max": "义务教育英语", // 分数最高的学
                     "min": "高中教育数学", // 分数最低的学，相同分数的学都显示
                     "midMax": "学前教育, 义务教育语文, 义务教育数学, 义务教育英语, 义务教育艺体, 高中教育英语, 高中教育理工",
-                    "midMin": "高中教育语文", 
+                    "midMin": "高中教育语文",
                     "chartData": [{"name":"学前教育","min":27.0,"median":45.0,"average":42.58,"max":45.0},{"name":"义务教育语文","min":30.0,"median":45.0,"average":42.89,"max":45.0},{"name":"义务教育数学","min":34.0,"median":45.0,"average":42.63,"max":45.0},{"name":"义务教育英语","min":35.0,"median":45.0,"average":43.37,"max":45.0},{"name":"义务教育社会","min":29.0,"median":44.0,"average":41.65,"max":45.0},{"name":"义务教育理工","min":32.0,"median":44.0,"average":42.02,"max":45.0},{"name":"义务教育艺体","min":28.0,"median":45.0,"average":43.0,"max":45.0},{"name":"高中教育语文","min":32.0,"median":42.0,"average":41.26,"max":45.0},{"name":"高中教育数学","min":27.0,"median":44.0,"average":41.19,"max":45.0},{"name":"高中教育英语","min":29.0,"median":45.0,"average":42.42,"max":45.0},{"name":"高中教育社会","min":27.0,"median":44.5,"average":41.44,"max":45.0},{"name":"高中教育理工","min":34.0,"median":45.0,"average":42.76,"max":45.0},{"name":"高中教育艺体","min":36.0,"median":44.5,"average":41.98,"max":45.0}]
                 },
                 "scene": {
                     "max": "学前教育", // 分数最高的学
                     "min": "高中教育社会", // 分数最低的学，相同分数的学都显示
                     "midMax": "学前教育",
-                    "midMin": "高中教育社会", 
+                    "midMin": "高中教育社会",
                     "chartData": [{"name":"学前教育","min":30.0,"median":45.0,"average":44.32,"max":45.0},{"name":"义务教育语文","min":20.0,"median":35.0,"average":37.05,"max":45.0},{"name":"义务教育数学","min":10.0,"median":40.0,"average":37.43,"max":45.0},{"name":"义务教育英语","min":30.0,"median":40.0,"average":37.81,"max":45.0},{"name":"义务教育社会","min":25.0,"median":40.0,"average":40.31,"max":45.0},{"name":"义务教育理工","min":30.0,"median":40.0,"average":37.97,"max":45.0},{"name":"义务教育艺体","min":25.0,"median":40.0,"average":39.11,"max":45.0},{"name":"高中教育语文","min":25.0,"median":40.0,"average":38.48,"max":45.0},{"name":"高中教育数学","min":25.0,"median":40.0,"average":38.75,"max":45.0},{"name":"高中教育英语","min":25.0,"median":40.0,"average":38.4,"max":45.0},{"name":"高中教育社会","min":20.0,"median":30.0,"average":32.75,"max":40.0},{"name":"高中教育理工","min":20.0,"median":40.0,"average":39.93,"max":45.0},{"name":"高中教育艺体","min":30.0,"median":35.0,"average":36.67,"max":45.0}]
                 }
             }
@@ -4114,310 +4114,310 @@ export const data = {
                     {
                         "name":"优秀",
                         "value":207,
-                        "proportion":99.66
+                        "proportion":8.12
                     },
                     {
                         "name":"良好",
                         "value":27,
-                        "proportion":95.88
+                        "proportion":1.06
                     },
                     {
                         "name":"及格",
                         "value":843,
-                        "proportion":93.63
+                        "proportion":33.06
                     },
                     {
                         "name":"待提升",
                         "value":1473,
-                        "proportion":84.15
+                        "proportion":57.76
                     }
                 ],
                 "childChartData": [
                     {
                         "name":"优秀",
                         "value":75,
-                        "proportion":99.72
+                        "proportion":13.69
                     },
                     {
                         "name":"良好",
                         "value":11,
-                        "proportion":95.96
+                        "proportion":2.01
                     },
                     {
                         "name":"及格",
                         "value":300,
-                        "proportion":93.6
+                        "proportion":54.74
                     },
                     {
                         "name":"待提升",
                         "value":162,
-                        "proportion":85.56
+                        "proportion":29.56
                     }
                 ],
                 "chnChartData": [
                     {
                         "name":"优秀",
                         "value":5,
-                        "proportion":100
+                        "proportion":1.14
                     },
                     {
                         "name":"良好",
                         "value":5,
-                        "proportion":100
+                        "proportion":1.14
                     },
                     {
                         "name":"及格",
                         "value":72,
-                        "proportion":93.72
+                        "proportion":16.4
                     },
                     {
                         "name":"待提升",
                         "value":357,
-                        "proportion":84.24
+                        "proportion":81.32
                     }
                 ],
                 "mathChartData": [
                     {
                         "name":"优秀",
                         "value":2,
-                        "proportion":94.56
+                        "proportion":0.67
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":95.56
+                        "proportion":0.33
                     },
                     {
                         "name":"及格",
                         "value":38,
-                        "proportion":93.74
+                        "proportion":12.67
                     },
                     {
                         "name":"待提升",
                         "value":259,
-                        "proportion":84.19
+                        "proportion":86.33
                     }
                 ],
                 "engChartData": [
                     {
                         "name":"优秀",
                         "value":17,
-                        "proportion":99.54
+                        "proportion":8.09
                     },
                     {
                         "name":"良好",
                         "value":6,
-                        "proportion":95.93
+                        "proportion":2.86
                     },
                     {
                         "name":"及格",
                         "value":93,
-                        "proportion":93.38
+                        "proportion":44.29
                     },
                     {
                         "name":"待提升",
                         "value":94,
-                        "proportion":84.88
+                        "proportion":44.76
                     }
                 ],
                 "socChartData": [
                     {
                         "name":"优秀",
                         "value":30,
-                        "proportion":99.59
+                        "proportion":10.45
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":96.67
+                        "proportion":0.35
                     },
                     {
                         "name":"及格",
                         "value":89,
-                        "proportion":93.93
+                        "proportion":31.01
                     },
                     {
                         "name":"待提升",
                         "value":167,
-                        "proportion":83.55
+                        "proportion":58.19
                     }
                 ],
                 "sciChartData": [
                     {
                         "name":"优秀",
                         "value":29,
-                        "proportion":99.54
+                        "proportion":18.13
                     },
                     {
                         "name":"良好",
                         "value":3,
-                        "proportion":95.93
+                        "proportion":1.87
                     },
                     {
                         "name":"及格",
                         "value":66,
-                        "proportion":93.5
+                        "proportion":41.25
                     },
                     {
                         "name":"待提升",
                         "value":62,
-                        "proportion":84.7
+                        "proportion":38.75
                     }
                 ],
                 "artChartData": [
                     {
                         "name":"优秀",
                         "value":11,
-                        "proportion":99.49
+                        "proportion":8.21
                     },
                     {
                         "name":"良好",
                         "value":11,
-                        "proportion":99.49
+                        "proportion":8.21
                     },
                     {
                         "name":"及格",
                         "value":32,
-                        "proportion":94.03
+                        "proportion":23.88
                     },
                     {
                         "name":"待提升",
                         "value":80,
-                        "proportion":84.17
+                        "proportion":59.7
                     }
                 ],
                 "highChnChartData": [
                     {
                         "name":"优秀",
                         "value":12,
-                        "proportion":99.91
+                        "proportion":17.39
                     },
                     {
                         "name":"良好",
                         "value":4,
-                        "proportion":95.56
+                        "proportion":5.8
                     },
                     {
                         "name":"及格",
                         "value":21,
-                        "proportion":93.28
+                        "proportion":30.43
                     },
                     {
                         "name":"待提升",
                         "value":32,
-                        "proportion":84.17
+                        "proportion":46.38
                     }
                 ],
                 "highMathChartData": [
                     {
                         "name":"优秀",
                         "value":5,
-                        "proportion":99.56
+                        "proportion":7.25
                     },
                     {
                         "name":"良好",
                         "value":5,
-                        "proportion":99.56
+                        "proportion":7.24
                     },
                     {
                         "name":"及格",
                         "value":27,
-                        "proportion":93.42
+                        "proportion":39.13
                     },
                     {
                         "name":"待提升",
                         "value":32,
-                        "proportion":81.98
+                        "proportion":46.38
                     }
-                ], 
+                ],
                 "highEngChartData": [
                     {
                         "name":"优秀",
                         "value":6,
-                        "proportion":99.81
+                        "proportion":7.69
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":95.56
+                        "proportion":1.28
                     },
                     {
                         "name":"及格",
                         "value":24,
-                        "proportion":93.89
+                        "proportion":30.77
                     },
                     {
                         "name":"待提升",
                         "value":47,
-                        "proportion":83.45
+                        "proportion":60.26
                     }
-                ], 
+                ],
                 "highSocChartData": [
                     {
                         "name":"优秀",
                         "value":16,
-                        "proportion":99.58
+                        "proportion":10.6
                     },
                     {
                         "name":"良好",
                         "value":16,
-                        "proportion":99.58
+                        "proportion":10.6
                     },
                     {
                         "name":"及格",
                         "value":51,
-                        "proportion":93.51
+                        "proportion":33.77
                     },
                     {
                         "name":"待提升",
                         "value":68,
-                        "proportion":84.58
+                        "proportion":45.03
                     }
-                ], 
+                ],
                 "highSciChartData": [
                     {
                         "name":"及格",
                         "value":12,
-                        "proportion":93.89
+                        "proportion":14.29
                     },
                     {
                         "name":"待提升",
                         "value":30,
-                        "proportion":82.44
+                        "proportion":35.71
                     },
                     {
                         "name":"优秀",
                         "value":12,
-                        "proportion":93.89
+                        "proportion":14.29
                     },
                     {
                         "name":"良好",
                         "value":30,
-                        "proportion":82.44
+                        "proportion":35.71
                     }
-                ], 
+                ],
                 "highArtChartData": [
                     {
                         "name":"优秀",
                         "value":1,
-                        "proportion":100
+                        "proportion":0.97
                     },
                     {
                         "name":"良好",
                         "value":1,
-                        "proportion":100
+                        "proportion":0.97
                     },
                     {
                         "name":"及格",
                         "value":18,
-                        "proportion":93.7
+                        "proportion":17.48
                     },
                     {
                         "name":"待提升",
                         "value":83,
-                        "proportion":82.38
+                        "proportion":80.58
                     }
-                ], 
+                ],
             },
             "averageScore": {
                 "all": {
@@ -4718,14 +4718,14 @@ export const data = {
                     "max": "义务教育艺体", // 分数最高的学
                     "min": "高中教育数学", // 分数最低的学，相同分数的学都显示
                     "midMax": "义务教育语文, 义务教育艺体, 高中教育英语, 高中教育艺体",
-                    "midMin": "高中教育语文", 
+                    "midMin": "高中教育语文",
                     "chartData": [{"name":"学前教育","min":25.0,"median":44.0,"average":41.89,"max":45.0},{"name":"义务教育语文","min":28.0,"median":45.0,"average":42.03,"max":45.0},{"name":"义务教育数学","min":27.0,"median":44.0,"average":41.65,"max":45.0},{"name":"义务教育英语","min":28.0,"median":44.0,"average":42.13,"max":45.0},{"name":"义务教育社会","min":28.0,"median":43.0,"average":41.23,"max":45.0},{"name":"义务教育理工","min":28.0,"median":44.0,"average":41.04,"max":45.0},{"name":"义务教育艺体","min":28.0,"median":45.0,"average":42.62,"max":45.0},{"name":"高中教育语文","min":29.0,"median":41.0,"average":40.65,"max":45.0},{"name":"高中教育数学","min":26.0,"median":42.0,"average":40.06,"max":45.0},{"name":"高中教育英语","min":26.0,"median":45.0,"average":41.38,"max":45.0},{"name":"高中教育社会","min":27.0,"median":44.5,"average":41.54,"max":45.0},{"name":"高中教育理工","min":32.0,"median":44.0,"average":42.13,"max":45.0},{"name":"高中教育艺体","min":30.0,"median":45.0,"average":41.55,"max":45.0}]
                 },
                 "scene": {
                     "max": "学前教育", // 分数最高的学
                     "min": "高中教育社会", // 分数最低的学，相同分数的学都显示
                     "midMax": "学前教育, 义务教育英语, 义务教育社会, 义务教育理工, 义务教育艺体, 高中教育语文, 高中教育数学, 高中教育英语, 高中教育理工",
-                    "midMin": "义务教育语文, 义务教育数学, 高中教育社会, 高中教育艺体", 
+                    "midMin": "义务教育语文, 义务教育数学, 高中教育社会, 高中教育艺体",
                     "chartData": [{"name":"学前教育","min":30.0,"median":40.0,"average":41.0,"max":45.0},{"name":"义务教育语文","min":20.0,"median":35.0,"average":35.37,"max":45.0},{"name":"义务教育数学","min":25.0,"median":35.0,"average":35.25,"max":45.0},{"name":"义务教育英语","min":25.0,"median":40.0,"average":39.0,"max":45.0},{"name":"义务教育社会","min":25.0,"median":40.0,"average":40.88,"max":45.0},{"name":"义务教育理工","min":30.0,"median":40.0,"average":38.25,"max":45.0},{"name":"义务教育艺体","min":25.0,"median":40.0,"average":37.02,"max":45.0},{"name":"高中教育语文","min":30.0,"median":40.0,"average":40.65,"max":45.0},{"name":"高中教育数学","min":25.0,"median":40.0,"average":39.3,"max":45.0},{"name":"高中教育英语","min":30.0,"median":40.0,"average":37.88,"max":45.0},{"name":"高中教育社会","min":25.0,"median":35.0,"average":34.56,"max":45.0},{"name":"高中教育理工","min":15.0,"median":40.0,"average":38.63,"max":45.0},{"name":"高中教育艺体","min":25.0,"median":35.0,"average":35.6,"max":45.0}]
                 }
             }
