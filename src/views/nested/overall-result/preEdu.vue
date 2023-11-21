@@ -357,7 +357,9 @@
                 :title="item.scoreRating.title + '得分分布情况'"
                 :chartData="item.eachScoreDistribution.chartData"
               ></PieChart>
+          
             </div>
+            
             <div class="area-right">
               <CommonTable
                 :tableInfo="item.eachScoreDistribution.tableInfo"
@@ -385,14 +387,7 @@
                 :chartData="item.averageScore.all.chartData.concat(item.averageScore.selfAndSecene.chartData)"
               ></ZoomBarChart>
             </div>
-            <!-- <div class="area-left">
-              <ZoomBarChart
-                :title="
-                  item.scoreRating.title + '自陈、情景问题平均分'
-                "
-                :chartData="item.averageScore.selfAndSecene.chartData"
-              ></ZoomBarChart>
-            </div> -->
+           
             <div class="area-right">
               <desc-slot>
                 学前教育{{ item.averageScore.title }}维度：<br />

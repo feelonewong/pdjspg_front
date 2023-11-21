@@ -209,11 +209,27 @@ export const data = {
                       }
                   ],
                   "chartData": [
-                      {"name": '优秀', "value": '344',  "precent": '62.77%',},
-                      {"name": '良好', "value": '4',  "precent": '0.37%',},
-                      {"name": '及格', "value": '181',  "precent": '33.03%',},
-                      {"name": '待提升'," value": '19', "precent": '3.47%',}
-                  ]
+                    {
+                        "name":"优秀",
+                        "value":344,
+                        "proportion":"62.77"
+                    },
+                    {
+                        "name":"良好",
+                        "value":4,
+                        "proportion":"0.73"
+                    },
+                    {
+                        "name":"及格",
+                        "value":181,
+                        "proportion":"33.03"
+                    },
+                    {
+                        "name":"待提升",
+                        "value":19,
+                        "proportion":"3.47"
+                    }
+                ]
               },
               "averageScore": {
                   "all": {
@@ -262,11 +278,30 @@ export const data = {
                       }
                   ],
                   "chartData": [
-                      {"name": '优秀', "value": '270',  "precent": '49.27%',},
-                      {"name": '良好', "value": '91',  "precent": '16.61%',},
-                      {"name": '及格', "value": '128',  "precent": '23.36%',},
-                      {"name": '待提升'," value": '59', "precent": '10.77%',}
+                      
+
+                      {
+                        "name":"优秀",
+                        "value":270,
+                        "proportion":"49.27"
+                    },
+                    {
+                        "name":"良好",
+                        "value":91,
+                        "proportion":"16.61"
+                    },
+                    {
+                        "name":"及格",
+                        "value":128,
+                        "proportion":"23.36"
+                    },
+                    {
+                        "name":"待提升",
+                        "value":59,
+                        "proportion":"10.77"
+                    }
                   ]
+                  
               },
               "averageScore": {
                   "all": {
@@ -315,10 +350,26 @@ export const data = {
                       }
                   ],
                   "chartData": [
-                      {"name": '优秀', "value": '327',  "precent": '59.67%',},
-                      {"name": '良好', "value": '54',  "precent": '9.85%',},
-                      {"name": '及格', "value": '122',  "precent": '22.26%',},
-                      {"name": '待提升'," value": '45', "precent": '8.21%',}
+                    {
+                      "name":"优秀",
+                      "value":327,
+                      "proportion":"49.27"
+                  },
+                  {
+                      "name":"良好",
+                      "value":54,
+                      "proportion":"16.61"
+                  },
+                  {
+                      "name":"及格",
+                      "value":122,
+                      "proportion":"23.36"
+                  },
+                  {
+                      "name":"待提升",
+                      "value":45,
+                      "proportion":"10.77"
+                  }
                   ]
               },
               "averageScore": {
@@ -368,10 +419,26 @@ export const data = {
                       }
                   ],
                   "chartData": [
-                      {"name": '优秀', "value": '75',  "precent": '13.69%',},
-                      {"name": '良好', "value": '11',  "precent": '2.01%',},
-                      {"name": '及格', "value": '300',  "precent": '54.74%',},
-                      {"name": '待提升'," value": '162', "precent": '29.56%',}
+                      {
+                        "name":"优秀",
+                        "value":75,
+                        "proportion":"49.27"
+                    },
+                    {
+                        "name":"良好",
+                        "value":11,
+                        "proportion":"16.61"
+                    },
+                    {
+                        "name":"及格",
+                        "value":300,
+                        "proportion":"23.36"
+                    },
+                    {
+                        "name":"待提升",
+                        "value":162,
+                        "proportion":"10.77"
+                    }
                   ]
               },
               "averageScore": {

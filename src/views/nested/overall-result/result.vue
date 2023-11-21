@@ -112,6 +112,7 @@
     <div>
       <!-- 整体分布情况 -->
       <div class="wrap-d" style="margin: 40px 0;">
+        {{ allResult.scoreDistribution.chartData }}
         <div class="area-left">
           <PieChart
             :title="'全区得分分布情况'"
