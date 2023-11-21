@@ -1,6 +1,6 @@
 <template>
   <div style="margin-bottom: 50px">
-    <h2>二、义务教育调研结果</h2>
+    <h2>三、义务教育调研结果</h2>
     <br />
     <h2 class="title" style="margin-top: 20px; margin-bottom: 30px;">3.1全区义务教育整体得分率与得分分布情况</h2>
     <span

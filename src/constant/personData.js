@@ -14,7 +14,7 @@ const legendList7 = ['仅拿到教师资格证，并未深入学习', '职业感
 
 export const Person_List = [
   {
-    title: "6.1教师性别差异情况",
+    title: "5.1教师性别差异情况",
     chart: {
       xDataLable: xLabelList,
       legend: legendList1,
@@ -51,7 +51,7 @@ export const Person_List = [
     }
   },
   {
-      title: "6.2 教师最高学历（或学位）情况",
+      title: "5.2 教师最高学历（或学位）情况",
       chart: {
         xDataLable: xLabelList,
         legend: legendList2,
@@ -112,7 +112,7 @@ export const Person_List = [
       }
   },
   {
-      title: "6.3 第一学历差异情况",
+      title: "5.3 第一学历差异情况",
       chart: {
         xDataLable: xLabelList,
         legend: legendList3,
@@ -149,7 +149,7 @@ export const Person_List = [
       }
   },
   {
-      title: "6.4 最后学历差异情况",
+      title: "5.4 最后学历差异情况",
       chart: {
         xDataLable: xLabelList,
         legend: legendList3,
@@ -187,7 +187,7 @@ export const Person_List = [
       }
   },
   {
-      title: "6.5 任教学科情况",
+      title: "5.5 任教学科情况",
       chart: {
         xDataLable: xLabelList,
         legend: legendList5,
@@ -262,7 +262,7 @@ export const Person_List = [
      }
   },
   {
-      title: "6.6 教育教学实习情况",
+      title: "5.6 教育教学实习情况",
       chart: {
         xDataLable: xLabelList,
         legend: legendList6,
@@ -312,7 +312,7 @@ export const Person_List = [
      }
   },
   {
-      title: "6.7 是否曾经接受或自学过师范类课程？学过哪些板块的课程？（多选）",
+      title: "5.7 是否曾经接受或自学过师范类课程？学过哪些板块的课程？（多选）",
       chart: {
         xDataLable: legendList7,
         legend: ['次数'],

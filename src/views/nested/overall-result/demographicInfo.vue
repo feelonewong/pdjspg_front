@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>六、人口学信息调查结果</h2>
+    <h2>五、人口学信息调查结果</h2>
     <template v-for="(item, index) in personList">
       <section :key="index">
         <h2>{{ item.title }}</h2>

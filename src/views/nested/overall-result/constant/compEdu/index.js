@@ -380,7 +380,7 @@ export const CompEdu = {
         {
             "title": "3.2.3 全区义务教育教学实践",
             "subTitle": "3.2.3.1 全区义务教育教学实践得分率与得分分布情况",
-            "second": "3.2.2.3 全区义务教育教学实践平均分、中位数、标准差",
+            "second": "3.2.3.2 全区义务教育教学实践平均分、中位数、标准差",
             "scoreRating": {
                 "title": "教学实践",
                 "chartData": data.modules[1].scoreRating.chartData,
